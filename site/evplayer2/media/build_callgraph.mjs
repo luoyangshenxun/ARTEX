@@ -1,0 +1,19 @@
+import fs from 'node:fs';
+const root=new URL('./',import.meta.url),runtime=JSON.parse(fs.readFileSync(new URL('runtime_inspection.json',root),'utf8'));
+const modules=runtime.modules.map(m=>({...m,number:parseInt(m.base,16)})),inventories={};
+for(const name of ['EVPlayer2.exe','PlayerLibRender56_vs.dll'])inventories[name]=JSON.parse(fs.readFileSync(new URL(name+'.inventory.json',root),'utf8'));
+const calls=[],references=[];
+for(const f of runtime.disassembly){const m=modules.find(m=>m.name===f.module),inventory=inventories[f.module];for(const ins of f.instructions){if(!ins.text)continue;
+ const direct=ins.text.match(/^(call|jmp) (0x[\da-f]+)$/i),indirect=ins.text.match(/^(call|jmp) qword ptr \[rip ([+-]) (0x[\da-f]+)\]$/i),lea=ins.text.match(/^lea [^,]+, \[rip ([+-]) (0x[\da-f]+)\]$/i);
+ if(direct){const address=parseInt(direct[2],16),targetModule=modules.find(m=>address>=m.number&&address<m.number+m.size),target=targetModule?{module:targetModule.name,rva:'0x'+(address-targetModule.number).toString(16)}:null,symbol=targetModule?inventories[targetModule.name]?.exports.find(e=>e.rva===address-targetModule.number)?.name||null:null;calls.push({kind:direct[1],from:{module:f.module,function:f.begin,at:ins.rva,label:f.label},instruction:ins.text,target,symbol});}
+ else if(indirect){const slot=parseInt(ins.rva,16)+ins.bytes.length/2+(indirect[2]==='+'?1:-1)*parseInt(indirect[3],16),imported=inventory.imports.find(i=>i.iatRva===slot);calls.push({kind:indirect[1],from:{module:f.module,function:f.begin,at:ins.rva,label:f.label},instruction:ins.text,target:imported?{module:imported.dll,iatRva:'0x'+slot.toString(16)}:null,symbol:imported?.name||null});}
+ if(lea){const target=parseInt(ins.rva,16)+ins.bytes.length/2+(lea[1]==='+'?1:-1)*parseInt(lea[2],16);references.push({from:{module:f.module,function:f.begin,at:ins.rva},target:'0x'+target.toString(16),instruction:ins.text,string:inventory.mediaStrings.find(s=>s.rva===target)?.text||null});}
+}}
+fs.writeFileSync(new URL('media_callgraph.json',root),JSON.stringify(calls,null,2)+'\n');fs.writeFileSync(new URL('code_references.json',root),JSON.stringify(references,null,2)+'\n');
+const lib=inventories['PlayerLibRender56_vs.dll'],b=fs.readFileSync(lib.file),wanted=JSON.parse(fs.readFileSync(new URL('input_layer_strings.json',root),'utf8')),stringMap=new Map(wanted.map(s=>[s.rva,s])),extra=[];
+for(const s of lib.sections.filter(s=>(s.flags&0x20000000)!==0))for(let o=s.raw;o+7<s.raw+s.rawSize;o++){if((b[o]===0x48||b[o]===0x4c)&&b[o+1]===0x8d&&(b[o+2]&0xc7)===5){const rva=s.rva+o-s.raw,target=rva+7+b.readInt32LE(o+3);if(stringMap.has(target)){const f=lib.functions.find(f=>f.begin<=rva&&f.end>rva);extra.push({rva,target,text:stringMap.get(target).text,function:f});}}}
+fs.writeFileSync(new URL('input_layer_xrefs.json',root),JSON.stringify(extra,null,2)+'\n');
+console.log(JSON.stringify({decodedFunctions:runtime.disassembly.length,truncated:runtime.disassembly.filter(f=>f.truncated).map(f=>({module:f.module,begin:f.begin})),resolvedCalls:calls.filter(c=>c.target).length,branchReferences:references.length,inputLayerXrefs:extra.length}));
+for(const x of extra.filter(x=>/Custom AVIOContext|open_hls_cache_file|restclient_download|release M3u8Ctx|ioRead err|open_ts_ctx|DecryptFilterMgr/.test(x.text)).slice(0,16))console.log('INPUT_XREF '+JSON.stringify(x));
+for(const c of calls.filter(c=>c.from.module===lib.name&&(['0x12300','0x421f0'].includes(c.from.function)||c.target?.rva==='0x4af520')).filter(c=>!c.symbol||/thread/i.test(c.symbol)).slice(0,18))console.log('EDGE '+JSON.stringify(c));
+const reader=runtime.disassembly.find(f=>f.module===lib.name&&f.begin==='0xee40'),index=reader.instructions.findIndex(i=>i.rva==='0xf5e8');for(const i of reader.instructions.slice(index-16,index+10))console.log('READER_SETUP '+i.rva+' '+i.text);

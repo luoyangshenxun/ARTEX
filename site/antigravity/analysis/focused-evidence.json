@@ -1,0 +1,320 @@
+[
+  {
+    "id": "E01",
+    "file": "unpacked/{code_GetDestDir}/resources/app/product.json",
+    "sourceSha256": "5e8a6ef4809e3963da6ac11fb3355ce1dbe6e9e58ea748332f0adedca8b5dd23",
+    "sourceBytes": 44752,
+    "startByte": 58,
+    "endByteExclusive": 238,
+    "line": 4,
+    "marker": "\"ideVersion\"",
+    "excerpt": "\"ideVersion\": \"2.7.0\",\n\t\"nameLong\": \"Antigravity IDE\",\n\t\"applicationName\": \"antigravity-ide\",\n\t\"aliasName\": \"agy-ide\",\n\t\"dataFolderName\": \".antigravity-ide\",\n\t\"win32MutexName\": \"an"
+  },
+  {
+    "id": "E02",
+    "file": "unpacked/{code_GetDestDir}/resources/app/product.json",
+    "sourceSha256": "5e8a6ef4809e3963da6ac11fb3355ce1dbe6e9e58ea748332f0adedca8b5dd23",
+    "sourceBytes": 44752,
+    "startByte": 43542,
+    "endByteExclusive": 43722,
+    "line": 2038,
+    "marker": "\"languageServerCL\"",
+    "excerpt": "\"languageServerCL\": \"1018779249\",\n\t\"commit\": \"71bedb45923debaf49871bdcb7c7d3a47918e247\",\n\t\"date\": \"2026-11-11T04:46:27.114Z\",\n\t\"checksums\": {\n\t\t\"vs/base/parts/sandbox/electron-brow"
+  },
+  {
+    "id": "E03",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 12649150,
+    "endByteExclusive": 12649630,
+    "line": 4254,
+    "marker": "get clientMetadata(){const t=this._productService",
+    "excerpt": "get clientMetadata(){const t=this._productService.isGoogleInternal?{ideName:\"jetski\",ideType:bCe.JETSKI}:{ideName:\"antigravity\",ideType:bCe.ANTIGRAVITY};return Kt(uDn,{...t,ideVersion:this._productService.ideVersion})}get userAgent(){const t=this._productService.isGoogleInternal?\"jetski\":\"antigravity\",n=this._productService.ideVersion,r=BBo(),i=DBo();return`${t}/${n} ${r}/${i}`}async getProfileData(t){const n=t??await this.getOAuthTokenFromStateSyncIfUnexpired();if(!n)throw n"
+  },
+  {
+    "id": "E04",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 12647193,
+    "endByteExclusive": 12647443,
+    "line": 4254,
+    "marker": "function BBo()",
+    "excerpt": "function BBo(){const e=process.platform;return e===\"win32\"?\"windows\":e}function DBo(){const e=process.arch;switch(e){case\"x64\":return\"amd64\";case\"ia32\":return\"386\";default:return e}}var mXa,$ee,gXa,YKe,EXa,YEn,PKe,kBo=M({\"out-build/vs/platform/cloudC"
+  },
+  {
+    "id": "E05",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 12650590,
+    "endByteExclusive": 12651990,
+    "line": 4254,
+    "marker": "async makePostRequest(t,n,r,i,a)",
+    "excerpt": "async makePostRequest(t,n,r,i,a){const o=(await this._oauthTokenObservable).get(),l=a??AF(o);if(!l)throw new Error(\"No OAuth token available. User is not logged in.\");const u=this.getBaseUrl(l);try{const f=await DKe(l,this._unifiedStateSyncService).request({url:`${u}/${t}`,method:\"POST\",headers:{\"Content-Type\":\"application/json\",\"User-Agent\":this.userAgent},data:kEn(nZn(n,r))}),m=f.headers?.get(YKe);return m&&this._logger.info(`[CloudCode] POST ${t} traceId: ${m}`),i.fromJson(VAe(f.data),{ignoreUnknownFields:!0,registry:mas(iDn)})}catch(d){throw this._logger.error(\"Failed to make POST request:\",d),d}}async makeGetRequest(t,n,r){const a=(await this._oauthTokenObservable).get(),s=r??AF(a);if(!s)throw new Error(\"No OAuth token available. User is not logged in.\");const o=this.getBaseUrl(s);try{const u=await DKe(s,this._unifiedStateSyncService).request({url:`${o}/${t}`,method:\"GET\",headers:{\"Content-Type\":\"application/json\",\"User-Agent\":this.userAgent}}),d=u.headers?.get(YKe);return d&&this._logger.info(`[CloudCode] GET ${t} traceId: ${d}`),n.fromJson(VAe(u.data),{ignoreUnknownFields:!0})}catch(l){throw l}}async loadCodeAssist(t,n){let r=await this.makePostRequest(\"v1internal:loadCodeAssist\",wre,Kt(wre,{metadata:this.clientMetadata,cloudaicompanionProject:n??await this.getGcpProjectIdFromUSS()}),QP(Fre),t);!r.paidTier&&r.cloudaicompanionProject!==\"\"&&(r=await this.makePostRequest(\"v"
+  },
+  {
+    "id": "E06",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 12651709,
+    "endByteExclusive": 12654709,
+    "line": 4254,
+    "marker": "async loadCodeAssist(t,n)",
+    "excerpt": "async loadCodeAssist(t,n){let r=await this.makePostRequest(\"v1internal:loadCodeAssist\",wre,Kt(wre,{metadata:this.clientMetadata,cloudaicompanionProject:n??await this.getGcpProjectIdFromUSS()}),QP(Fre),t);!r.paidTier&&r.cloudaicompanionProject!==\"\"&&(r=await this.makePostRequest(\"v1internal:loadCodeAssist\",wre,Kt(wre,{metadata:this.clientMetadata,cloudaicompanionProject:n??await this.getGcpProjectIdFromUSS()}),QP(Fre),t));const i=r.paidTier?.availableCredits?.find(o=>o.creditType===ztt.GOOGLE_ONE_AI),a=i?.creditAmount===void 0?void 0:Number(i.creditAmount),s=i?.minimumCreditAmountForUsage===void 0?void 0:Number(i.minimumCreditAmountForUsage);return this._unifiedStateSyncService.pushUpdate(FBo(a)),s!==void 0&&this._unifiedStateSyncService.pushUpdate(xBo(s)),a===void 0&&this._unifiedStateSyncService.pushUpdate(wBo(!1)),this._isTierGCPTos=r.paidTier?.usesGcpTos??!1,r.cloudaicompanionProject!==\"\"&&r.cloudaicompanionProject!==void 0&&(this._cloudAiCompanionProject=r.cloudaicompanionProject),r}async onboardUser(t,n,r){let i=await this.makePostRequest(\"v1internal:onboardUser\",qtt,Kt(qtt,{tierId:t,cloudaicompanionProject:r??await this.getGcpProjectIdFromUSS(),metadata:this.clientMetadata}),YEn,n);for(;!i.done;)i=await this.makeGetRequest(`v1internal/${i.name}`,YEn,n),await new Promise(a=>setTimeout(a,gXa));return i.response?.cloudaicompanionProject?.id!==void 0&&i.response?.cloudaicompanionProject?.id!==\"\"?this._cloudAiCompanionProject=i.response.cloudaicompanionProject.id:this._logger.warn(\"No cloud AI companion project found after onboardUser\"),i.response??Kt(ent,{})}async listCascadeNuxes(){return this.makeGetRequest(\"v1internal/cascadeNuxes\",QP(wXn))}async getUserAccountSettings(t){return(await this.makePostRequest(\"v1internal:fetchUserInfo\",Vnt,Kt(Vnt,{project:this._cloudAiCompanionProject}),QP(TXn),t)).userSettings??Kt(AJ,{})}async getAvailableModels(t){return this.makePostRequest(\"v1internal:fetchAvailableModels\",Rnt,Kt(Rnt,{project:this._cloudAiCompanionProject}),QP(Snt),t)}async fetchAdminControls(t){return this.makePostRequest(\"v1internal:fetchAdminControls\",tnt,Kt(tnt,{project:this._cloudAiCompanionProject}),QP(ACe),t)}async setUserAccountSettings(t){return(await this.makePostRequest(\"v1internal:setUserSettings\",Cnt,Kt(Cnt,{userSettings:t}),QP(_Xn))).userSettings??Kt(AJ,{})}async recordConversationInteraction(t,n,r){const i=Kt(tXa,{timestamp:Bas(Date.now()),event:{case:\"conversationInteraction\",value:Kt(sXa,{traceId:n??\"\",status:XEn.NO_ERROR,interaction:t,isAgentic:!0,acceptedLines:r?.acceptedLines!==void 0?BigInt(r.acceptedLines):void 0,removedLines:r?.removedLines!==void 0?BigInt(r.removedLines):void 0,initiationMethod:r?.initiationMethod,language:r?.language})}});this.recordCodeAssistMetrics(i)}async recordCodeAssistMetrics(t){const n=ld(),r=Kt(GEn,{project:this._cloudAiCompanionProject,requestId:n,metadata:this.clientMetadata,metrics:[t]});this.makePostRequest(\"v1internal:recordCodeAssistMetrics\",GEn,r,EXa)}resetIsTierGCPTos(){this._isTierG"
+  },
+  {
+    "id": "E07",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 12635095,
+    "endByteExclusive": 12635415,
+    "line": 4254,
+    "marker": "function kEn(e)",
+    "excerpt": "function kEn(e){if(e==null||typeof e!=\"object\")return e;if(Array.isArray(e))return e.map(n=>kEn(n));const t={};for(const n in e)if(e.hasOwnProperty(n)){const r=n.replace(/[A-Z]/g,i=>`_${i.toLowerCase()}`);t[r]=kEn(e[n])}return t}function VAe(e){if(e==null||typeof e!=\"object\")return e;if(Array.isArray(e))return e.map(n="
+  },
+  {
+    "id": "E08",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 1124998,
+    "endByteExclusive": 1125748,
+    "line": 98,
+    "marker": "function nZn(e,t,n)",
+    "excerpt": "re(),Get(),Aet(),WLn(),fss()}});function mss(e){return e?Object.assign(Object.assign({},ctt),e):ctt}function nZn(e,t,n){return Are(KA(e,t),mss(n))}function Sx(e,t,n){var r;const i=nZn(e,t,n);return JSON.stringify(i,null,(r=n?.prettySpaces)!==null&&r!==void 0?r:0)}function Are(e,t){var n;const r=bss(e,t);if(r!==void 0)return r;const i={};for(const a of e.sortedFields){if(!e.isSet(a)){if(a.presence==sZn)throw new Error(`cannot encode ${a} to JSON: required field not set`);if(!t.alwaysEmitImplicit||a.presence!==oZn)continue}const s=rZn(a,e.get(a),t);s!==void 0&&(i[pss(a,t)]=s)}if(t.registry){const a=new Set;for(const{no:s}of(n=e.getUnknown())!==null&&n!==void 0?n:[])if(!a.has(s)){a.add(s);const o=t.registry.getExtensionFor(e.desc,s);if(!o)cont"
+  },
+  {
+    "id": "E09",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 12635642,
+    "endByteExclusive": 12636342,
+    "line": 4254,
+    "marker": "function NBo(",
+    "excerpt": "function NBo({isDevMode:e,isGoogleInternal:t,isGcpTos:n,isTierGCPTos:r,cloudCodeUrlOverride:i}){return i||(t&&e?j3a:t?$3a:n||r===!0||r===void 0?eXa:q3a)}var j3a,$3a,q3a,eXa,IBo=M({\"out-build/vs/base/common/cloudCode.js\"(){\"use strict\";j3a=\"https://autopush-cloudcode-pa.sandbox.googleapis.com\",$3a=\"https://preprod-daily-cloudcode-pa.sandbox.googleapis.com\",q3a=\"https://daily-cloudcode-pa.googleapis.com\",eXa=\"https://cloudcode-pa.googleapis.com\"}}),OKe,GEn,tXa,nXa,rXa,iXa,aXa,sXa,oXa,lXa,XEn,yBo=M({\"../exa/proto_ts/out/dist/exa/google/internal/cloud/code/v1internal/metrics_pb.js\"(){\"use strict\";Ba(),hJ(),Qk(),fc(),OKe=Ra(\"CjdleGEvZ29vZ2xlL2ludGVybmFsL2Nsb3VkL2NvZGUvdjFpbnRlcm5hbC9tZXRyaWNzLnBy"
+  },
+  {
+    "id": "E10",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 12623992,
+    "endByteExclusive": 12624572,
+    "line": 4254,
+    "marker": "function DKe(e,t)",
+    "excerpt": "function DKe(e,t){const n=e.isGcpTos??!1;let r;return n?(zee||(zee=new D3a(zQe,jQe),zee.on(\"tokens\",k3a(t,!0)),Kee=G3a(Kee)),r=zee):(Kee||(Kee=new D3a(oAe,lAe),Kee.on(\"tokens\",k3a(t,!1)),zee=G3a(zee)),r=Kee),HP=e,r.setCredentials({access_token:e.accessToken,refresh_token:e.refreshToken,expiry_date:e.expiryDateSeconds*1e3,token_type:e.tokenType}),r}var Kee,zee,HP,X3a=M({\"out-build/vs/platform/cloudCode/electron-main/oauthClient.js\"(){\"use strict\";Zka(),Dee()}});import{release as pBo,arch as W3a}from\"os\";var O3a,jee,LEn,kKe,Y3a,P3a,M3a,J3a,UEn,ZEn,GKe,bBo=M({\"out-build/vs/pla"
+  },
+  {
+    "id": "E11",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 12526793,
+    "endByteExclusive": 12527293,
+    "line": 4249,
+    "marker": "getLoginUrl(t){",
+    "excerpt": "getLoginUrl(t){const n=this.getLocalhostRedirectUri()??\"\",r=ld(),i=t?zQe:oAe,a=t?jQe:lAe,o=new nEn(i,a,n).generateAuthUrl({access_type:\"offline\",scope:Uka,state:r,prompt:\"consent\"});return Promise.resolve(o)}getLocalhostRedirectUri(){return this._port===null?null:`http://localhost:${this._port}/oauth-callback`}},hKe=v4a([SF(0,jo),SF(1,KQe),SF(2,qbe),SF(3,L9),SF(4,s0),SF(5,g2),SF(6,Jc),SF(7,Mc)],hKe)}});import*as N4a from\"fs\";import*as ZUo from\"http\";import*as BUo from\"url\";var I4a,y4a,Xee,_4a,fK"
+  },
+  {
+    "id": "E12",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 12526229,
+    "endByteExclusive": 12526879,
+    "line": 4249,
+    "marker": "async exchangeCodeForToken(t,n,r)",
+    "excerpt": "async exchangeCodeForToken(t,n,r){const i=this.getLocalhostRedirectUri()??\"\",a=r?zQe:oAe,s=r?jQe:lAe,o=new nEn(a,s,i);try{const{tokens:l}=await o.getToken(t);return{accessToken:l.access_token??\"\",refreshToken:l.refresh_token??\"\",expiryDateSeconds:Math.floor((l.expiry_date??0)/1e3),tokenType:l.token_type??\"\",isGcpTos:r}}catch(l){throw this.logger.error(\"[OAuth] Token exchange failed:\",l),this._onDidOnboardUser.fire({errorType:\"error\",reason:\"Failed to exchange authorization code for token\"}),new Error(`Failed to exchange authorization code for token: ${l}`)}}getLoginUrl(t){const n=this.getLocalhostRedirectUri()??\"\",r=ld(),i=t?zQe:oAe,a=t?jQe:l"
+  },
+  {
+    "id": "E13",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 926568,
+    "endByteExclusive": 927968,
+    "line": 92,
+    "marker": "function Zqe(e,t,n)",
+    "excerpt": "async function Zqe(e,t,n){if(t===\"insider\")try{const r=await new Promise((i,a)=>{Nrs.get(\"https://dl.google.com/antigravity/insider_secret\",s=>{if(s.statusCode!==200){a(new Error(`Failed to fetch insider_secret: HTTP ${s.statusCode}`)),s.resume();return}let o=\"\";s.on(\"data\",l=>o+=l),s.on(\"end\",()=>i(o.trim()))}).on(\"error\",a)});return`https://antigravity-auto-updater-insider-974169037036.us-central1.run.app/api/update/${e}/${t}/${n.commit}/${r}`}catch(r){return console.error(\"Failed to fetch insider_secret:\",r),`https://antigravity-auto-updater-insider-974169037036.us-central1.run.app/api/update/${e}/${t}/${n.commit}/not_insider`}else try{const r=Irs.hostname()||\"no_hostname\",i=Vrs.createHash(\"sha256\").update(r).digest(\"hex\");return`https://antigravity-ide-auto-updater-974169037036.us-central1.run.app/api/update/${e}/${t}/${n.commit}/${i}`}catch{return`https://antigravity-ide-auto-updater-974169037036.us-central1.run.app/api/update/${e}/${t}/${n.commit}/no_hostname`}}var _xn,Gk,k8,Bqe=M({\"out-build/vs/platform/update/electron-main/abstractUpdateService.js\"(){\"use strict\";Za(),od(),ai(),wo(),Ou(),Cu(),Tr(),ou(),v5(),fx(),_xn=function(e,t,n,r){var i=arguments.length,a=i<3?t:r===null?r=Object.getOwnPropertyDescriptor(t,n):r,s;if(typeof Reflect==\"object\"&&typeof Reflect.decorate==\"function\")a=Reflect.decorate(e,t,n,r);else for(var o=e.length-1;o>=0;o--)(s=e[o])&&(a=(i<3?s(a):i>3?s("
+  },
+  {
+    "id": "E14",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 967010,
+    "endByteExclusive": 967380,
+    "line": 92,
+    "marker": "async buildUpdateFeedUrl(t){let n=`win32-",
+    "excerpt": "async buildUpdateFeedUrl(t){let n=`win32-${process.arch}`;return W8()===1?n+=\"-archive\":this.productService.target===\"user\"&&(n+=\"-user\"),await Zqe(n,t,this.productService)}doCheckForUpdates(t){if(!this.url||this.url.includes(\"exafunction.com\")||this.url.includes(\"codeium.com\"))return;const n=t?this.url:`${this.url}?bg=true`;this.setState(us.CheckingForUpdates(t)),thi"
+  },
+  {
+    "id": "E15",
+    "file": "unpacked/{code_GetDestDir}/resources/app/extensions/agy/vscode/extension.js",
+    "sourceSha256": "bfe65af77e4637e0c17fb395a89365f7bf78cbe512c5a230c225b188a767a8e7",
+    "sourceBytes": 4508863,
+    "startByte": 1216917,
+    "endByteExclusive": 1217637,
+    "line": 22818,
+    "marker": "Va.MIN_AGY_VERSION=",
+    "excerpt": "Va.MIN_AGY_VERSION=\"1.1.11\";\r\nVa.CDE_PREINSTALLED_BINARY_PATH=\"/usr/bin/agy\";Va.DEFAULT_RELEASE_BASE_URL=\"https://antigravity-cli-auto-updater-974169037036.us-central1.run.app\";Va.DOGFOOD_RELEASE_BASE_URL=\"https://storage.googleapis.com/antigravity-public/antigravity-cli\";function ab(){return n.workspace.getConfiguration(\"antigravity\").get(\"channel\")===\"dogfood\"?Va.DOGFOOD_RELEASE_BASE_URL:Va.DEFAULT_RELEASE_BASE_URL}Va.getDefaultReleaseBaseUrl=ab;\r\nfunction bb(a,b,c=\"configuration\"){var d=a.trim().replace(/\\/+$/,\"\");if(d===\"https://storage.googleapis.com/antigravity-releases\")return ab();try{let g=new URL(d),h=g.protocol===\"http:\"&&(g.hostname===\"localhost\"||g.hostname===\"127.0.0.1\");return g.protocol===\"https"
+  },
+  {
+    "id": "E16",
+    "file": "unpacked/{code_GetDestDir}/resources/app/extensions/agy/vscode/extension.js",
+    "sourceSha256": "bfe65af77e4637e0c17fb395a89365f7bf78cbe512c5a230c225b188a767a8e7",
+    "sourceBytes": 4508863,
+    "startByte": 1217916,
+    "endByteExclusive": 1218356,
+    "line": 22821,
+    "marker": "function db(a,b)",
+    "excerpt": "function db(a,b){var c=process.env.AGY_RELEASE_BASE_URL;return c&&c.trim()?bb(c.trim(),b,\"environment variable AGY_RELEASE_BASE_URL\"):(a=(a!=null?a:n.workspace.getConfiguration(\"antigravity\")).get(\"releaseBaseUrl\"))&&a.trim()?bb(a.trim(),b,\"configuration\"):ab()}Va.resolveReleaseBaseUrl=db;function eb(a){if(a){a=a.trim();var b=Number(a);if(!isNaN(b)&&b>=0)return b*1E3;a=Date.parse(a);if(!isNaN(a))return a-=Date.now(),a>0?a:0}}Va.parseRet"
+  },
+  {
+    "id": "E17",
+    "file": "unpacked/{code_GetDestDir}/resources/app/extensions/agy/vscode/extension.js",
+    "sourceSha256": "bfe65af77e4637e0c17fb395a89365f7bf78cbe512c5a230c225b188a767a8e7",
+    "sourceBytes": 4508863,
+    "startByte": 1237560,
+    "endByteExclusive": 1240460,
+    "line": 22867,
+    "marker": "async function ac(a,b,c,d=ob)",
+    "excerpt": "async function ac(a,b,c,d=ob){var g=f.asyncContextStart(),h=g();g=g(1);try{let q=[],t,u,v,w,B,E,I={maxAttempts:(t=b==null?void 0:b.maxAttempts)!=null?t:1,initialDelayMs:(u=b==null?void 0:b.initialDelayMs)!=null?u:500,backoffFactor:(v=b==null?void 0:b.backoffFactor)!=null?v:2,maxDelayMs:(w=b==null?void 0:b.maxDelayMs)!=null?w:3E3,timeoutMs:(B=b==null?void 0:b.timeoutMs)!=null?B:5E3,preservePartialOnError:(E=b==null?void 0:b.preservePartialOnError)!=null?E:!1};b=!1;try{b=(new URL(a)).pathname.endsWith(\".json\")}catch{b=a.endsWith(\".json\")}if(b)try{return g(await h(Zb(a,\r\nI,c)))}catch(ca){g();let ra=jb(ca);throw g(await h(rb(`Failed to fetch valid release manifest from direct JSON URL ${a}. Details:\\n- ${a}: ${ra}`,a,ca,c,d)));}var m=process.platform===\"win32\"?\"windows\":process.platform;let K=process.arch===\"x64\"?\"amd64\":process.arch,O=a.replace(/\\/+$/,\"\");m=`${O}/manifests/${m}_${K}.json`;try{return g(await h(Zb(m,I,c)))}catch(ca){g();var p=jb(ca);q.push(`- ${m}: ${p}`);if(!Va.HttpError.isHttpError(ca))throw g(await h(rb(`Failed to fetch release manifest for ${a}. Details:\\n${q.join(\"\\n\")}`,\r\nm,ca,c,d)));}p=`${O}/latest`;try{let ca=g(await h($b(O,I,c)));if(ca.manifest)return ca.manifest;ca.errorSnippet&&q.push(`- ${p}: ${ca.errorSnippet}`)}catch(ca){g();let ra=jb(ca);q.push(`- ${p}: ${ra}`);if(!Va.HttpError.isHttpError(ca))throw g(await h(rb(`Failed to fetch release manifest for ${a}. Details:\\n${q.join(\"\\n\")}`,p,ca,c,d)));}d=`${O}/releases/latest/manifest.json`;try{return g(await h(Zb(d,I,c)))}catch(ca){g();let ra=jb(ca);q.push(`- ${d}: ${ra}`)}throw Error(`Failed to fetch release manifest from all candidate endpoints for ${a}. Details:\\n${q.join(\"\\n\")}`);\r\n}finally{h()}}Va.fetchReleaseManifest=ac;async function bc(a,b=\"sha512\"){var c=f.asyncContextStart(),d=c();c=c(1);try{let g=(0,Pa.createHash)(b),h=(0,la.createReadStream)(a);c(await d((0,Qa.pipeline)(h,g)));return g.digest(\"hex\")}finally{d()}}Va.computeFileChecksum=bc;Va.computeFileSha256=async function(a){return bc(a,\"sha256\")};function cc(){var a=(0,ma.homedir)();return(0,na.join)(a,\".gemini\",\"bin\",`agy${process.platform===\"win32\"?\".exe\":\"\"}`)}\r\nfunction ec(a=Va.CDE_PREINSTALLED_BINARY_PATH){return oa.CdeAuthService.getInstance().isCdeEnvironment()&&(0,la.existsSync)(a)?a:cc()}Va.getInstalledTargetPath=ec;const fc=new WeakMap;\r\nfunction hc(a,b){var c=0,d=0;return{onChunk:(g,h)=>{if(h&&!(h<=0)){var m=Math.min(100,Math.floor(g/h*100)),p=m===100&&c!==100;if(m>=c+10||p){c=m;var q;p=b?(q=fc.get(b))!=null?q:0:d;q=m>p?m-p:0;q>0&&(b?fc.set(b,m):d=m);b==null||b.report({message:`Downloading (${m}%)...`,increment:q});a.appendLine(`[INSTALL] Download progress: ${m}% (${g}/${h} bytes)`)}}},onRetry:(g,h,m)=>{a.appendLine(`[INSTALL] Download attempt ${h} failed: ${jb(g)}. Retrying in ${m}ms...`);b==null||b.report({message:`Download attempt ${h} failed, retrying in ${m}ms...`});\r\nc=0}}}async function ic(a,b,c,d"
+  },
+  {
+    "id": "E18",
+    "file": "unpacked/{code_GetDestDir}/resources/app/extensions/agy/vscode/extension.js",
+    "sourceSha256": "bfe65af77e4637e0c17fb395a89365f7bf78cbe512c5a230c225b188a767a8e7",
+    "sourceBytes": 4508863,
+    "startByte": 1298778,
+    "endByteExclusive": 1299728,
+    "line": 22997,
+    "marker": "async spawnAndWaitForPort(a)",
+    "excerpt": "async spawnAndWaitForPort(a){var b=f.asyncContextStart(),c=b();b=b(1);try{let d=[\"--hub\",`--hub-port=${a.targetPort}`,\"--app_data_dir=antigravity\",`--csrf_token=${this.csrfToken}`,...a.baseExtraArgs],g=`http://127.0.0.1:${a.targetPort}`,h;(h=this.outputChannel)==null||h.appendLine(`[LAUNCH] Spawning ${a.binaryPath}${a.versionLog} ${d.join(\" \")}`);console.log(`[LAUNCH] Spawning ${a.binaryPath}${a.versionLog} ${d.join(\" \")}`);\r\nlet m=Date.now(),p=[],q=()=>p.length>0?p.join(\"\\n\").slice(-Zc.MAX_STDERR_TAIL_CHARS):void 0,t,u,v,w=(0,Na.spawn)(a.binaryPath,d,{cwd:a.activeCwd,env:a.serverEnv,shell:!1,stdio:[\"ignore\",\"pipe\",\"pipe\"]});this.serverProcess=w;this.attachServerProcessStreams(w,p);w.on(\"error\",B=>{this.isStopping||(v=B);var E;(E=this.outputChannel)==null||E.appendLine(`[LAUNCH PROCESS ERROR] Failed to spawn process: ${B.message}`);var I,K;(I=a.activeTelemetry)==null||(K=I.logError)==null||K.call(I,fa.AntigravityEvent.SERVER_CRASH, // s"
+  },
+  {
+    "id": "E19",
+    "file": "unpacked/{code_GetDestDir}/resources/app/node_modules/google-auth-library/build/src/auth/authclient.js",
+    "sourceSha256": "85805ee0fa8b22852f8c1a9b1266c3f46d0e71dda053ce4e5ab9c07ca5095547",
+    "sourceBytes": 11374,
+    "startByte": 6850,
+    "endByteExclusive": 7850,
+    "line": 175,
+    "marker": "static DEFAULT_REQUEST_INTERCEPTOR",
+    "excerpt": "static DEFAULT_REQUEST_INTERCEPTOR = {\n        resolved: async (config) => {\n            // Set `x-goog-api-client`, if not already set\n            if (!config.headers.has('x-goog-api-client')) {\n                const nodeVersion = process.version.replace(/^v/, '');\n                config.headers.set('x-goog-api-client', `gl-node/${nodeVersion}`);\n            }\n            // Set `User-Agent`\n            const userAgent = config.headers.get('User-Agent');\n            if (!userAgent) {\n                config.headers.set('User-Agent', shared_cjs_1.USER_AGENT);\n            }\n            else if (!userAgent.includes(`${shared_cjs_1.PRODUCT_NAME}/`)) {\n                config.headers.set('User-Agent', `${userAgent} ${shared_cjs_1.USER_AGENT}`);\n            }\n            try {\n                const symbols = config;\n                const methodName = symbols[AuthClient.RequestMethodNameSymbol];\n                // This doesn't need to be very unique or interesting, it's just an aid for\n       "
+  },
+  {
+    "id": "E20",
+    "file": "unpacked/{code_GetDestDir}/resources/app/node_modules/google-auth-library/build/src/shared.cjs",
+    "sourceSha256": "007b101ae9e592517ac46606e6481632178ac4551c61b9abce555bffb236f6fb",
+    "sourceBytes": 995,
+    "startByte": 788,
+    "endByteExclusive": 995,
+    "line": 18,
+    "marker": "const PRODUCT_NAME",
+    "excerpt": "const PRODUCT_NAME = 'google-api-nodejs-client';\nexports.PRODUCT_NAME = PRODUCT_NAME;\nconst USER_AGENT = `${PRODUCT_NAME}/${pkg.version}`;\nexports.USER_AGENT = USER_AGENT;\n//# sourceMappingURL=shared.cjs.map"
+  },
+  {
+    "id": "E21",
+    "file": "unpacked/{code_GetDestDir}/resources/app/node_modules/google-auth-library/build/src/auth/oauth2client.js",
+    "sourceSha256": "1e8b5327cd0195908a302d81bc90fb4f059eeb9c44700b3e67e5999744d5786c",
+    "sourceBytes": 33789,
+    "startByte": 18245,
+    "endByteExclusive": 18895,
+    "line": 455,
+    "marker": "async requestAsync(opts",
+    "excerpt": "async requestAsync(opts, reAuthRetried = false) {\n        try {\n            const r = await this.getRequestMetadataAsync();\n            opts.headers = gaxios_1.Gaxios.mergeHeaders(opts.headers);\n            this.addUserProjectAndAuthHeaders(opts.headers, r.headers);\n            if (this.apiKey) {\n                opts.headers.set('X-Goog-Api-Key', this.apiKey);\n            }\n            return await this.transporter.request(opts);\n        }\n        catch (e) {\n            const res = e.response;\n            if (res) {\n                const statusCode = res.status;\n                // Retry the request for metadata if the following criteria are "
+  },
+  {
+    "id": "E22",
+    "file": "unpacked/{code_GetDestDir}/resources/app/node_modules/google-auth-library/build/src/auth/oauth2client.js",
+    "sourceSha256": "1e8b5327cd0195908a302d81bc90fb4f059eeb9c44700b3e67e5999744d5786c",
+    "sourceBytes": 33789,
+    "startByte": 14080,
+    "endByteExclusive": 16880,
+    "line": 339,
+    "marker": "async getRequestMetadataAsync(",
+    "excerpt": "async getRequestMetadataAsync(url) {\n        url;\n        const thisCreds = this.credentials;\n        if (!thisCreds.access_token &&\n            !thisCreds.refresh_token &&\n            !this.apiKey &&\n            !this.refreshHandler) {\n            throw new Error('No access, refresh token, API key or refresh handler callback is set.');\n        }\n        if (thisCreds.access_token && !this.isTokenExpiring()) {\n            thisCreds.token_type = thisCreds.token_type || 'Bearer';\n            const headers = new Headers({\n                authorization: thisCreds.token_type + ' ' + thisCreds.access_token,\n            });\n            return { headers: this.addSharedMetadataHeaders(headers) };\n        }\n        // If refreshHandler exists, call processAndValidateRefreshHandler().\n        if (this.refreshHandler) {\n            const refreshedAccessToken = await this.processAndValidateRefreshHandler();\n            if (refreshedAccessToken?.access_token) {\n                this.setCredentials(refreshedAccessToken);\n                const headers = new Headers({\n                    authorization: 'Bearer ' + this.credentials.access_token,\n                });\n                return { headers: this.addSharedMetadataHeaders(headers) };\n            }\n        }\n        if (this.apiKey) {\n            return { headers: new Headers({ 'X-Goog-Api-Key': this.apiKey }) };\n        }\n        let r = null;\n        let tokens = null;\n        try {\n            r = await this.refreshToken(thisCreds.refresh_token);\n            tokens = r.tokens;\n        }\n        catch (err) {\n            const e = err;\n            if (e.response &&\n                (e.response.status === 403 || e.response.status === 404)) {\n                e.message = `Could not refresh access token: ${e.message}`;\n            }\n            throw e;\n        }\n        const credentials = this.credentials;\n        credentials.token_type = credentials.token_type || 'Bearer';\n        tokens.refresh_token = credentials.refresh_token;\n        this.credentials = tokens;\n        const headers = new Headers({\n            authorization: credentials.token_type + ' ' + tokens.access_token,\n        });\n        return { headers: this.addSharedMetadataHeaders(headers), res: r.res };\n    }\n    /**\n     * Generates an URL to revoke the given token.\n     * @param token The existing token to be revoked.\n     *\n     * @deprecated use instance method {@link OAuth2Client.getRevokeTokenURL}\n     */\n    static getRevokeTokenUrl(token) {\n        return new OAuth2Client().getRevokeTokenURL(token).toString();\n    }\n    /**\n     * Generates a URL to revoke the given token.\n     *\n     * @param token The existing token to be revoked.\n     */\n    getRevokeTokenURL(token) {\n        const url = new URL(this.endpoints.oauth2RevokeUrl);\n        u"
+  },
+  {
+    "id": "E23",
+    "file": "unpacked/{code_GetDestDir}/resources/app/node_modules/gaxios/build/cjs/src/gaxios.js",
+    "sourceSha256": "0f4313f12b90be9e512f56d4030fd8cee4027513264540e32943683d54b3ca4a",
+    "sourceBytes": 22176,
+    "startByte": 20388,
+    "endByteExclusive": 20718,
+    "line": 515,
+    "marker": "static async #getFetch()",
+    "excerpt": "static async #getFetch() {\n        const hasWindow = typeof window !== 'undefined' && !!window;\n        this.#fetch ||= hasWindow\n            ? window.fetch\n            : (await import('node-fetch')).default;\n        return this.#fetch;\n    }\n    /**\n     * Merges headers.\n     * If the base headers do not exist a new `Headers` "
+  },
+  {
+    "id": "E24",
+    "file": "unpacked/{code_GetDestDir}/resources/app/node_modules/gaxios/build/cjs/src/gaxios.js",
+    "sourceSha256": "0f4313f12b90be9e512f56d4030fd8cee4027513264540e32943683d54b3ca4a",
+    "sourceBytes": 22176,
+    "startByte": 12694,
+    "endByteExclusive": 15244,
+    "line": 321,
+    "marker": "const shouldDirectlyPassData",
+    "excerpt": "const shouldDirectlyPassData = typeof opts.data === 'string' ||\n            opts.data instanceof ArrayBuffer ||\n            opts.data instanceof Blob ||\n            // Node 18 does not have a global `File` object\n            (globalThis.File && opts.data instanceof File) ||\n            opts.data instanceof FormData ||\n            opts.data instanceof stream_1.Readable ||\n            opts.data instanceof ReadableStream ||\n            opts.data instanceof String ||\n            opts.data instanceof URLSearchParams ||\n            ArrayBuffer.isView(opts.data) || // `Buffer` (Node.js), `DataView`, `TypedArray`\n            /**\n             * @deprecated `node-fetch` or another third-party's request types\n             */\n            ['Blob', 'File', 'FormData'].includes(opts.data?.constructor?.name || '');\n        if (opts.multipart?.length) {\n            const boundary = await randomUUID();\n            preparedHeaders.set('content-type', `multipart/related; boundary=${boundary}`);\n            opts.body = stream_1.Readable.from(this.getMultipartRequest(opts.multipart, boundary));\n        }\n        else if (shouldDirectlyPassData) {\n            opts.body = opts.data;\n        }\n        else if (typeof opts.data === 'object') {\n            if (preparedHeaders.get('Content-Type') ===\n                'application/x-www-form-urlencoded') {\n                // If www-form-urlencoded content type has been set, but data is\n                // provided as an object, serialize the content\n                opts.body = opts.paramsSerializer\n                    ? opts.paramsSerializer(opts.data)\n                    : new URLSearchParams(opts.data);\n            }\n            else {\n                if (!preparedHeaders.has('content-type')) {\n                    preparedHeaders.set('content-type', 'application/json');\n                }\n                opts.body = JSON.stringify(opts.data);\n            }\n        }\n        else if (opts.data) {\n            opts.body = opts.data;\n        }\n        opts.validateStatus = opts.validateStatus || this.validateStatus;\n        opts.responseType = opts.responseType || 'unknown';\n        if (!preparedHeaders.has('accept') && opts.responseType === 'json') {\n            preparedHeaders.set('accept', 'application/json');\n        }\n        const proxy = opts.proxy ||\n            process?.env?.HTTPS_PROXY ||\n            process?.env?.https_proxy ||\n            process?.env?.HTTP_PROXY ||\n            process?.env?.http_proxy;\n        if (opts.agent) {\n            // don't do any of the following opt"
+  },
+  {
+    "id": "E25",
+    "file": "unpacked/{code_GetDestDir}/resources/app/node_modules/gaxios/node_modules/node-fetch/src/request.js",
+    "sourceSha256": "4a57dfc72f98d37646d7d0b464ad6157700fc875116618cb7af40238d0cbae4c",
+    "sourceBytes": 8619,
+    "startByte": 5979,
+    "endByteExclusive": 8619,
+    "line": 226,
+    "marker": "export const getNodeRequestOptions",
+    "excerpt": "export const getNodeRequestOptions = request => {\n\tconst {parsedURL} = request[INTERNALS];\n\tconst headers = new Headers(request[INTERNALS].headers);\n\n\t// Fetch step 1.3\n\tif (!headers.has('Accept')) {\n\t\theaders.set('Accept', '*/*');\n\t}\n\n\t// HTTP-network-or-cache fetch steps 2.4-2.7\n\tlet contentLengthValue = null;\n\tif (request.body === null && /^(post|put)$/i.test(request.method)) {\n\t\tcontentLengthValue = '0';\n\t}\n\n\tif (request.body !== null) {\n\t\tconst totalBytes = getTotalBytes(request);\n\t\t// Set Content-Length if totalBytes is a number (that is not NaN)\n\t\tif (typeof totalBytes === 'number' && !Number.isNaN(totalBytes)) {\n\t\t\tcontentLengthValue = String(totalBytes);\n\t\t}\n\t}\n\n\tif (contentLengthValue) {\n\t\theaders.set('Content-Length', contentLengthValue);\n\t}\n\n\t// 4.1. Main fetch, step 2.6\n\t// > If request's referrer policy is the empty string, then set request's referrer policy to the\n\t// > default referrer policy.\n\tif (request.referrerPolicy === '') {\n\t\trequest.referrerPolicy = DEFAULT_REFERRER_POLICY;\n\t}\n\n\t// 4.1. Main fetch, step 2.7\n\t// > If request's referrer is not \"no-referrer\", set request's referrer to the result of invoking\n\t// > determine request's referrer.\n\tif (request.referrer && request.referrer !== 'no-referrer') {\n\t\trequest[INTERNALS].referrer = determineRequestsReferrer(request);\n\t} else {\n\t\trequest[INTERNALS].referrer = 'no-referrer';\n\t}\n\n\t// 4.5. HTTP-network-or-cache fetch, step 6.9\n\t// > If httpRequest's referrer is a URL, then append `Referer`/httpRequest's referrer, serialized\n\t// >  and isomorphic encoded, to httpRequest's header list.\n\tif (request[INTERNALS].referrer instanceof URL) {\n\t\theaders.set('Referer', request.referrer);\n\t}\n\n\t// HTTP-network-or-cache fetch step 2.11\n\tif (!headers.has('User-Agent')) {\n\t\theaders.set('User-Agent', 'node-fetch');\n\t}\n\n\t// HTTP-network-or-cache fetch step 2.15\n\tif (request.compress && !headers.has('Accept-Encoding')) {\n\t\theaders.set('Accept-Encoding', 'gzip, deflate, br');\n\t}\n\n\tlet {agent} = request;\n\tif (typeof agent === 'function') {\n\t\tagent = agent(parsedURL);\n\t}\n\n\t// HTTP-network fetch step 4.2\n\t// chunked encoding is handled by Node.js\n\n\tconst search = getSearch(parsedURL);\n\n\t// Pass the full URL directly to request(), but overwrite the following\n\t// options:\n\tconst options = {\n\t\t// Overwrite search to retain trailing ? (issue #776)\n\t\tpath: parsedURL.pathname + search,\n\t\t// The following options are not expressed in the URL\n\t\tmethod: request.method,\n\t\theaders: headers[Symbol.for('nodejs.util.inspect.custom')](),\n\t\tinsecureHTTPParser: request.insecureHTTPParser,\n\t\tagent\n\t};\n\n\treturn {\n\t\t/** @type {URL} */\n\t\tparsedURL,\n\t\toptions\n\t};\n};\n"
+  },
+  {
+    "id": "E26",
+    "file": "unpacked/{code_GetDestDir}/resources/app/node_modules/gaxios/node_modules/node-fetch/src/headers.js",
+    "sourceSha256": "eeed838f73cfb5915df245da11c9450134d14529acab3ffa5307c48ca2f9f39e",
+    "sourceBytes": 6932,
+    "startByte": 4151,
+    "endByteExclusive": 4401,
+    "line": 136,
+    "marker": "case 'keys':",
+    "excerpt": "case 'keys':\n\t\t\t\t\t\treturn () => {\n\t\t\t\t\t\t\ttarget.sort();\n\t\t\t\t\t\t\treturn new Set(URLSearchParams.prototype.keys.call(target)).keys();\n\t\t\t\t\t\t};\n\n\t\t\t\t\tdefault:\n\t\t\t\t\t\treturn Reflect.get(target, p, receiver);\n\t\t\t\t}\n\t\t\t}\n\t\t});\n\t\t/* c8 ignore next */\n\t}\n\n\tget"
+  },
+  {
+    "id": "E27",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 12466930,
+    "endByteExclusive": 12467570,
+    "line": 4249,
+    "marker": "oAe=\"1071006060591-",
+    "excerpt": "oAe=\"1071006060591-tmhssin2h21lcre235vtolojh4g403ep.apps.googleusercontent.com\",lAe=\"<CLIENT_SECRET_SHA256:1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60>\",zQe=\"884354919052-36trc1jjb3tguiac32ov6cod268c5blh.apps.googleusercontent.com\",jQe=\"<CLIENT_SECRET_SHA256:a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0>\",Uka=[\"https://www.googleapis.com/auth/cloud-platform\",\"https://www.googleapis.com/auth/userinfo.email\",\"https://www.googleapis.com/auth/userinfo.profile\",\"https://www.googleapis.com/auth/cclog\",\"https://www.googleapis.com/auth/experimentsandconfigs\"]}});function Bka(e){if(!e||!Object.keys(e.data).includes(cAe))return Kt(T5);const t=e.data[cAe].value;try{return Ys(t,T5)}catch{return Kt(T5)}}func",
+    "redactedClientSecrets": [
+      {
+        "sha256": "1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60",
+        "bytes": 35
+      },
+      {
+        "sha256": "a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0",
+        "bytes": 35
+      }
+    ]
+  },
+  {
+    "id": "E28",
+    "file": "unpacked/{code_GetDestDir}/resources/app/out/main.js",
+    "sourceSha256": "4a88efbcfd29a5abbc15d366c276c8ed75e95a63a40853242a4ee14bdf91ba60",
+    "sourceBytes": 12946323,
+    "startByte": 12586613,
+    "endByteExclusive": 12587043,
+    "line": 4254,
+    "marker": "t.languageServerCL||\"Unknown\"",
+    "excerpt": "||\"Unknown\",t.date?`${t.date}${\"(\"+a_n(new Date(t.date),!0)+\")\"}`:\"Unknown\",process.versions.electron,process.versions.chrome,process.versions.node,process.versions.v8,`${i.type} ${i.arch} ${i.release}${oSe?\" snap\":\"\"}`,t.languageServerCL||\"Unknown\")}async function h3a(e){const t=e.get(jo),n=e.get(E2),r=await YZo(e);await n.showMessageBox({type:\"info\",title:\"About\",message:t.quality===\"next\"?t.nameLong+\" (Beta)\":t.nameLong,det"
+  }
+]

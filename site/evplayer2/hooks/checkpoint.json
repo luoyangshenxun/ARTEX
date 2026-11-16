@@ -1,0 +1,35 @@
+{
+  "active_object": "H:/orca/rea/site/evplayer2",
+  "target_binary": "F:/EVPlayer2/EVPlayer2.exe",
+  "target_pid": 67068,
+  "status": "account_batch_export_complete",
+  "last_confirmed_result": "331/331 MP4 outputs; 0 failed; batch status complete; final audit restoration true. All listed output paths were reopened.",
+  "next_executable_action": "Review media/account_mp4 and media/batch/batch_summary.json.",
+  "input_paths": [
+    "H:/orca/rea/site/evplayer2/media/batch/batch_runner.json",
+    "H:/orca/rea/site/evplayer2/media/batch/batch_progress.json",
+    "H:/orca/rea/site/evplayer2/media/batch/batch_download.mjs",
+    "H:/orca/rea/site/evplayer2/media/batch/account_manifest.json",
+    "H:/orca/rea/site/evplayer2/media/account_mp4"
+  ],
+  "acceptance_event": "331 MP4 outputs with complete decrypted order, packet/continuity validation, duration/stream checks, start/end decode checks, and hook restoration; failures remain explicit.",
+  "roles": {
+    "MODIFIED_FILE": "H:/orca/rea/site/evplayer2/hooks/hook_checks.js",
+    "DIFF_FILE": "H:/orca/rea/site/evplayer2/hooks/hook_checks.patch",
+    "VERIFICATION": "H:/orca/rea/site/evplayer2/hooks/VERIFICATION.txt",
+    "ROLLBACK": "H:/orca/rea/site/evplayer2/hooks/ROLLBACK.sh"
+  },
+  "report": "H:\\orca\\rea\\site\\evplayer2\\report_account_batch.md",
+  "remaining_unknowns": [
+    "All-account batch completion pending",
+    "Native decryption uses current authorized session; standalone key derivation has not been exported"
+  ],
+  "reports": [
+    "H:/orca/rea/site/evplayer2/report_dynamic_hook.md",
+    "H:/orca/rea/site/evplayer2/report_media_flow.md",
+    "H:\\orca\\rea\\site\\evplayer2\\report_cache_playback.md",
+    "H:\\orca\\rea\\site\\evplayer2\\report_full_video.md",
+    "H:\\orca\\rea\\site\\evplayer2\\report_segment_order.md"
+  ],
+  "batch_runner_pid": 67128
+}

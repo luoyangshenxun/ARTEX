@@ -1,0 +1,373 @@
+[
+  {
+    "source": "out/main.js",
+    "descriptor": "exa/google/internal/cloud/code/v1internal/onboarding.proto",
+    "descriptorByteOffset": 1220665,
+    "name": "OnboardUserRequest",
+    "fields": [
+      {
+        "name": "tier_id",
+        "number": 1,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "cloudaicompanion_project",
+        "number": 2,
+        "label": 1,
+        "type": 9,
+        "proto3Optional": 1
+      },
+      {
+        "name": "metadata",
+        "number": 3,
+        "label": 1,
+        "type": 11,
+        "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata"
+      }
+    ],
+    "nested": [],
+    "enums": []
+  },
+  {
+    "source": "out/main.js",
+    "descriptor": "exa/google/internal/cloud/code/v1internal/onboarding.proto",
+    "descriptorByteOffset": 1220665,
+    "name": "LoadCodeAssistRequest",
+    "fields": [
+      {
+        "name": "cloudaicompanion_project",
+        "number": 1,
+        "label": 1,
+        "type": 9,
+        "proto3Optional": 1
+      },
+      {
+        "name": "metadata",
+        "number": 2,
+        "label": 1,
+        "type": 11,
+        "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata"
+      },
+      {
+        "name": "mode",
+        "number": 3,
+        "label": 1,
+        "type": 14,
+        "typeName": ".google.internal.cloud.code.v1internal.LoadCodeAssistRequest.Mode",
+        "proto3Optional": 1
+      }
+    ],
+    "nested": [],
+    "enums": [
+      {
+        "name": "Mode",
+        "values": [
+          {
+            "name": "MODE_UNSPECIFIED",
+            "number": 0
+          },
+          {
+            "name": "FULL_ELIGIBILITY_CHECK",
+            "number": 1
+          },
+          {
+            "name": "HEALTH_CHECK",
+            "number": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "out/main.js",
+    "descriptor": "exa/google/internal/cloud/code/v1internal/onboarding.proto",
+    "descriptorByteOffset": 1220665,
+    "name": "ClientMetadata",
+    "fields": [
+      {
+        "name": "ide_type",
+        "number": 1,
+        "label": 1,
+        "type": 14,
+        "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata.IdeType"
+      },
+      {
+        "name": "ide_version",
+        "number": 2,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "plugin_version",
+        "number": 3,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "platform",
+        "number": 4,
+        "label": 1,
+        "type": 14,
+        "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata.Platform"
+      },
+      {
+        "name": "update_channel",
+        "number": 5,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "duet_project",
+        "number": 6,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "plugin_type",
+        "number": 7,
+        "label": 1,
+        "type": 14,
+        "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata.PluginType"
+      },
+      {
+        "name": "ide_name",
+        "number": 8,
+        "label": 1,
+        "type": 9
+      }
+    ],
+    "nested": [],
+    "enums": [
+      {
+        "name": "IdeType",
+        "values": [
+          {
+            "name": "IDE_UNSPECIFIED",
+            "number": 0
+          },
+          {
+            "name": "VSCODE",
+            "number": 1
+          },
+          {
+            "name": "INTELLIJ",
+            "number": 2
+          },
+          {
+            "name": "VSCODE_CLOUD_WORKSTATION",
+            "number": 3
+          },
+          {
+            "name": "INTELLIJ_CLOUD_WORKSTATION",
+            "number": 4
+          },
+          {
+            "name": "CLOUD_SHELL",
+            "number": 5
+          },
+          {
+            "name": "CIDER",
+            "number": 6
+          },
+          {
+            "name": "CLOUD_RUN",
+            "number": 7
+          },
+          {
+            "name": "ANDROID_STUDIO",
+            "number": 8
+          },
+          {
+            "name": "ANTIGRAVITY",
+            "number": 9
+          },
+          {
+            "name": "JETSKI",
+            "number": 10
+          },
+          {
+            "name": "COLAB",
+            "number": 11
+          },
+          {
+            "name": "FIREBASE",
+            "number": 12
+          },
+          {
+            "name": "CHROME_DEVTOOLS",
+            "number": 13
+          },
+          {
+            "name": "GEMINI_CLI",
+            "number": 14
+          }
+        ]
+      },
+      {
+        "name": "Platform",
+        "values": [
+          {
+            "name": "PLATFORM_UNSPECIFIED",
+            "number": 0
+          },
+          {
+            "name": "DARWIN_AMD64",
+            "number": 1
+          },
+          {
+            "name": "DARWIN_ARM64",
+            "number": 2
+          },
+          {
+            "name": "LINUX_AMD64",
+            "number": 3
+          },
+          {
+            "name": "LINUX_ARM64",
+            "number": 4
+          },
+          {
+            "name": "WINDOWS_AMD64",
+            "number": 5
+          }
+        ]
+      },
+      {
+        "name": "PluginType",
+        "values": [
+          {
+            "name": "PLUGIN_UNSPECIFIED",
+            "number": 0
+          },
+          {
+            "name": "CLOUD_CODE",
+            "number": 1
+          },
+          {
+            "name": "GEMINI",
+            "number": 2
+          },
+          {
+            "name": "AIPLUGIN_INTELLIJ",
+            "number": 3
+          },
+          {
+            "name": "AIPLUGIN_STUDIO",
+            "number": 4
+          },
+          {
+            "name": "PANTHEON",
+            "number": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "out/main.js",
+    "descriptor": "exa/codeium_common_pb/codeium_common.proto",
+    "descriptorByteOffset": 1233257,
+    "name": "ChatToolCall",
+    "fields": [
+      {
+        "name": "id",
+        "number": 1,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "name",
+        "number": 2,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "arguments_json",
+        "number": 3,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "invalid_json_str",
+        "number": 4,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "invalid_json_err",
+        "number": 5,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "thought_signature",
+        "number": 6,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "thinking_signature",
+        "number": 7,
+        "label": 1,
+        "type": 12
+      },
+      {
+        "name": "original_arguments_json",
+        "number": 8,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "original_name",
+        "number": 9,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "function_call_parts",
+        "number": 10,
+        "label": 3,
+        "type": 11,
+        "typeName": ".exa.codeium_common_pb.Media"
+      }
+    ],
+    "nested": [],
+    "enums": []
+  },
+  {
+    "source": "out/main.js",
+    "descriptor": "exa/google/internal/cloud/code/v1internal/model_configs.proto",
+    "descriptorByteOffset": 1961761,
+    "name": "FetchAvailableModelsRequest",
+    "fields": [
+      {
+        "name": "project",
+        "number": 1,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "request_id",
+        "number": 2,
+        "label": 1,
+        "type": 9
+      },
+      {
+        "name": "entitlement",
+        "number": 9,
+        "label": 1,
+        "type": 11,
+        "typeName": ".google.internal.cloud.code.v1internal.Entitlement"
+      },
+      {
+        "name": "location",
+        "number": 3,
+        "label": 1,
+        "type": 9
+      }
+    ],
+    "nested": [],
+    "enums": []
+  }
+]

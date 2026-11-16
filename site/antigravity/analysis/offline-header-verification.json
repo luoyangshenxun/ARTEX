@@ -1,0 +1,24 @@
+{
+  "kind": "OFFLINE_DEPENDENCY_REPRODUCTION",
+  "officialClientExecuted": false,
+  "networkRequests": 0,
+  "note": "Synthetic TOKEN and PROJECT. Host Node version is not the official Electron runtime.",
+  "hostNodeVersion": "22.19.0",
+  "googleAuthLibraryVersion": "10.3.0",
+  "captured": {
+    "url": "https://cloudcode-pa.googleapis.com/v1internal:loadCodeAssist",
+    "method": "POST",
+    "headers": {
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br",
+      "authorization": "Bearer TOKEN",
+      "content-length": "123",
+      "content-type": "application/json",
+      "user-agent": "antigravity/2.7.0 windows/amd64 google-api-nodejs-client/10.3.0",
+      "x-goog-api-client": "gl-node/22.19.0"
+    },
+    "body": "{\"cloudaicompanion_project\":\"PROJECT\",\"metadata\":{\"ide_type\":\"ANTIGRAVITY\",\"ide_version\":\"2.7.0\",\"ide_name\":\"antigravity\"}}"
+  },
+  "limits": "Host, Connection, TLS/HTTP negotiation and final wire header order are not captured.",
+  "exitStatus": 0
+}

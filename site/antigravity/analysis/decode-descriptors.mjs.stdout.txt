@@ -1,0 +1,13 @@
+Decoded 128 descriptors.
+out/main.js: exa/google/internal/cloud/code/v1internal/onboarding.proto (20 messages; 0 services)
+out/main.js: exa/gemini_coder/cider/proto/trajectory_steps.proto (17 messages; 0 services)
+out/main.js: exa/chat_client_server_pb/chat_client_server.proto (6 messages; 1 services)
+out/main.js: exa/chat_pb/chat.proto (38 messages; 0 services)
+out/main.js: exa/gemini_coder/proto/trajectory.proto (5 messages; 0 services)
+out/main.js: exa/language_server_pb/language_server.proto (807 messages; 1 services)
+extensions/agy/vscode/extension.js: google/internal/cloud/code/v1internal/onboarding.proto (20 messages; 0 services)
+extensions/agy/vscode/extension.js: third_party/gemini_coder/cider/proto/trajectory_steps.proto (17 messages; 0 services)
+extensions/agy/vscode/extension.js: third_party/jetski/chat_client_server_pb/chat_client_server.proto (6 messages; 1 services)
+extensions/agy/vscode/extension.js: third_party/jetski/chat_pb/chat.proto (38 messages; 0 services)
+extensions/agy/vscode/extension.js: third_party/gemini_coder/proto/trajectory.proto (5 messages; 0 services)
+extensions/agy/vscode/extension.js: third_party/gemini_coder/proto/iframe_messages.proto (158 messages; 2 services)

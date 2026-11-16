@@ -1,0 +1,10 @@
+--- hook_checks.pristine.js
++++ hook_checks.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+ // Observe arguments and original results. Every hook is removed before detaching.
+-const HOOKS_ENABLED = false;
++const HOOKS_ENABLED = true;
+ const MAX_EVENTS_PER_API = 60;
+ const counts = Object.create(null), emitted = Object.create(null);
+ const installed = [], failed = [], attached = new Set(), attempted = new Set(), internalThreads = new Set();

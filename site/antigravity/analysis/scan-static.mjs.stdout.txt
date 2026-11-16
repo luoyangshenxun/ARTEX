@@ -1,0 +1,30 @@
+{"output":"H:\\orca\\rea\\site\\antigravity\\analysis\\static-evidence.json","scannedFiles":39,"matchedFiles":29}
+unpacked/{code_GetDestDir}/resources/app/extensions/agy/bridge.js: v1internal, userAgent, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/extensions/agy/dist/extension.js: ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/extensions/agy/package.json: releaseBaseUrl, agy --hub, --hub
+unpacked/{code_GetDestDir}/resources/app/extensions/agy/vscode/extension.js: cloudcode-pa, v1internal, userAgent, X-Goog-, ideVersion, clientId, client_secret, releaseBaseUrl, releases, storage.googleapis.com, antigravity-public, --hub, ANTIGRAVITY_CLI, AGY_VERSION
+unpacked/{code_GetDestDir}/resources/app/out/bootstrap-fork.js: userAgent, ideVersion, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/cli.js: userAgent, ideVersion, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/jetskiAgent/main.js: changelist, userAgent, X-Goog-, loadCodeAssist, ideVersion, clientId, oauth2, releases, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/main.js: cloudcode-pa, daily-cloudcode, v1internal, changelist, userAgent, X-Goog-, loadCodeAssist, onboardUser, fetchAvailableModels, ideVersion, ideType, clientMetadata, clientId, oauth2, releases, updateUrl, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/nls.keys.json: clientId
+unpacked/{code_GetDestDir}/resources/app/out/nls.messages.json: releases
+unpacked/{code_GetDestDir}/resources/app/out/vs/code/electron-browser/workbench/jetskiAgent.js: v1internal
+unpacked/{code_GetDestDir}/resources/app/out/vs/code/electron-browser/workbench/workbench.js: v1internal
+unpacked/{code_GetDestDir}/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js: userAgent, X-Client-, ideVersion, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/vs/code/node/cliProcessMain.js: userAgent, ideVersion, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/vs/editor/common/services/editorWebWorkerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/platform/files/node/watcher/watcherMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/platform/profiling/electron-browser/profileAnalysisWorkerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/platform/terminal/node/ptyHostMain.js: userAgent, ideVersion, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/api/node/extensionHostProcess.js: user-agent, userAgent, ideVersion, ideType, client_id, clientId, client_secret, redirect_uri, code_challenge, code_verifier, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/api/worker/extensionHostWorkerMain.js: v1internal, user-agent, userAgent, ideVersion, ideType, client_id, clientId, client_secret, redirect_uri, code_challenge, code_verifier, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/contrib/debug/node/telemetryApp.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/contrib/notebook/common/services/notebookWebWorkerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/contrib/output/common/outputLinkComputerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/contrib/webview/browser/pre/service-worker.js: clientId
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/services/languageDetection/browser/languageDetectionWebWorkerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/services/search/worker/localFileSearchMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/services/textMate/browser/backgroundTokenization/worker/textMateTokenizationWorker.workerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/workbench.desktop.main.js: changelist, user-agent, userAgent, X-Goog-, X-Client-, loadCodeAssist, generateContent, ideVersion, ideType, client_id, clientId, redirect_uri, oauth2, releases, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/product.json: ideVersion, updateUrl

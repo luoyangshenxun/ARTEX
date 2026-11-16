@@ -1,0 +1,93 @@
+{
+  "baseline": {
+    "enabled": false,
+    "installed": 0,
+    "failed": [],
+    "countsByOrigin": {
+      "application": {},
+      "observer_selftest": {}
+    },
+    "selftest": {
+      "isDebuggerPresent": 0,
+      "checkRemoteSuccess": 1,
+      "remoteDebuggerPresent": 0
+    },
+    "mainWindow": {
+      "hwnd": "0x6fd054c",
+      "visible": true,
+      "title": "EVPlayer2",
+      "affinityReadSuccess": true,
+      "affinity": 1
+    },
+    "audit": {
+      "checked": 0,
+      "allRestored": true
+    }
+  },
+  "modified": {
+    "enabled": true,
+    "installed": 15,
+    "failed": [
+      {
+        "module": "user32.dll",
+        "api": "SetWindowDisplayAffinity",
+        "address": "0x7ff911583290",
+        "original": "2000000017020000cccccccccccccccc",
+        "error": "Error: unable to intercept function at 00007FF911583290; please file a bug"
+      }
+    ],
+    "countsByOrigin": {
+      "application": {
+        "IsDebuggerPresent": 174
+      },
+      "observer_selftest": {
+        "IsDebuggerPresent": 1,
+        "NtQueryInformationProcess": 1,
+        "CheckRemoteDebuggerPresent": 1,
+        "GetWindowDisplayAffinity": 3,
+        "EnumWindows": 1
+      }
+    },
+    "selftest": {
+      "isDebuggerPresent": 0,
+      "checkRemoteSuccess": 1,
+      "remoteDebuggerPresent": 0
+    },
+    "mainWindow": {
+      "hwnd": "0x6fd054c",
+      "visible": true,
+      "title": "EVPlayer2",
+      "affinityReadSuccess": true,
+      "affinity": 1
+    },
+    "audit": {
+      "checked": 15,
+      "allRestored": true
+    }
+  },
+  "rollback": {
+    "enabled": false,
+    "installed": 0,
+    "failed": [],
+    "countsByOrigin": {
+      "application": {},
+      "observer_selftest": {}
+    },
+    "selftest": {
+      "isDebuggerPresent": 0,
+      "checkRemoteSuccess": 1,
+      "remoteDebuggerPresent": 0
+    },
+    "mainWindow": {
+      "hwnd": "0x6fd054c",
+      "visible": true,
+      "title": "EVPlayer2",
+      "affinityReadSuccess": true,
+      "affinity": 1
+    },
+    "audit": {
+      "checked": 0,
+      "allRestored": true
+    }
+  }
+}

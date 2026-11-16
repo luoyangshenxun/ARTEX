@@ -1,0 +1,24 @@
+{
+  "file": "C:/Windows/System32/user32.dll",
+  "sha256": "f285937030bcb325cad39ee5be4818f6666241229adeadea4ff1ae469dfd7ef3",
+  "results": [
+    {
+      "name": "GetWindowDisplayAffinity",
+      "rva": "0x72870",
+      "disk": "ff2532b50400ccccccccccccccccccccff251ab50400ccccccccccccccccccccff2502b50400cccccccccccccccccccc",
+      "memory": "ff2532b50400ccccccccccccccccccccff251ab50400ccccccccccccccccccccff2502b50400cccccccccccccccccccc",
+      "equal": true,
+      "diskFirst8": "ff2532b50400cccc",
+      "memoryFirst8": "ff2532b50400cccc"
+    },
+    {
+      "name": "SetWindowDisplayAffinity",
+      "rva": "0x73290",
+      "disk": "ff2502a60400ccccccccccccccccccccff25eaa50400ccccccccccccccccccccff25d2a50400cccccccccccccccccccc",
+      "memory": "2000000017020000ccccccccccccccccff25eaa50400ccccccccccccccccccccff25d2a50400cccccccccccccccccccc",
+      "equal": false,
+      "diskFirst8": "ff2502a60400cccc",
+      "memoryFirst8": "2000000017020000"
+    }
+  ]
+}

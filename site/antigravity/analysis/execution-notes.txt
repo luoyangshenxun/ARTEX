@@ -1,0 +1,41 @@
+Tool errors and resolved inspection mistakes retained from this analysis:
+
+1. Initial broad rg search included nonexistent .agents and .codex directories.
+   Literal error: 系统找不到指定的文件。 (os error 2)
+   The running broad search was interrupted; exec session exit status: 1.
+   Corrected by limiting subsequent scans to site/antigravity and extracted app sources.
+
+2. Invoke-RestMethod to GitHub API failed.
+   Literal error: 基础连接已经关闭: 接收时发生错误。
+   PowerShell command exit status: 1.
+   Invoke-WebRequest to raw.githubusercontent.com also failed after escalation.
+   Literal error: 基础连接已经关闭: 发送时发生错误。
+   PowerShell command exit status: 1.
+   Corrected using curl.exe and the GitHub contents API; download and extraction exit status: 0.
+
+3. curl to raw.githubusercontent.com failed.
+   Literal stderr: curl: (35) Recv failure: Connection was reset
+   Native exit status: 35; wrapper exit status: 1.
+   Corrected by retrieving the same repository file as Base64 through api.github.com.
+
+4. Existing 7-Zip 18.05 could not list the Inno archive.
+   Literal output: Can not open the file as archive
+   Native exit status was not separately captured; the encompassing command returned 0.
+   Corrected by using innounp 2.71.3; list and unpack native exit statuses: 0.
+
+5. A PowerShell-quoted rg expression failed to parse.
+   Literal error: regex parse error / error: unclosed character class
+   Encompassing command exit status: 1.
+   Corrected by using Node string searches in scan-static.mjs.
+
+6. node-fetch was initially searched at the top-level node_modules path.
+   Literal error: 系统找不到指定的路径。 (os error 3)
+   The encompassing mixed inspection command returned 0; this was not a successful path lookup.
+   Corrected by locating gaxios/node_modules/node-fetch through rg --files.
+
+7. An exploratory exact-string count printed split(term).length rather than length - 1.
+   That exploratory command returned 0 but its displayed counts were off by one.
+   The corrected counts are emitted and retained by verify-evidence.mjs.
+   No report uses the erroneous counts.
+
+These events precede the reproducible verification run recorded in VERIFICATION.txt.

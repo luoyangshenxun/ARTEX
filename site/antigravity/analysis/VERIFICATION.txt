@@ -1,0 +1,163 @@
+Antigravity local static analysis verification
+Recorded at: 2026-11-16T10:05:48.087Z
+TARGET: H:\orca\rea\site\antigravity\installer\Antigravity-IDE-2.7.0-windows-x64.exe
+Original installer and official client were not executed or modified.
+Offline dependency reproduction uses synthetic TOKEN and PROJECT and an intercepted fetch adapter.
+The Node version in offline output belongs to the analysis host, not official Electron.
+Extraction: innounp 2.71.3 -x -y -d<analysis/unpacked> <TARGET>; observed exit status 0.
+Installer file list and unpack.log are the literal PowerShell UTF-16 output from extraction.
+Public CLI manifest was downloaded as JSON only; its referenced binary was not downloaded.
+
+COMMAND: "F:\Program Files\nodejs\node.exe" "H:\orca\rea\site\antigravity\analysis\scan-static.mjs"
+CWD: H:\orca\rea\site\antigravity\analysis
+STDOUT (literal):
+{"output":"H:\\orca\\rea\\site\\antigravity\\analysis\\static-evidence.json","scannedFiles":39,"matchedFiles":29}
+unpacked/{code_GetDestDir}/resources/app/extensions/agy/bridge.js: v1internal, userAgent, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/extensions/agy/dist/extension.js: ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/extensions/agy/package.json: releaseBaseUrl, agy --hub, --hub
+unpacked/{code_GetDestDir}/resources/app/extensions/agy/vscode/extension.js: cloudcode-pa, v1internal, userAgent, X-Goog-, ideVersion, clientId, client_secret, releaseBaseUrl, releases, storage.googleapis.com, antigravity-public, --hub, ANTIGRAVITY_CLI, AGY_VERSION
+unpacked/{code_GetDestDir}/resources/app/out/bootstrap-fork.js: userAgent, ideVersion, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/cli.js: userAgent, ideVersion, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/jetskiAgent/main.js: changelist, userAgent, X-Goog-, loadCodeAssist, ideVersion, clientId, oauth2, releases, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/main.js: cloudcode-pa, daily-cloudcode, v1internal, changelist, userAgent, X-Goog-, loadCodeAssist, onboardUser, fetchAvailableModels, ideVersion, ideType, clientMetadata, clientId, oauth2, releases, updateUrl, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/nls.keys.json: clientId
+unpacked/{code_GetDestDir}/resources/app/out/nls.messages.json: releases
+unpacked/{code_GetDestDir}/resources/app/out/vs/code/electron-browser/workbench/jetskiAgent.js: v1internal
+unpacked/{code_GetDestDir}/resources/app/out/vs/code/electron-browser/workbench/workbench.js: v1internal
+unpacked/{code_GetDestDir}/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js: userAgent, X-Client-, ideVersion, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/vs/code/node/cliProcessMain.js: userAgent, ideVersion, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/vs/editor/common/services/editorWebWorkerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/platform/files/node/watcher/watcherMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/platform/profiling/electron-browser/profileAnalysisWorkerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/platform/terminal/node/ptyHostMain.js: userAgent, ideVersion, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/api/node/extensionHostProcess.js: user-agent, userAgent, ideVersion, ideType, client_id, clientId, client_secret, redirect_uri, code_challenge, code_verifier, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/api/worker/extensionHostWorkerMain.js: v1internal, user-agent, userAgent, ideVersion, ideType, client_id, clientId, client_secret, redirect_uri, code_challenge, code_verifier, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/contrib/debug/node/telemetryApp.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/contrib/notebook/common/services/notebookWebWorkerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/contrib/output/common/outputLinkComputerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/contrib/webview/browser/pre/service-worker.js: clientId
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/services/languageDetection/browser/languageDetectionWebWorkerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/services/search/worker/localFileSearchMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/services/textMate/browser/backgroundTokenization/worker/textMateTokenizationWorker.workerMain.js: userAgent
+unpacked/{code_GetDestDir}/resources/app/out/vs/workbench/workbench.desktop.main.js: changelist, user-agent, userAgent, X-Goog-, X-Client-, loadCodeAssist, generateContent, ideVersion, ideType, client_id, clientId, redirect_uri, oauth2, releases, ANTIGRAVITY_CLI
+unpacked/{code_GetDestDir}/resources/app/product.json: ideVersion, updateUrl
+
+STDERR (literal):
+
+EXIT STATUS: 0
+
+COMMAND: "F:\Program Files\nodejs\node.exe" "H:\orca\rea\site\antigravity\analysis\decode-descriptors.mjs"
+CWD: H:\orca\rea\site\antigravity\analysis
+STDOUT (literal):
+Decoded 128 descriptors.
+out/main.js: exa/google/internal/cloud/code/v1internal/onboarding.proto (20 messages; 0 services)
+out/main.js: exa/gemini_coder/cider/proto/trajectory_steps.proto (17 messages; 0 services)
+out/main.js: exa/chat_client_server_pb/chat_client_server.proto (6 messages; 1 services)
+out/main.js: exa/chat_pb/chat.proto (38 messages; 0 services)
+out/main.js: exa/gemini_coder/proto/trajectory.proto (5 messages; 0 services)
+out/main.js: exa/language_server_pb/language_server.proto (807 messages; 1 services)
+extensions/agy/vscode/extension.js: google/internal/cloud/code/v1internal/onboarding.proto (20 messages; 0 services)
+extensions/agy/vscode/extension.js: third_party/gemini_coder/cider/proto/trajectory_steps.proto (17 messages; 0 services)
+extensions/agy/vscode/extension.js: third_party/jetski/chat_client_server_pb/chat_client_server.proto (6 messages; 1 services)
+extensions/agy/vscode/extension.js: third_party/jetski/chat_pb/chat.proto (38 messages; 0 services)
+extensions/agy/vscode/extension.js: third_party/gemini_coder/proto/trajectory.proto (5 messages; 0 services)
+extensions/agy/vscode/extension.js: third_party/gemini_coder/proto/iframe_messages.proto (158 messages; 2 services)
+
+STDERR (literal):
+
+EXIT STATUS: 0
+
+COMMAND: "F:\Program Files\nodejs\node.exe" "H:\orca\rea\site\antigravity\analysis\build-focused-evidence.mjs"
+CWD: H:\orca\rea\site\antigravity\analysis
+STDOUT (literal):
+E01 unpacked/{code_GetDestDir}/resources/app/product.json:4 byte=58
+E02 unpacked/{code_GetDestDir}/resources/app/product.json:2038 byte=43542
+E03 unpacked/{code_GetDestDir}/resources/app/out/main.js:4254 byte=12649150
+E04 unpacked/{code_GetDestDir}/resources/app/out/main.js:4254 byte=12647193
+E05 unpacked/{code_GetDestDir}/resources/app/out/main.js:4254 byte=12650590
+E06 unpacked/{code_GetDestDir}/resources/app/out/main.js:4254 byte=12651709
+E07 unpacked/{code_GetDestDir}/resources/app/out/main.js:4254 byte=12635095
+E08 unpacked/{code_GetDestDir}/resources/app/out/main.js:98 byte=1124998
+E09 unpacked/{code_GetDestDir}/resources/app/out/main.js:4254 byte=12635642
+E10 unpacked/{code_GetDestDir}/resources/app/out/main.js:4254 byte=12623992
+E11 unpacked/{code_GetDestDir}/resources/app/out/main.js:4249 byte=12526793
+E12 unpacked/{code_GetDestDir}/resources/app/out/main.js:4249 byte=12526229
+E13 unpacked/{code_GetDestDir}/resources/app/out/main.js:92 byte=926568
+E14 unpacked/{code_GetDestDir}/resources/app/out/main.js:92 byte=967010
+E15 unpacked/{code_GetDestDir}/resources/app/extensions/agy/vscode/extension.js:22818 byte=1216917
+E16 unpacked/{code_GetDestDir}/resources/app/extensions/agy/vscode/extension.js:22821 byte=1217916
+E17 unpacked/{code_GetDestDir}/resources/app/extensions/agy/vscode/extension.js:22867 byte=1237560
+E18 unpacked/{code_GetDestDir}/resources/app/extensions/agy/vscode/extension.js:22997 byte=1298778
+E19 unpacked/{code_GetDestDir}/resources/app/node_modules/google-auth-library/build/src/auth/authclient.js:175 byte=6850
+E20 unpacked/{code_GetDestDir}/resources/app/node_modules/google-auth-library/build/src/shared.cjs:18 byte=788
+E21 unpacked/{code_GetDestDir}/resources/app/node_modules/google-auth-library/build/src/auth/oauth2client.js:455 byte=18245
+E22 unpacked/{code_GetDestDir}/resources/app/node_modules/google-auth-library/build/src/auth/oauth2client.js:339 byte=14080
+E23 unpacked/{code_GetDestDir}/resources/app/node_modules/gaxios/build/cjs/src/gaxios.js:515 byte=20388
+E24 unpacked/{code_GetDestDir}/resources/app/node_modules/gaxios/build/cjs/src/gaxios.js:321 byte=12694
+E25 unpacked/{code_GetDestDir}/resources/app/node_modules/gaxios/node_modules/node-fetch/src/request.js:226 byte=5979
+E26 unpacked/{code_GetDestDir}/resources/app/node_modules/gaxios/node_modules/node-fetch/src/headers.js:136 byte=4151
+E27 unpacked/{code_GetDestDir}/resources/app/out/main.js:4249 byte=12466930
+E28 unpacked/{code_GetDestDir}/resources/app/out/main.js:4254 byte=12586613
+
+STDERR (literal):
+
+EXIT STATUS: 0
+
+COMMAND: "F:\Program Files\nodejs\node.exe" "H:\orca\rea\site\antigravity\analysis\verify-offline-headers.mjs"
+CWD: H:\orca\rea\site\antigravity\analysis
+STDOUT (literal):
+{
+  "kind": "OFFLINE_DEPENDENCY_REPRODUCTION",
+  "officialClientExecuted": false,
+  "networkRequests": 0,
+  "note": "Synthetic TOKEN and PROJECT. Host Node version is not the official Electron runtime.",
+  "hostNodeVersion": "22.19.0",
+  "googleAuthLibraryVersion": "10.3.0",
+  "captured": {
+    "url": "https://cloudcode-pa.googleapis.com/v1internal:loadCodeAssist",
+    "method": "POST",
+    "headers": {
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br",
+      "authorization": "Bearer TOKEN",
+      "content-length": "123",
+      "content-type": "application/json",
+      "user-agent": "antigravity/2.7.0 windows/amd64 google-api-nodejs-client/10.3.0",
+      "x-goog-api-client": "gl-node/22.19.0"
+    },
+    "body": "{\"cloudaicompanion_project\":\"PROJECT\",\"metadata\":{\"ide_type\":\"ANTIGRAVITY\",\"ide_version\":\"2.7.0\",\"ide_name\":\"antigravity\"}}"
+  },
+  "limits": "Host, Connection, TLS/HTTP negotiation and final wire header order are not captured.",
+  "exitStatus": 0
+}
+
+STDERR (literal):
+
+EXIT STATUS: 0
+
+COMMAND: "F:\Program Files\nodejs\node.exe" "H:\orca\rea\site\antigravity\analysis\verify-evidence.mjs"
+CWD: H:\orca\rea\site\antigravity\analysis
+STDOUT (literal):
+ORIGINAL_UNCHANGED SHA256=307c7a41b050ffe742fd4dd1045050df1464de219271f74b5f6c269e9e00c822
+FOCUSED_EXCERPTS_VERIFIED=28
+DESCRIPTORS_CROSS_CHECKED_WITH_BUFLIB=128
+EXACT_LITERAL_COUNT out/main.js "antigravity/hub/"=0
+EXACT_LITERAL_COUNT out/main.js "streamGenerateContent"=0
+EXACT_LITERAL_COUNT out/main.js "You are Antigravity"=0
+EXACT_LITERAL_COUNT out/main.js "TOS_VIOLATION"=0
+EXACT_LITERAL_COUNT extensions/agy/vscode/extension.js "antigravity/hub/"=0
+EXACT_LITERAL_COUNT extensions/agy/vscode/extension.js "streamGenerateContent"=0
+EXACT_LITERAL_COUNT extensions/agy/vscode/extension.js "You are Antigravity"=0
+EXACT_LITERAL_COUNT extensions/agy/vscode/extension.js "TOS_VIOLATION"=0
+REPORT_REOPENED H:\orca\rea\site\antigravity\analysis\antigravity-real-fingerprint.md bytes=15655 SHA256=fee8f729e8912e5786be1dc62e3e7a1649ae080670b99b7d17478b92c0463bc7
+REPORT_REOPENED H:\orca\rea\site\antigravity\analysis\version-changelist-rules.md bytes=2995 SHA256=5fcf4f69ba5e7219de2e2c4f1b165e74beb8a43ec2be0ded7194c660511f4dca
+REPORT_REOPENED H:\orca\rea\site\antigravity\analysis\subway-fingerprint-diff.md bytes=3764 SHA256=b01e5acb55839bb8ad84102df60d30cc38b69f5ff4421999c1b734197b68f67e
+REPORT_REOPENED H:\orca\rea\site\antigravity\analysis\version-sources.md bytes=4034 SHA256=ee16577ba8c9b20d4de6a3c985f61b5239549d331bac8cf5a931d85ed82353f3
+EVIDENCE_VERIFICATION=PASS
+
+STDERR (literal):
+
+EXIT STATUS: 0
+
+RESULT: PASS; 5 stages; artifacts reopened and hashed: 31.
+INTEGRITY MANIFEST: H:\orca\rea\site\antigravity\analysis\integrity-manifest.json

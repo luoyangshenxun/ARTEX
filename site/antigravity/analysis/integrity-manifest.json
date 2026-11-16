@@ -1,0 +1,157 @@
+[
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\antigravity-real-fingerprint.md",
+    "bytes": 15655,
+    "sha256": "fee8f729e8912e5786be1dc62e3e7a1649ae080670b99b7d17478b92c0463bc7"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\build-focused-evidence.mjs",
+    "bytes": 3819,
+    "sha256": "882e03ac14b578e252eb35588aaa58876da5c321855a246abd8e0f8e88d8fb3f"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\build-focused-evidence.mjs.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\build-focused-evidence.mjs.stdout.txt",
+    "bytes": 2515,
+    "sha256": "3098619c180246e84f077646a7a5e1a4e136fc998a7b6584bde83b90bc67bb9c"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\cli-manifest-windows-amd64.json",
+    "bytes": 302,
+    "sha256": "ff2a060152d060f909c51ddd92c5ccde61060db9c236dd67ff002e95787ecca3"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\cloudcode-service-excerpt.txt",
+    "bytes": 10250,
+    "sha256": "aa0670956671f24389ca4a91240f807d32f4e8589d1ff3624cec1ea7e8b46170"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\decode-descriptors.mjs",
+    "bytes": 3707,
+    "sha256": "cfac15498518e72daf80833ca848753f5fc2009248f70f10b05c86cff6fd3188"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\decode-descriptors.mjs.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\decode-descriptors.mjs.stdout.txt",
+    "bytes": 1219,
+    "sha256": "e16ad69ce33362bf263db2da97b7a68483aea046078012fb25dd83b0210efca3"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\execution-notes.txt",
+    "bytes": 2251,
+    "sha256": "bd77f94091187f16f94c60463aa8022ecdc48307b183985ea1aa4c68d03cf41e"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\focused-evidence.json",
+    "bytes": 38570,
+    "sha256": "9b4ed6d9eaef6035f11e37b9a665abb19e2b5cdf87b1b379c45358a84e2288c5"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\installer-file-list.txt",
+    "bytes": 9782032,
+    "sha256": "613b29d76861308a9647d53706e90e70a627ce6fb744aff790e47f10b0623f0a"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\offline-header-verification.json",
+    "bytes": 1008,
+    "sha256": "e198c6d921c6ec331a79a34b42372f8dfb179a11fa181b7a409bfa86754e96e6"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\protobuf-descriptors.json",
+    "bytes": 4484418,
+    "sha256": "b3fd4c182b8357f4774b26f431192589180ea2197165bea89dd4a310f8480836"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\report_overview.md",
+    "bytes": 3713,
+    "sha256": "04db90269c2bf4f250f7d229650983c9123fadf07f93058bb3e2b7eed4a097b4"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\request-schemas.json",
+    "bytes": 7841,
+    "sha256": "bbe533b54a4c01053821fcf3c8bd3e53010617ce5696ff26febea249b6070516"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\run-analysis.mjs",
+    "bytes": 2664,
+    "sha256": "f466674bf0f82f39c056b1fbb8ae4cbb567a48a21edab9a536efd742c58e61be"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\scan-static.mjs",
+    "bytes": 2944,
+    "sha256": "507d97d9fc433382e0ada9499c84cab3a6f49fc710342eedb921a38e2156c9df"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\scan-static.mjs.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\scan-static.mjs.stdout.txt",
+    "bytes": 4104,
+    "sha256": "5d6fc4e709931381e6dc6227261d9b051cfdc276873293f70b0aaab0c18feb20"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\static-evidence.json",
+    "bytes": 805998,
+    "sha256": "2b27ca831f3396887ddfa21d5b3ad53cf1e52e2bc709ba77aceee01ad573fd3f"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\subway-fingerprint-diff.md",
+    "bytes": 3764,
+    "sha256": "b01e5acb55839bb8ad84102df60d30cc38b69f5ff4421999c1b734197b68f67e"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\unpack.log",
+    "bytes": 8622786,
+    "sha256": "c13f1e33165452b9c5eede257a3838720930b6358babf5c77b0304c75854ac6b"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\verify-evidence.mjs",
+    "bytes": 3958,
+    "sha256": "29242ededdd1afaf44c5df738180f07a01ac52d831d75cd271fdaa0b8071bf07"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\verify-evidence.mjs.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\verify-evidence.mjs.stdout.txt",
+    "bytes": 1370,
+    "sha256": "f0040eca70bf9a4773eaad915b29f5dbfe0d84dee632892b7c10caddabd681d2"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\verify-offline-headers.mjs",
+    "bytes": 3118,
+    "sha256": "82180d2e26943609222028385f901f620f47ba046d3d74f3e48c6a3a64ae9dd8"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\verify-offline-headers.mjs.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\verify-offline-headers.mjs.stdout.txt",
+    "bytes": 1008,
+    "sha256": "e198c6d921c6ec331a79a34b42372f8dfb179a11fa181b7a409bfa86754e96e6"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\version-changelist-rules.md",
+    "bytes": 2995,
+    "sha256": "5fcf4f69ba5e7219de2e2c4f1b165e74beb8a43ec2be0ded7194c660511f4dca"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\antigravity\\analysis\\version-sources.md",
+    "bytes": 4034,
+    "sha256": "ee16577ba8c9b20d4de6a3c985f61b5239549d331bac8cf5a931d85ed82353f3"
+  }
+]

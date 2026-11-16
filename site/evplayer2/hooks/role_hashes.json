@@ -1,0 +1,22 @@
+{
+  "MODIFIED_FILE": {
+    "path": "H:/orca/rea/site/evplayer2/hooks/hook_checks.js",
+    "bytes": 10857,
+    "sha256": "133e1de74aace0e7da2a37bb756d86d8ed1e4281cf67accd82af437bd97f3bcd"
+  },
+  "DIFF_FILE": {
+    "path": "H:/orca/rea/site/evplayer2/hooks/hook_checks.patch",
+    "bytes": 431,
+    "sha256": "970e17a92718d8e5af12bb15fc50d72f57b3b1e717f5f41c3cc2f395594a076d"
+  },
+  "VERIFICATION": {
+    "path": "H:/orca/rea/site/evplayer2/hooks/VERIFICATION.txt",
+    "bytes": 3854633,
+    "sha256": "f57631bf8d994f21c89cfef01abe14b068ca35bb9905e34e2850e867b704c810"
+  },
+  "ROLLBACK": {
+    "path": "H:/orca/rea/site/evplayer2/hooks/ROLLBACK.sh",
+    "bytes": 320,
+    "sha256": "8e8118098c575831656992e61560936c87695f2fe85d34ea2911d05f2369fccf"
+  }
+}

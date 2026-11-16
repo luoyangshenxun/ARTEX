@@ -1,0 +1,9 @@
+{
+  "name": "evplayer2-observe-checks",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "dependencies": {
+    "frida": "17.26.0"
+  }
+}

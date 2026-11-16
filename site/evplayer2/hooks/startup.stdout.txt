@@ -1,0 +1,3 @@
+{"kind":"run_start","pid":16376,"spawn":"F:/EVPlayer2/EVPlayer2.exe","agent":"H:\\orca\\rea\\site\\evplayer2\\hooks\\hook_checks.js","agentSha256":"133e1de74aace0e7da2a37bb756d86d8ed1e4281cf67accd82af437bd97f3bcd","seconds":10,"fridaVersion":null}
+{"time":"2026-11-10T15:25:31.106Z","pid":16376,"kind":"ready","enabled":true,"installed":16}
+{"kind":"run_end","exitCode":0}

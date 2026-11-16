@@ -1,0 +1,16 @@
+ORIGINAL_UNCHANGED SHA256=307c7a41b050ffe742fd4dd1045050df1464de219271f74b5f6c269e9e00c822
+FOCUSED_EXCERPTS_VERIFIED=28
+DESCRIPTORS_CROSS_CHECKED_WITH_BUFLIB=128
+EXACT_LITERAL_COUNT out/main.js "antigravity/hub/"=0
+EXACT_LITERAL_COUNT out/main.js "streamGenerateContent"=0
+EXACT_LITERAL_COUNT out/main.js "You are Antigravity"=0
+EXACT_LITERAL_COUNT out/main.js "TOS_VIOLATION"=0
+EXACT_LITERAL_COUNT extensions/agy/vscode/extension.js "antigravity/hub/"=0
+EXACT_LITERAL_COUNT extensions/agy/vscode/extension.js "streamGenerateContent"=0
+EXACT_LITERAL_COUNT extensions/agy/vscode/extension.js "You are Antigravity"=0
+EXACT_LITERAL_COUNT extensions/agy/vscode/extension.js "TOS_VIOLATION"=0
+REPORT_REOPENED H:\orca\rea\site\antigravity\analysis\antigravity-real-fingerprint.md bytes=15655 SHA256=fee8f729e8912e5786be1dc62e3e7a1649ae080670b99b7d17478b92c0463bc7
+REPORT_REOPENED H:\orca\rea\site\antigravity\analysis\version-changelist-rules.md bytes=2995 SHA256=5fcf4f69ba5e7219de2e2c4f1b165e74beb8a43ec2be0ded7194c660511f4dca
+REPORT_REOPENED H:\orca\rea\site\antigravity\analysis\subway-fingerprint-diff.md bytes=3764 SHA256=b01e5acb55839bb8ad84102df60d30cc38b69f5ff4421999c1b734197b68f67e
+REPORT_REOPENED H:\orca\rea\site\antigravity\analysis\version-sources.md bytes=4034 SHA256=ee16577ba8c9b20d4de6a3c985f61b5239549d331bac8cf5a931d85ed82353f3
+EVIDENCE_VERIFICATION=PASS

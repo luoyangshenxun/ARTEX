@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import * as frida from '../hooks/node_modules/frida/build/src/frida.js';
+const media=path.dirname(fileURLToPath(import.meta.url)),out=path.join(media,'full_video');
+const latest=JSON.parse(fs.readFileSync(path.join(out,'latest_capture.json'))),capture=JSON.parse(fs.readFileSync(latest.result));
+const getters=JSON.parse(fs.readFileSync(path.join(media,'PlayerLibRender56_vs.dll.inventory.json'))).exports.filter(e=>/^\?(currentTime|duration|isPaused|isStoped)@MediaPlayer/.test(e.name));
+const config={object:capture.object,saved:capture.prepared.saved,sourceBase:capture.prepared.sourceBase,getters};
+const session=await frida.attach(capture.pid);let script;
+const source=String.raw`
+const config=CONFIG,m=Process.getModuleByName('PlayerLibRender56_vs.dll'),self=ptr(config.object);
+function state(){const values={};for(const e of config.getters){const type=/currentTime|duration/.test(e.name)?'int64':'bool';values[e.name]=new NativeFunction(m.base.add(e.rva),type,['pointer'])(self).toString();}const ev=self.add(0x20).readPointer(),engine=ev.add(0x10).readPointer(),controller=engine.add(0x101be8).readPointer().add(0x60).readPointer(),q=self.add(0x28).readPointer(),url=q.add(q.add(16).readS64().toNumber()).readUtf16String(q.add(4).readS32());return {time:new Date().toISOString(),values,currentMs:Number(values['?currentTime@MediaPlayer@@QEBA_JXZ']),durationMs:Number(values['?duration@MediaPlayer@@QEBA_JXZ']),paused:values['?isPaused@MediaPlayer@@QEAA_NXZ']==='1',stopped:values['?isStoped@MediaPlayer@@QEAA_NXZ']==='1',speed:controller.add(0x100).readFloat(),sourceMatches:url.replace(/[?#].*/,'')===config.sourceBase};}
+rpc.exports={state,restore(){const before=state();if(!before.sourceMatches||before.durationMs!==config.saved.durationMs)throw new Error('Current video changed; refusing to alter its playback state');new NativeFunction(m.base.add(0x48380),'void',['pointer','double'])(self,config.saved.speed);new NativeFunction(m.base.add(0x480b0),'void',['pointer','double'])(self,config.saved.currentMs/config.saved.durationMs);new NativeFunction(m.base.add(config.saved.paused?0x47c00:0x48000),'void',['pointer'],{exceptions:'propagate'})(self);return {before,requested:{currentMs:config.saved.currentMs,speed:config.saved.speed,paused:config.saved.paused}};}}
+`.replace('CONFIG',JSON.stringify(config));
+try{script=await session.createScript(source,{name:'evplayer2-restore-original-playback'});await script.load();const action=await script.exports.restore();await new Promise(r=>setTimeout(r,1000));const after=await script.exports.state();const result={action,after,success:after.sourceMatches&&after.paused===config.saved.paused&&Math.abs(after.speed-config.saved.speed)<0.001&&Math.abs(after.currentMs-config.saved.currentMs)<1500};fs.writeFileSync(path.join(out,'playback_state_restored.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));if(!result.success)process.exitCode=1;}finally{if(script)await script.unload();await session.detach();}

@@ -1,0 +1,24 @@
+# Installed dependencies and package-manager cache.
+node_modules/
+.npm-cache/
+
+# Native binaries and generated binary dumps.
+*.exe
+*.dll
+*.node
+*.bin
+*.dmp
+
+# Retain media-analysis source; keep account data, captures, and exports local.
+/media/*
+!/media/*.mjs
+!/media/*.js
+!/media/batch/
+/media/batch/*
+!/media/batch/*.mjs
+!/media/batch/*.js
+
+# Raw hook inspection records and temporary reconstruction copies.
+/hooks/entries.json
+/hooks/hook_checks.patchcheck.js
+/hooks/hook_checks.restored.js

@@ -1,0 +1,9 @@
+{"kind":"run_start","pid":56664,"spawn":null,"agent":"H:\\orca\\rea\\site\\evplayer2\\hooks\\hook_checks.pristine.js","agentSha256":"8ab7ab2d09df5cc97a98709093505eafa5f0809e6d40e57280c3ce0f2092bf79","seconds":6,"fridaVersion":null}
+{"time":"2026-11-10T15:24:10.784Z","pid":56664,"kind":"modules","modules":[{"name":"EVPlayer2.exe","base":"0x7ff6a0bb0000","size":10506240,"path":"F:\\EVPlayer2\\EVPlayer2.exe"},{"name":"Bridge.dll","base":"0x7ff8dc440000","size":507904,"path":"F:\\EVPlayer2\\Bridge.dll"},{"name":"PlayerLibRender56_vs.dll","base":"0x7ff84a800000","size":19857408,"path":"F:\\EVPlayer2\\PlayerLibRender56_vs.dll"}]}
+{"time":"2026-11-10T15:24:10.784Z","pid":56664,"kind":"ready","enabled":false,"installed":0}
+{"time":"2026-11-10T15:24:10.786Z","pid":56664,"kind":"selftest","isDebuggerPresent":0,"checkRemoteSuccess":1,"remoteDebuggerPresent":0}
+{"time":"2026-11-10T15:24:10.795Z","pid":56664,"kind":"window_snapshot","windows":[{"hwnd":"0x6fd054c","visible":true,"title":"EVPlayer2","affinityReadSuccess":true,"affinity":1},{"hwnd":"0xce0c06","visible":false,"title":"MSCTFIME UI","affinityReadSuccess":true,"affinity":0},{"hwnd":"0x6f12f6","visible":false,"title":"Default IME","affinityReadSuccess":true,"affinity":0}]}
+{"kind":"summary","enabled":false,"installed":[],"failed":[],"counts":{},"countsByOrigin":{"application":{},"observer_selftest":{}},"emitted":{}}
+{"kind":"unload_audit","checked":0,"allRestored":true,"results":[]}
+{"kind":"detached","reason":"application-requested","crash":null}
+{"kind":"run_end","exitCode":0}

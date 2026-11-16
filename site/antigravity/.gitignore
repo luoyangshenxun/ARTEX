@@ -1,0 +1,9 @@
+# Downloaded installers, unpacked vendor files, and portable analysis tools.
+/installer/*.exe
+/analysis/unpacked/
+/analysis/tools/
+
+# Reproducible bulk scans and raw extraction output.
+/analysis/installer-file-list.txt
+/analysis/unpack.log
+/analysis/static-evidence.json
