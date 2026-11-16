@@ -1,0 +1,543 @@
+{
+  "nativePath": "H:\\orca\\rea\\site\\antigravity\\analysis\\unpacked\\macos-app-2.32.0-verified\\Antigravity.app\\Contents\\Resources\\bin\\language_server",
+  "bytes": 205328048,
+  "sha256": "5084a59982e1ff3b6dc4cf2ca35680c72c23435450080c2921cd8996c8440aae",
+  "architecture": "Mach-O ARM64",
+  "pclntabFunctions": 190160,
+  "textBase": "0x100000f80",
+  "sections": [
+    {
+      "name": "__text",
+      "address": 4294971264,
+      "bytes": 53238280,
+      "offset": 3968
+    },
+    {
+      "name": "__stubs",
+      "address": 4348209544,
+      "bytes": 6036,
+      "offset": 53242248
+    },
+    {
+      "name": "__stub_helper",
+      "address": 4348215580,
+      "bytes": 5892,
+      "offset": 53248284
+    },
+    {
+      "name": "__rodata",
+      "address": 4348221472,
+      "bytes": 12221465,
+      "offset": 53254176
+    },
+    {
+      "name": "__lrodata_gopcln",
+      "address": 4360442944,
+      "bytes": 57664552,
+      "offset": 65475648
+    },
+    {
+      "name": "__cstring",
+      "address": 4418107496,
+      "bytes": 168047,
+      "offset": 123140200
+    },
+    {
+      "name": "__const",
+      "address": 4418275584,
+      "bytes": 704064,
+      "offset": 123308288
+    },
+    {
+      "name": "__gcc_except_tab",
+      "address": 4418979648,
+      "bytes": 177992,
+      "offset": 124012352
+    },
+    {
+      "name": "__literals",
+      "address": 4419157648,
+      "bytes": 4352,
+      "offset": 124190352
+    },
+    {
+      "name": "__ustring",
+      "address": 4419162000,
+      "bytes": 3098,
+      "offset": 124194704
+    },
+    {
+      "name": "__unwind_info",
+      "address": 4419165100,
+      "bytes": 92508,
+      "offset": 124197804
+    },
+    {
+      "name": "__eh_frame",
+      "address": 4419257608,
+      "bytes": 1272,
+      "offset": 124290312
+    },
+    {
+      "name": "__got",
+      "address": 4419272704,
+      "bytes": 504,
+      "offset": 124305408
+    },
+    {
+      "name": "__const",
+      "address": 4419273216,
+      "bytes": 134200,
+      "offset": 124305920
+    },
+    {
+      "name": "__rodata",
+      "address": 4419407424,
+      "bytes": 4979480,
+      "offset": 124440128
+    },
+    {
+      "name": "__go_type",
+      "address": 4424386912,
+      "bytes": 21377536,
+      "offset": 129419616
+    },
+    {
+      "name": "__go_func",
+      "address": 4445764448,
+      "bytes": 43000,
+      "offset": 150797152
+    },
+    {
+      "name": "__mod_init_func",
+      "address": 4445807448,
+      "bytes": 720,
+      "offset": 150840152
+    },
+    {
+      "name": "__cfstring",
+      "address": 4445808168,
+      "bytes": 32,
+      "offset": 150840872
+    },
+    {
+      "name": "__la_symbol_ptr",
+      "address": 4445814784,
+      "bytes": 4024,
+      "offset": 150847488
+    },
+    {
+      "name": "__go_buildinfo",
+      "address": 4445818816,
+      "bytes": 144,
+      "offset": 150851520
+    },
+    {
+      "name": "__go_fipsinfo",
+      "address": 4445818976,
+      "bytes": 120,
+      "offset": 150851680
+    },
+    {
+      "name": "__go_module",
+      "address": 4445819104,
+      "bytes": 568,
+      "offset": 150851808
+    },
+    {
+      "name": "__noptrdata",
+      "address": 4445819680,
+      "bytes": 51897633,
+      "offset": 150852384
+    },
+    {
+      "name": "__data",
+      "address": 4497717376,
+      "bytes": 1058696,
+      "offset": 202750080
+    },
+    {
+      "name": "__thread_vars",
+      "address": 4498776072,
+      "bytes": 408,
+      "offset": 203808776
+    },
+    {
+      "name": "__thread_data",
+      "address": 4498776480,
+      "bytes": 72,
+      "offset": 203809184
+    },
+    {
+      "name": "__thread_bss",
+      "address": 4498776576,
+      "bytes": 145,
+      "offset": 0
+    },
+    {
+      "name": "__bss",
+      "address": 4498776768,
+      "bytes": 328888,
+      "offset": 0
+    },
+    {
+      "name": "__noptrbss",
+      "address": 4499105664,
+      "bytes": 33637776,
+      "offset": 0
+    },
+    {
+      "name": "__common",
+      "address": 4532743488,
+      "bytes": 72056,
+      "offset": 0
+    }
+  ],
+  "fallbackChangelist": {
+    "address": "0x10c15e180",
+    "offset": 202760576,
+    "pointer": "0x103c65148",
+    "length": 10,
+    "dataOffset": 63328584,
+    "value": "1020486441"
+  },
+  "globals": [
+    {
+      "field": "fallback_changelist_string",
+      "address": "0x10c15e180",
+      "initializedInFile": true
+    },
+    {
+      "field": "numeric_changelist_override",
+      "address": "0x10c2b09b8",
+      "initializedInFile": false
+    },
+    {
+      "field": "user_agent_name_override",
+      "address": "0x10c266c80",
+      "initializedInFile": false
+    },
+    {
+      "field": "subclient_type_override",
+      "address": "0x10c266c90",
+      "initializedInFile": false
+    },
+    {
+      "field": "host_path_override",
+      "address": "0x10c266ca0",
+      "initializedInFile": false
+    },
+    {
+      "field": "proxy_client_override",
+      "address": "0x10c266cb0",
+      "initializedInFile": false
+    }
+  ],
+  "literals": [
+    {
+      "id": "uaFormatHub",
+      "offset": 54040262,
+      "length": 13,
+      "value": "%s/%s/%s (%s)"
+    },
+    {
+      "id": "uaFormatNoSubclient",
+      "offset": 53737898,
+      "length": 10,
+      "value": "%s/%s (%s)"
+    },
+    {
+      "id": "uaCommentSeparator",
+      "offset": 53254340,
+      "length": 2,
+      "value": "; "
+    },
+    {
+      "id": "uaOSFormat",
+      "offset": 53737878,
+      "length": 10,
+      "value": "os_type=%s"
+    },
+    {
+      "id": "uaArchFormat",
+      "offset": 53454829,
+      "length": 7,
+      "value": "arch=%s"
+    },
+    {
+      "id": "uaCLFormat",
+      "offset": 53330154,
+      "length": 5,
+      "value": "cl=%d"
+    },
+    {
+      "id": "uaAuthMethodFormat",
+      "offset": 54131665,
+      "length": 14,
+      "value": "auth_method=%s"
+    },
+    {
+      "id": "uaPurposeFormat",
+      "offset": 53737888,
+      "length": 10,
+      "value": "purpose=%s"
+    },
+    {
+      "id": "uaFirstComment",
+      "offset": 53943759,
+      "length": 12,
+      "value": "aidev_client"
+    },
+    {
+      "id": "uaDataCollectionOptOut",
+      "offset": 55008691,
+      "length": 27,
+      "value": "datacollection_opt_in=false"
+    },
+    {
+      "id": "uaHostPath",
+      "offset": 53943771,
+      "length": 12,
+      "value": "host_path=%s"
+    },
+    {
+      "id": "uaProxyClient",
+      "offset": 54214578,
+      "length": 15,
+      "value": "proxy_client=%s"
+    }
+  ],
+  "references": [
+    {
+      "field": "fallback_changelist_string",
+      "target": "0x10c15e180",
+      "instructionOffset": 1491212,
+      "instructionAddress": "0x10016c10c",
+      "function": "google3/base/go/build.map.init.0"
+    },
+    {
+      "field": "fallback_changelist_string",
+      "target": "0x10c15e180",
+      "instructionOffset": 1493364,
+      "instructionAddress": "0x10016c974",
+      "function": "google3/base/go/build.ClientInfo"
+    },
+    {
+      "field": "fallback_changelist_string",
+      "target": "0x10c15e180",
+      "instructionOffset": 1493496,
+      "instructionAddress": "0x10016c9f8",
+      "function": "google3/base/go/build.ClientInfo"
+    },
+    {
+      "field": "fallback_changelist_string",
+      "target": "0x10c15e180",
+      "instructionOffset": 2076152,
+      "instructionAddress": "0x1001fadf8",
+      "function": "google3/base/go/toollog.Entry"
+    },
+    {
+      "field": "fallback_changelist_string",
+      "target": "0x10c15e180",
+      "instructionOffset": 4009992,
+      "instructionAddress": "0x1003d3008",
+      "function": "google3/third_party/golang/protobuf/v2/internal/detrand/detrand.init.0"
+    },
+    {
+      "field": "fallback_changelist_string",
+      "target": "0x10c15e180",
+      "instructionOffset": 4010316,
+      "instructionAddress": "0x1003d314c",
+      "function": "google3/third_party/golang/protobuf/v2/internal/detrand/detrand.init.0"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 35420260,
+      "instructionAddress": "0x1021c7864",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*IDEAuthProvider).GetUserAgentName"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 35423044,
+      "instructionAddress": "0x1021c8344",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*HostAuthProvider).GetUserAgentName"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 35425060,
+      "instructionAddress": "0x1021c8b24",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*StandaloneAuthProvider).GetUserAgentName"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 35435908,
+      "instructionAddress": "0x1021cb584",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CLIAuthProvider).GetUserAgentName"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 35446612,
+      "instructionAddress": "0x1021cdf54",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*AntigravityHubAuthProvider).GetUserAgentName"
+    },
+    {
+      "field": "subclient_type_override",
+      "target": "0x10c266c90",
+      "instructionOffset": 35472064,
+      "instructionAddress": "0x1021d42c0",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).noCCPAFlags"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 35524020,
+      "instructionAddress": "0x1021e0db4",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*GeminiAPIKeyAuthProvider).GetUserAgentName"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 35569036,
+      "instructionAddress": "0x1021ebd8c",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent"
+    },
+    {
+      "field": "subclient_type_override",
+      "target": "0x10c266c90",
+      "instructionOffset": 35569116,
+      "instructionAddress": "0x1021ebddc",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent"
+    },
+    {
+      "field": "numeric_changelist_override",
+      "target": "0x10c2b09b8",
+      "instructionOffset": 35569376,
+      "instructionAddress": "0x1021ebee0",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent"
+    },
+    {
+      "field": "fallback_changelist_string",
+      "target": "0x10c15e180",
+      "instructionOffset": 35569388,
+      "instructionAddress": "0x1021ebeec",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent"
+    },
+    {
+      "field": "host_path_override",
+      "target": "0x10c266ca0",
+      "instructionOffset": 35569900,
+      "instructionAddress": "0x1021ec0ec",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent"
+    },
+    {
+      "field": "proxy_client_override",
+      "target": "0x10c266cb0",
+      "instructionOffset": 35570436,
+      "instructionAddress": "0x1021ec304",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent"
+    },
+    {
+      "field": "subclient_type_override",
+      "target": "0x10c266c90",
+      "instructionOffset": 35690392,
+      "instructionAddress": "0x102209798",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.vertexAILabels"
+    },
+    {
+      "field": "subclient_type_override",
+      "target": "0x10c266c90",
+      "instructionOffset": 35692140,
+      "instructionAddress": "0x102209e6c",
+      "function": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.addInternalVertexMetadataHeader"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 44736548,
+      "instructionAddress": "0x102aaa024",
+      "function": "google3/third_party/jetski/gateway/gateway.(*AuthProvider).GetUserAgentName"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 44738152,
+      "instructionAddress": "0x102aaa668",
+      "function": "google3/third_party/jetski/gateway/gateway.(*AuthProvider).SetHTTPHeaders"
+    },
+    {
+      "field": "subclient_type_override",
+      "target": "0x10c266c90",
+      "instructionOffset": 45910928,
+      "instructionAddress": "0x102bc8b90",
+      "function": "google3/third_party/jetski/language_server/language_server.CreateLanguageServerAndServe"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 45910940,
+      "instructionAddress": "0x102bc8b9c",
+      "function": "google3/third_party/jetski/language_server/language_server.CreateLanguageServerAndServe"
+    },
+    {
+      "field": "subclient_type_override",
+      "target": "0x10c266c90",
+      "instructionOffset": 45911300,
+      "instructionAddress": "0x102bc8d04",
+      "function": "google3/third_party/jetski/language_server/language_server.CreateLanguageServerAndServe"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 45911312,
+      "instructionAddress": "0x102bc8d10",
+      "function": "google3/third_party/jetski/language_server/language_server.CreateLanguageServerAndServe"
+    },
+    {
+      "field": "subclient_type_override",
+      "target": "0x10c266c90",
+      "instructionOffset": 45914252,
+      "instructionAddress": "0x102bc988c",
+      "function": "google3/third_party/jetski/language_server/language_server.CreateLanguageServerAndServe"
+    },
+    {
+      "field": "subclient_type_override",
+      "target": "0x10c266c90",
+      "instructionOffset": 45964604,
+      "instructionAddress": "0x102bd5d3c",
+      "function": "google3/third_party/jetski/language_server/language_server.(*Server).isAuthenticatedUIBootstrapEnabled"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 45964616,
+      "instructionAddress": "0x102bd5d48",
+      "function": "google3/third_party/jetski/language_server/language_server.(*Server).isAuthenticatedUIBootstrapEnabled"
+    },
+    {
+      "field": "fallback_changelist_string",
+      "target": "0x10c15e180",
+      "instructionOffset": 46165708,
+      "instructionAddress": "0x102c06ecc",
+      "function": "main.main"
+    },
+    {
+      "field": "user_agent_name_override",
+      "target": "0x10c266c80",
+      "instructionOffset": 46166340,
+      "instructionAddress": "0x102c07144",
+      "function": "main.main"
+    },
+    {
+      "field": "subclient_type_override",
+      "target": "0x10c266c90",
+      "instructionOffset": 46166404,
+      "instructionAddress": "0x102c07184",
+      "function": "main.main"
+    }
+  ]
+}

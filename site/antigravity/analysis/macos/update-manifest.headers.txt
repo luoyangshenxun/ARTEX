@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-type: application/yaml
+cache-control: no-store
+vary: x-user-staging-id, x-app-version
+x-cloud-trace-context: f1e1314ff81e90214ce704635fb0cbc6
+date: Mon, 16 Nov 2026 15:15:17 GMT
+server: Google Frontend
+Content-Length: 389
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

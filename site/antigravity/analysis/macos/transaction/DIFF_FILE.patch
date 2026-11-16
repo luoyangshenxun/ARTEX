@@ -1,0 +1,318 @@
+diff --git a/./MODIFIED_FILE.md b/./MODIFIED_FILE.md
+new file mode 100644
+index 0000000..9606bb7
+--- /dev/null
++++ b/./MODIFIED_FILE.md
+@@ -0,0 +1,312 @@
++# Antigravity macOS 客户端指纹分析
++
++分析对象是官方 Antigravity App 2.32.0 的 macOS Apple Silicon 安装包。本文给出从 DMG、Electron `app.asar` 和 ARM64 原生 `language_server` 静态恢复的请求指纹，供 Subway 对照实现。
++
++## 结论
++
++macOS ARM64 的 Hub 请求可以从静态代码恢复出以下核心 UA：
++
++```text
++antigravity/hub/2.32.0 (aidev_client; os_type=darwin; arch=arm64; cl=1020486441)
++```
++
++这是由原生二进制中的 UA 格式、评论字段、Changelist 常量，以及 Electron 启动参数共同重建的值。它不是 mitmproxy 运行时抓包结果；可选的 `auth_method`、`purpose`、`host_path`、`proxy_client` 评论是否在某个具体请求中出现，还取决于运行时认证和路由状态。
++
++最关键的 macOS 结果如下：
++
++| 项目 | 静态确认值 | 证据 |
++|---|---|---|
++| App 版本 | `2.32.0` | `Info.plist`、`asar/package.json` |
++| App 标识 | `com.google.antigravity` | `Info.plist` |
++| Hub 启动参数 | `--override_ide_name antigravity`、`--subclient_type hub`、`--override_ide_version 2.32.0` | `dist/lsDefaults.js` |
++| UA 基础格式 | `%s/%s/%s (%s)` | 原生 `codeassistclient.userAgent` |
++| UA 评论分隔符 | `; ` | 原生字符串 |
++| 平台评论 | `os_type=darwin` | 原生 `userAgent` |
++| 架构评论 | `arch=arm64` | 原生 `userAgent` |
++| 产品 Changelist | `1020486441` | 原生 `fallback_changelist_string` |
++| Go 构建 Changelist | `1012564305` | `go version -m`；不是 UA 产品 CL |
++| 默认 Cloud Code 地址 | `https://daily-cloudcode-pa.googleapis.com` | `dist/lsDefaults.js` |
++
++## 样本与完整性
++
++| 项目 | 值 |
++|---|---|
++| 安装包 | `Antigravity-App-2.32.0-darwin-arm.parallel.dmg` |
++| 官方下载构建目录 | `2.32.0-6141816156848128/darwin-arm` |
++| DMG 字节数 | `241278833` |
++| DMG SHA-256 | `7ec0f204cf306506ecd77abbb7ba2a6e722471dbf908a86433dcb8efa6ed98f7` |
++| GCS CRC32C | `/QFW9w==`，与响应头一致 |
++| 原生文件 | `Antigravity.app/Contents/Resources/bin/language_server` |
++| 原生文件大小 | `205328048` |
++| 原生文件 SHA-256 | `5084a59982e1ff3b6dc4cf2ca35680c72c23435450080c2921cd8996c8440aae` |
++| 原生架构 | Mach-O ARM64 |
++| Go pclntab 函数数量 | `190160` |
++| 官方客户端是否执行 | 否 |
++
++## P0：版本、UA 和 Changelist
++
++Electron 层把 Hub 身份传给原生语言服务器：
++
++```text
++--standalone
++--override_ide_name antigravity
++--subclient_type hub
++--override_ide_version 2.32.0
++--override_user_agent_name antigravity
++```
++
++原生 `codeassistclient.userAgent` 使用以下格式：
++
++```text
++%s/%s/%s (%s)
++```
++
++其中 Hub 的三个主体字段由上述参数提供，评论字段通过 `strings.Join(..., "; ")` 组合。原生二进制中可直接看到：
++
++```text
++aidev_client
++os_type=%s
++arch=%s
++cl=%d
++auth_method=%s
++purpose=%s
++host_path=%s
++proxy_client=%s
++```
++
++`fallback_changelist_string` 是一个长度为 10 的 Go 字符串，值为：
++
++```text
++1020486441
++```
++
++它被 `codeassistclient.userAgent` 用作数值 Changelist 的回退值，因此本样本的默认 Hub 指纹是：
++
++```text
++antigravity/hub/2.32.0 (aidev_client; os_type=darwin; arch=arm64; cl=1020486441)
++```
++
++原生文件的 Go build info 另有：
++
++```text
++go1.28-20261102-RC00 cl/1012564305 +298f53e483
++```
++
++`1012564305` 是 Go 构建信息中的工具链/构建 CL，不能替代 UA 中的产品 CL `1020486441`。
++
++## P1：请求头
++
++`CodeAssistClient.setHeaders` 静态确认每个请求的公共处理至少包括：
++
++| 头 | 结论 |
++|---|---|
++| `User-Agent` | 由原生 `userAgent` 生成；macOS ARM64 默认值见上 |
++| `Content-Type` | 原生路径会设置为 `application/json`；具体请求可能由其他层覆盖 |
++| `Authorization` | 由认证 provider 设置；Hub provider 的实现单独存在 |
++| `X-Goog-User-Project` | 只在 quota project / 路由条件满足时由 `maybeOverrideQuotaProject` 加入 |
++| `X-Goog-Request-Reason` | 原生代码存在条件分支，不能静态断言每个 action 都发送 |
++
++原生字符串表还包含这些候选头名或头相关字段：
++
++```text
++X-Goog-User-Project
++X-Goog-Request-Reason
++Authorization
++User-Agent
++Content-Type
++```
++
++`aicode`、trajectory、代理和安装标识相关字符串也出现在二进制中，但仅凭字符串表不能证明它们在每一个 `/v1internal:*` 请求中都存在，更不能证明顺序。要获得真实线上头集合和顺序，仍需在可运行的 macOS 环境上抓包。
++
++`X-Goog-Api-Client: gl-node/22.21.1` 是 Subway 当前给出的 Node 客户端值。macOS 官方请求由 Go 原生 `language_server` 发出，静态代码没有把这个 Node 值作为官方 macOS 指纹确认下来，因此 Subway 不能直接把它当成 macOS 真值。
++
++## P1：metadata 和请求体 schema
++
++原生 protobuf descriptor 确认 `ClientMetadata` 字段为：
++
++| 字段 | 类型/枚举 | macOS 结论 |
++|---|---|---|
++| `ide_type` | `ANTIGRAVITY=9` | 应使用 Antigravity |
++| `ide_version` | 字符串 | `2.32.0` |
++| `plugin_version` | 字符串 | schema 存在，静态未确认运行时是否填充 |
++| `platform` | `DARWIN_AMD64=1`、`DARWIN_ARM64=2` 等 | Apple Silicon 为 `DARWIN_ARM64` |
++| `update_channel` | 字符串 | schema 存在，静态未确认运行时是否填充 |
++| `duet_project` | 字符串 | schema 存在，运行时取决于账号/项目 |
++| `plugin_type` | 枚举 | schema 存在，静态未确认 Hub 请求的最终值 |
++| `ide_name` | 字符串 | `antigravity` |
++
++确认的请求消息字段如下：
++
++```text
++LoadCodeAssistRequest:
++  cloudaicompanion_project
++  metadata
++  mode (optional)
++
++OnboardUserRequest:
++  tier_id
++  cloudaicompanion_project
++  metadata
++
++GenerateContentRequest:
++  project
++  request_id
++  request
++  model
++  user_prompt_id
++  user_agent
++  request_type
++  enabled_credit_types
++
++FetchAvailableModelsRequest:
++  project
++  request_id
++  entitlement
++  location
++```
++
++schema 中存在 `thought_signature` 相关字段和内容处理代码；本次静态分析确认了实现存在，未确认某一次真实请求中它的具体值和编码。
++
++## P2：端点与 OAuth
++
++App 通过 `dist/lsDefaults.js` 给语言服务器传入：
++
++```text
++API server:
++  https://generativelanguage.googleapis.com
++
++Cloud Code endpoint:
++  https://daily-cloudcode-pa.googleapis.com
++```
++
++原生 descriptor 注册了包括以下在内的 `/v1internal:*` RPC：
++
++```text
++/v1internal:loadCodeAssist
++/v1internal:onboardUser
++/v1internal:onboardUserBackgroundTasks
++/v1internal:streamGenerateChat
++/v1internal:generateChat
++/v1internal:listModelConfigs
++/v1internal:recordCodeAssistMetrics
++/v1internal:recordClientEvent
++/v1internal:fetchAdminControls
++```
++
++个人账号 OAuth 客户端：
++
++```text
++client_id:
++1071006060591-tmhssin2h21lcre235vtolojh4g403ep.apps.googleusercontent.com
++
++scopes:
++https://www.googleapis.com/auth/cloud-platform
++https://www.googleapis.com/auth/userinfo.email
++https://www.googleapis.com/auth/userinfo.profile
++https://www.googleapis.com/auth/cclog
++https://www.googleapis.com/auth/experimentsandconfigs
++https://www.googleapis.com/auth/aicode
++```
++
++企业账号客户端：
++
++```text
++client_id:
++884354919052-36trc1jjb3tguiac32ov6cod268c5blh.apps.googleusercontent.com
++```
++
++WIF 客户端：
++
++```text
++client_id:
++a2a6f0e3e-3ff0-462b-869a-47277df4c806
++```
++
++登录 URL 的静态校验要求：
++
++```text
++response_type=code
++access_type=offline
++code_challenge_method=S256
++code_challenge=<PKCE value>
++redirect_uri=http://localhost:<port>/auth/callback
++```
++
++## 版本号权威来源
++
++App 内置的 `Contents/app-update.yml` 指向：
++
++```text
++https://antigravity-hub-auto-updater-974169037036.us-central1.run.app/manifest/
++```
++
++macOS 更新器设置：
++
++```text
++channel = latest-${process.arch}
++request header = x-app-version: <App.getVersion()>
++```
++
++因此 Apple Silicon 的 manifest 名称为：
++
++```text
++latest-arm64-mac.yml
++```
++
++在 **2026 年 11 月 16 日**以 `x-app-version: 2.32.0` 查询，返回：
++
++```text
++version: 2.32.1
++url: https://storage.googleapis.com/antigravity-public/antigravity-hub/2.32.1-6001966350991360/darwin-arm/Antigravity.zip
++size: 216300499
++```
++
++这说明下载页显示的 2.32.0 与 live updater manifest 可能不同。自动同步应优先读取平台对应的 updater manifest，并保存 `version`、构建目录和校验值；不能只解析下载页或假设 App 版本等于 Hub build CL。
++
++## Subway 差异清单
++
++对照用户提供的 Subway 当前值：
++
++```text
++User-Agent:
++antigravity/hub/2.23.0 windows/amd64
++
++X-Goog-Api-Client:
++gl-node/22.21.1
++```
++
++| 项目 | macOS 官方静态值 | Subway 当前值 | 状态 |
++|---|---|---|---|
++| Hub 版本 | `2.32.0` | `2.23.0` | 过期/待确认 |
++| OS | `darwin` | `windows` | 平台值不同 |
++| 架构 | `arm64` | `amd64` | 样本平台不同 |
++| UA 格式 | `antigravity/hub/2.32.0 (...)` | 无括号评论 | 缺失 |
++| 首个评论 | `aidev_client` | 无 | 缺失 |
++| 产品 CL | `cl=1020486441` | 无 | 缺失 |
++| metadata `ideType` | `ANTIGRAVITY` | 需检查 Subway body | 待对照 |
++| metadata `ideVersion` | `2.32.0` | 需检查 Subway body | 待对照 |
++| metadata `platform` | `DARWIN_ARM64` | 需检查 Subway body | 待对照 |
++| `X-Goog-Api-Client` | Go 原生路径的实际值未由静态分析确定 | `gl-node/22.21.1` | 不能直接沿用 |
++| `Authorization` | provider 动态设置 | 需检查 Subway | 待对照 |
++| `X-Goog-User-Project` | 按 quota project 条件设置 | 需检查 Subway | 待对照 |
++
++## 可直接喂给改造 A/B 的规则
++
++1. 版本同步读取 `latest-arm64-mac.yml` / 对应平台 manifest，使用返回的 `version` 和构建目录；App 页面版本只作为下载入口信息。
++2. macOS Apple Silicon 的静态 UA 基线使用 `darwin`、`arm64`、产品 CL `1020486441`；不要把 Go build info 的 `1012564305` 当成产品 CL。
++3. Hub 的 body metadata 至少应能表达 `ANTIGRAVITY`、App 版本、`DARWIN_ARM64` 和 `antigravity`。
++4. `X-Goog-Api-Client: gl-node/22.21.1` 不能作为官方 macOS Go 客户端的已证实值。
++5. 需要最终上线前的逐字节确认时，必须补一份 macOS 运行时抓包，核对动态 Authorization、quota project、请求 ID、可选 UA 评论和头顺序。
++
++## 证据文件
++
++- [download-provenance.json](./download-provenance.json)
++- [latest-arm64-mac.yml](./latest-arm64-mac.yml)
++- [native-evidence.json](./native-evidence.json)
++- [request-schemas.json](./request-schemas.json)
++- [user-agent-construction.disasm.txt](./user-agent-construction.disasm.txt)
++- [ua-and-headers.disasm.txt](./ua-and-headers.disasm.txt)
++- [serialization-and-auth.disasm.txt](./serialization-and-auth.disasm.txt)
++- [extract-asar.mjs](./extract-asar.mjs)
++- [inspect-native.mjs](./inspect-native.mjs)
++- [decode-native-schemas.mjs](./decode-native-schemas.mjs)

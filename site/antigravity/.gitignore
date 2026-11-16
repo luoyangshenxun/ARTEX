@@ -1,5 +1,7 @@
 # Downloaded installers, unpacked vendor files, and portable analysis tools.
 /installer/*.exe
+/installer/*.dmg
+/installer/*.dmg.parts/
 /analysis/unpacked/
 /analysis/tools/
 

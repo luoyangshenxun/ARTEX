@@ -1,0 +1,216 @@
+Antigravity macOS static analysis verification
+Workspace: H:\orca\rea
+Date: 2026-11-16
+Mode: static analysis only; official client was not executed
+
+[GIT_BASELINE]
+command:
+  git status --short --branch
+  git log -1 --oneline --decorate
+stdout:
+  ## english-ui...origin/english-ui
+  755f6cf (HEAD -> english-ui, origin/english-ui) Add Antigravity and EVPlayer analysis workspaces
+exit: 0
+
+[DMG_PROVENANCE]
+source:
+  official Antigravity App download page
+sample:
+  site\antigravity\installer\Antigravity-App-2.32.0-darwin-arm.parallel.dmg
+literal values:
+  version=2.32.0
+  platform=darwin-arm
+  releaseBuild=6141816156848128
+  bytes=241278833
+  sha256=7ec0f204cf306506ecd77abbb7ba2a6e722471dbf908a86433dcb8efa6ed98f7
+  crc32c=/QFW9w==
+  expectedCrc32c=/QFW9w==
+  verifiedGoogleStorageChecksum=true
+  officialClientExecuted=false
+exit: 0
+
+[APP_METADATA]
+files:
+  site\antigravity\analysis\unpacked\macos-app-2.32.0-verified\Antigravity.app\Contents\Info.plist
+  site\antigravity\analysis\unpacked\macos-app-2.32.0-verified\asar\package.json
+literal values:
+  CFBundleIdentifier=com.google.antigravity
+  CFBundleShortVersionString=2.32.0
+  CFBundleVersion=2.32.0
+  package.name=antigravity
+  package.version=2.32.0
+  ElectronAsarIntegrity.Resources/app.asar=cea16e1bc5b1d6ddf3f110b794e14717e40eb413e61288f9282b4b6285c651c9
+  LSMinimumSystemVersion=13.0
+exit: 0
+
+[NATIVE_BINARY]
+command:
+  node site\antigravity\analysis\macos\inspect-native.mjs
+literal stdout:
+  NATIVE_SHA256=5084a59982e1ff3b6dc4cf2ca35680c72c23435450080c2921cd8996c8440aae
+  PCLNTAB_FUNCTIONS=190160
+  FALLBACK_CL=1020486441
+changed symbol/field:
+  google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent
+  fallback_changelist_string
+exit: 0
+
+[GO_BUILD_INFO]
+command:
+  go version -m site\antigravity\analysis\unpacked\macos-app-2.32.0-verified\Antigravity.app\Contents\Resources\bin\language_server
+literal stdout:
+  go1.28-20261102-RC00
+  cl/1012564305
+  +298f53e483
+interpretation:
+  1012564305 is Go build information and is not the product UA CL.
+exit: 0
+
+[UA_RECONSTRUCTION]
+native literals:
+  format=%s/%s/%s (%s)
+  separator=; 
+  first_comment=aidev_client
+  os_format=os_type=%s
+  arch_format=arch=%s
+  cl_format=cl=%d
+Electron launch arguments:
+  --override_ide_name antigravity
+  --subclient_type hub
+  --override_ide_version 2.32.0
+static reconstructed default:
+  antigravity/hub/2.32.0 (aidev_client; os_type=darwin; arch=arm64; cl=1020486441)
+status:
+  format and values statically confirmed
+  wire value and optional comments not runtime-captured
+exit: 0
+
+[PROTOBUF_SCHEMA]
+command:
+  node site\antigravity\analysis\macos\decode-native-schemas.mjs
+literal stdout (relevant lines, in observed order):
+  REJECT_NON_DESCRIPTOR google/internal/cloud/code/v1internal/credits.proto offset=56398202: illegal tag: field no 13 wire type 7
+  DESCRIPTOR google/internal/cloud/code/v1internal/entitlement.proto offset=56315497 bytes=321
+  DESCRIPTOR google/internal/cloud/code/v1internal/remote_context.proto offset=56530809 bytes=914
+  DESCRIPTOR google/internal/cloud/code/v1internal/quota_summary.proto offset=56656721 bytes=1235
+  DESCRIPTOR google/internal/cloud/code/v1internal/prediction_service.proto offset=57590471 bytes=5880
+  DESCRIPTOR google/internal/cloud/code/v1internal/model_configs.proto offset=57663566 bytes=6302
+  DESCRIPTOR google/internal/cloud/code/v1internal/metrics.proto offset=57781654 bytes=6909
+  DESCRIPTOR google/internal/cloud/code/v1internal/onboarding.proto offset=57940991 bytes=9778
+  DESCRIPTOR google/internal/cloud/code/v1internal/jetski_service.proto offset=58886961 bytes=19626
+  DESCRIPTOR google/internal/cloud/code/v1internal/cloudcode.proto offset=59552644 bytes=31550
+  NATIVE_DESCRIPTORS_DECODED_WITH_BUFLIB=9
+confirmed fields:
+  ClientMetadata.ide_type
+  ClientMetadata.ide_version
+  ClientMetadata.plugin_version
+  ClientMetadata.platform
+  ClientMetadata.update_channel
+  ClientMetadata.duet_project
+  ClientMetadata.plugin_type
+  ClientMetadata.ide_name
+confirmed enums:
+  ClientMetadata.IdeType.ANTIGRAVITY=9
+  ClientMetadata.Platform.DARWIN_ARM64=2
+request descriptors:
+  LoadCodeAssistRequest
+  OnboardUserRequest
+  GenerateContentRequest
+  FetchAvailableModelsRequest
+exit: 0
+
+[ENDPOINT_AND_LAUNCH]
+file:
+  site\antigravity\analysis\unpacked\macos-app-2.32.0-verified\asar\dist\lsDefaults.js
+literal values:
+  LS_API_SERVER_URL=https://generativelanguage.googleapis.com
+  LS_CLOUD_CODE_ENDPOINT=https://daily-cloudcode-pa.googleapis.com
+  override_ide_name=antigravity
+  subclient_type=hub
+  override_user_agent_name=antigravity
+exit: 0
+
+[UPDATER]
+files:
+  site\antigravity\analysis\unpacked\macos-app-2.32.0-verified\Antigravity.app\Contents\Resources\app-update.yml
+  site\antigravity\analysis\unpacked\macos-app-2.32.0-verified\asar\dist\updater.js
+request:
+  manifest=latest-arm64-mac.yml
+  x-app-version=2.32.0
+response:
+  version=2.32.1
+  url=https://storage.googleapis.com/antigravity-public/antigravity-hub/2.32.1-6001966350991360/darwin-arm/Antigravity.zip
+  size=216300499
+headers:
+  status=200
+  date=Mon, 16 Nov 2026 15:15:17 GMT
+exit: 0
+
+[AUTH]
+file:
+  site\antigravity\analysis\unpacked\macos-app-2.32.0-verified\asar\dist\remote\signInUrls.js
+confirmed:
+  personal_client_id=1071006060591-tmhssin2h21lcre235vtolojh4g403ep.apps.googleusercontent.com
+  business_client_id=884354919052-36trc1jjb3tguiac32ov6cod268c5blh.apps.googleusercontent.com
+  wif_client_id=a2a6f0e3e-3ff0-462b-869a-47277df4c806
+  pkce_method=S256
+  redirect=localhost_or_127.0.0.1/auth/callback
+exit: 0
+
+[LIMITATIONS]
+No official macOS process was launched.
+No mitmproxy capture was made.
+Therefore the following remain runtime-dependent:
+  exact Authorization value and token scheme
+  optional UA comments
+  final per-action X-* header set
+  header order
+  actual populated protobuf optional fields
+  exact thought_signature value and wire encoding
+
+[VERIFIED_TRANSACTION_ROLES]
+MODIFIED_FILE:
+  H:\orca\rea\site\antigravity\analysis\macos\transaction\MODIFIED_FILE.md
+DIFF_FILE:
+  H:\orca\rea\site\antigravity\analysis\macos\transaction\DIFF_FILE.patch
+VERIFICATION:
+  H:\orca\rea\site\antigravity\analysis\macos\VERIFICATION.txt
+ROLLBACK:
+  H:\orca\rea\site\antigravity\analysis\macos\transaction\ROLLBACK.sh
+
+MODIFIED_FILE observed:
+  bytes=10709
+  sha256=8E30933CC10C763AAE28FA07EEC7E1749248D819DD2D669F8C1B43A3001BD182
+  behavior=UTF8_CONTENT_LENGTH=8183
+
+DIFF_FILE observed:
+  git diff --no-index exit=1 (expected for /dev/null -> new file)
+  bytes=11175
+  sha256=7599EBD98BC79214D7DD96240A6E33235965DC28F6B444D98ADE46C81D7665BE
+  encoding=UTF-8 without BOM
+  line_endings=LF
+
+DIFF_FILE replay:
+  temporary target=H:\orca\rea\site\antigravity\analysis\macos\transaction\PATCH_REPLAY_TARGET.md
+  REPLAY_DIFF_EXIT=1
+  REPLAY_APPLY_EXIT=0
+  REPLAY_MATCH=True
+  REPLAY_SHA256=8E30933CC10C763AAE28FA07EEC7E1749248D819DD2D669F8C1B43A3001BD182
+
+ROLLBACK first attempt:
+  exit=1
+  error=bash unavailable for portable rollback verification
+  cause=Windows environment did not expose bash as a command
+
+ROLLBACK corrected execution:
+  shell=C:\Program Files\Git\usr\bin\sh.exe
+  command=ROLLBACK.sh ROLLBACK_TEST_COPY.md
+  BASELINE_HASH=8E30933CC10C763AAE28FA07EEC7E1749248D819DD2D669F8C1B43A3001BD182
+  BASELINE_BYTES=10709
+  BASELINE_BEHAVIOR=UTF8_CONTENT_LENGTH=8183
+  ROLLBACK_EXIT=0
+  ROLLBACK_HASH=E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+  ROLLBACK_BYTES=0
+  ROLLBACK_BEHAVIOR=UTF8_CONTENT_LENGTH=0
+  REAPPLY_HASH=8E30933CC10C763AAE28FA07EEC7E1749248D819DD2D669F8C1B43A3001BD182
+  REAPPLY_MATCH=True

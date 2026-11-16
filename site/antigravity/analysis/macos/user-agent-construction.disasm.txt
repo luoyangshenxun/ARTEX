@@ -1,0 +1,567 @@
+PCLNTAB_FUNCTIONS=190160 TEXT_BASE=0x100000f80
+
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent VA=0x1021ebd50 FILE=35568976 SIZE=2256
+  00000001021ebd50 file=35568976 f9400b90 ldr x16, [x28,#16]                      
+  00000001021ebd54 file=35568980 d10603f1 sub x17, sp, #0x180                     
+  00000001021ebd58 file=35568984 eb10023f cmp x17, x16                            
+  00000001021ebd5c file=35568988 54004489 b.ls .+0x890                             target=0x1021ec5ec
+  00000001021ebd60 file=35568992 d10803f4 sub x20, sp, #0x200                     
+  00000001021ebd64 file=35568996 a93ffa9d stp x29, x30, [x20,#-8]                 
+  00000001021ebd68 file=35569000 9100029f mov sp, x20                             
+  00000001021ebd6c file=35569004 d10023fd sub x29, sp, #0x8                       
+  00000001021ebd70 file=35569008 f9010fe2 str x2, [sp,#536]                       
+  00000001021ebd74 file=35569012 3908e3e6 strb w6, [sp,#568]                      
+  00000001021ebd78 file=35569016 f9011be5 str x5, [sp,#560]                       
+  00000001021ebd7c file=35569020 f90117e4 str x4, [sp,#552]                       
+  00000001021ebd80 file=35569024 f9010be1 str x1, [sp,#528]                       
+  00000001021ebd84 file=35569028 f90107e0 str x0, [sp,#520]                       
+  00000001021ebd88 file=35569032 b5000163 cbnz x3, .+0x2c                          target=0x1021ebdb4
+  00000001021ebd8c file=35569036 f00503db adrp x27, .+0xa07b000                   
+  00000001021ebd90 file=35569040 9132037b add x27, x27, #0xc80                    
+  00000001021ebd94 file=35569044 a9402367 ldp x7, x8, [x27]                       
+  00000001021ebd98 file=35569048 d503201f nop                                     
+  00000001021ebd9c file=35569052 f100011f cmp x8, #0x0                            
+  00000001021ebda0 file=35569056 d2800169 mov x9, #0xb                            
+  00000001021ebda4 file=35569060 9a891103 csel x3, x8, x9, ne                     
+  00000001021ebda8 file=35569064 b0008b68 adrp x8, .+0x116d000                    
+  00000001021ebdac file=35569068 912d3508 add x8, x8, #0xb4d                       ref=0x103358b4d file=53840717 "antigravitymarketplacedescriptiondatachannelCancelLogin"
+  00000001021ebdb0 file=35569072 9a8810e2 csel x2, x7, x8, ne                     
+  00000001021ebdb4 file=35569076 f9006be3 str x3, [sp,#208]                       
+  00000001021ebdb8 file=35569080 f900fbe2 str x2, [sp,#496]                       
+  00000001021ebdbc file=35569084 97a6e00d bl .+0xfffffffffe9b8034                  target=0x100ba3df0 google3/third_party/jetski/language_server/metadata_provider/metadata_provider.SafeGetMetadata
+  00000001021ebdc0 file=35569088 b4000060 cbz x0, .+0xc                            target=0x1021ebdcc
+  00000001021ebdc4 file=35569092 a9419805 ldp x5, x6, [x0,#24]                    
+  00000001021ebdc8 file=35569096 14000003 b .+0xc                                  target=0x1021ebdd4
+  00000001021ebdcc file=35569100 aa1f03e6 mov x6, xzr                             
+  00000001021ebdd0 file=35569104 aa1f03e5 mov x5, xzr                             
+  00000001021ebdd4 file=35569108 f90033e6 str x6, [sp,#96]                        
+  00000001021ebdd8 file=35569112 f90077e5 str x5, [sp,#232]                       
+  00000001021ebddc file=35569116 f00503db adrp x27, .+0xa07b000                   
+  00000001021ebde0 file=35569120 9132437b add x27, x27, #0xc90                    
+  00000001021ebde4 file=35569124 a9401b65 ldp x5, x6, [x27]                       
+  00000001021ebde8 file=35569128 f9002fe6 str x6, [sp,#88]                        
+  00000001021ebdec file=35569132 f90073e5 str x5, [sp,#224]                       
+  00000001021ebdf0 file=35569136 b0031085 adrp x5, .+0x6211000                    
+  00000001021ebdf4 file=35569140 9131a0a5 add x5, x5, #0xc68                      
+  00000001021ebdf8 file=35569144 d002a606 adrp x6, .+0x54c2000                    
+  00000001021ebdfc file=35569148 913f00c6 add x6, x6, #0xfc0                      
+  00000001021ebe00 file=35569152 a91b9be5 stp x5, x6, [sp,#440]                   
+  00000001021ebe04 file=35569156 90008aa0 adrp x0, .+0x1154000                    
+  00000001021ebe08 file=35569160 91265800 add x0, x0, #0x996                       ref=0x10333f996 file=53737878 "os_type=%spurpose=%s%s/%s (%s)User-Agentdrop_blockcontainerdSSH_CLIENTconn_statemaxResultsrunTriggeraiplatformrawPredictgemini-2.5rewriteUri"
+  00000001021ebe0c file=35569164 d2800141 mov x1, #0xa                            
+  00000001021ebe10 file=35569168 9106e3e2 add x2, sp, #0x1b8                      
+  00000001021ebe14 file=35569172 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ebe18 file=35569176 aa0303e4 mov x4, x3                              
+  00000001021ebe1c file=35569180 977c9859 bl .+0xfffffffffdf26164                  target=0x100111f80 fmt.Sprintf
+  00000001021ebe20 file=35569184 f900f7e0 str x0, [sp,#488]                       
+  00000001021ebe24 file=35569188 f90067e1 str x1, [sp,#200]                       
+  00000001021ebe28 file=35569192 b0031085 adrp x5, .+0x6211000                    
+  00000001021ebe2c file=35569196 9131a0a5 add x5, x5, #0xc68                      
+  00000001021ebe30 file=35569200 d002a606 adrp x6, .+0x54c2000                    
+  00000001021ebe34 file=35569204 913f40c6 add x6, x6, #0xfd0                      
+  00000001021ebe38 file=35569208 a91a9be5 stp x5, x6, [sp,#424]                   
+  00000001021ebe3c file=35569212 f0008860 adrp x0, .+0x110f000                    
+  00000001021ebe40 file=35569216 911fb400 add x0, x0, #0x7ed                       ref=0x1032fa7ed file=53454829 "arch=%sURL: %s[%s] %s%s: %s"
+  00000001021ebe44 file=35569220 b2400be1 orr x1, xzr, #0x7                       
+  00000001021ebe48 file=35569224 9106a3e2 add x2, sp, #0x1a8                      
+  00000001021ebe4c file=35569228 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ebe50 file=35569232 aa0303e4 mov x4, x3                              
+  00000001021ebe54 file=35569236 977c984b bl .+0xfffffffffdf2612c                  target=0x100111f80 fmt.Sprintf
+  00000001021ebe58 file=35569240 f900f3e0 str x0, [sp,#480]                       
+  00000001021ebe5c file=35569244 f90063e1 str x1, [sp,#192]                       
+  00000001021ebe60 file=35569248 aa1f03e0 mov x0, xzr                             
+  00000001021ebe64 file=35569252 b24007e1 orr x1, xzr, #0x3                       
+  00000001021ebe68 file=35569256 aa1f03e2 mov x2, xzr                             
+  00000001021ebe6c file=35569260 aa0103e3 mov x3, x1                              
+  00000001021ebe70 file=35569264 b0031084 adrp x4, .+0x6211000                    
+  00000001021ebe74 file=35569268 9131a084 add x4, x4, #0xc68                      
+  00000001021ebe78 file=35569272 977a8202 bl .+0xfffffffffdea0808                  target=0x10008c680 runtime.growslice
+  00000001021ebe7c file=35569276 b27e07e5 orr x5, xzr, #0xc                       
+  00000001021ebe80 file=35569280 f9000405 str x5, [x0,#8]                         
+  00000001021ebe84 file=35569284 f005063b adrp x27, .+0xa0c7000                   
+  00000001021ebe88 file=35569288 b9436365 ldr w5, [x27,#864]                      
+  00000001021ebe8c file=35569292 35000065 cbnz w5, .+0xc                           target=0x1021ebe98
+  00000001021ebe90 file=35569296 a95e23e5 ldp x5, x8, [sp,#480]                   
+  00000001021ebe94 file=35569300 1400000a b .+0x28                                 target=0x1021ebebc
+  00000001021ebe98 file=35569304 f9400005 ldr x5, [x0]                            
+  00000001021ebe9c file=35569308 f9400806 ldr x6, [x0,#16]                        
+  00000001021ebea0 file=35569312 f9401007 ldr x7, [x0,#32]                        
+  00000001021ebea4 file=35569316 977a97db bl .+0xfffffffffdea5f6c                  target=0x100091e10 runtime.gcWriteBarrier5
+  00000001021ebea8 file=35569320 f940f7e8 ldr x8, [sp,#488]                       
+  00000001021ebeac file=35569324 a9002325 stp x5, x8, [x25]                       
+  00000001021ebeb0 file=35569328 f940f3e5 ldr x5, [sp,#480]                       
+  00000001021ebeb4 file=35569332 a9011726 stp x6, x5, [x25,#16]                   
+  00000001021ebeb8 file=35569336 f9001327 str x7, [x25,#32]                       
+  00000001021ebebc file=35569340 f90047e2 str x2, [sp,#136]                       
+  00000001021ebec0 file=35569344 f90087e0 str x0, [sp,#264]                       
+  00000001021ebec4 file=35569348 d0008c26 adrp x6, .+0x1186000                    
+  00000001021ebec8 file=35569352 91373cc6 add x6, x6, #0xdcf                       ref=0x103371dcf file=53943759 "aidev_clienthost_path=%s Trace: 0x%s Sherlog: %sagentPluginscascadeNuxesstartCascadeworkspaceUrilistProjectslistTriggersnot modifiedHTTP 304"
+  00000001021ebecc file=35569356 f9000006 str x6, [x0]                            
+  00000001021ebed0 file=35569360 f94067e6 ldr x6, [sp,#200]                       
+  00000001021ebed4 file=35569364 a9011808 stp x8, x6, [x0,#16]                    
+  00000001021ebed8 file=35569368 f94063e6 ldr x6, [sp,#192]                       
+  00000001021ebedc file=35569372 a9021805 stp x5, x6, [x0,#32]                    
+  00000001021ebee0 file=35569376 b005063b adrp x27, .+0xa0c5000                   
+  00000001021ebee4 file=35569380 f944df65 ldr x5, [x27,#2488]                     
+  00000001021ebee8 file=35569384 b5000125 cbnz x5, .+0x24                          target=0x1021ebf0c
+  00000001021ebeec file=35569388 f004fb9b adrp x27, .+0x9f73000                   
+  00000001021ebef0 file=35569392 9106037b add x27, x27, #0x180                    
+  00000001021ebef4 file=35569396 a9400760 ldp x0, x1, [x27]                       
+  00000001021ebef8 file=35569400 d503201f nop                                     
+  00000001021ebefc file=35569404 977b5521 bl .+0xfffffffffded5484                  target=0x1000c1380 strconv.Atoi
+  00000001021ebf00 file=35569408 f94047e2 ldr x2, [sp,#136]                       
+  00000001021ebf04 file=35569412 aa0003e5 mov x5, x0                              
+  00000001021ebf08 file=35569416 f94087e0 ldr x0, [sp,#264]                       
+  00000001021ebf0c file=35569420 f10000bf cmp x5, #0x0                            
+  00000001021ebf10 file=35569424 5400006c b.gt .+0xc                               target=0x1021ebf1c
+  00000001021ebf14 file=35569428 b24007e1 orr x1, xzr, #0x3                       
+  00000001021ebf18 file=35569432 14000028 b .+0xa0                                 target=0x1021ebfb8
+  00000001021ebf1c file=35569436 a91affff stp xzr, xzr, [sp,#424]                 
+  00000001021ebf20 file=35569440 aa0503e0 mov x0, x5                              
+  00000001021ebf24 file=35569444 977a6c0b bl .+0xfffffffffde9b02c                  target=0x100086f50 runtime.convT64
+  00000001021ebf28 file=35569448 b0031081 adrp x1, .+0x6211000                    
+  00000001021ebf2c file=35569452 913aa021 add x1, x1, #0xea8                      
+  00000001021ebf30 file=35569456 a91a83e1 stp x1, x0, [sp,#424]                   
+  00000001021ebf34 file=35569460 b0008780 adrp x0, .+0x10f1000                    
+  00000001021ebf38 file=35569464 9103a800 add x0, x0, #0xea                        ref=0x1032dc0ea file=53330154 "cl=%ddata:title(...)code_protounaryAllowclickhoverToolsflashhello via array&amp;&#34;&#39;:***@%d %sRangeHTTP1HTTP2HTTP3%s %q%s=%sHTTP/:http"
+  00000001021ebf3c file=35569468 d28000a1 mov x1, #0x5                            
+  00000001021ebf40 file=35569472 9106a3e2 add x2, sp, #0x1a8                      
+  00000001021ebf44 file=35569476 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ebf48 file=35569480 aa0303e4 mov x4, x3                              
+  00000001021ebf4c file=35569484 977c980d bl .+0xfffffffffdf26034                  target=0x100111f80 fmt.Sprintf
+  00000001021ebf50 file=35569488 f94047e2 ldr x2, [sp,#136]                       
+  00000001021ebf54 file=35569492 f100105f cmp x2, #0x4                            
+  00000001021ebf58 file=35569496 54000063 b.cc .+0xc                               target=0x1021ebf64
+  00000001021ebf5c file=35569500 f94087e3 ldr x3, [sp,#264]                       
+  00000001021ebf60 file=35569504 1400000c b .+0x30                                 target=0x1021ebf90
+  00000001021ebf64 file=35569508 f90067e1 str x1, [sp,#200]                       
+  00000001021ebf68 file=35569512 f900f7e0 str x0, [sp,#488]                       
+  00000001021ebf6c file=35569516 f94087e0 ldr x0, [sp,#264]                       
+  00000001021ebf70 file=35569520 b27e03e1 orr x1, xzr, #0x4                       
+  00000001021ebf74 file=35569524 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ebf78 file=35569528 b0031084 adrp x4, .+0x6211000                    
+  00000001021ebf7c file=35569532 9131a084 add x4, x4, #0xc68                      
+  00000001021ebf80 file=35569536 977a81c0 bl .+0xfffffffffdea0700                  target=0x10008c680 runtime.growslice
+  00000001021ebf84 file=35569540 f94067e1 ldr x1, [sp,#200]                       
+  00000001021ebf88 file=35569544 aa0003e3 mov x3, x0                              
+  00000001021ebf8c file=35569548 f940f7e0 ldr x0, [sp,#488]                       
+  00000001021ebf90 file=35569552 f9001c61 str x1, [x3,#56]                        
+  00000001021ebf94 file=35569556 f005063b adrp x27, .+0xa0c7000                   
+  00000001021ebf98 file=35569560 b9436365 ldr w5, [x27,#864]                      
+  00000001021ebf9c file=35569564 34000085 cbz w5, .+0x10                           target=0x1021ebfac
+  00000001021ebfa0 file=35569568 f9401865 ldr x5, [x3,#48]                        
+  00000001021ebfa4 file=35569572 977a978f bl .+0xfffffffffdea5e3c                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021ebfa8 file=35569576 a9001720 stp x0, x5, [x25]                       
+  00000001021ebfac file=35569580 f9001860 str x0, [x3,#48]                        
+  00000001021ebfb0 file=35569584 aa0303e0 mov x0, x3                              
+  00000001021ebfb4 file=35569588 b27e03e1 orr x1, xzr, #0x4                       
+  00000001021ebfb8 file=35569592 f9411be3 ldr x3, [sp,#560]                       
+  00000001021ebfbc file=35569596 b4000683 cbz x3, .+0xd0                           target=0x1021ec08c
+  00000001021ebfc0 file=35569600 f9005fe2 str x2, [sp,#184]                       
+  00000001021ebfc4 file=35569604 f900efe0 str x0, [sp,#472]                       
+  00000001021ebfc8 file=35569608 f90043e1 str x1, [sp,#128]                       
+  00000001021ebfcc file=35569612 a91affff stp xzr, xzr, [sp,#424]                 
+  00000001021ebfd0 file=35569616 f94117e0 ldr x0, [sp,#552]                       
+  00000001021ebfd4 file=35569620 aa0303e1 mov x1, x3                              
+  00000001021ebfd8 file=35569624 977a6bfa bl .+0xfffffffffde9afe8                  target=0x100086fc0 runtime.convTstring
+  00000001021ebfdc file=35569628 b0031082 adrp x2, .+0x6211000                    
+  00000001021ebfe0 file=35569632 9131a042 add x2, x2, #0xc68                      
+  00000001021ebfe4 file=35569636 a91a83e2 stp x2, x0, [sp,#424]                   
+  00000001021ebfe8 file=35569640 90008da0 adrp x0, .+0x11b4000                    
+  00000001021ebfec file=35569644 912f4400 add x0, x0, #0xbd1                       ref=0x10339fbd1 file=54131665 "auth_method=%sloadCodeAssistrequest is nilanthropic-beta/proc/1/cgroupSSH_CONNECTIONconversationIdcreateTerminal/auth/callbackAgent Platform"
+  00000001021ebff0 file=35569648 b27f0be1 orr x1, xzr, #0xe                       
+  00000001021ebff4 file=35569652 9106a3e2 add x2, sp, #0x1a8                      
+  00000001021ebff8 file=35569656 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ebffc file=35569660 aa0303e4 mov x4, x3                              
+  00000001021ec000 file=35569664 977c97e0 bl .+0xfffffffffdf25f80                  target=0x100111f80 fmt.Sprintf
+  00000001021ec004 file=35569668 f94043e2 ldr x2, [sp,#128]                       
+  00000001021ec008 file=35569672 91000442 add x2, x2, #0x1                        
+  00000001021ec00c file=35569676 f9405fe3 ldr x3, [sp,#184]                       
+  00000001021ec010 file=35569680 eb02007f cmp x3, x2                              
+  00000001021ec014 file=35569684 54000063 b.cc .+0xc                               target=0x1021ec020
+  00000001021ec018 file=35569688 f940efe4 ldr x4, [sp,#472]                       
+  00000001021ec01c file=35569692 1400000f b .+0x3c                                 target=0x1021ec058
+  00000001021ec020 file=35569696 f90067e1 str x1, [sp,#200]                       
+  00000001021ec024 file=35569700 f900f7e0 str x0, [sp,#488]                       
+  00000001021ec028 file=35569704 f940efe0 ldr x0, [sp,#472]                       
+  00000001021ec02c file=35569708 aa0203e1 mov x1, x2                              
+  00000001021ec030 file=35569712 aa0303e2 mov x2, x3                              
+  00000001021ec034 file=35569716 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ec038 file=35569720 90031084 adrp x4, .+0x6210000                    
+  00000001021ec03c file=35569724 9131a084 add x4, x4, #0xc68                      
+  00000001021ec040 file=35569728 977a8190 bl .+0xfffffffffdea0640                  target=0x10008c680 runtime.growslice
+  00000001021ec044 file=35569732 aa0003e4 mov x4, x0                              
+  00000001021ec048 file=35569736 aa0203e3 mov x3, x2                              
+  00000001021ec04c file=35569740 f940f7e0 ldr x0, [sp,#488]                       
+  00000001021ec050 file=35569744 aa0103e2 mov x2, x1                              
+  00000001021ec054 file=35569748 f94067e1 ldr x1, [sp,#200]                       
+  00000001021ec058 file=35569752 d1000445 sub x5, x2, #0x1                        
+  00000001021ec05c file=35569756 8b051085 add x5, x4, x5, lsl #4                  
+  00000001021ec060 file=35569760 f90004a1 str x1, [x5,#8]                         
+  00000001021ec064 file=35569764 d005063b adrp x27, .+0xa0c6000                   
+  00000001021ec068 file=35569768 b9436366 ldr w6, [x27,#864]                      
+  00000001021ec06c file=35569772 34000086 cbz w6, .+0x10                           target=0x1021ec07c
+  00000001021ec070 file=35569776 f94000a6 ldr x6, [x5]                            
+  00000001021ec074 file=35569780 977a975b bl .+0xfffffffffdea5d6c                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021ec078 file=35569784 a9001b20 stp x0, x6, [x25]                       
+  00000001021ec07c file=35569788 f90000a0 str x0, [x5]                            
+  00000001021ec080 file=35569792 aa0403e0 mov x0, x4                              
+  00000001021ec084 file=35569796 aa0203e1 mov x1, x2                              
+  00000001021ec088 file=35569800 aa0303e2 mov x2, x3                              
+  00000001021ec08c file=35569804 3948e3e3 ldrb w3, [sp,#568]                      
+  00000001021ec090 file=35569808 360002a3 tbz w3, #0, .+0x54                       target=0x1021ec0e4
+  00000001021ec094 file=35569812 91000421 add x1, x1, #0x1                        
+  00000001021ec098 file=35569816 eb01005f cmp x2, x1                              
+  00000001021ec09c file=35569820 540000a2 b.cs .+0x14                              target=0x1021ec0b0
+  00000001021ec0a0 file=35569824 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ec0a4 file=35569828 90031084 adrp x4, .+0x6210000                    
+  00000001021ec0a8 file=35569832 9131a084 add x4, x4, #0xc68                      
+  00000001021ec0ac file=35569836 977a8175 bl .+0xfffffffffdea05d4                  target=0x10008c680 runtime.growslice
+  00000001021ec0b0 file=35569840 d1000425 sub x5, x1, #0x1                        
+  00000001021ec0b4 file=35569844 8b051005 add x5, x0, x5, lsl #4                  
+  00000001021ec0b8 file=35569848 d2800366 mov x6, #0x1b                           
+  00000001021ec0bc file=35569852 f90004a6 str x6, [x5,#8]                         
+  00000001021ec0c0 file=35569856 d005063b adrp x27, .+0xa0c6000                   
+  00000001021ec0c4 file=35569860 b9436366 ldr w6, [x27,#864]                      
+  00000001021ec0c8 file=35569864 34000086 cbz w6, .+0x10                           target=0x1021ec0d8
+  00000001021ec0cc file=35569868 f94000a6 ldr x6, [x5]                            
+  00000001021ec0d0 file=35569872 977a9740 bl .+0xfffffffffdea5d00                  target=0x100091dd0 runtime.gcWriteBarrier1
+  00000001021ec0d4 file=35569876 f9000326 str x6, [x25]                           
+  00000001021ec0d8 file=35569880 b0009446 adrp x6, .+0x1289000                    
+  00000001021ec0dc file=35569884 9136ccc6 add x6, x6, #0xdb3                       ref=0x103475db3 file=55008691 "datacollection_opt_in=falseSuccessfully authenticated.failed to marshal token: %wgoog-originating-service-idmarshal protobuf status: %vperfo"
+  00000001021ec0e0 file=35569888 f90000a6 str x6, [x5]                            
+  00000001021ec0e4 file=35569892 f90087e0 str x0, [sp,#264]                       
+  00000001021ec0e8 file=35569896 a9080be1 stp x1, x2, [sp,#128]                   
+  00000001021ec0ec file=35569900 d00503db adrp x27, .+0xa07a000                   
+  00000001021ec0f0 file=35569904 9132837b add x27, x27, #0xca0                    
+  00000001021ec0f4 file=35569908 a9401b65 ldp x5, x6, [x27]                       
+  00000001021ec0f8 file=35569912 f94107e3 ldr x3, [sp,#520]                       
+  00000001021ec0fc file=35569916 b5000083 cbnz x3, .+0x10                          target=0x1021ec10c
+  00000001021ec100 file=35569920 aa1f03e3 mov x3, xzr                             
+  00000001021ec104 file=35569924 aa1f03e4 mov x4, xzr                             
+  00000001021ec108 file=35569928 1400004a b .+0x128                                target=0x1021ec230
+  00000001021ec10c file=35569932 f9002be6 str x6, [sp,#80]                        
+  00000001021ec110 file=35569936 f9006fe5 str x5, [sp,#216]                       
+  00000001021ec114 file=35569940 f9401863 ldr x3, [x3,#48]                        
+  00000001021ec118 file=35569944 f9410be0 ldr x0, [sp,#528]                       
+  00000001021ec11c file=35569948 f00319c1 adrp x1, .+0x633b000                    
+  00000001021ec120 file=35569952 9123e021 add x1, x1, #0x8f8                      
+  00000001021ec124 file=35569956 d0050602 adrp x2, .+0xa0c2000                    
+  00000001021ec128 file=35569960 911e0042 add x2, x2, #0x780                      
+  00000001021ec12c file=35569964 d63f0060 blr x3                                  
+  00000001021ec130 file=35569968 f0033663 adrp x3, .+0x66cf000                    
+  00000001021ec134 file=35569972 91074063 add x3, x3, #0x1d0                      
+  00000001021ec138 file=35569976 eb03001f cmp x0, x3                              
+  00000001021ec13c file=35569980 54000081 b.ne .+0x10                              target=0x1021ec14c
+  00000001021ec140 file=35569984 a9400c20 ldp x0, x3, [x1]                        
+  00000001021ec144 file=35569988 a9411424 ldp x4, x5, [x1,#16]                    
+  00000001021ec148 file=35569992 14000005 b .+0x14                                 target=0x1021ec15c
+  00000001021ec14c file=35569996 aa1f03e5 mov x5, xzr                             
+  00000001021ec150 file=35570000 aa1f03e3 mov x3, xzr                             
+  00000001021ec154 file=35570004 aa1f03e4 mov x4, xzr                             
+  00000001021ec158 file=35570008 aa1f03e0 mov x0, xzr                             
+  00000001021ec15c file=35570012 54000080 b.eq .+0x10                              target=0x1021ec16c
+  00000001021ec160 file=35570016 f9402be1 ldr x1, [sp,#80]                        
+  00000001021ec164 file=35570020 f9406fe0 ldr x0, [sp,#216]                       
+  00000001021ec168 file=35570024 14000019 b .+0x64                                 target=0x1021ec1cc
+  00000001021ec16c file=35570028 f9003be5 str x5, [sp,#112]                       
+  00000001021ec170 file=35570032 f9007fe4 str x4, [sp,#248]                       
+  00000001021ec174 file=35570036 d503201f nop                                     
+  00000001021ec178 file=35570040 910623e2 add x2, sp, #0x188                      
+  00000001021ec17c file=35570044 a9007c5f stp xzr, xzr, [x2]                      
+  00000001021ec180 file=35570048 a9017c5f stp xzr, xzr, [x2,#16]                  
+  00000001021ec184 file=35570052 aa0303e1 mov x1, x3                              
+  00000001021ec188 file=35570056 977a6b8e bl .+0xfffffffffde9ae38                  target=0x100086fc0 runtime.convTstring
+  00000001021ec18c file=35570060 90031082 adrp x2, .+0x6210000                    
+  00000001021ec190 file=35570064 9131a042 add x2, x2, #0xc68                      
+  00000001021ec194 file=35570068 a91883e2 stp x2, x0, [sp,#392]                   
+  00000001021ec198 file=35570072 f9407fe0 ldr x0, [sp,#248]                       
+  00000001021ec19c file=35570076 f9403be1 ldr x1, [sp,#112]                       
+  00000001021ec1a0 file=35570080 977a6b88 bl .+0xfffffffffde9ae20                  target=0x100086fc0 runtime.convTstring
+  00000001021ec1a4 file=35570084 90031082 adrp x2, .+0x6210000                    
+  00000001021ec1a8 file=35570088 9131a042 add x2, x2, #0xc68                      
+  00000001021ec1ac file=35570092 a91983e2 stp x2, x0, [sp,#408]                   
+  00000001021ec1b0 file=35570096 f0008760 adrp x0, .+0x10ef000                    
+  00000001021ec1b4 file=35570100 913da400 add x0, x0, #0xf69                       ref=0x1032dbf69 file=53329769 "%s/%sPiper%s.pb%s-%shttpsfixed/auth<nil> +-#0(nil)ErrorsvqxXchdirwritemkdir$HOMEchmodlstatchownfile"
+  00000001021ec1b8 file=35570104 d28000a1 mov x1, #0x5                            
+  00000001021ec1bc file=35570108 910623e2 add x2, sp, #0x188                      
+  00000001021ec1c0 file=35570112 b27f03e3 orr x3, xzr, #0x2                       
+  00000001021ec1c4 file=35570116 aa0303e4 mov x4, x3                              
+  00000001021ec1c8 file=35570120 977c976e bl .+0xfffffffffdf25db8                  target=0x100111f80 fmt.Sprintf
+  00000001021ec1cc file=35570124 f90083e0 str x0, [sp,#256]                       
+  00000001021ec1d0 file=35570128 f9003fe1 str x1, [sp,#120]                       
+  00000001021ec1d4 file=35570132 f94107e3 ldr x3, [sp,#520]                       
+  00000001021ec1d8 file=35570136 f9401863 ldr x3, [x3,#48]                        
+  00000001021ec1dc file=35570140 f9410be0 ldr x0, [sp,#528]                       
+  00000001021ec1e0 file=35570144 f00319a1 adrp x1, .+0x6337000                    
+  00000001021ec1e4 file=35570148 912de021 add x1, x1, #0xb78                      
+  00000001021ec1e8 file=35570152 d0050602 adrp x2, .+0xa0c2000                    
+  00000001021ec1ec file=35570156 911e0042 add x2, x2, #0x780                      
+  00000001021ec1f0 file=35570160 d63f0060 blr x3                                  
+  00000001021ec1f4 file=35570164 90031083 adrp x3, .+0x6210000                    
+  00000001021ec1f8 file=35570168 9131a063 add x3, x3, #0xc68                      
+  00000001021ec1fc file=35570172 eb03001f cmp x0, x3                              
+  00000001021ec200 file=35570176 54000061 b.ne .+0xc                               target=0x1021ec20c
+  00000001021ec204 file=35570180 a9400420 ldp x0, x1, [x1]                        
+  00000001021ec208 file=35570184 14000003 b .+0xc                                  target=0x1021ec214
+  00000001021ec20c file=35570188 aa1f03e1 mov x1, xzr                             
+  00000001021ec210 file=35570192 aa1f03e0 mov x0, xzr                             
+  00000001021ec214 file=35570196 f94047e2 ldr x2, [sp,#136]                       
+  00000001021ec218 file=35570200 f9403fe6 ldr x6, [sp,#120]                       
+  00000001021ec21c file=35570204 aa0103e3 mov x3, x1                              
+  00000001021ec220 file=35570208 f94083e5 ldr x5, [sp,#256]                       
+  00000001021ec224 file=35570212 aa0003e4 mov x4, x0                              
+  00000001021ec228 file=35570216 f94087e0 ldr x0, [sp,#264]                       
+  00000001021ec22c file=35570220 f94043e1 ldr x1, [sp,#128]                       
+  00000001021ec230 file=35570224 f9007be4 str x4, [sp,#240]                       
+  00000001021ec234 file=35570228 f90037e3 str x3, [sp,#104]                       
+  00000001021ec238 file=35570232 b4000666 cbz x6, .+0xcc                           target=0x1021ec304
+  00000001021ec23c file=35570236 a91affff stp xzr, xzr, [sp,#424]                 
+  00000001021ec240 file=35570240 aa0503e0 mov x0, x5                              
+  00000001021ec244 file=35570244 aa0603e1 mov x1, x6                              
+  00000001021ec248 file=35570248 977a6b5e bl .+0xfffffffffde9ad78                  target=0x100086fc0 runtime.convTstring
+  00000001021ec24c file=35570252 90031082 adrp x2, .+0x6210000                    
+  00000001021ec250 file=35570256 9131a042 add x2, x2, #0xc68                      
+  00000001021ec254 file=35570260 a91a83e2 stp x2, x0, [sp,#424]                   
+  00000001021ec258 file=35570264 b0008c20 adrp x0, .+0x1185000                    
+  00000001021ec25c file=35570268 91376c00 add x0, x0, #0xddb                       ref=0x103371ddb file=53943771 "host_path=%s Trace: 0x%s Sherlog: %sagentPluginscascadeNuxesstartCascadeworkspaceUrilistProjectslistTriggersnot modifiedHTTP 304: %wGrpc-Tim"
+  00000001021ec260 file=35570272 b27e07e1 orr x1, xzr, #0xc                       
+  00000001021ec264 file=35570276 9106a3e2 add x2, sp, #0x1a8                      
+  00000001021ec268 file=35570280 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ec26c file=35570284 aa0303e4 mov x4, x3                              
+  00000001021ec270 file=35570288 977c9744 bl .+0xfffffffffdf25d10                  target=0x100111f80 fmt.Sprintf
+  00000001021ec274 file=35570292 f94043e2 ldr x2, [sp,#128]                       
+  00000001021ec278 file=35570296 91000442 add x2, x2, #0x1                        
+  00000001021ec27c file=35570300 f94047e3 ldr x3, [sp,#136]                       
+  00000001021ec280 file=35570304 eb02007f cmp x3, x2                              
+  00000001021ec284 file=35570308 54000063 b.cc .+0xc                               target=0x1021ec290
+  00000001021ec288 file=35570312 f94087e4 ldr x4, [sp,#264]                       
+  00000001021ec28c file=35570316 1400000f b .+0x3c                                 target=0x1021ec2c8
+  00000001021ec290 file=35570320 f90067e1 str x1, [sp,#200]                       
+  00000001021ec294 file=35570324 f900f7e0 str x0, [sp,#488]                       
+  00000001021ec298 file=35570328 f94087e0 ldr x0, [sp,#264]                       
+  00000001021ec29c file=35570332 aa0203e1 mov x1, x2                              
+  00000001021ec2a0 file=35570336 aa0303e2 mov x2, x3                              
+  00000001021ec2a4 file=35570340 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ec2a8 file=35570344 90031084 adrp x4, .+0x6210000                    
+  00000001021ec2ac file=35570348 9131a084 add x4, x4, #0xc68                      
+  00000001021ec2b0 file=35570352 977a80f4 bl .+0xfffffffffdea03d0                  target=0x10008c680 runtime.growslice
+  00000001021ec2b4 file=35570356 aa0003e4 mov x4, x0                              
+  00000001021ec2b8 file=35570360 aa0203e3 mov x3, x2                              
+  00000001021ec2bc file=35570364 f940f7e0 ldr x0, [sp,#488]                       
+  00000001021ec2c0 file=35570368 aa0103e2 mov x2, x1                              
+  00000001021ec2c4 file=35570372 f94067e1 ldr x1, [sp,#200]                       
+  00000001021ec2c8 file=35570376 d1000445 sub x5, x2, #0x1                        
+  00000001021ec2cc file=35570380 8b051085 add x5, x4, x5, lsl #4                  
+  00000001021ec2d0 file=35570384 f90004a1 str x1, [x5,#8]                         
+  00000001021ec2d4 file=35570388 d005063b adrp x27, .+0xa0c6000                   
+  00000001021ec2d8 file=35570392 b9436366 ldr w6, [x27,#864]                      
+  00000001021ec2dc file=35570396 34000086 cbz w6, .+0x10                           target=0x1021ec2ec
+  00000001021ec2e0 file=35570400 f94000a6 ldr x6, [x5]                            
+  00000001021ec2e4 file=35570404 977a96bf bl .+0xfffffffffdea5afc                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021ec2e8 file=35570408 a9001b20 stp x0, x6, [x25]                       
+  00000001021ec2ec file=35570412 f90000a0 str x0, [x5]                            
+  00000001021ec2f0 file=35570416 aa0403e0 mov x0, x4                              
+  00000001021ec2f4 file=35570420 aa0203e1 mov x1, x2                              
+  00000001021ec2f8 file=35570424 f9407be4 ldr x4, [sp,#240]                       
+  00000001021ec2fc file=35570428 aa0303e2 mov x2, x3                              
+  00000001021ec300 file=35570432 f94037e3 ldr x3, [sp,#104]                       
+  00000001021ec304 file=35570436 d00503db adrp x27, .+0xa07a000                   
+  00000001021ec308 file=35570440 9132c37b add x27, x27, #0xcb0                    
+  00000001021ec30c file=35570444 a9401b65 ldp x5, x6, [x27]                       
+  00000001021ec310 file=35570448 b40006a6 cbz x6, .+0xd4                           target=0x1021ec3e4
+  00000001021ec314 file=35570452 a90a8be1 stp x1, x2, [sp,#168]                   
+  00000001021ec318 file=35570456 f900ebe0 str x0, [sp,#464]                       
+  00000001021ec31c file=35570460 a91affff stp xzr, xzr, [sp,#424]                 
+  00000001021ec320 file=35570464 aa0503e0 mov x0, x5                              
+  00000001021ec324 file=35570468 aa0603e1 mov x1, x6                              
+  00000001021ec328 file=35570472 977a6b26 bl .+0xfffffffffde9ac98                  target=0x100086fc0 runtime.convTstring
+  00000001021ec32c file=35570476 90031082 adrp x2, .+0x6210000                    
+  00000001021ec330 file=35570480 9131a042 add x2, x2, #0xc68                      
+  00000001021ec334 file=35570484 a91a83e2 stp x2, x0, [sp,#424]                   
+  00000001021ec338 file=35570488 f0008e20 adrp x0, .+0x11c7000                    
+  00000001021ec33c file=35570492 913ec800 add x0, x0, #0xfb2                       ref=0x1033b3fb2 file=54214578 "proxy_client=%s ResponseID: %sWSL environmentWSL_DISTRO_NAMEgetConversationaskSideQuestionmaxContentBytessetUserSettingsVERTEX_AI_MODELunaut"
+  00000001021ec340 file=35570496 b2400fe1 orr x1, xzr, #0xf                       
+  00000001021ec344 file=35570500 9106a3e2 add x2, sp, #0x1a8                      
+  00000001021ec348 file=35570504 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ec34c file=35570508 aa0303e4 mov x4, x3                              
+  00000001021ec350 file=35570512 977c970c bl .+0xfffffffffdf25c30                  target=0x100111f80 fmt.Sprintf
+  00000001021ec354 file=35570516 f94057e2 ldr x2, [sp,#168]                       
+  00000001021ec358 file=35570520 91000442 add x2, x2, #0x1                        
+  00000001021ec35c file=35570524 f9405be3 ldr x3, [sp,#176]                       
+  00000001021ec360 file=35570528 eb02007f cmp x3, x2                              
+  00000001021ec364 file=35570532 54000063 b.cc .+0xc                               target=0x1021ec370
+  00000001021ec368 file=35570536 f940ebe4 ldr x4, [sp,#464]                       
+  00000001021ec36c file=35570540 1400000f b .+0x3c                                 target=0x1021ec3a8
+  00000001021ec370 file=35570544 f90067e1 str x1, [sp,#200]                       
+  00000001021ec374 file=35570548 f900f7e0 str x0, [sp,#488]                       
+  00000001021ec378 file=35570552 f940ebe0 ldr x0, [sp,#464]                       
+  00000001021ec37c file=35570556 aa0203e1 mov x1, x2                              
+  00000001021ec380 file=35570560 aa0303e2 mov x2, x3                              
+  00000001021ec384 file=35570564 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ec388 file=35570568 90031084 adrp x4, .+0x6210000                    
+  00000001021ec38c file=35570572 9131a084 add x4, x4, #0xc68                      
+  00000001021ec390 file=35570576 977a80bc bl .+0xfffffffffdea02f0                  target=0x10008c680 runtime.growslice
+  00000001021ec394 file=35570580 aa0003e4 mov x4, x0                              
+  00000001021ec398 file=35570584 aa0203e3 mov x3, x2                              
+  00000001021ec39c file=35570588 f940f7e0 ldr x0, [sp,#488]                       
+  00000001021ec3a0 file=35570592 aa0103e2 mov x2, x1                              
+  00000001021ec3a4 file=35570596 f94067e1 ldr x1, [sp,#200]                       
+  00000001021ec3a8 file=35570600 d1000445 sub x5, x2, #0x1                        
+  00000001021ec3ac file=35570604 8b051085 add x5, x4, x5, lsl #4                  
+  00000001021ec3b0 file=35570608 f90004a1 str x1, [x5,#8]                         
+  00000001021ec3b4 file=35570612 d005063b adrp x27, .+0xa0c6000                   
+  00000001021ec3b8 file=35570616 b9436366 ldr w6, [x27,#864]                      
+  00000001021ec3bc file=35570620 34000086 cbz w6, .+0x10                           target=0x1021ec3cc
+  00000001021ec3c0 file=35570624 f94000a6 ldr x6, [x5]                            
+  00000001021ec3c4 file=35570628 977a9687 bl .+0xfffffffffdea5a1c                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021ec3c8 file=35570632 a9001b20 stp x0, x6, [x25]                       
+  00000001021ec3cc file=35570636 f90000a0 str x0, [x5]                            
+  00000001021ec3d0 file=35570640 aa0403e0 mov x0, x4                              
+  00000001021ec3d4 file=35570644 aa0203e1 mov x1, x2                              
+  00000001021ec3d8 file=35570648 f9407be4 ldr x4, [sp,#240]                       
+  00000001021ec3dc file=35570652 aa0303e2 mov x2, x3                              
+  00000001021ec3e0 file=35570656 f94037e3 ldr x3, [sp,#104]                       
+  00000001021ec3e4 file=35570660 b4000663 cbz x3, .+0xcc                           target=0x1021ec4b0
+  00000001021ec3e8 file=35570664 a9098be1 stp x1, x2, [sp,#152]                   
+  00000001021ec3ec file=35570668 f900e7e0 str x0, [sp,#456]                       
+  00000001021ec3f0 file=35570672 a91affff stp xzr, xzr, [sp,#424]                 
+  00000001021ec3f4 file=35570676 aa0403e0 mov x0, x4                              
+  00000001021ec3f8 file=35570680 aa0303e1 mov x1, x3                              
+  00000001021ec3fc file=35570684 977a6af1 bl .+0xfffffffffde9abc4                  target=0x100086fc0 runtime.convTstring
+  00000001021ec400 file=35570688 90031082 adrp x2, .+0x6210000                    
+  00000001021ec404 file=35570692 9131a042 add x2, x2, #0xc68                      
+  00000001021ec408 file=35570696 a91a83e2 stp x2, x0, [sp,#424]                   
+  00000001021ec40c file=35570700 f0008a80 adrp x0, .+0x1153000                    
+  00000001021ec410 file=35570704 91268000 add x0, x0, #0x9a0                       ref=0x10333f9a0 file=53737888 "purpose=%s%s/%s (%s)User-Agentdrop_blockcontainerdSSH_CLIENTconn_statemaxResultsrunTriggeraiplatformrawPredictgemini-2.5rewriteUrino timeout"
+  00000001021ec414 file=35570708 d2800141 mov x1, #0xa                            
+  00000001021ec418 file=35570712 9106a3e2 add x2, sp, #0x1a8                      
+  00000001021ec41c file=35570716 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ec420 file=35570720 aa0303e4 mov x4, x3                              
+  00000001021ec424 file=35570724 977c96d7 bl .+0xfffffffffdf25b5c                  target=0x100111f80 fmt.Sprintf
+  00000001021ec428 file=35570728 f9404fe2 ldr x2, [sp,#152]                       
+  00000001021ec42c file=35570732 91000442 add x2, x2, #0x1                        
+  00000001021ec430 file=35570736 f94053e3 ldr x3, [sp,#160]                       
+  00000001021ec434 file=35570740 eb02007f cmp x3, x2                              
+  00000001021ec438 file=35570744 54000063 b.cc .+0xc                               target=0x1021ec444
+  00000001021ec43c file=35570748 f940e7e4 ldr x4, [sp,#456]                       
+  00000001021ec440 file=35570752 1400000f b .+0x3c                                 target=0x1021ec47c
+  00000001021ec444 file=35570756 f90067e1 str x1, [sp,#200]                       
+  00000001021ec448 file=35570760 f900f7e0 str x0, [sp,#488]                       
+  00000001021ec44c file=35570764 f940e7e0 ldr x0, [sp,#456]                       
+  00000001021ec450 file=35570768 aa0203e1 mov x1, x2                              
+  00000001021ec454 file=35570772 aa0303e2 mov x2, x3                              
+  00000001021ec458 file=35570776 b24003e3 orr x3, xzr, #0x1                       
+  00000001021ec45c file=35570780 90031084 adrp x4, .+0x6210000                    
+  00000001021ec460 file=35570784 9131a084 add x4, x4, #0xc68                      
+  00000001021ec464 file=35570788 977a8087 bl .+0xfffffffffdea021c                  target=0x10008c680 runtime.growslice
+  00000001021ec468 file=35570792 aa0003e4 mov x4, x0                              
+  00000001021ec46c file=35570796 aa0203e3 mov x3, x2                              
+  00000001021ec470 file=35570800 f940f7e0 ldr x0, [sp,#488]                       
+  00000001021ec474 file=35570804 aa0103e2 mov x2, x1                              
+  00000001021ec478 file=35570808 f94067e1 ldr x1, [sp,#200]                       
+  00000001021ec47c file=35570812 d1000445 sub x5, x2, #0x1                        
+  00000001021ec480 file=35570816 8b051085 add x5, x4, x5, lsl #4                  
+  00000001021ec484 file=35570820 f90004a1 str x1, [x5,#8]                         
+  00000001021ec488 file=35570824 d005063b adrp x27, .+0xa0c6000                   
+  00000001021ec48c file=35570828 b9436366 ldr w6, [x27,#864]                      
+  00000001021ec490 file=35570832 34000086 cbz w6, .+0x10                           target=0x1021ec4a0
+  00000001021ec494 file=35570836 f94000a6 ldr x6, [x5]                            
+  00000001021ec498 file=35570840 977a9652 bl .+0xfffffffffdea5948                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021ec49c file=35570844 a9001b20 stp x0, x6, [x25]                       
+  00000001021ec4a0 file=35570848 f90000a0 str x0, [x5]                            
+  00000001021ec4a4 file=35570852 aa0203e1 mov x1, x2                              
+  00000001021ec4a8 file=35570856 aa0403e0 mov x0, x4                              
+  00000001021ec4ac file=35570860 aa0303e2 mov x2, x3                              
+  00000001021ec4b0 file=35570864 b00086e3 adrp x3, .+0x10dd000                    
+  00000001021ec4b4 file=35570868 91231063 add x3, x3, #0x8c4                      
+  00000001021ec4b8 file=35570872 b27f03e4 orr x4, xzr, #0x2                       
+  00000001021ec4bc file=35570876 977d0f89 bl .+0xfffffffffdf43e24                  target=0x1001302e0 strings.Join
+  00000001021ec4c0 file=35570880 f9008be0 str x0, [sp,#272]                       
+  00000001021ec4c4 file=35570884 f9004be1 str x1, [sp,#144]                       
+  00000001021ec4c8 file=35570888 f9402fe2 ldr x2, [sp,#88]                        
+  00000001021ec4cc file=35570892 b4000502 cbz x2, .+0xa0                           target=0x1021ec56c
+  00000001021ec4d0 file=35570896 910523e2 add x2, sp, #0x148                      
+  00000001021ec4d4 file=35570900 a9007c5f stp xzr, xzr, [x2]                      
+  00000001021ec4d8 file=35570904 a9017c5f stp xzr, xzr, [x2,#16]                  
+  00000001021ec4dc file=35570908 a9027c5f stp xzr, xzr, [x2,#32]                  
+  00000001021ec4e0 file=35570912 a9037c5f stp xzr, xzr, [x2,#48]                  
+  00000001021ec4e4 file=35570916 f940fbe0 ldr x0, [sp,#496]                       
+  00000001021ec4e8 file=35570920 f9406be1 ldr x1, [sp,#208]                       
+  00000001021ec4ec file=35570924 977a6ab5 bl .+0xfffffffffde9aad4                  target=0x100086fc0 runtime.convTstring
+  00000001021ec4f0 file=35570928 90031082 adrp x2, .+0x6210000                    
+  00000001021ec4f4 file=35570932 9131a042 add x2, x2, #0xc68                      
+  00000001021ec4f8 file=35570936 a91483e2 stp x2, x0, [sp,#328]                   
+  00000001021ec4fc file=35570940 f94073e0 ldr x0, [sp,#224]                       
+  00000001021ec500 file=35570944 f9402fe1 ldr x1, [sp,#88]                        
+  00000001021ec504 file=35570948 977a6aaf bl .+0xfffffffffde9aabc                  target=0x100086fc0 runtime.convTstring
+  00000001021ec508 file=35570952 90031082 adrp x2, .+0x6210000                    
+  00000001021ec50c file=35570956 9131a042 add x2, x2, #0xc68                      
+  00000001021ec510 file=35570960 a91583e2 stp x2, x0, [sp,#344]                   
+  00000001021ec514 file=35570964 f94077e0 ldr x0, [sp,#232]                       
+  00000001021ec518 file=35570968 f94033e1 ldr x1, [sp,#96]                        
+  00000001021ec51c file=35570972 977a6aa9 bl .+0xfffffffffde9aaa4                  target=0x100086fc0 runtime.convTstring
+  00000001021ec520 file=35570976 90031082 adrp x2, .+0x6210000                    
+  00000001021ec524 file=35570980 9131a042 add x2, x2, #0xc68                      
+  00000001021ec528 file=35570984 a91683e2 stp x2, x0, [sp,#360]                   
+  00000001021ec52c file=35570988 f9408be0 ldr x0, [sp,#272]                       
+  00000001021ec530 file=35570992 f9404be1 ldr x1, [sp,#144]                       
+  00000001021ec534 file=35570996 977a6aa3 bl .+0xfffffffffde9aa8c                  target=0x100086fc0 runtime.convTstring
+  00000001021ec538 file=35571000 90031082 adrp x2, .+0x6210000                    
+  00000001021ec53c file=35571004 9131a042 add x2, x2, #0xc68                      
+  00000001021ec540 file=35571008 a91783e2 stp x2, x0, [sp,#376]                   
+  00000001021ec544 file=35571012 b0008ce0 adrp x0, .+0x119d000                    
+  00000001021ec548 file=35571016 911b1800 add x0, x0, #0x6c6                       ref=0x1033896c6 file=54040262 "%s/%s/%s (%s)userInitiatedcreateProjectupdateProjectcreateTriggerupdateTriggerdeleteTriggercancelCascadedeleteProjectlistTerminalscloseTermi"
+  00000001021ec54c file=35571020 d28001a1 mov x1, #0xd                            
+  00000001021ec550 file=35571024 910523e2 add x2, sp, #0x148                      
+  00000001021ec554 file=35571028 b27e03e3 orr x3, xzr, #0x4                       
+  00000001021ec558 file=35571032 aa0303e4 mov x4, x3                              
+  00000001021ec55c file=35571036 977c9689 bl .+0xfffffffffdf25a24                  target=0x100111f80 fmt.Sprintf
+  00000001021ec560 file=35571040 a97ffbfd ldp x29, x30, [sp,#-8]                  
+  00000001021ec564 file=35571044 910803ff add sp, sp, #0x200                      
+  00000001021ec568 file=35571048 d65f03c0 ret                                     
+  00000001021ec56c file=35571052 910463e2 add x2, sp, #0x118                      
+  00000001021ec570 file=35571056 a9007c5f stp xzr, xzr, [x2]                      
+  00000001021ec574 file=35571060 a9017c5f stp xzr, xzr, [x2,#16]                  
+  00000001021ec578 file=35571064 a9027c5f stp xzr, xzr, [x2,#32]                  
+  00000001021ec57c file=35571068 f940fbe0 ldr x0, [sp,#496]                       
+  00000001021ec580 file=35571072 f9406be1 ldr x1, [sp,#208]                       
+  00000001021ec584 file=35571076 977a6a8f bl .+0xfffffffffde9aa3c                  target=0x100086fc0 runtime.convTstring
+  00000001021ec588 file=35571080 90031082 adrp x2, .+0x6210000                    
+  00000001021ec58c file=35571084 9131a042 add x2, x2, #0xc68                      
+  00000001021ec590 file=35571088 a91183e2 stp x2, x0, [sp,#280]                   
+  00000001021ec594 file=35571092 f94077e0 ldr x0, [sp,#232]                       
+  00000001021ec598 file=35571096 f94033e1 ldr x1, [sp,#96]                        
+  00000001021ec59c file=35571100 977a6a89 bl .+0xfffffffffde9aa24                  target=0x100086fc0 runtime.convTstring
+  00000001021ec5a0 file=35571104 90031082 adrp x2, .+0x6210000                    
+  00000001021ec5a4 file=35571108 9131a042 add x2, x2, #0xc68                      
+  00000001021ec5a8 file=35571112 a91283e2 stp x2, x0, [sp,#296]                   
+  00000001021ec5ac file=35571116 f9408be0 ldr x0, [sp,#272]                       
+  00000001021ec5b0 file=35571120 f9404be1 ldr x1, [sp,#144]                       
+  00000001021ec5b4 file=35571124 977a6a83 bl .+0xfffffffffde9aa0c                  target=0x100086fc0 runtime.convTstring
+  00000001021ec5b8 file=35571128 90031082 adrp x2, .+0x6210000                    
+  00000001021ec5bc file=35571132 9131a042 add x2, x2, #0xc68                      
+  00000001021ec5c0 file=35571136 a91383e2 stp x2, x0, [sp,#312]                   
+  00000001021ec5c4 file=35571140 f0008a80 adrp x0, .+0x1153000                    
+  00000001021ec5c8 file=35571144 9126a800 add x0, x0, #0x9aa                       ref=0x10333f9aa file=53737898 "%s/%s (%s)User-Agentdrop_blockcontainerdSSH_CLIENTconn_statemaxResultsrunTriggeraiplatformrawPredictgemini-2.5rewriteUrino timeoutidempotent"
+  00000001021ec5cc file=35571148 d2800141 mov x1, #0xa                            
+  00000001021ec5d0 file=35571152 910463e2 add x2, sp, #0x118                      
+  00000001021ec5d4 file=35571156 b24007e3 orr x3, xzr, #0x3                       
+  00000001021ec5d8 file=35571160 aa0303e4 mov x4, x3                              
+  00000001021ec5dc file=35571164 977c9669 bl .+0xfffffffffdf259a4                  target=0x100111f80 fmt.Sprintf
+  00000001021ec5e0 file=35571168 a97ffbfd ldp x29, x30, [sp,#-8]                  
+  00000001021ec5e4 file=35571172 910803ff add sp, sp, #0x200                      
+  00000001021ec5e8 file=35571176 d65f03c0 ret                                     
+  00000001021ec5ec file=35571180 a90087e0 stp x0, x1, [sp,#8]                     
+  00000001021ec5f0 file=35571184 a9018fe2 stp x2, x3, [sp,#24]                    
+  00000001021ec5f4 file=35571188 a90297e4 stp x4, x5, [sp,#40]                    
+  00000001021ec5f8 file=35571192 3900e3e6 strb w6, [sp,#56]                       
+  00000001021ec5fc file=35571196 aa1e03e3 mov x3, x30                             
+  00000001021ec600 file=35571200 977a8e14 bl .+0xfffffffffdea3850                  target=0x10008fe50 runtime.morestack_noctxt
+  00000001021ec604 file=35571204 a94087e0 ldp x0, x1, [sp,#8]                     
+  00000001021ec608 file=35571208 a9418fe2 ldp x2, x3, [sp,#24]                    
+  00000001021ec60c file=35571212 a94297e4 ldp x4, x5, [sp,#40]                    
+  00000001021ec610 file=35571216 3940e3e6 ldrb w6, [sp,#56]                       
+  00000001021ec614 file=35571220 17fffdcf b .+0xfffffffffffff73c                   target=0x1021ebd50 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent
+  00000001021ec618 file=35571224 00000000 .word 0x00000000                        
+  00000001021ec61c file=35571228 00000000 .word 0x00000000                        

@@ -1,0 +1,16 @@
+{
+  "observedAt": "2026-11-16T15:02:40.801Z",
+  "product": "Antigravity App",
+  "version": "2.32.0",
+  "platform": "darwin-arm",
+  "releaseBuild": "6141816156848128",
+  "sourcePage": "https://antigravity.google/download",
+  "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.32.0-6141816156848128/darwin-arm/Antigravity.dmg",
+  "sample": "H:\\orca\\rea\\site\\antigravity\\installer\\Antigravity-App-2.32.0-darwin-arm.parallel.dmg",
+  "bytes": 241278833,
+  "sha256": "7ec0f204cf306506ecd77abbb7ba2a6e722471dbf908a86433dcb8efa6ed98f7",
+  "crc32c": "/QFW9w==",
+  "expectedCrc32c": "/QFW9w==",
+  "verifiedGoogleStorageChecksum": true,
+  "officialClientExecuted": false
+}

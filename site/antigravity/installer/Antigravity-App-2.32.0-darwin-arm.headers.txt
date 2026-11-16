@@ -1,0 +1,60 @@
+HTTP/1.1 200 OK
+Content-Type: application/x-apple-diskimage
+X-GUploader-UploadID: AFy3sg2g6zSVmWMAjTYp9973LFWSiKjgUwmipZIdQHFvN-OtGl7jGx_1DsTDaqoma90wLB9f
+Expires: Mon, 16 Nov 2026 15:51:31 GMT
+Date: Mon, 16 Nov 2026 14:51:31 GMT
+Cache-Control: public, max-age=3600
+Last-Modified: Fri, 13 Nov 2026 00:30:35 GMT
+ETag: "-CMGNk8vYg5gDEAE="
+x-goog-generation: 1794529835665089
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 241278833
+x-goog-hash: crc32c=/QFW9w==
+x-goog-component-count: 5
+x-goog-storage-class: STANDARD
+Accept-Ranges: bytes
+Content-Length: 241278833
+Server: UploadServer
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+HTTP/1.1 200 OK
+Content-Type: application/x-apple-diskimage
+X-GUploader-UploadID: AFy3sg2pCAGVCCyVH8_UNiVPONjTtkXuDn0rOkaXi21u8pqs5KisESK9kfDhXNhP03Ml3tU
+Expires: Mon, 16 Nov 2026 15:56:32 GMT
+Date: Mon, 16 Nov 2026 14:56:32 GMT
+Cache-Control: public, max-age=3600
+Last-Modified: Fri, 13 Nov 2026 00:30:35 GMT
+ETag: "-CMGNk8vYg5gDEAE="
+x-goog-generation: 1794529835665089
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 241278833
+x-goog-hash: crc32c=/QFW9w==
+x-goog-component-count: 5
+x-goog-storage-class: STANDARD
+Accept-Ranges: bytes
+Content-Length: 241278833
+Server: UploadServer
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+HTTP/1.1 200 OK
+Content-Type: application/x-apple-diskimage
+X-GUploader-UploadID: AFy3sg3-c8l2qdTo1iLkjr0JQFsfB-hZcT2VCkA67Fhg7QFjnQOR7akFaeGC6rknXqYi2L631-nnhxg
+Expires: Mon, 16 Nov 2026 16:01:34 GMT
+Date: Mon, 16 Nov 2026 15:01:34 GMT
+Cache-Control: public, max-age=3600
+Last-Modified: Fri, 13 Nov 2026 00:30:35 GMT
+ETag: "-CMGNk8vYg5gDEAE="
+x-goog-generation: 1794529835665089
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 241278833
+x-goog-hash: crc32c=/QFW9w==
+x-goog-component-count: 5
+x-goog-storage-class: STANDARD
+Accept-Ranges: bytes
+Content-Length: 241278833
+Server: UploadServer
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
