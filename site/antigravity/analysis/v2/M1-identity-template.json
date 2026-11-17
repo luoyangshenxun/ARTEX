@@ -1,0 +1,7 @@
+[
+  {
+    "offset": 59158070,
+    "context": ".\n\nOn a remote board each member also gets:\n\n-   an **owner badge** (`<identity>@<host>`, e.g. `agent-worker@host-1`;\n    `@<host>` for older rows), the identity and machine whose LS runs it;\n    none for rows that record no owner;\n-   for a member on another machine, **last seen**: the newer of its row's\n   ",
+    "headers": []
+  }
+]

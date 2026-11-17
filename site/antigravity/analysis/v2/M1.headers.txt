@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Content-Type: application/zip
+X-GUploader-UploadID: AFy3sg1Sv49HSFsAThfxyKFXvGCZa8_TYJDlKgIVG6I_tudV7J6cVVrz92SFoWRK7stxmEg
+Expires: Tue, 17 Nov 2026 07:00:20 GMT
+Date: Tue, 17 Nov 2026 06:00:20 GMT
+Cache-Control: public, max-age=3600
+Last-Modified: Fri, 13 Nov 2026 23:00:20 GMT
+ETag: "-CKKewKOGhpgDEAE="
+x-goog-generation: 1794610820026146
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 216300499
+x-goog-hash: crc32c=zAyoTA==
+x-goog-component-count: 5
+x-goog-storage-class: STANDARD
+Accept-Ranges: bytes
+Content-Length: 216300499
+Server: UploadServer
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

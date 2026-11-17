@@ -2,6 +2,7 @@
 /installer/*.exe
 /installer/*.dmg
 /installer/*.dmg.parts/
+/installer/*.zip
 /analysis/unpacked/
 /analysis/tools/
 
@@ -9,3 +10,12 @@
 /analysis/installer-file-list.txt
 /analysis/unpack.log
 /analysis/static-evidence.json
+
+# Round-two reproducible bulk output; curated evidence remains tracked.
+/analysis/v2/*-native-index.json
+/analysis/v2/*.disasm.txt
+/analysis/v2/download-page.html
+/analysis/v2/rfc6749.txt
+/analysis/v2/M1-selected-data-symbols.txt
+/analysis/v2/M1-identity-xrefs.json
+/analysis/v2/M1-request-type-xrefs.json

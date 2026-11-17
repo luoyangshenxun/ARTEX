@@ -1,0 +1,837 @@
+{
+  "sample": "H:\\orca\\rea\\site\\antigravity\\analysis\\unpacked\\macos-app-2.32.1\\Antigravity.app\\Contents\\Resources\\bin\\language_server",
+  "schemas": [
+    {
+      "file": "google/internal/cloud/code/v1internal/credits.proto",
+      "offset": 56399144,
+      "bytes": 523,
+      "sha256": "bf362b0c3d49ff7c15bc4c77e1f70a5ad02b39e52ea10813c170fa95831bfa7b",
+      "syntax": "proto3",
+      "enums": [],
+      "messages": [
+        {
+          "name": "Credits",
+          "fields": [
+            {
+              "name": "credit_type",
+              "jsonName": "creditType",
+              "number": 1,
+              "type": 14,
+              "typeName": ".google.internal.cloud.code.v1internal.Credits.CreditType",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "credit_amount",
+              "jsonName": "creditAmount",
+              "number": 2,
+              "type": 3,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "minimum_credit_amount_for_usage",
+              "jsonName": "minimumCreditAmountForUsage",
+              "number": 3,
+              "type": 3,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            }
+          ],
+          "enums": [
+            {
+              "name": "CreditType",
+              "values": [
+                {
+                  "name": "CREDIT_TYPE_UNSPECIFIED",
+                  "number": 0
+                },
+                {
+                  "name": "GOOGLE_ONE_AI",
+                  "number": 1
+                }
+              ]
+            }
+          ],
+          "nested": []
+        }
+      ]
+    },
+    {
+      "file": "google/internal/cloud/code/v1internal/prediction_service.proto",
+      "offset": 57591413,
+      "bytes": 5880,
+      "sha256": "7083333895648871257354517d3c328d67bb1d624e32ae022b5a256d254a1658",
+      "syntax": "proto3",
+      "enums": [],
+      "messages": [
+        {
+          "name": "GenerateContentRequest",
+          "fields": [
+            {
+              "name": "project",
+              "jsonName": "project",
+              "number": 1,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "request_id",
+              "jsonName": "requestId",
+              "number": 2,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "request",
+              "jsonName": "request",
+              "number": 3,
+              "type": 11,
+              "typeName": ".google.cloud.aiplatform.master.GenerateContentRequest",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "model",
+              "jsonName": "model",
+              "number": 4,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "user_prompt_id",
+              "jsonName": "userPromptId",
+              "number": 5,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "user_agent",
+              "jsonName": "userAgent",
+              "number": 6,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "request_type",
+              "jsonName": "requestType",
+              "number": 7,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "enabled_credit_types",
+              "jsonName": "enabledCreditTypes",
+              "number": 8,
+              "type": 14,
+              "typeName": ".google.internal.cloud.code.v1internal.Credits.CreditType",
+              "label": 3,
+              "optional": false
+            }
+          ],
+          "enums": [],
+          "nested": []
+        }
+      ]
+    },
+    {
+      "file": "google/internal/cloud/code/v1internal/model_configs.proto",
+      "offset": 57664508,
+      "bytes": 6302,
+      "sha256": "f9912a577025def786532abde588a0174dfd9513c54fe62f9ae25b0f6cb3d1cd",
+      "syntax": "proto3",
+      "enums": [],
+      "messages": [
+        {
+          "name": "FetchAvailableModelsRequest",
+          "fields": [
+            {
+              "name": "project",
+              "jsonName": "project",
+              "number": 1,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "request_id",
+              "jsonName": "requestId",
+              "number": 2,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "entitlement",
+              "jsonName": "entitlement",
+              "number": 9,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.Entitlement",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "location",
+              "jsonName": "location",
+              "number": 3,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            }
+          ],
+          "enums": [],
+          "nested": []
+        }
+      ]
+    },
+    {
+      "file": "google/internal/cloud/code/v1internal/onboarding.proto",
+      "offset": 57941933,
+      "bytes": 9778,
+      "sha256": "783569dab0969eff075a73e63019b2a509bf075f5b30e12bcc86f5529a901eef",
+      "syntax": "proto3",
+      "enums": [],
+      "messages": [
+        {
+          "name": "OnboardUserRequest",
+          "fields": [
+            {
+              "name": "tier_id",
+              "jsonName": "tierId",
+              "number": 1,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "cloudaicompanion_project",
+              "jsonName": "cloudaicompanionProject",
+              "number": 2,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": true
+            },
+            {
+              "name": "metadata",
+              "jsonName": "metadata",
+              "number": 3,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata",
+              "label": 1,
+              "optional": false
+            }
+          ],
+          "enums": [],
+          "nested": []
+        },
+        {
+          "name": "LoadCodeAssistRequest",
+          "fields": [
+            {
+              "name": "cloudaicompanion_project",
+              "jsonName": "cloudaicompanionProject",
+              "number": 1,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": true
+            },
+            {
+              "name": "metadata",
+              "jsonName": "metadata",
+              "number": 2,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "mode",
+              "jsonName": "mode",
+              "number": 3,
+              "type": 14,
+              "typeName": ".google.internal.cloud.code.v1internal.LoadCodeAssistRequest.Mode",
+              "label": 1,
+              "optional": true
+            }
+          ],
+          "enums": [
+            {
+              "name": "Mode",
+              "values": [
+                {
+                  "name": "MODE_UNSPECIFIED",
+                  "number": 0
+                },
+                {
+                  "name": "FULL_ELIGIBILITY_CHECK",
+                  "number": 1
+                },
+                {
+                  "name": "HEALTH_CHECK",
+                  "number": 2
+                }
+              ]
+            }
+          ],
+          "nested": []
+        },
+        {
+          "name": "ClientMetadata",
+          "fields": [
+            {
+              "name": "ide_type",
+              "jsonName": "ideType",
+              "number": 1,
+              "type": 14,
+              "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata.IdeType",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "ide_version",
+              "jsonName": "ideVersion",
+              "number": 2,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "plugin_version",
+              "jsonName": "pluginVersion",
+              "number": 3,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "platform",
+              "jsonName": "platform",
+              "number": 4,
+              "type": 14,
+              "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata.Platform",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "update_channel",
+              "jsonName": "updateChannel",
+              "number": 5,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "duet_project",
+              "jsonName": "duetProject",
+              "number": 6,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "plugin_type",
+              "jsonName": "pluginType",
+              "number": 7,
+              "type": 14,
+              "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata.PluginType",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "ide_name",
+              "jsonName": "ideName",
+              "number": 8,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            }
+          ],
+          "enums": [
+            {
+              "name": "IdeType",
+              "values": [
+                {
+                  "name": "IDE_UNSPECIFIED",
+                  "number": 0
+                },
+                {
+                  "name": "VSCODE",
+                  "number": 1
+                },
+                {
+                  "name": "INTELLIJ",
+                  "number": 2
+                },
+                {
+                  "name": "VSCODE_CLOUD_WORKSTATION",
+                  "number": 3
+                },
+                {
+                  "name": "INTELLIJ_CLOUD_WORKSTATION",
+                  "number": 4
+                },
+                {
+                  "name": "CLOUD_SHELL",
+                  "number": 5
+                },
+                {
+                  "name": "CIDER",
+                  "number": 6
+                },
+                {
+                  "name": "CLOUD_RUN",
+                  "number": 7
+                },
+                {
+                  "name": "ANDROID_STUDIO",
+                  "number": 8
+                },
+                {
+                  "name": "ANTIGRAVITY",
+                  "number": 9
+                },
+                {
+                  "name": "JETSKI",
+                  "number": 10
+                },
+                {
+                  "name": "COLAB",
+                  "number": 11
+                },
+                {
+                  "name": "FIREBASE",
+                  "number": 12
+                },
+                {
+                  "name": "CHROME_DEVTOOLS",
+                  "number": 13
+                },
+                {
+                  "name": "GEMINI_CLI",
+                  "number": 14
+                }
+              ]
+            },
+            {
+              "name": "Platform",
+              "values": [
+                {
+                  "name": "PLATFORM_UNSPECIFIED",
+                  "number": 0
+                },
+                {
+                  "name": "DARWIN_AMD64",
+                  "number": 1
+                },
+                {
+                  "name": "DARWIN_ARM64",
+                  "number": 2
+                },
+                {
+                  "name": "LINUX_AMD64",
+                  "number": 3
+                },
+                {
+                  "name": "LINUX_ARM64",
+                  "number": 4
+                },
+                {
+                  "name": "WINDOWS_AMD64",
+                  "number": 5
+                }
+              ]
+            },
+            {
+              "name": "PluginType",
+              "values": [
+                {
+                  "name": "PLUGIN_UNSPECIFIED",
+                  "number": 0
+                },
+                {
+                  "name": "CLOUD_CODE",
+                  "number": 1
+                },
+                {
+                  "name": "GEMINI",
+                  "number": 2
+                },
+                {
+                  "name": "AIPLUGIN_INTELLIJ",
+                  "number": 3
+                },
+                {
+                  "name": "AIPLUGIN_STUDIO",
+                  "number": 4
+                },
+                {
+                  "name": "PANTHEON",
+                  "number": 6
+                }
+              ]
+            }
+          ],
+          "nested": []
+        }
+      ]
+    },
+    {
+      "file": "google/internal/cloud/code/v1internal/cloudcode.proto",
+      "offset": 59553586,
+      "bytes": 31550,
+      "sha256": "521e8f601acff6fe6bd92533fb72cf740dc905aa92d5b88f13029e12e4c5efbf",
+      "syntax": "lzano-altoadigevje-og-hornnes3-website-us-west-2bomlocustomer-ocienciabonavstackarasjoketokuyamashikokuchuobond",
+      "enums": [
+        {
+          "name": "RagStatus",
+          "values": [
+            {
+              "name": "RAG_STATUS_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "RAG_DISABLED",
+              "number": 1
+            },
+            {
+              "name": "RAG_FOUND",
+              "number": 2
+            },
+            {
+              "name": "RAG_NOT_FOUND",
+              "number": 3
+            },
+            {
+              "name": "RAG_ERROR",
+              "number": 4
+            }
+          ]
+        },
+        {
+          "name": "CCRagStatus",
+          "values": [
+            {
+              "name": "CC_RAG_STATUS_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "CC_RAG_STATUS_REPOSITORIES_FOUND",
+              "number": 1
+            },
+            {
+              "name": "CC_RAG_STATUS_NOT_FOUND",
+              "number": 2
+            },
+            {
+              "name": "CC_RAG_STATUS_NO_REPOSITORIES",
+              "number": 3
+            }
+          ]
+        },
+        {
+          "name": "FinishReason",
+          "values": [
+            {
+              "name": "FINISH_REASON_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "FINISH_REASON_STOP",
+              "number": 1
+            },
+            {
+              "name": "FINISH_REASON_RECITATION",
+              "number": 2
+            },
+            {
+              "name": "FINISH_REASON_PROHIBITED_CONTENT",
+              "number": 3
+            }
+          ]
+        },
+        {
+          "name": "SandboxType",
+          "values": [
+            {
+              "name": "SANDBOX_TYPE_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "WORKSTATION",
+              "number": 1
+            },
+            {
+              "name": "CLOUD_RUN",
+              "number": 2
+            }
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "name": "GenerateChatRequest",
+          "fields": [
+            {
+              "name": "project",
+              "jsonName": "project",
+              "number": 1,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "request_id",
+              "jsonName": "requestId",
+              "number": 2,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "user_message",
+              "jsonName": "userMessage",
+              "number": 3,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "history",
+              "jsonName": "history",
+              "number": 4,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.ChatMessage",
+              "label": 3,
+              "optional": false
+            },
+            {
+              "name": "ide_context",
+              "jsonName": "ideContext",
+              "number": 5,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.IDEContext",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "metadata",
+              "jsonName": "metadata",
+              "number": 6,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "enable_prompt_enhancement",
+              "jsonName": "enablePromptEnhancement",
+              "number": 7,
+              "type": 8,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "yield_info",
+              "jsonName": "yieldInfo",
+              "number": 8,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.YieldInfo",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "yielded_user_input",
+              "jsonName": "yieldedUserInput",
+              "number": 9,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.GenerateChatRequest.YieldedUserInput",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "retry_details",
+              "jsonName": "retryDetails",
+              "number": 10,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.RetryDetails",
+              "label": 1,
+              "optional": true
+            },
+            {
+              "name": "function_declarations",
+              "jsonName": "functionDeclarations",
+              "number": 11,
+              "type": 11,
+              "typeName": ".google.cloud.aiplatform.master.FunctionDeclaration",
+              "label": 3,
+              "optional": false
+            },
+            {
+              "name": "include_thinking_summaries",
+              "jsonName": "includeThinkingSummaries",
+              "number": 12,
+              "type": 8,
+              "typeName": "",
+              "label": 1,
+              "optional": true
+            },
+            {
+              "name": "tier_id",
+              "jsonName": "tierId",
+              "number": 13,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": true
+            },
+            {
+              "name": "model_config_id",
+              "jsonName": "modelConfigId",
+              "number": 14,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": true
+            },
+            {
+              "name": "user_prompt_id",
+              "jsonName": "userPromptId",
+              "number": 15,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": true
+            }
+          ],
+          "enums": [],
+          "nested": [
+            {
+              "name": "YieldedUserInput",
+              "fields": [
+                {
+                  "name": "consented",
+                  "jsonName": "consented",
+                  "number": 1,
+                  "type": 8,
+                  "typeName": "",
+                  "label": 1,
+                  "optional": false
+                }
+              ],
+              "enums": [],
+              "nested": []
+            }
+          ]
+        },
+        {
+          "name": "InternalAtomicAgenticChatRequest",
+          "fields": [
+            {
+              "name": "project",
+              "jsonName": "project",
+              "number": 1,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "request_id",
+              "jsonName": "requestId",
+              "number": 2,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "user_message",
+              "jsonName": "userMessage",
+              "number": 3,
+              "type": 9,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "history",
+              "jsonName": "history",
+              "number": 4,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.AgenticChatMessage",
+              "label": 3,
+              "optional": false
+            },
+            {
+              "name": "ide_context",
+              "jsonName": "ideContext",
+              "number": 5,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.IDEContext",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "metadata",
+              "jsonName": "metadata",
+              "number": 6,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.ClientMetadata",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "enable_prompt_enhancement",
+              "jsonName": "enablePromptEnhancement",
+              "number": 7,
+              "type": 8,
+              "typeName": "",
+              "label": 1,
+              "optional": false
+            },
+            {
+              "name": "tool_definitions",
+              "jsonName": "toolDefinitions",
+              "number": 8,
+              "type": 11,
+              "typeName": ".google.internal.cloud.code.v1internal.ToolDefinition",
+              "label": 3,
+              "optional": false
+            }
+          ],
+          "enums": [],
+          "nested": []
+        }
+      ]
+    }
+  ]
+}

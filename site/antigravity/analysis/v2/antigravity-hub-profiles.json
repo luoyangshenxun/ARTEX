@@ -1,0 +1,457 @@
+{
+  "schema_version": 2,
+  "analysis_date": "2026-11-17",
+  "status": "static_branch_specification",
+  "selected_candidate": "windows Hub (W1 available); product decision remains Subway owner choice",
+  "secret_policy": "No plaintext client secret; sha256-only inventory",
+  "version_changelist": [
+    {
+      "sample": "M2",
+      "app_version": "2.32.0",
+      "build_dir_id": "6141816156848128",
+      "cl": "1020486441"
+    },
+    {
+      "sample": "M1",
+      "app_version": "2.32.1",
+      "build_dir_id": "6001966350991360",
+      "cl": "1021296516"
+    },
+    {
+      "sample": "W1",
+      "app_version": "2.32.1",
+      "build_dir_id": "6001966350991360",
+      "cl": "1021296516"
+    },
+    {
+      "sample": "C1",
+      "app_version": "1.5.9",
+      "build_dir_id": "4515810895593472",
+      "cl": "1021519450"
+    }
+  ],
+  "cl_derivation": "Not derivable from observed manifests/build ids; extract exact sample fallback_changelist_string, verify provenance, then publish a version/build/platform tuple.",
+  "evidence_catalog": "evidence-catalog.json",
+  "profiles": [
+    {
+      "id": "hub-2.32.1-windows-amd64-personal-ccpa",
+      "sample": "W1",
+      "app_version": "2.32.1",
+      "build_dir_id": "6001966350991360",
+      "cl": "1021296516",
+      "os_type": "windows",
+      "arch": "amd64",
+      "ua": "antigravity/hub/2.32.1 (aidev_client; os_type=windows; arch=amd64; cl=1021296516)",
+      "ua_semantics": "core-only; authentication/context comments must be resolved at runtime",
+      "ua_optional_comments": [
+        "auth_method=<AUTH_METHOD>",
+        "datacollection_opt_in=false",
+        "purpose=<PURPOSE>",
+        "host_path=<HOST_PATH>",
+        "proxy_client=<PROXY_CLIENT>"
+      ],
+      "metadata_platform": 0,
+      "metadata_platform_name": "PLATFORM_UNSPECIFIED",
+      "metadata_platform_emitted": false,
+      "schema_platform_for_os": {
+        "name": "WINDOWS_AMD64",
+        "value": 5
+      },
+      "ide_name": "antigravity",
+      "ide_version": "2.32.1",
+      "ide_field_semantics": "launch override values; absent from observed load/onboard metadata construction",
+      "endpoints": {
+        "bootstrap": "https://daily-cloudcode-pa.googleapis.com",
+        "personal": "https://daily-cloudcode-pa.googleapis.com",
+        "business_or_gcp_tos": "https://cloudcode-pa.googleapis.com",
+        "precedence": [
+          "CLOUD_CODE_URL/dev/custom configured URL guards",
+          "business/GCP ToS -> prod",
+          "personal token -> daily",
+          "no-token load-response branch: tier predicate requires runtime data"
+        ],
+        "fallback_policy": null,
+        "privacy_endpoint": null,
+        "note": "No evidence for Subway prod-first/5-minute fallback policy or a universal privacy override"
+      },
+      "oauth": {
+        "account_type": "personal",
+        "client_id": "1071006060591-tmhssin2h21lcre235vtolojh4g403ep.apps.googleusercontent.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/cloud-platform",
+          "https://www.googleapis.com/auth/userinfo.email",
+          "https://www.googleapis.com/auth/userinfo.profile",
+          "https://www.googleapis.com/auth/cclog",
+          "https://www.googleapis.com/auth/experimentsandconfigs",
+          "https://www.googleapis.com/auth/aicode"
+        ],
+        "redirect": "http://localhost:<PORT>/auth/callback",
+        "port_policy": "ephemeral loopback port; IPv4 then IPv6 on same port, localhost fallback",
+        "pkce": "S256",
+        "response_type": "code",
+        "access_type": "offline",
+        "prompt": "consent",
+        "state": "<STATE>",
+        "client_secret_sha256_candidates": [
+          "a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0",
+          "1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60",
+          "9a015b93b682ec7a547d239ebd42d15b05340615ee63c64f121517e523784918"
+        ],
+        "client_secret_mapping": "hash-only inventory; individual client-to-secret mapping not asserted"
+      },
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": null,
+        "Authorization": null,
+        "X-Goog-Api-Client": null,
+        "X-Goog-Request-Reason": null,
+        "X-Goog-User-Project": null
+      },
+      "header_policy": {
+        "null_means": "Resolve under corresponding policy, or omit; never send JSON null as a header",
+        "User-Agent": "ua core plus provider/context comments; no invented auth_method",
+        "Authorization": "OAuth2 transport Bearer <TOKEN>",
+        "X-Goog-Api-Client": "not set in traced common CCPA Go path; remove gl-node/22.21.1",
+        "X-Goog-Request-Reason": "nonempty request context only",
+        "X-Goog-User-Project": "provider auth-mode/host gate and nonempty project; context quota override may replace it",
+        "Accept": "no constant inferred for all actions",
+        "Host": "derive from selected URL; no fixed daily host",
+        "header_order": null,
+        "scope": "Application-constructed headers only; transport headers/order require capture"
+      },
+      "requests": {
+        "wire_format": "JSON (protojson)",
+        "field_names": "lowerCamelCase",
+        "emit_unpopulated": false,
+        "loadCodeAssist": {
+          "method": "POST",
+          "path": "/v1internal:loadCodeAssist",
+          "metadata": {
+            "ideType": "ANTIGRAVITY"
+          },
+          "optional": [
+            "cloudaicompanionProject: nonempty input"
+          ]
+        },
+        "onboardUser": {
+          "method": "POST",
+          "path": "/v1internal:onboardUser",
+          "metadata": {
+            "ideType": "ANTIGRAVITY"
+          },
+          "optional": [
+            "tierId: caller input",
+            "cloudaicompanionProject: nonempty input"
+          ]
+        },
+        "fetchAvailableModels": {
+          "method": "POST",
+          "path": "/v1internal:fetchAvailableModels",
+          "metadata": null,
+          "fields": [
+            "project"
+          ],
+          "conditional": [
+            "location",
+            "entitlement"
+          ]
+        },
+        "generation": {
+          "branch": "personal CCPA continuation; personal AICode/gateway/business dispatches also exist",
+          "method": "POST",
+          "path": "/v1internal:streamGenerateContent",
+          "query": {
+            "alt": "sse"
+          },
+          "content_type": "application/json",
+          "wrapper_fields": [
+            "project",
+            "requestId",
+            "request",
+            "model",
+            "userAgent",
+            "requestType",
+            "enabledCreditTypes"
+          ],
+          "userAgent": "antigravity",
+          "userPromptId": {
+            "emitted": false,
+            "reason": "cleared by StreamGenerateContent after computeRequestID"
+          },
+          "requestId": {
+            "prompt_and_session": "<REQUEST_TYPE>/<SESSION_ID>/<TIMESTAMP_MS>/<USER_PROMPT_ID>/<REASON_ENUM>",
+            "prompt_without_session": "<REQUEST_TYPE>/<TIMESTAMP_MS>/<USER_PROMPT_ID>/<REASON_ENUM>",
+            "no_prompt": "<REQUEST_TYPE>/<UUID_V4>",
+            "empty_request_type": "unknown"
+          },
+          "requestType_maps": "request-type-maps.json",
+          "enabledCreditTypes": {
+            "condition": "EnableAiCredits boolean input",
+            "when_true": [
+              "GOOGLE_ONE_AI"
+            ],
+            "numeric_value": 1,
+            "when_false": "omit",
+            "enum_number_exception": "marshalCCPARequest may set UseEnumNumbers for nested model/config enum values 5 or 6; then [1]"
+          },
+          "systemInstruction": {
+            "source": "caller-supplied prompt assembled above transport",
+            "identity_template_evidence": "IDENTITY-TEMPLATE",
+            "template_experiment": "generic-system-prompt",
+            "autonomous_flag": "IsAutonomous",
+            "fixed_identity_literal_per_all_requests": false
+          },
+          "thoughtSignature": {
+            "wire": "base64 string (protobuf bytes)",
+            "storage": "ChatMessagePrompt.ThinkingSignature or ChatToolCall.ThinkingSignature; legacy base64 string fallback",
+            "preserve": "Keep original assistant parts and per-tool call ID/name/arguments/signature association; no global cache inferred"
+          },
+          "non_stream_generateContent": "Not established as the same official Hub main path",
+          "aicode_selection": "USE_AICODE parsed boolean or feature state/cooldown; missing-scope fallback exists"
+        }
+      },
+      "evidence_refs": [
+        "CL-W1",
+        "UA-W1",
+        "OS-W1",
+        "LAUNCH-W1",
+        "OAUTH-SOURCE-W1",
+        "META-LOAD-W1",
+        "META-ONBOARD-W1",
+        "GENERATE-CALLER",
+        "GENERATE-ROUTE",
+        "GENERATE-JSON",
+        "GENERATE-SSE",
+        "GENERATE-ID",
+        "GENERATE-BUILD",
+        "HEADERS",
+        "HEADERS-HUB",
+        "ENDPOINTS",
+        "OAUTH-CALLBACK",
+        "THOUGHT-SEND",
+        "THOUGHT-RECEIVE"
+      ],
+      "cross_platform_note": "Windows UA/metadata/dispatch individually checked; detailed conditional generation semantics traced on M1 with identical five descriptor hashes. Those details are cross-platform inference (E4), not a Windows runtime capture.",
+      "runtime_capture": false,
+      "ready_as_unconditional_constants": false,
+      "unresolved": [
+        "Full UA with actual authenticated provider state",
+        "Transport-generated headers and order",
+        "Selected personal CCPA vs AICode branch for a live account",
+        "Exact rendered system prompt per model/experiment/harness",
+        "Entitlement/tier-dependent optional fields",
+        "Privacy-action routing beyond traced common path"
+      ]
+    },
+    {
+      "id": "hub-2.32.1-darwin-arm64-personal-ccpa",
+      "sample": "M1",
+      "app_version": "2.32.1",
+      "build_dir_id": "6001966350991360",
+      "cl": "1021296516",
+      "os_type": "darwin",
+      "arch": "arm64",
+      "ua": "antigravity/hub/2.32.1 (aidev_client; os_type=darwin; arch=arm64; cl=1021296516)",
+      "ua_semantics": "core-only; authentication/context comments must be resolved at runtime",
+      "ua_optional_comments": [
+        "auth_method=<AUTH_METHOD>",
+        "datacollection_opt_in=false",
+        "purpose=<PURPOSE>",
+        "host_path=<HOST_PATH>",
+        "proxy_client=<PROXY_CLIENT>"
+      ],
+      "metadata_platform": 0,
+      "metadata_platform_name": "PLATFORM_UNSPECIFIED",
+      "metadata_platform_emitted": false,
+      "schema_platform_for_os": {
+        "name": "DARWIN_ARM64",
+        "value": 2
+      },
+      "ide_name": "antigravity",
+      "ide_version": "2.32.1",
+      "ide_field_semantics": "launch override values; absent from observed load/onboard metadata construction",
+      "endpoints": {
+        "bootstrap": "https://daily-cloudcode-pa.googleapis.com",
+        "personal": "https://daily-cloudcode-pa.googleapis.com",
+        "business_or_gcp_tos": "https://cloudcode-pa.googleapis.com",
+        "precedence": [
+          "CLOUD_CODE_URL/dev/custom configured URL guards",
+          "business/GCP ToS -> prod",
+          "personal token -> daily",
+          "no-token load-response branch: tier predicate requires runtime data"
+        ],
+        "fallback_policy": null,
+        "privacy_endpoint": null,
+        "note": "No evidence for Subway prod-first/5-minute fallback policy or a universal privacy override"
+      },
+      "oauth": {
+        "account_type": "personal",
+        "client_id": "1071006060591-tmhssin2h21lcre235vtolojh4g403ep.apps.googleusercontent.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/cloud-platform",
+          "https://www.googleapis.com/auth/userinfo.email",
+          "https://www.googleapis.com/auth/userinfo.profile",
+          "https://www.googleapis.com/auth/cclog",
+          "https://www.googleapis.com/auth/experimentsandconfigs",
+          "https://www.googleapis.com/auth/aicode"
+        ],
+        "redirect": "http://localhost:<PORT>/auth/callback",
+        "port_policy": "ephemeral loopback port; IPv4 then IPv6 on same port, localhost fallback",
+        "pkce": "S256",
+        "response_type": "code",
+        "access_type": "offline",
+        "prompt": "consent",
+        "state": "<STATE>",
+        "client_secret_sha256_candidates": [
+          "a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0",
+          "1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60",
+          "9a015b93b682ec7a547d239ebd42d15b05340615ee63c64f121517e523784918"
+        ],
+        "client_secret_mapping": "hash-only inventory; individual client-to-secret mapping not asserted"
+      },
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": null,
+        "Authorization": null,
+        "X-Goog-Api-Client": null,
+        "X-Goog-Request-Reason": null,
+        "X-Goog-User-Project": null
+      },
+      "header_policy": {
+        "null_means": "Resolve under corresponding policy, or omit; never send JSON null as a header",
+        "User-Agent": "ua core plus provider/context comments; no invented auth_method",
+        "Authorization": "OAuth2 transport Bearer <TOKEN>",
+        "X-Goog-Api-Client": "not set in traced common CCPA Go path; remove gl-node/22.21.1",
+        "X-Goog-Request-Reason": "nonempty request context only",
+        "X-Goog-User-Project": "provider auth-mode/host gate and nonempty project; context quota override may replace it",
+        "Accept": "no constant inferred for all actions",
+        "Host": "derive from selected URL; no fixed daily host",
+        "header_order": null,
+        "scope": "Application-constructed headers only; transport headers/order require capture"
+      },
+      "requests": {
+        "wire_format": "JSON (protojson)",
+        "field_names": "lowerCamelCase",
+        "emit_unpopulated": false,
+        "loadCodeAssist": {
+          "method": "POST",
+          "path": "/v1internal:loadCodeAssist",
+          "metadata": {
+            "ideType": "ANTIGRAVITY"
+          },
+          "optional": [
+            "cloudaicompanionProject: nonempty input"
+          ]
+        },
+        "onboardUser": {
+          "method": "POST",
+          "path": "/v1internal:onboardUser",
+          "metadata": {
+            "ideType": "ANTIGRAVITY"
+          },
+          "optional": [
+            "tierId: caller input",
+            "cloudaicompanionProject: nonempty input"
+          ]
+        },
+        "fetchAvailableModels": {
+          "method": "POST",
+          "path": "/v1internal:fetchAvailableModels",
+          "metadata": null,
+          "fields": [
+            "project"
+          ],
+          "conditional": [
+            "location",
+            "entitlement"
+          ]
+        },
+        "generation": {
+          "branch": "personal CCPA continuation; personal AICode/gateway/business dispatches also exist",
+          "method": "POST",
+          "path": "/v1internal:streamGenerateContent",
+          "query": {
+            "alt": "sse"
+          },
+          "content_type": "application/json",
+          "wrapper_fields": [
+            "project",
+            "requestId",
+            "request",
+            "model",
+            "userAgent",
+            "requestType",
+            "enabledCreditTypes"
+          ],
+          "userAgent": "antigravity",
+          "userPromptId": {
+            "emitted": false,
+            "reason": "cleared by StreamGenerateContent after computeRequestID"
+          },
+          "requestId": {
+            "prompt_and_session": "<REQUEST_TYPE>/<SESSION_ID>/<TIMESTAMP_MS>/<USER_PROMPT_ID>/<REASON_ENUM>",
+            "prompt_without_session": "<REQUEST_TYPE>/<TIMESTAMP_MS>/<USER_PROMPT_ID>/<REASON_ENUM>",
+            "no_prompt": "<REQUEST_TYPE>/<UUID_V4>",
+            "empty_request_type": "unknown"
+          },
+          "requestType_maps": "request-type-maps.json",
+          "enabledCreditTypes": {
+            "condition": "EnableAiCredits boolean input",
+            "when_true": [
+              "GOOGLE_ONE_AI"
+            ],
+            "numeric_value": 1,
+            "when_false": "omit",
+            "enum_number_exception": "marshalCCPARequest may set UseEnumNumbers for nested model/config enum values 5 or 6; then [1]"
+          },
+          "systemInstruction": {
+            "source": "caller-supplied prompt assembled above transport",
+            "identity_template_evidence": "IDENTITY-TEMPLATE",
+            "template_experiment": "generic-system-prompt",
+            "autonomous_flag": "IsAutonomous",
+            "fixed_identity_literal_per_all_requests": false
+          },
+          "thoughtSignature": {
+            "wire": "base64 string (protobuf bytes)",
+            "storage": "ChatMessagePrompt.ThinkingSignature or ChatToolCall.ThinkingSignature; legacy base64 string fallback",
+            "preserve": "Keep original assistant parts and per-tool call ID/name/arguments/signature association; no global cache inferred"
+          },
+          "non_stream_generateContent": "Not established as the same official Hub main path",
+          "aicode_selection": "USE_AICODE parsed boolean or feature state/cooldown; missing-scope fallback exists"
+        }
+      },
+      "evidence_refs": [
+        "CL-M1",
+        "UA-M1",
+        "OS-M1",
+        "LAUNCH-M1",
+        "OAUTH-SOURCE-M1",
+        "META-LOAD-M1",
+        "META-ONBOARD-M1",
+        "GENERATE-CALLER",
+        "GENERATE-ROUTE",
+        "GENERATE-JSON",
+        "GENERATE-SSE",
+        "GENERATE-ID",
+        "GENERATE-BUILD",
+        "HEADERS",
+        "HEADERS-HUB",
+        "ENDPOINTS",
+        "OAUTH-CALLBACK",
+        "THOUGHT-SEND",
+        "THOUGHT-RECEIVE"
+      ],
+      "cross_platform_note": null,
+      "runtime_capture": false,
+      "ready_as_unconditional_constants": false,
+      "unresolved": [
+        "Full UA with actual authenticated provider state",
+        "Transport-generated headers and order",
+        "Selected personal CCPA vs AICode branch for a live account",
+        "Exact rendered system prompt per model/experiment/harness",
+        "Entitlement/tier-dependent optional fields",
+        "Privacy-action routing beyond traced common path"
+      ]
+    }
+  ]
+}

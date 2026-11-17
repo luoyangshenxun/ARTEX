@@ -1,0 +1,14 @@
+{
+  "id": "W1",
+  "version": "2.32.1",
+  "build": "6001966350991360",
+  "platform": "windows-x64",
+  "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.32.1-6001966350991360/windows-x64/Antigravity-x64.exe",
+  "name": "Antigravity-App-2.32.1-windows-x64.exe",
+  "file": "H:\\orca\\rea\\site\\antigravity\\installer\\Antigravity-App-2.32.1-windows-x64.exe",
+  "size": 189004024,
+  "sha256": "f216ee69d6a6d0c69f7fca01e3ccef9f0f1d78f861fa24891a6db185d6fa5ee1",
+  "sha512": "a632836f3daa313f4ca759bb4c67e354a3b3dec431880d521376357cc5329969984f9086c1b8349332d9a73c4d1bbde36677742940c6fb900cdc46bcdf589db0",
+  "officialClientExecuted": false,
+  "observedAt": "2026-11-17T06:01:20.390Z"
+}

@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Content-Type: application/x-msdos-program
+X-GUploader-UploadID: AFy3sg1TciFM8cEOkGWccLHwwasyRfrW_3bvoBQ2ZV6u92pmAA035lKZPeB0iGqevh7S527pcpYxZcA
+Expires: Tue, 17 Nov 2026 07:00:19 GMT
+Date: Tue, 17 Nov 2026 06:00:19 GMT
+Cache-Control: public, max-age=3600
+Last-Modified: Fri, 13 Nov 2026 23:00:57 GMT
+ETag: "-CLX9sbWGhpgDEAE="
+x-goog-generation: 1794610857541301
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 189004024
+x-goog-hash: crc32c=3v/j/A==
+x-goog-component-count: 4
+x-goog-storage-class: STANDARD
+Accept-Ranges: bytes
+Content-Length: 189004024
+Server: UploadServer
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

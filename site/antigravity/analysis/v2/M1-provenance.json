@@ -1,0 +1,14 @@
+{
+  "id": "M1",
+  "version": "2.32.1",
+  "build": "6001966350991360",
+  "platform": "darwin-arm",
+  "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.32.1-6001966350991360/darwin-arm/Antigravity.zip",
+  "name": "Antigravity-App-2.32.1-darwin-arm.zip",
+  "file": "H:\\orca\\rea\\site\\antigravity\\installer\\Antigravity-App-2.32.1-darwin-arm.zip",
+  "size": 216300499,
+  "sha256": "20dbf3f96f50aaaa83a2a9abcddb81ddb90ec073ea0e2776737126cf1cdb463a",
+  "sha512": "f97a281c51d6e418017b0b533b1a69df09cb597eb72ecf1024e933d1c0f86730f1c7be242577b10143dc6f59d8b7bfeb5b952c4f10583d9f2901a1032e61d5ef",
+  "officialClientExecuted": false,
+  "observedAt": "2026-11-17T06:01:16.620Z"
+}

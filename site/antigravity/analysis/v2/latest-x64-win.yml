@@ -1,0 +1,7 @@
+version: 2.32.1
+files:
+  - url: https://storage.googleapis.com/antigravity-public/antigravity-hub/2.32.1-6001966350991360/windows-x64/Antigravity-x64.exe
+    sha512: pjKDbz2qMT9Mp1m7TGfjVKOz3sQxiA1SE3Y1fMUymWmYT5CGwbg0kzLZpzxNG73jZnd0KUDG+5AM3Ea831idsA==
+    size: 189004024
+path: Antigravity-x64.exe
+sha512: pjKDbz2qMT9Mp1m7TGfjVKOz3sQxiA1SE3Y1fMUymWmYT5CGwbg0kzLZpzxNG73jZnd0KUDG+5AM3Ea831idsA==

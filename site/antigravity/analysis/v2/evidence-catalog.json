@@ -1,0 +1,757 @@
+{
+  "offset_convention": "Zero-based file byte offsets, not RVA; offsets inside unpacked ASAR files are relative to that file",
+  "levels": {
+    "E1": "Runtime capture of this exact official sample (none performed in v2)",
+    "E2": "Static executable instructions and traced construction/serialization branch",
+    "E3": "Packaged source, descriptor, literal, manifest or file bytes",
+    "E4": "Inference across samples or from a cited standard; conditions stated",
+    "E5": "Unresolved or requires runtime state"
+  },
+  "legacy_note": "First-round reports used three prose evidence categories; this explicit v2 five-level normalization is new, not a claim of pre-existing five labels.",
+  "evidence": [
+    {
+      "id": "UA-W1",
+      "sample": "W1",
+      "level": "E2",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent",
+      "offset": 42212640,
+      "bytes": 2976,
+      "sha256": "a5804de40459a1e8993af34e67d69f804ca124ca7156919d11ebf82625b71c22",
+      "instruction_offsets": [],
+      "note": "Core format plus conditional comments; not a captured full authenticated UA"
+    },
+    {
+      "id": "UA-M1",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent",
+      "offset": 35569744,
+      "bytes": 2256,
+      "sha256": "56b0461e02fdffb099ece66b720b3e839b906d45e49d671e8d406e913aea6b15",
+      "instruction_offsets": [],
+      "note": "Core format plus conditional comments; runtime auth_method is not a fabricated constant"
+    },
+    {
+      "id": "OS-W1",
+      "sample": "W1",
+      "level": "E2",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "google3/third_party/jetski/language_server/metadata_provider/metadata_provider.Initialize.func1",
+      "offset": 14637536,
+      "bytes": 224,
+      "sha256": "2e78eb7c71ddf0beeb96920c701c7dac9c87ad152751e09758964b5502f92777",
+      "instruction_offsets": [],
+      "note": "Compiled OS/architecture constants"
+    },
+    {
+      "id": "OS-M1",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/metadata_provider/metadata_provider.Initialize.func1",
+      "offset": 12206464,
+      "bytes": 208,
+      "sha256": "a3eeae2e0c895872585ade833a22ab0dcdd7802bb8ff278f7b988ff824827e0b",
+      "instruction_offsets": [],
+      "note": "Compiled OS/architecture constants"
+    },
+    {
+      "id": "META-LOAD-W1",
+      "sample": "W1",
+      "level": "E2",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).fetchLoadCodeAssistResponse",
+      "offset": 42330304,
+      "bytes": 4128,
+      "sha256": "1cf579816df0c9469254db5feb0d6ba2ffbad178758d2cd9a4b166f844105da9",
+      "instruction_offsets": [
+        42331172,
+        42331179
+      ],
+      "note": "Metadata: IdeType=9, PluginType=0; no Platform/IdeVersion/IdeName stores"
+    },
+    {
+      "id": "META-ONBOARD-W1",
+      "sample": "W1",
+      "level": "E2",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).OnboardUser",
+      "offset": 42334880,
+      "bytes": 2144,
+      "sha256": "3d9b51e75dceabe1e4a3adebbd78feedc9eef4e4559c18460351e89653ae7025",
+      "instruction_offsets": [
+        42335173,
+        42335180
+      ],
+      "note": "Metadata: IdeType=9, PluginType=0"
+    },
+    {
+      "id": "META-LOAD-M1",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).fetchLoadCodeAssistResponse",
+      "offset": 35667664,
+      "bytes": 3552,
+      "sha256": "bafe85f52b28fe4e1de890ce41975c43bff682f35b7623f67adf81c7a8543665",
+      "instruction_offsets": [
+        35668480,
+        35668484
+      ],
+      "note": "Metadata constructed with IdeType=9, PluginType=0"
+    },
+    {
+      "id": "META-ONBOARD-M1",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).OnboardUser",
+      "offset": 35671680,
+      "bytes": 1680,
+      "sha256": "7e2883ef0cb09cdba1b37342c00b91a01f764f8f963cff3e5f11d89ee397b67e",
+      "instruction_offsets": [
+        35671896,
+        35671900
+      ],
+      "note": "Metadata constructed with IdeType=9, PluginType=0"
+    },
+    {
+      "id": "MODELS-M1",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).fetchAvailableModels",
+      "offset": 35593088,
+      "bytes": 1472,
+      "sha256": "91367d6e29732851b7a4d9200f383f8fe2187004da417683a03e22a5d0f3da86",
+      "instruction_offsets": [],
+      "note": "Project; conditional Location/Entitlement; no metadata"
+    },
+    {
+      "id": "MODELS-W1",
+      "sample": "W1",
+      "level": "E2",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).fetchAvailableModels",
+      "offset": 42240160,
+      "bytes": 1504,
+      "sha256": "8d334f68e7cde70c7830a8b8af970b0856a56d2c4874ee2eef6a11c07d886d47",
+      "instruction_offsets": [],
+      "note": "Windows matching branch"
+    },
+    {
+      "id": "POST-JSON",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.doPostAndUnmarshalWithErrorReport[go.shape.*uint8]",
+      "offset": 35751072,
+      "bytes": 1488,
+      "sha256": "02f46e99959ce21c253b259f85ed69a62910dd45bf7ca7c4c30cacb1b31219b1",
+      "instruction_offsets": [
+        35751152
+      ],
+      "note": "protojson.Marshal default lowerCamel names"
+    },
+    {
+      "id": "GENERATE-BUILD",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.BuildGenerateContentRequest",
+      "offset": 35535552,
+      "bytes": 4128,
+      "sha256": "1cbfa0abfde123a12fb9089d24d579e0d4fb27525e2687ddfd4fe2a9289d62e4",
+      "instruction_offsets": [
+        35535660,
+        35535696,
+        35539176,
+        35539212
+      ],
+      "note": "Input-driven system prompt and request type maps; conditional credits"
+    },
+    {
+      "id": "GENERATE-CALLER",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).getStreamingTextCompletion",
+      "offset": 35527728,
+      "bytes": 2000,
+      "sha256": "9d05fafb921a8072a3dba291439d262fc7525aba371f019e5b80d28978ded6e0",
+      "instruction_offsets": [
+        35528676,
+        35529312
+      ],
+      "note": "Traced call to builder then StreamGenerateContent"
+    },
+    {
+      "id": "GENERATE-ROUTE",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).StreamGenerateContent",
+      "offset": 35540272,
+      "bytes": 1728,
+      "sha256": "00322bdff117806a8c61b4088edc9e79e5fdc0a2f6374b02eadf712a26ad3d4c",
+      "instruction_offsets": [
+        35540808,
+        35540896,
+        35540952
+      ],
+      "note": "Recomputes request ID, provider UserAgentName, clears UserPromptId; auth-mode dispatch"
+    },
+    {
+      "id": "GENERATE-ROUTE-W1",
+      "sample": "W1",
+      "level": "E2",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).StreamGenerateContent",
+      "offset": 42177504,
+      "bytes": 1984,
+      "sha256": "bdfdc97c762730cf76380592cfe78c67d0b7b0c6351a3e47766cfdf59d746d49",
+      "instruction_offsets": [],
+      "note": "Windows matching dispatcher"
+    },
+    {
+      "id": "GENERATE-JSON",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.marshalCCPARequest",
+      "offset": 35542000,
+      "bytes": 240,
+      "sha256": "adec837bce99c0790a3faaf6b48c57b530bff86acbe381b656cb37c3f93e98cf",
+      "instruction_offsets": [],
+      "note": "UseProtoNames=false; conditional UseEnumNumbers for nested enum 5/6"
+    },
+    {
+      "id": "GENERATE-SSE",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).streamGenerateContentFromCCPA",
+      "offset": 35542240,
+      "bytes": 2000,
+      "sha256": "a9b04c160925cda5b12da3bb5d1726e48aadb79120fca8f83f7e86f7a680af23",
+      "instruction_offsets": [
+        35542752,
+        35543408,
+        35543500
+      ],
+      "note": "POST streamGenerateContent with alt=sse and JSON"
+    },
+    {
+      "id": "GENERATE-ID",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.computeRequestID",
+      "offset": 35539680,
+      "bytes": 592,
+      "sha256": "eddba16bd7a141adaeed301c9f506b06a48017a5a2d5e6267bbf6b66a6831855",
+      "instruction_offsets": [],
+      "note": "Slash-delimited formats, with random UUID fallback"
+    },
+    {
+      "id": "GENERATE-AICODE",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).useAICodePredictionFlow",
+      "offset": 35554112,
+      "bytes": 144,
+      "sha256": "ced75fda51d0916588ae0b6eb8466d2055f08f50c34ba485e851adb19e537097",
+      "instruction_offsets": [],
+      "note": "USE_AICODE parsed bool overrides, otherwise feature state and cooldown"
+    },
+    {
+      "id": "THOUGHT-SEND",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.processToolCalls",
+      "offset": 35531680,
+      "bytes": 960,
+      "sha256": "9b1e7bca456b7106c9fa29c4f5459e7a4c59cb8a07c27daeca7c12c0ba90fd29",
+      "instruction_offsets": [
+        35532136,
+        35532172,
+        35532212
+      ],
+      "note": "Copies per-call ThinkingSignature bytes; fallback base64 ThoughtSignature"
+    },
+    {
+      "id": "THOUGHT-RECEIVE",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).getStreamingTextCompletion-range1",
+      "offset": 35722736,
+      "bytes": 4992,
+      "sha256": "9bba59e53b6769ddd399b754d8dfab183a11f0f880f8e96759d49b3d74e270f9",
+      "instruction_offsets": [
+        35723824,
+        35724020
+      ],
+      "note": "Part.ThoughtSignature copied to per-call ThinkingSignature"
+    },
+    {
+      "id": "HEADERS",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).setHeaders",
+      "offset": 35572000,
+      "bytes": 848,
+      "sha256": "dc18c5023dbf0bb28af184b9a8a41a11cd69834948b387ca82db844a4d9f4cc7",
+      "instruction_offsets": [
+        35572372
+      ],
+      "note": "UA, context request reason, provider headers and quota override"
+    },
+    {
+      "id": "HEADERS-HUB",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*AntigravityHubAuthProvider).SetHTTPHeaders",
+      "offset": 35448496,
+      "bytes": 816,
+      "sha256": "a16d861671aafa9ef0a304ca9c811db7e3e7c927014ecf8a3b0aba8fb29c8261",
+      "instruction_offsets": [],
+      "note": "Account-mode and host gated quota project"
+    },
+    {
+      "id": "HEADERS-QUOTA",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).maybeOverrideQuotaProject",
+      "offset": 35378720,
+      "bytes": 288,
+      "sha256": "ab8c0e9dc1a4322b61a20d336e57b03c0951d63c3719d683a5c1d5b9633ba5e3",
+      "instruction_offsets": [
+        35378796
+      ],
+      "note": "Nonempty context quota override"
+    },
+    {
+      "id": "ENDPOINTS",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*AntigravityHubAuthProvider).UpdateEndpointURL",
+      "offset": 35449744,
+      "bytes": 832,
+      "sha256": "e1f17b43ed1edd56a53f8f374c0f6b3a2b213c3e0a3d9669bf028a5e88bb21bd",
+      "instruction_offsets": [
+        35450084,
+        35450124
+      ],
+      "note": "Override guards; business/GCP ToS prod; personal daily"
+    },
+    {
+      "id": "OAUTH-CALLBACK",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/auth_client/authclient.(*BrowserTokenAcquirer).AcquireToken",
+      "offset": 39593936,
+      "bytes": 1920,
+      "sha256": "28b601482dbf9b8d65a5c40317ed0f94c1cad72e04100f93e11b7681c2e96348",
+      "instruction_offsets": [
+        39594044,
+        39594412,
+        39594472
+      ],
+      "note": "Loopback listener, /auth/callback and verifier"
+    },
+    {
+      "id": "OAUTH-LOOPBACK",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/auth_client/authclient.listenLoopbackDualStackWith",
+      "offset": 39591696,
+      "bytes": 1360,
+      "sha256": "0ab73cd9d1078d943d9066b88daa0496ebb8bffe943105d0ada5371e42bd5b19",
+      "instruction_offsets": [],
+      "note": "IPv4 ephemeral port, IPv6 same port, localhost fallback"
+    },
+    {
+      "id": "OAUTH-AUTHURL",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/auth_client/authclient.buildAuthCodeURL",
+      "offset": 39602288,
+      "bytes": 528,
+      "sha256": "17038d9acd2f3f8809ef5076a2f0bf6f1dcf6be523dbc56c7c77fc4ea47ba820",
+      "instruction_offsets": [],
+      "note": "S256, consent, offline"
+    },
+    {
+      "id": "OAUTH-CONFIG",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/language_server/auth_client/authclient.getOAuthConfig",
+      "offset": 39637344,
+      "bytes": 1280,
+      "sha256": "b4a2e2f8875b6d85d9db5a0196a9ed9e8d461def2762ce6d9bea42a4bc4926f6",
+      "instruction_offsets": [],
+      "note": "Personal/business/WIF configurations; secrets recorded only as hashes"
+    },
+    {
+      "id": "IDENTITY-SECTION",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/cortex/mixins/mixins.(*IdentitySection).GetName",
+      "offset": 29558400,
+      "bytes": 16,
+      "sha256": "f44b145bb308560a299a48cc569f0940f6e83f5a267a9f94501f6ff42936c368",
+      "instruction_offsets": [],
+      "note": "identity section name"
+    },
+    {
+      "id": "IDENTITY-CONDITION",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/cortex/mixins/mixins.(*IdentitySection).ShouldInclude",
+      "offset": 29558416,
+      "bytes": 16,
+      "sha256": "29afb02218437703fd2859332388ff18db4a3276b2ff00a78425d019c557087b",
+      "instruction_offsets": [],
+      "note": "Always true for this section object; other harness selection not inferred"
+    },
+    {
+      "id": "IDENTITY-ASSEMBLY",
+      "sample": "M1",
+      "level": "E2",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google3/third_party/jetski/cortex/mixins/mixins.(*CascadeConversationalMixin).GetSystemPrompt",
+      "offset": 29552000,
+      "bytes": 3008,
+      "sha256": "afc40084d0c68bc9f1c48b20c9ecac6f2bfe125f1c64d115c1ed73f4b64bdff2",
+      "instruction_offsets": [],
+      "note": "System-prompt assembly separate from HTTP serializer"
+    },
+    {
+      "id": "CLI-BACKEND",
+      "sample": "C1",
+      "level": "E2",
+      "file": "../installer/Antigravity-CLI-1.5.9-windows-x64.exe",
+      "symbol": "google3/third_party/jetski/cli/backend/backend.NewServerBackend",
+      "offset": 54828608,
+      "bytes": 6464,
+      "sha256": "e92b22751e06f2e7e723d5b3ab5c4654323ad1afbe435eb857cc17057af0f85a",
+      "instruction_offsets": [
+        54832419,
+        54832453
+      ],
+      "note": "Standalone CLI includes codeassistclient and binds CLIAuthProvider"
+    },
+    {
+      "id": "CLI-UA",
+      "sample": "C1",
+      "level": "E2",
+      "file": "../installer/Antigravity-CLI-1.5.9-windows-x64.exe",
+      "symbol": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CLIAuthProvider).GetUserAgentName",
+      "offset": 41239264,
+      "bytes": 64,
+      "sha256": "88a8a8e1ad9fa6064b73aa057f7df9a0da0642faa2f5a0848b96c0a1556cd144",
+      "instruction_offsets": [],
+      "note": "Default antigravity name with override; not GeminiCLI/0.1.5"
+    },
+    {
+      "id": "CL-W1",
+      "sample": "W1",
+      "level": "E3",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "fallback_changelist_string (Go string header)",
+      "offset": 210307584,
+      "data_offset": 70504496,
+      "bytes": 16,
+      "value": "1021296516"
+    },
+    {
+      "id": "CL-M1",
+      "sample": "M1",
+      "level": "E3",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "fallback_changelist_string (Go string header)",
+      "offset": 202760576,
+      "data_offset": 63329536,
+      "bytes": 16,
+      "value": "1021296516"
+    },
+    {
+      "id": "CL-M2",
+      "sample": "M2",
+      "level": "E3",
+      "file": "unpacked/macos-app-2.32.0-verified/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "fallback_changelist_string (Go string header)",
+      "offset": 202760576,
+      "data_offset": 63328584,
+      "bytes": 16,
+      "value": "1020486441"
+    },
+    {
+      "id": "CL-C1",
+      "sample": "C1",
+      "level": "E3",
+      "file": "../installer/Antigravity-CLI-1.5.9-windows-x64.exe",
+      "symbol": "fallback_changelist_string (Go string header)",
+      "offset": 226359728,
+      "data_offset": 80139904,
+      "bytes": 16,
+      "value": "1021519450"
+    },
+    {
+      "id": "SCHEMA-W1-credits",
+      "sample": "W1",
+      "level": "E3",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "google/internal/cloud/code/v1internal/credits.proto",
+      "offset": 63558326,
+      "bytes": 523,
+      "sha256": "bf362b0c3d49ff7c15bc4c77e1f70a5ad02b39e52ea10813c170fa95831bfa7b",
+      "note": "Schema is not proof that a field is populated"
+    },
+    {
+      "id": "SCHEMA-W1-prediction_service",
+      "sample": "W1",
+      "level": "E3",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "google/internal/cloud/code/v1internal/prediction_service.proto",
+      "offset": 64756329,
+      "bytes": 5880,
+      "sha256": "7083333895648871257354517d3c328d67bb1d624e32ae022b5a256d254a1658",
+      "note": "Schema is not proof that a field is populated"
+    },
+    {
+      "id": "SCHEMA-W1-model_configs",
+      "sample": "W1",
+      "level": "E3",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "google/internal/cloud/code/v1internal/model_configs.proto",
+      "offset": 64829424,
+      "bytes": 6302,
+      "sha256": "f9912a577025def786532abde588a0174dfd9513c54fe62f9ae25b0f6cb3d1cd",
+      "note": "Schema is not proof that a field is populated"
+    },
+    {
+      "id": "SCHEMA-W1-onboarding",
+      "sample": "W1",
+      "level": "E3",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "google/internal/cloud/code/v1internal/onboarding.proto",
+      "offset": 65116107,
+      "bytes": 9778,
+      "sha256": "783569dab0969eff075a73e63019b2a509bf075f5b30e12bcc86f5529a901eef",
+      "note": "Schema is not proof that a field is populated"
+    },
+    {
+      "id": "SCHEMA-W1-cloudcode",
+      "sample": "W1",
+      "level": "E3",
+      "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+      "symbol": "google/internal/cloud/code/v1internal/cloudcode.proto",
+      "offset": 66727760,
+      "bytes": 31550,
+      "sha256": "521e8f601acff6fe6bd92533fb72cf740dc905aa92d5b88f13029e12e4c5efbf",
+      "note": "Schema is not proof that a field is populated"
+    },
+    {
+      "id": "LAUNCH-W1",
+      "sample": "W1",
+      "level": "E3",
+      "file": "unpacked/windows-app-2.32.1/asar/dist/lsDefaults.js",
+      "symbol": "dist/lsDefaults.js",
+      "offset": 0,
+      "bytes": 1000,
+      "sha256": "a423ac7026b38c4e98d82217b50ead0d22ede92c62e752fdf1fd4c6d189e5af4",
+      "locations": [
+        {
+          "needle": "LS_CLOUD_CODE_ENDPOINT",
+          "offset": 160
+        },
+        {
+          "needle": "--override_ide_name",
+          "offset": 479
+        },
+        {
+          "needle": "--subclient_type",
+          "offset": 533
+        },
+        {
+          "needle": "--override_ide_version",
+          "offset": 576
+        }
+      ]
+    },
+    {
+      "id": "OAUTH-SOURCE-W1",
+      "sample": "W1",
+      "level": "E3",
+      "file": "unpacked/windows-app-2.32.1/asar/dist/remote/signInUrls.js",
+      "symbol": "dist/remote/signInUrls.js",
+      "offset": 0,
+      "bytes": 5684,
+      "sha256": "cc268b0bdef51f77e33b9452fffd2917b4389c133daea04f777dc9040e0de052",
+      "locations": [
+        {
+          "needle": "const LS_GOOGLE_SCOPES",
+          "offset": 427
+        },
+        {
+          "needle": "// Personal accounts.",
+          "offset": 842
+        },
+        {
+          "needle": "https://www.googleapis.com/auth/aicode",
+          "offset": 1101
+        },
+        {
+          "needle": "!== 'S256'",
+          "offset": 3881
+        },
+        {
+          "needle": "!== 'offline'",
+          "offset": 3820
+        }
+      ]
+    },
+    {
+      "id": "SCHEMA-M1-credits",
+      "sample": "M1",
+      "level": "E3",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google/internal/cloud/code/v1internal/credits.proto",
+      "offset": 56399144,
+      "bytes": 523,
+      "sha256": "bf362b0c3d49ff7c15bc4c77e1f70a5ad02b39e52ea10813c170fa95831bfa7b",
+      "note": "Schema is not proof that a field is populated"
+    },
+    {
+      "id": "SCHEMA-M1-prediction_service",
+      "sample": "M1",
+      "level": "E3",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google/internal/cloud/code/v1internal/prediction_service.proto",
+      "offset": 57591413,
+      "bytes": 5880,
+      "sha256": "7083333895648871257354517d3c328d67bb1d624e32ae022b5a256d254a1658",
+      "note": "Schema is not proof that a field is populated"
+    },
+    {
+      "id": "SCHEMA-M1-model_configs",
+      "sample": "M1",
+      "level": "E3",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google/internal/cloud/code/v1internal/model_configs.proto",
+      "offset": 57664508,
+      "bytes": 6302,
+      "sha256": "f9912a577025def786532abde588a0174dfd9513c54fe62f9ae25b0f6cb3d1cd",
+      "note": "Schema is not proof that a field is populated"
+    },
+    {
+      "id": "SCHEMA-M1-onboarding",
+      "sample": "M1",
+      "level": "E3",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google/internal/cloud/code/v1internal/onboarding.proto",
+      "offset": 57941933,
+      "bytes": 9778,
+      "sha256": "783569dab0969eff075a73e63019b2a509bf075f5b30e12bcc86f5529a901eef",
+      "note": "Schema is not proof that a field is populated"
+    },
+    {
+      "id": "SCHEMA-M1-cloudcode",
+      "sample": "M1",
+      "level": "E3",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "google/internal/cloud/code/v1internal/cloudcode.proto",
+      "offset": 59553586,
+      "bytes": 31550,
+      "sha256": "521e8f601acff6fe6bd92533fb72cf740dc905aa92d5b88f13029e12e4c5efbf",
+      "note": "Schema is not proof that a field is populated"
+    },
+    {
+      "id": "LAUNCH-M1",
+      "sample": "M1",
+      "level": "E3",
+      "file": "unpacked/macos-app-2.32.1/asar/dist/lsDefaults.js",
+      "symbol": "dist/lsDefaults.js",
+      "offset": 0,
+      "bytes": 1000,
+      "sha256": "a423ac7026b38c4e98d82217b50ead0d22ede92c62e752fdf1fd4c6d189e5af4",
+      "locations": [
+        {
+          "needle": "LS_CLOUD_CODE_ENDPOINT",
+          "offset": 160
+        },
+        {
+          "needle": "--override_ide_name",
+          "offset": 479
+        },
+        {
+          "needle": "--subclient_type",
+          "offset": 533
+        },
+        {
+          "needle": "--override_ide_version",
+          "offset": 576
+        }
+      ]
+    },
+    {
+      "id": "OAUTH-SOURCE-M1",
+      "sample": "M1",
+      "level": "E3",
+      "file": "unpacked/macos-app-2.32.1/asar/dist/remote/signInUrls.js",
+      "symbol": "dist/remote/signInUrls.js",
+      "offset": 0,
+      "bytes": 5684,
+      "sha256": "cc268b0bdef51f77e33b9452fffd2917b4389c133daea04f777dc9040e0de052",
+      "locations": [
+        {
+          "needle": "const LS_GOOGLE_SCOPES",
+          "offset": 427
+        },
+        {
+          "needle": "// Personal accounts.",
+          "offset": 842
+        },
+        {
+          "needle": "https://www.googleapis.com/auth/aicode",
+          "offset": 1101
+        },
+        {
+          "needle": "!== 'S256'",
+          "offset": 3881
+        },
+        {
+          "needle": "!== 'offline'",
+          "offset": 3820
+        }
+      ]
+    },
+    {
+      "id": "IDENTITY-TEMPLATE",
+      "sample": "M1",
+      "level": "E3",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+      "symbol": "embedded antigravity_identity template",
+      "offset": 56618566,
+      "bytes": 1133,
+      "sha256": "bd8957e589c97f9fa5d5fe3077b01c49b0329f0987bd58cf73bab123ea0a199b",
+      "text": "{{- /* LINT.IfChange(antigravity_identity) */ -}}\n{{if .ExperimentEnabled \"generic-system-prompt\"}}You are Antigravity, a powerful agentic AI assistant designed by the Google Deepmind team.{{else}}You are Antigravity, a powerful agentic AI coding assistant designed by the Google Deepmind team working on Advanced Agentic Coding.{{end}}\n{{if .ExperimentEnabled \"generic-system-prompt\"}}You are {{if .IsAutonomous}}working for{{else}}working with{{end}} a USER to solve their task.{{else}}You are {{if .IsAutonomous}}working for{{else}}pair programming with{{end}} a USER to solve their coding task. The task may require creating a new codebase, modifying or debugging an existing codebase, or simply answering a question.{{end}}\nThe USER will send you requests, which you must always prioritize addressing. User requests are enclosed within <USER_REQUEST> tags.\n{{- if .IsAutonomous}}\nThe USER is not available to respond to questions or requests for approval. Work autonomously.\n{{- end}}\n{{- /* LINT.ThenChange(//depot/google3/cloud/developer_experience/cloudcode/pa/prediction_service/config/abuse.pi:antigravity_identity) */ -}}\n"
+    }
+  ]
+}

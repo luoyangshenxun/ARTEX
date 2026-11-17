@@ -1,32 +1,37 @@
-# Subway 与本地 Antigravity 样本对照
+# Subway 与官方 Antigravity Hub 对照 · v2
 
-日期：2026-11-16。
+更新：2026-11-17。Subway 基线为用户提交的生产 **f314f5d7 源码摘录**，源码根为 `orca/workspaces/alice-issue/alice/subway/backend/internal/pkg/antigravity/`。本次没有独立读取该生产目录或查询线上设置；“配置当前为空”等运营值也按用户记录标识。此表替换第一轮口述对照。
 
-**对照基线来自用户消息，不是本次读取的 Subway 源码或生产配置。** 本地对象是 IDE 2.7.0；用户基线描述的是 `antigravity/hub/2.23.0`。只有相同调用路径才可以判定一致或缺失；跨产品版本不直接标“过期”。
+官方比较对象为 **W1 Windows Hub 2.32.1** 与 **M1 macOS Hub 2.32.1**。Windows IDE 2.7.0 是独立历史样本，不拿其 Node 请求格式覆盖 Hub。详细证据 ID 均可在 [v2 catalog](v2/evidence-catalog.json) 查到样本、文件、函数、偏移与级别；没有运行时抓包 E1。
 
-| 项目 | 用户提供的 Subway 值 | 本地可验证事实 | 差异判定 |
-| --- | --- | --- | --- |
-| 基础 UA | `antigravity/hub/2.23.0 windows/amd64` | IDE 构造 `antigravity/2.7.0 windows/amd64` | **不同路径**；不能把 IDE 字符串直接当作 hub 的替换值 |
-| UA 库后缀 | 用户未列出 | IDE 认证库追加 `google-api-nodejs-client/10.3.0` | 若 Subway 没有该后缀，与此 IDE 分支不同；hub 是否需要仍待确认 |
-| hub 版本 | `2.23.0` | 本样本未包含后台二进制；App 2.32.0 不是本地对象 | **待确认**，不能判为过期 |
-| changelist | 用户称完全没有 | 包中存在 `languageServerCL=1018779249`；在已定位直接请求中未见发送 | **出站差异待确认**；不能据配置值要求补某个头 |
-| version/CL 校准 | 用户称没有 | 只取得同包配置映射，未发现 hub 配对算法 | **待确认** |
-| `X-Goog-Api-Client` 格式 | `gl-node/22.21.1` | IDE 所用库格式为 `gl-node/{运行时 Node 版本}` | **模板一致**；实际值是否一致取决于对应官方运行时 |
-| `X-*` 数量 | 用户称只有上述头 | 该 IDE 分支也未显式设置设备/session 头 | 目前不能据数量判定“缺失” |
-| metadata 的 IDE 类型 | 用户称 `ANTIGRAVITY` | 本地外部版为 `ANTIGRAVITY=9` | **语义一致**，序列化形式需检查 |
-| metadata 字段命名 | 用户给出 camelCase 名称，实际发送未知 | 本地直接请求经 `kEn` 转为 `ide_type`、`ide_version`、`ide_name` | **待查实际 wire body**；不能把 JS 字段名当作已发送格式 |
-| metadata 的版本 | 用户未给实际值 | 此 IDE 分支从 `ideVersion=2.7.0` 读取 | **待确认** |
-| `platform`／`plugin_type` | 用户未给实际值 | schema 支持，但本地 getter 未设置 | 不能因 schema 存在就要求补齐 |
-| `fetchAvailableModels` body | 未提供 | 该调用仅设置 `project`；没有 metadata 块 | **待确认** |
-| 主域／daily 域 | 提及两个域名 | IDE 按内部版、开发模式、GCP ToS 和 tier 状态选路 | **待查 Subway 选路分支** |
-| OAuth client_id | `1071006060591-...` | 常规 ID 前缀匹配，完整值见主报告；另有 GCP ToS 模式 ID | **部分匹配**；不能据前缀判定完整一致或仍有效 |
-| scopes、redirect_uri、PKCE | 未提供完整值 | 五项 scope、localhost 回调；所定位登录分支未设置 PKCE 参数 | **待确认** |
-| systemInstruction | 用户提及身份前导文本，原文不完整 | 后台生成实现不在样本中 | **待确认** |
-| thoughtSignature | 未提供实现 | 本地 protobuf 有 thought_signature 等字段；云端处理路径未取得 | **待确认** |
-| 403／封禁原因 | 用户推测指纹不齐导致 | 未运行真实请求、未取得服务端判定证据 | **因果未证实** |
+| 项目 / Subway 源码位置 | Subway 源码实值（用户摘录） | 官方 Hub 证据 / 建议 | 判定 |
+|---|---|---|---|
+| UA / oauth.go:37,124–128 | antigravity/hub/&lt;ver&gt; windows/amd64；后台值记录为空→env→内置 2.23.0 | W1 核心为 antigravity/hub/2.32.1 (aidev_client; os_type=windows; arch=amd64; cl=1021296516)，另有动态评论；UA-W1 E2 FILE 42212640 | 格式不匹配；样本版本不同，不能仅换数字 |
+| changelist | 无 | W1/M1 产品 CL 1021296516；CL-W1/CL-M1 E3；M2 1020486441 | 缺失，必须按精确样本配对 |
+| 自动版本源 | 当前没有本轮已验证的同步实现 | latest-x64-win.yml / latest-arm64-mac.yml 等 channel 可用；manifest 不含 CL | 版本可同步，CL 需离线提取 |
+| 基础头 / client.go:48–50 | Content-Type json、Bearer、User-Agent | 保持类型与认证机制；更新 UA 的构造分支；HEADERS E2 FILE 35572000 | 部分保持 |
+| 隐私额外头 / client.go:877–930 | Accept: */*、gl-node/22.21.1、固定 daily Host | Go common CCPA 未设置 gl-node；不能套到所有 action；隐私专用分支未还原 | common path 删除 Node 指纹；隐私例外待验证 |
+| 条件项目/原因头 | 未见于摘录基础头 | X-Goog-User-Project 依 provider/host/project/context；Request-Reason 非空才设；HEADERS-HUB E2 FILE 35448496 | 条件实现；不伪造设备/session头 |
+| load / client.go:81–84,471–473 | metadata: ideType ANTIGRAVITY、ideVersion ver、ideName antigravity，项目可选；camelCase | W1/M1 metadata 只设置 IdeType=9、PluginType=0；默认 wire 只有 ideType；META-LOAD-W1 E2 FILE 42330304 | 保持 camelCase/ideType，省略 version/name |
+| onboard / client.go:195–198,549–551 | ideType ANTIGRAVITY、platform PLATFORM_UNSPECIFIED、pluginType GEMINI，无 version/name | 默认 platform=0、plugin=0 省略；GEMINI=2 非该构造值；META-ONBOARD-W1 E2 FILE 42334880 | 省略 platform/plugin；保持不带 version/name |
+| metadata 平台枚举 | load 无 platform；onboard 显式 UNSPECIFIED | WINDOWS_AMD64=5、DARWIN_ARM64=2 是 schema；load/onboard 未赋值；SCHEMA-W1-onboarding E3 FILE 65116107 | 不按 UA 平台盲补枚举 |
+| models / client.go:674 | {project} | 基础保持；有 entitlement 时还有 location/entitlement，无 metadata；MODELS-M1 E2 FILE 35593088 | 基础一致，补条件分支 |
+| 生成 RPC / client.go:35–39 | streamGenerateContent?alt=sse 或非流式 generateContent | 已追到 CCPA 流式同一 action；个人还可选 AICode，business/gateway 分支另有处理；GENERATE-ROUTE E2 FILE 35540272 | CCPA 流式一致；不证明非流式官方等价 |
+| 编码 / gemini_types.go:6–13 | JSON lowerCamelCase wrapper | protojson lowerCamelCase，schema 内 snake_case 非 wire；GENERATE-JSON E2 FILE 35542000 | 保持命名 |
+| wrapper userAgent | antigravity | provider 默认 antigravity；GENERATE-ROUTE E2 FILE 35540896 | 保持 |
+| requestType / request_transformer.go:97–187 | agent / web_search | 来源/子类型映射见 request-type-maps.json；agent 已确认，所追两表不含 web_search | agent 有依据；搜索特殊路径未证实 |
+| requestId | agent-&lt;uuid&gt; | 按 prompt/session/time/reason 或 requestType/UUID 构造斜杠格式；GENERATE-ID E2 FILE 35539680 | 改为对应输入分支 |
+| userPromptId | 无 | 参与 ID 计算后被清空；GENERATE-ROUTE E2 FILE 35540952 | 该 wire 分支保持省略 |
+| enabledCreditTypes | 无 | EnableAiCredits 真才加 GOOGLE_ONE_AI=1；GENERATE-BUILD E2 FILE 35539176；SCHEMA-M1-credits E3 | 条件支持，不强制补 |
+| systemInstruction / request_transformer.go | 注入 Manager 来源 identity、剥离 Claude 身份句 | 官方有 1133 字节条件模板，受 generic-system-prompt / IsAutonomous 控制；IDENTITY-TEMPLATE E3 FILE 56618566 | 完整 Subway 文本未提供，逐字 diff 待定；不能认定固定注入等价 |
+| thoughtSignature | 摘录未给具体实现 | 接收保存 per-call bytes，重发复制或解码旧 base64；THOUGHT-SEND E2 FILE 35531680；THOUGHT-RECEIVE E2 FILE 35722736 | 按对象关联保存；当前 Subway 是否缺失未知 |
+| 路由 / oauth.go:148–151、client.go:822 | prod 优先，daily 备用，5min TTL；隐私固定 daily | Hub bootstrap daily，个人 daily，业务/GCP ToS prod，有 env/dev/custom 覆盖；ENDPOINTS E2 FILE 35449744 | 改认证/配置选路，不整体反转 |
+| OAuth / oauth.go:28,40–47 | client_id 1071006060591-tmhs…，五 scope 无 aicode；secret 内置/env 覆盖 | 个人完整 ID 见 profile，六 scope；业务/WIF 为不同模式，不是轮换池；OAUTH-SOURCE-* E3 | 个人授权补 aicode，核验实际授予范围 |
+| OAuth callback / oauth.go:403–404 | localhost:8085/callback、PKCE S256 | 官方动态端口 /auth/callback、S256、consent、offline；OAUTH-CALLBACK E2 FILE 39593936 | S256 保持；回调监听与注册策略一并对齐 |
+| secret | 内置可覆盖 | 本轮仅记录 SHA-256，未验证有效性或吊销状态；OAUTH-CONFIG E2 FILE 39637344 | 不公开明文，不推断可轮换 |
+| geminicli / pkg/geminicli/constants.go:41,50 | GeminiCLI/0.1.5 (Windows; AMD64)，client_id 681255809395-… | agy 1.5.9 属另一客户端，不是 Gemini CLI 升级；官方 Gemini CLI 2026-11-17 查询稳定版 v0.68.0 | 独立升级评估；不可只换 agy UA |
+| TOS 403 | 用户记录唯一号 11-13 后不可用 | 本轮无账号请求、无服务端因果证据 | 不声称改指纹能恢复或避免封禁 |
 
-本次能直接供改造评审使用的结果是：分清 IDE 与 hub；对比认证库追加后的完整 UA；追踪运行时生成的 `X-Goog-Api-Client`；检查请求体的 snake_case 转换；按 action 分别核对 metadata；记录实际 endpoint 选择条件。
+完整核心 UA、OAuth scope/回调、版本/CL 表、生成字段与条件头已整合到 [机器 profile](v2/antigravity-hub-profiles.json)。文件中的 null 由 policy 解释，不能直接作为 HTTP 头发送；ready_as_unconditional_constants=false，动态状态需要调用方实现。本轮主报告见 [antigravity-static-analysis-v2.md](v2/antigravity-static-analysis-v2.md)，Mac 摘要见 [macos fingerprint](macos/antigravity-macos-fingerprint.md)。
 
-本次没有修改 Subway，没有连接 `alice-sg-26`，也没有执行消息中截断的 SQL。线上设置、账号 proxy、Gemini CLI 活跃用量和“是否转移号池”等事项未由本地静态样本回答。
-
-在缺少同版本后台样本和 Subway 实际发送数据时，没有可验证的 UA／CL 自动补丁。
+Windows Hub 样本已取得，A 方案前置缺口已补；是否继续 A、改 B 或重建号池仍由 Subway 负责方决定。本次只改变 ARTEX 分析交付，没有改生产 Subway 或执行线上 SQL。

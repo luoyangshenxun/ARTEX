@@ -1,0 +1,138 @@
+[
+  {
+    "symbol": "FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.map.init.0 VA=0x1021bba80 FILE=35371648 SIZE=752\r",
+    "entries": [
+      {
+        "key": 1,
+        "callOffset": 35371712,
+        "length": 4,
+        "dataOffset": 53288887,
+        "value": "chat"
+      },
+      {
+        "key": 2,
+        "callOffset": 35371776,
+        "length": 13,
+        "dataOffset": 54040913,
+        "value": "context_check"
+      },
+      {
+        "key": 3,
+        "callOffset": 35371840,
+        "length": 4,
+        "dataOffset": 53288891,
+        "value": "plan"
+      },
+      {
+        "key": 4,
+        "callOffset": 35371904,
+        "length": 7,
+        "dataOffset": 53455009,
+        "value": "command"
+      },
+      {
+        "key": 5,
+        "callOffset": 35371968,
+        "length": 5,
+        "dataOffset": 53330882,
+        "value": "agent"
+      },
+      {
+        "key": 6,
+        "callOffset": 35372032,
+        "length": 4,
+        "dataOffset": 53288531,
+        "value": "eval"
+      },
+      {
+        "key": 10,
+        "callOffset": 35372096,
+        "length": 10,
+        "dataOffset": 53738456,
+        "value": "checkpoint"
+      },
+      {
+        "key": 9,
+        "callOffset": 35372160,
+        "length": 23,
+        "dataOffset": 54790161,
+        "value": "generate_commit_message"
+      },
+      {
+        "key": 12,
+        "callOffset": 35372224,
+        "length": 16,
+        "dataOffset": 54296659,
+        "value": "agent_monitoring"
+      },
+      {
+        "key": 13,
+        "callOffset": 35372288,
+        "length": 12,
+        "dataOffset": 53944335,
+        "value": "custom_agent"
+      }
+    ]
+  },
+  {
+    "symbol": "FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.map.init.1 VA=0x1021bbd70 FILE=35372400 SIZE=608\r",
+    "entries": [
+      {
+        "key": 1,
+        "callOffset": 35372448,
+        "length": 12,
+        "dataOffset": 53944347,
+        "value": "autocomplete"
+      },
+      {
+        "key": 4,
+        "callOffset": 35372512,
+        "length": 16,
+        "dataOffset": 54296675,
+        "value": "command_generate"
+      },
+      {
+        "key": 5,
+        "callOffset": 35372576,
+        "length": 12,
+        "dataOffset": 53944359,
+        "value": "command_edit"
+      },
+      {
+        "key": 6,
+        "callOffset": 35372640,
+        "length": 3,
+        "dataOffset": 53262148,
+        "value": "tab"
+      },
+      {
+        "key": 7,
+        "callOffset": 35372704,
+        "length": 12,
+        "dataOffset": 53944371,
+        "value": "command_plan"
+      },
+      {
+        "key": 10,
+        "callOffset": 35372768,
+        "length": 16,
+        "dataOffset": 54296691,
+        "value": "command_terminal"
+      },
+      {
+        "key": 11,
+        "callOffset": 35372832,
+        "length": 8,
+        "dataOffset": 53545514,
+        "value": "tab_jump"
+      },
+      {
+        "key": 12,
+        "callOffset": 35372896,
+        "length": 18,
+        "dataOffset": 54444861,
+        "value": "agent_code_tracker"
+      }
+    ]
+  }
+]

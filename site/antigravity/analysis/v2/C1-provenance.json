@@ -1,0 +1,15 @@
+{
+  "id": "C1",
+  "version": "1.5.9",
+  "build": "4515810895593472",
+  "platform": "windows-x64",
+  "url": "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.5.9-4515810895593472/windows-x64/cli_windows_x64.exe",
+  "name": "Antigravity-CLI-1.5.9-windows-x64.exe",
+  "expectedSha512": "539a9415a686d9ec45f5c59fe7d32c485c6fa9abaea50208ae8ede4ed3622b9fb2bfd6680c87dc52344981172a96ddacb261ff4231276b5572fb5b62a9b0221e",
+  "file": "H:\\orca\\rea\\site\\antigravity\\installer\\Antigravity-CLI-1.5.9-windows-x64.exe",
+  "size": 231726744,
+  "sha256": "8803c289cac04d6e53f2211592d9981c2d5760bc0d9b4a7f222ef6ecc7abb38a",
+  "sha512": "539a9415a686d9ec45f5c59fe7d32c485c6fa9abaea50208ae8ede4ed3622b9fb2bfd6680c87dc52344981172a96ddacb261ff4231276b5572fb5b62a9b0221e",
+  "officialClientExecuted": false,
+  "observedAt": "2026-11-17T06:01:18.180Z"
+}

@@ -1,0 +1,242 @@
+{
+  "M2": {
+    "file": "unpacked/macos-app-2.32.0-verified/Antigravity.app/Contents/Resources/bin/language_server",
+    "sha256": "5084a59982e1ff3b6dc4cf2ca35680c72c23435450080c2921cd8996c8440aae",
+    "bytes": 205328048,
+    "format": "Mach-O",
+    "arch": "arm64",
+    "cl": {
+      "address": 4497727872,
+      "offset": 202760576,
+      "dataOffset": 63328584,
+      "length": 10,
+      "value": "1020486441"
+    },
+    "client_secrets_sha256_only": [
+      {
+        "offset": 55304550,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0"
+      },
+      {
+        "offset": 55304690,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60"
+      },
+      {
+        "offset": 55308015,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "9a015b93b682ec7a547d239ebd42d15b05340615ee63c64f121517e523784918"
+      }
+    ],
+    "occurrences": {
+      "<identity>": [
+        59157128
+      ],
+      "You are Antigravity": [
+        56100555,
+        56617723,
+        56617821
+      ],
+      "enabled_credit_types": [
+        57591488,
+        145548265,
+        145548386
+      ],
+      "user_prompt_id": [
+        57591345,
+        59559286,
+        59559490,
+        140448735,
+        140448782,
+        141215752,
+        141215805
+      ],
+      "X-Goog-Api-Client": [],
+      "gl-node/22.21.1": []
+    }
+  },
+  "M1": {
+    "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+    "sha256": "f5377993d29bc1036ed9ddbfb2aec55bb37b8aaaf811df4a8c3ed5763dde2db0",
+    "bytes": 205328064,
+    "format": "Mach-O",
+    "arch": "arm64",
+    "cl": {
+      "address": 4497727872,
+      "offset": 202760576,
+      "dataOffset": 63329536,
+      "length": 10,
+      "value": "1021296516"
+    },
+    "client_secrets_sha256_only": [
+      {
+        "offset": 55305492,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0"
+      },
+      {
+        "offset": 55305632,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60"
+      },
+      {
+        "offset": 55308957,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "9a015b93b682ec7a547d239ebd42d15b05340615ee63c64f121517e523784918"
+      }
+    ],
+    "occurrences": {
+      "<identity>": [
+        59158070
+      ],
+      "You are Antigravity": [
+        56101497,
+        56618665,
+        56618763
+      ],
+      "enabled_credit_types": [
+        57592430,
+        145548617,
+        145548738
+      ],
+      "user_prompt_id": [
+        57592287,
+        59560228,
+        59560432,
+        140449087,
+        140449134,
+        141216104,
+        141216157
+      ],
+      "X-Goog-Api-Client": [],
+      "gl-node/22.21.1": []
+    }
+  },
+  "W1": {
+    "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+    "sha256": "65cdb8d132fc61056625081be7d07d4d22f57eba485de7edf0d24d98e77c891f",
+    "bytes": 215547392,
+    "format": "PE",
+    "arch": "amd64",
+    "cl": {
+      "address": 5579021312,
+      "offset": 210307584,
+      "dataOffset": 70504496,
+      "length": 10,
+      "value": "1021296516"
+    },
+    "client_secrets_sha256_only": [
+      {
+        "offset": 62461726,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0"
+      },
+      {
+        "offset": 62461866,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60"
+      },
+      {
+        "offset": 62465191,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "9a015b93b682ec7a547d239ebd42d15b05340615ee63c64f121517e523784918"
+      }
+    ],
+    "occurrences": {
+      "<identity>": [
+        66332244
+      ],
+      "You are Antigravity": [
+        63260259,
+        63779016,
+        63779114
+      ],
+      "enabled_credit_types": [
+        64757346,
+        161834009,
+        161834130
+      ],
+      "user_prompt_id": [
+        64757203,
+        66734402,
+        66734606,
+        156720427,
+        156720474,
+        157490544,
+        157490597
+      ],
+      "X-Goog-Api-Client": [],
+      "gl-node/22.21.1": []
+    }
+  },
+  "C1": {
+    "file": "../installer/Antigravity-CLI-1.5.9-windows-x64.exe",
+    "sha256": "8803c289cac04d6e53f2211592d9981c2d5760bc0d9b4a7f222ef6ecc7abb38a",
+    "bytes": 231726744,
+    "format": "PE",
+    "arch": "amd64",
+    "cl": {
+      "address": 5595074992,
+      "offset": 226359728,
+      "dataOffset": 80139904,
+      "length": 10,
+      "value": "1021519450"
+    },
+    "client_secrets_sha256_only": [
+      {
+        "offset": 70339785,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0"
+      },
+      {
+        "offset": 70339960,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60"
+      },
+      {
+        "offset": 70343180,
+        "length": 35,
+        "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+        "sha256": "9a015b93b682ec7a547d239ebd42d15b05340615ee63c64f121517e523784918"
+      }
+    ],
+    "occurrences": {
+      "<identity>": [
+        75394019
+      ],
+      "You are Antigravity": [
+        71247125,
+        71749289,
+        71749387
+      ],
+      "enabled_credit_types": [
+        73384735,
+        187832496,
+        187832617
+      ],
+      "user_prompt_id": [
+        73384592,
+        75952706,
+        75952910,
+        182986870,
+        182986917,
+        183693340,
+        183693393
+      ],
+      "X-Goog-Api-Client": [],
+      "gl-node/22.21.1": []
+    }
+  }
+}

@@ -1,7 +1,18 @@
 # Antigravity App — analysis workspace
 
-Workspace for analyzing **Google Antigravity IDE** (agentic AI development environment,
-a fork of VS Code / Electron, Gemini-powered).
+Workspace for static analysis of Google Antigravity products. The Windows
+**IDE 2.7.0** sample and the **App/Hub 2.32.x** samples are distinct products.
+The Hub includes a native Go language_server on both Windows and macOS.
+
+Current analysis (November 17, 2026):
+
+- [Round-two report](analysis/v2/antigravity-static-analysis-v2.md): Windows Hub,
+  macOS version/CL comparison, request construction, OAuth and CLI findings.
+- [Machine-readable profiles](analysis/v2/antigravity-hub-profiles.json): Windows
+  amd64 and macOS arm64, with explicit conditions and unresolved runtime fields.
+- [Subway source-excerpt comparison](analysis/subway-fingerprint-diff.md) and
+  [macOS report](analysis/macos/antigravity-macos-fingerprint.md).
+- [Evidence and verification guide](analysis/v2/README.md).
 
 ## Layout
 
@@ -11,7 +22,9 @@ site/antigravity/
 │   ├── Antigravity-IDE-2.7.0-windows-x64.exe   # official Google CDN download (Inno Setup, 191 MB)
 │   └── SHA256SUMS.txt                           # recorded checksum
 ├── analysis/
-│   └── report_overview.md                       # architecture + packaging notes
+│   ├── report_overview.md                       # first Windows IDE analysis
+│   ├── macos/                                  # macOS Hub and transaction records
+│   └── v2/                                     # round-two report, profiles, evidence
 └── README.md
 ```
 
@@ -33,7 +46,8 @@ Windows `arm64` `.exe`.
 
 ## Scope note
 
-This workspace holds a **high-level architecture / packaging analysis** of an
-officially downloaded installer. It does not contain protection-bypass, license,
-anti-detection, or account-automation tooling — unlike the `evplayer2` sibling
-workspace. If deeper work is wanted, say what and for what authorized purpose.
+The reports distinguish packaged constants and traced construction branches from
+runtime observations. No official client was executed in the second round.
+Downloaded packages, extracted binaries and portable tool binaries remain ignored;
+client secrets are recorded only as SHA-256 hashes. See each report for its
+sample provenance, evidence level and unresolved conditions.

@@ -1,0 +1,7 @@
+version: 2.32.1
+files:
+  - url: https://storage.googleapis.com/antigravity-public/antigravity-hub/2.32.1-6001966350991360/darwin-x64/Antigravity.zip
+    sha512: 9miyOSDWYoqOdwR9wIQY0IXLC4cV2//LDnKOPKW4FVr+1xkQbFEW92EVgfI/+1rMYz03Y7uBu3Y2g4VjTrkhaQ==
+    size: 228581631
+path: Antigravity.zip
+sha512: 9miyOSDWYoqOdwR9wIQY0IXLC4cV2//LDnKOPKW4FVr+1xkQbFEW92EVgfI/+1rMYz03Y7uBu3Y2g4VjTrkhaQ==

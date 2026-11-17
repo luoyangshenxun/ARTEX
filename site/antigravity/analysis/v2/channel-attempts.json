@@ -1,0 +1,68 @@
+{
+  "observedAt": "2026-11-17T06:00:07.137Z",
+  "attempts": [
+    {
+      "channel": "latest-x64-win",
+      "url": "https://antigravity-hub-auto-updater-974169037036.us-central1.run.app/manifest/latest-x64-win.yml",
+      "exit": 0,
+      "stdout": "200",
+      "stderr": "",
+      "bytes": 405,
+      "version": "2.32.1"
+    },
+    {
+      "channel": "latest-arm64-win",
+      "url": "https://antigravity-hub-auto-updater-974169037036.us-central1.run.app/manifest/latest-arm64-win.yml",
+      "exit": 0,
+      "stdout": "200",
+      "stderr": "",
+      "bytes": 409,
+      "version": "2.32.1"
+    },
+    {
+      "channel": "latest-arm64-mac",
+      "url": "https://antigravity-hub-auto-updater-974169037036.us-central1.run.app/manifest/latest-arm64-mac.yml",
+      "exit": 0,
+      "stdout": "200",
+      "stderr": "",
+      "bytes": 389,
+      "version": "2.32.1"
+    },
+    {
+      "channel": "latest-x64-mac",
+      "url": "https://antigravity-hub-auto-updater-974169037036.us-central1.run.app/manifest/latest-x64-mac.yml",
+      "exit": 0,
+      "stdout": "200",
+      "stderr": "",
+      "bytes": 389,
+      "version": "2.32.1"
+    },
+    {
+      "channel": "latest",
+      "url": "https://antigravity-hub-auto-updater-974169037036.us-central1.run.app/manifest/latest.yml",
+      "exit": 0,
+      "stdout": "404",
+      "stderr": "",
+      "bytes": 0,
+      "version": null
+    },
+    {
+      "channel": "latest-x64",
+      "url": "https://antigravity-hub-auto-updater-974169037036.us-central1.run.app/manifest/latest-x64.yml",
+      "exit": 0,
+      "stdout": "404",
+      "stderr": "",
+      "bytes": 0,
+      "version": null
+    },
+    {
+      "channel": "latest-arm64",
+      "url": "https://antigravity-hub-auto-updater-974169037036.us-central1.run.app/manifest/latest-arm64.yml",
+      "exit": 0,
+      "stdout": "404",
+      "stderr": "",
+      "bytes": 0,
+      "version": null
+    }
+  ]
+}

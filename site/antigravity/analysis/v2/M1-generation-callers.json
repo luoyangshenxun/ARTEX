@@ -1,0 +1,23 @@
+[
+  {
+    "caller": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).getStreamingTextCompletion",
+    "callerOffset": 35527728,
+    "instructionOffset": 35528676,
+    "target": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.BuildGenerateContentRequest",
+    "targetOffset": 35535552
+  },
+  {
+    "caller": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).getStreamingTextCompletion",
+    "callerOffset": 35527728,
+    "instructionOffset": 35529312,
+    "target": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).StreamGenerateContent",
+    "targetOffset": 35540272
+  },
+  {
+    "caller": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).GetVideoSummarization",
+    "callerOffset": 35552208,
+    "instructionOffset": 35553412,
+    "target": "google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).StreamGenerateContent",
+    "targetOffset": 35540272
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "records": [
+    {
+      "id": "download-page",
+      "url": "https://antigravity.google/download",
+      "local_snapshot": "download-page.html",
+      "observed_date": "2026-11-17",
+      "bytes": 174650,
+      "sha256": "ec15fb3f0f910109abf32e6dc11d81e85b26581019b12aaf3efc83930e83517e",
+      "offset": 112557
+    },
+    {
+      "id": "refresh-scope-standard",
+      "url": "https://www.rfc-editor.org/rfc/rfc6749.txt",
+      "local_snapshot": "rfc6749.txt",
+      "observed_date": "2026-11-17",
+      "bytes": 163498,
+      "sha256": "f204fc8661d6c92d2ec6e0b54808f961a9ad26e792f57f312d9528335519bd71",
+      "offset": 101829,
+      "section": "6",
+      "lines": [
+        2597,
+        2602
+      ],
+      "conclusion": "Refresh scopes cannot exceed the original grant; additional scope requires an authorization grant."
+    },
+    {
+      "id": "gemini-cli-stable",
+      "url": "https://api.github.com/repos/google-gemini/gemini-cli/releases/latest",
+      "local_snapshot": "gemini-cli-latest-release.json",
+      "observed_date": "2026-11-17",
+      "bytes": 12951,
+      "sha256": "804ea6c4d2d21ab15c131bcafaa76a849933f20e32570c6d639fd5b771708bfc",
+      "offset": 1595,
+      "tag_name": "v0.68.0",
+      "published_at": "2026-11-10T21:17:07Z",
+      "prerelease": false,
+      "release_url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.68.0"
+    },
+    {
+      "id": "updater-W1",
+      "sample": "W1",
+      "file": "unpacked/windows-app-2.32.1/resources/app-update.yml",
+      "offset": 0,
+      "bytes": 144,
+      "sha256": "7f5e7ecae74c2a2483979d085b39f59df66a908988d46d73dea8eefc038de2ba",
+      "content": "provider: generic\nurl: https://antigravity-hub-auto-updater-974169037036.us-central1.run.app/manifest/\nupdaterCacheDirName: antigravity-updater\n"
+    },
+    {
+      "id": "updater-M1",
+      "sample": "M1",
+      "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/app-update.yml",
+      "offset": 0,
+      "bytes": 147,
+      "sha256": "2099f4315f5499b9ad35bad980262eace122b2ef284428e88b3e50ee881d88ab",
+      "content": "provider: generic\nurl: https://antigravity-hub-auto-updater-974169037036.us-central1.run.app/manifest/\nupdaterCacheDirName: com.google.antigravity\n"
+    }
+  ]
+}

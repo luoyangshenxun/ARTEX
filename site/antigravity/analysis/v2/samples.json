@@ -1,0 +1,281 @@
+{
+  "observed_date": "2026-11-17",
+  "samples": {
+    "W1": {
+      "app_version": "2.32.1",
+      "build_dir_id": "6001966350991360",
+      "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.32.1-6001966350991360/windows-x64/Antigravity-x64.exe",
+      "bytes": 189004024,
+      "sha256": "f216ee69d6a6d0c69f7fca01e3ccef9f0f1d78f861fa24891a6db185d6fa5ee1",
+      "sha512_hex": "a632836f3daa313f4ca759bb4c67e354a3b3dec431880d521376357cc5329969984f9086c1b8349332d9a73c4d1bbde36677742940c6fb900cdc46bcdf589db0",
+      "native": {
+        "file": "unpacked/windows-app-2.32.1/resources/bin/language_server.exe",
+        "sha256": "65cdb8d132fc61056625081be7d07d4d22f57eba485de7edf0d24d98e77c891f",
+        "bytes": 215547392,
+        "format": "PE",
+        "arch": "amd64",
+        "cl": {
+          "address": 5579021312,
+          "offset": 210307584,
+          "dataOffset": 70504496,
+          "length": 10,
+          "value": "1021296516"
+        },
+        "client_secrets_sha256_only": [
+          {
+            "offset": 62461726,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0"
+          },
+          {
+            "offset": 62461866,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60"
+          },
+          {
+            "offset": 62465191,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "9a015b93b682ec7a547d239ebd42d15b05340615ee63c64f121517e523784918"
+          }
+        ],
+        "occurrences": {
+          "<identity>": [
+            66332244
+          ],
+          "You are Antigravity": [
+            63260259,
+            63779016,
+            63779114
+          ],
+          "enabled_credit_types": [
+            64757346,
+            161834009,
+            161834130
+          ],
+          "user_prompt_id": [
+            64757203,
+            66734402,
+            66734606,
+            156720427,
+            156720474,
+            157490544,
+            157490597
+          ],
+          "X-Goog-Api-Client": [],
+          "gl-node/22.21.1": []
+        }
+      },
+      "official_client_executed": false
+    },
+    "M1": {
+      "app_version": "2.32.1",
+      "build_dir_id": "6001966350991360",
+      "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.32.1-6001966350991360/darwin-arm/Antigravity.zip",
+      "bytes": 216300499,
+      "sha256": "20dbf3f96f50aaaa83a2a9abcddb81ddb90ec073ea0e2776737126cf1cdb463a",
+      "sha512_hex": "f97a281c51d6e418017b0b533b1a69df09cb597eb72ecf1024e933d1c0f86730f1c7be242577b10143dc6f59d8b7bfeb5b952c4f10583d9f2901a1032e61d5ef",
+      "native": {
+        "file": "unpacked/macos-app-2.32.1/Antigravity.app/Contents/Resources/bin/language_server",
+        "sha256": "f5377993d29bc1036ed9ddbfb2aec55bb37b8aaaf811df4a8c3ed5763dde2db0",
+        "bytes": 205328064,
+        "format": "Mach-O",
+        "arch": "arm64",
+        "cl": {
+          "address": 4497727872,
+          "offset": 202760576,
+          "dataOffset": 63329536,
+          "length": 10,
+          "value": "1021296516"
+        },
+        "client_secrets_sha256_only": [
+          {
+            "offset": 55305492,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0"
+          },
+          {
+            "offset": 55305632,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60"
+          },
+          {
+            "offset": 55308957,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "9a015b93b682ec7a547d239ebd42d15b05340615ee63c64f121517e523784918"
+          }
+        ],
+        "occurrences": {
+          "<identity>": [
+            59158070
+          ],
+          "You are Antigravity": [
+            56101497,
+            56618665,
+            56618763
+          ],
+          "enabled_credit_types": [
+            57592430,
+            145548617,
+            145548738
+          ],
+          "user_prompt_id": [
+            57592287,
+            59560228,
+            59560432,
+            140449087,
+            140449134,
+            141216104,
+            141216157
+          ],
+          "X-Goog-Api-Client": [],
+          "gl-node/22.21.1": []
+        }
+      },
+      "official_client_executed": false
+    },
+    "C1": {
+      "app_version": "1.5.9",
+      "build_dir_id": "4515810895593472",
+      "url": "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.5.9-4515810895593472/windows-x64/cli_windows_x64.exe",
+      "bytes": 231726744,
+      "sha256": "8803c289cac04d6e53f2211592d9981c2d5760bc0d9b4a7f222ef6ecc7abb38a",
+      "sha512_hex": "539a9415a686d9ec45f5c59fe7d32c485c6fa9abaea50208ae8ede4ed3622b9fb2bfd6680c87dc52344981172a96ddacb261ff4231276b5572fb5b62a9b0221e",
+      "native": {
+        "file": "../installer/Antigravity-CLI-1.5.9-windows-x64.exe",
+        "sha256": "8803c289cac04d6e53f2211592d9981c2d5760bc0d9b4a7f222ef6ecc7abb38a",
+        "bytes": 231726744,
+        "format": "PE",
+        "arch": "amd64",
+        "cl": {
+          "address": 5595074992,
+          "offset": 226359728,
+          "dataOffset": 80139904,
+          "length": 10,
+          "value": "1021519450"
+        },
+        "client_secrets_sha256_only": [
+          {
+            "offset": 70339785,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0"
+          },
+          {
+            "offset": 70339960,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60"
+          },
+          {
+            "offset": 70343180,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "9a015b93b682ec7a547d239ebd42d15b05340615ee63c64f121517e523784918"
+          }
+        ],
+        "occurrences": {
+          "<identity>": [
+            75394019
+          ],
+          "You are Antigravity": [
+            71247125,
+            71749289,
+            71749387
+          ],
+          "enabled_credit_types": [
+            73384735,
+            187832496,
+            187832617
+          ],
+          "user_prompt_id": [
+            73384592,
+            75952706,
+            75952910,
+            182986870,
+            182986917,
+            183693340,
+            183693393
+          ],
+          "X-Goog-Api-Client": [],
+          "gl-node/22.21.1": []
+        }
+      },
+      "official_client_executed": false
+    },
+    "M2": {
+      "app_version": "2.32.0",
+      "build_dir_id": "6141816156848128",
+      "url": "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.32.0-6141816156848128/darwin-arm/Antigravity.dmg",
+      "bytes": 241278833,
+      "sha256": "7ec0f204cf306506ecd77abbb7ba2a6e722471dbf908a86433dcb8efa6ed98f7",
+      "native": {
+        "file": "unpacked/macos-app-2.32.0-verified/Antigravity.app/Contents/Resources/bin/language_server",
+        "sha256": "5084a59982e1ff3b6dc4cf2ca35680c72c23435450080c2921cd8996c8440aae",
+        "bytes": 205328048,
+        "format": "Mach-O",
+        "arch": "arm64",
+        "cl": {
+          "address": 4497727872,
+          "offset": 202760576,
+          "dataOffset": 63328584,
+          "length": 10,
+          "value": "1020486441"
+        },
+        "client_secrets_sha256_only": [
+          {
+            "offset": 55304550,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "a2ddedc84850a9c48b7e01d61700848083bf0e10fb8d6c99c496803e8b48ced0"
+          },
+          {
+            "offset": 55304690,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "1d2f041093fd95aa8995a038c711d50a7960da09a505381c09a745d6ad0ecc60"
+          },
+          {
+            "offset": 55308015,
+            "length": 35,
+            "boundary": "getOAuthConfig immediate 0x23; verify per sample",
+            "sha256": "9a015b93b682ec7a547d239ebd42d15b05340615ee63c64f121517e523784918"
+          }
+        ],
+        "occurrences": {
+          "<identity>": [
+            59157128
+          ],
+          "You are Antigravity": [
+            56100555,
+            56617723,
+            56617821
+          ],
+          "enabled_credit_types": [
+            57591488,
+            145548265,
+            145548386
+          ],
+          "user_prompt_id": [
+            57591345,
+            59559286,
+            59559490,
+            140448735,
+            140448782,
+            141215752,
+            141215805
+          ],
+          "X-Goog-Api-Client": [],
+          "gl-node/22.21.1": []
+        }
+      },
+      "official_client_executed": false,
+      "provenance": "Retained first-round verified DMG; see ../macos/VERIFICATION.txt"
+    }
+  }
+}

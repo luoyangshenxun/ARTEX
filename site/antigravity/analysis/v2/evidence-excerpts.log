@@ -1,0 +1,2139 @@
+Selected static instructions. FILE offsets are decimal; no official client was executed.
+
+SOURCE M1-init-auth.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/metadata_provider/metadata_provider.Initialize.func1 VA=0x100ba4180 FILE=12206464 SIZE=208
+  0000000100ba4180 file=12206464 f9400b90 ldr x16, [x28,#16]
+  0000000100ba4184 file=12206468 eb3063ff cmp sp, x16
+  0000000100ba4188 file=12206472 540005a9 b.ls .+0xb4                              target=0x100ba423c
+  0000000100ba418c file=12206476 f81c0ffe str x30, [sp,#-64]!
+  0000000100ba4190 file=12206480 f81f83fd stur x29, [sp,#-8]
+  0000000100ba4194 file=12206484 d10023fd sub x29, sp, #0x8
+  0000000100ba4198 file=12206488 f9400743 ldr x3, [x26,#8]
+  0000000100ba419c file=12206492 f9001be3 str x3, [sp,#48]
+  0000000100ba41a0 file=12206496 b4000223 cbz x3, .+0x44                           target=0x100ba41e4
+  0000000100ba41a4 file=12206500 b27f07e4 orr x4, xzr, #0x6
+  0000000100ba41a8 file=12206504 f9003864 str x4, [x3,#112]
+  0000000100ba41ac file=12206508 d005b87b adrp x27, .+0xb70e000
+  0000000100ba41b0 file=12206512 b9436364 ldr w4, [x27,#864]
+  0000000100ba41b4 file=12206516 340000a4 cbz w4, .+0x14                           target=0x100ba41c8
+  0000000100ba41b8 file=12206520 f9403464 ldr x4, [x3,#104]
+  0000000100ba41bc file=12206524 f9403c65 ldr x5, [x3,#120]
+  0000000100ba41c0 file=12206528 97d3b708 bl .+0xffffffffff4edc20                  target=0x100091de0 runtime.gcWriteBarrier2
+  0000000100ba41c4 file=12206532 a9001724 stp x4, x5, [x25]
+  0000000100ba41c8 file=12206536 b0013a24 adrp x4, .+0x2745000
+  0000000100ba41cc file=12206540 9108a084 add x4, x4, #0x228                       ref=0x1032e9228 file=53383720 "darwin'self'jetski1.11.0Originglobalgeministubbyvideo/MODEL_cachedstatussystemSystemmodels%s: %vfailedpluginskills%s"
+  0000000100ba41d0 file=12206544 f9003464 str x4, [x3,#104]
+  0000000100ba41d4 file=12206548 900139c4 adrp x4, .+0x2738000
+  0000000100ba41d8 file=12206552 910c9c84 add x4, x4, #0x327                       ref=0x1032dc327 file=53330727 "arm64gcing MB, stackother got= ..."
+  0000000100ba41dc file=12206556 d28000a5 mov x5, #0x5
+  0000000100ba41e0 file=12206560 a9079464 stp x4, x5, [x3,#120]
+  0000000100ba41e4 file=12206564 b27b03e0 orr x0, xzr, #0x20
+  0000000100ba41e8 file=12206568 9003e021 adrp x1, .+0x7c04000
+  0000000100ba41ec file=12206572 9130c021 add x1, x1, #0xc30
+  0000000100ba41f0 file=12206576 b24003e2 orr x2, xzr, #0x1
+  0000000100ba41f4 file=12206580 97d1f887 bl .+0xffffffffff47e21c                  target=0x100022410 runtime.mallocgcSmallScanNoHeaderSC4
+  0000000100ba41f8 file=12206584 d005b87b adrp x27, .+0xb70e000
+  0000000100ba41fc file=12206588 b9436363 ldr w3, [x27,#864]
+  0000000100ba4200 file=12206592 35000063 cbnz w3, .+0xc                           target=0x100ba420c
+  0000000100ba4204 file=12206596 f9401be2 ldr x2, [sp,#48]
+  0000000100ba4208 file=12206600 14000007 b .+0x1c                                 target=0x100ba4224
+  0000000100ba420c file=12206604 f005b5db adrp x27, .+0xb6bb000
+  0000000100ba4210 file=12206608 f9437f61 ldr x1, [x27,#1784]
+  0000000100ba4214 file=12206612 97d3b6f7 bl .+0xffffffffff4edbdc                  target=0x100091df0 runtime.gcWriteBarrier3
+  0000000100ba4218 file=12206616 f9401be2 ldr x2, [sp,#48]
+  0000000100ba421c file=12206620 a9000322 stp x2, x0, [x25]
+  0000000100ba4220 file=12206624 f9000b21 str x1, [x25,#16]
+  0000000100ba4224 file=12206628 f9000c02 str x2, [x0,#24]
+  0000000100ba4228 file=12206632 f005b5db adrp x27, .+0xb6bb000
+  0000000100ba422c file=12206636 f9037f60 str x0, [x27,#1784]
+  0000000100ba4230 file=12206640 f85f83fd ldur x29, [sp,#-8]
+  0000000100ba4234 file=12206644 f84407fe ldr x30, [sp],#64
+  0000000100ba4238 file=12206648 d65f03c0 ret
+  0000000100ba423c file=12206652 aa1e03e3 mov x3, x30
+  0000000100ba4240 file=12206656 97d3aee4 bl .+0xffffffffff4ebb90                  target=0x10008fdd0 runtime.morestack
+  0000000100ba4244 file=12206660 17ffffcf b .+0xffffffffffffff3c                   target=0x100ba4180 google3/third_party/jetski/language_server/metadata_provider/metadata_provider.Initialize.func1
+  0000000100ba4248 file=12206664 00000000 .word 0x00000000
+  0000000100ba424c file=12206668 00000000 .word 0x00000000
+
+SOURCE W1-ua.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/metadata_provider/metadata_provider.Initialize.func1 VA=0x140df63e0 FILE=14637536 SIZE=224
+  0000000140df63e0 file=14637536 cmp rsp, qword ptr [r14+0x10]
+  0000000140df63e4 file=14637540 jbe 0x140df64a2                               target=0x140df64a2
+  0000000140df63ea file=14637546 push rbp
+  0000000140df63eb file=14637547 mov rbp, rsp
+  0000000140df63ee file=14637550 sub rsp, 0x28
+  0000000140df63f2 file=14637554 mov rdx, qword ptr [rdx+0x8]
+  0000000140df63f6 file=14637558 mov qword ptr [rsp+0x20], rdx
+  0000000140df63fb file=14637563 nop dword ptr [rax+rax*1], eax
+  0000000140df6400 file=14637568 test rdx, rdx
+  0000000140df6403 file=14637571 jz 0x140df644d                                target=0x140df644d
+  0000000140df6405 file=14637573 mov qword ptr [rdx+0x70], 0x7
+  0000000140df640d file=14637581 cmp dword ptr [rip+0xbc12f5c], 0x0            mem=0x14ca09370 file=-1
+  0000000140df6414 file=14637588 jz 0x140df642c                                target=0x140df642c
+  0000000140df6416 file=14637590 mov rsi, qword ptr [rdx+0x68]
+  0000000140df641a file=14637594 mov rdi, qword ptr [rdx+0x78]
+  0000000140df641e file=14637598 data16 nop
+  0000000140df6420 file=14637600 call 0x140098040                              target=0x140098040 runtime.gcWriteBarrier2
+  0000000140df6425 file=14637605 mov qword ptr [r11], rsi
+  0000000140df6428 file=14637608 mov qword ptr [r11+0x8], rdi
+  0000000140df642c file=14637612 lea rsi, ptr [rip+0x2bd39ac]                  mem=0x1439c9ddf file=60593119 ref=0x1439c9ddf file=60593119 "windows/u/\\d+/Bearer checkedskippeddroppedstartupsurfacepreviewsuccessversionupdatedpluginsorderBycorporaAppDataunknownfile://google3capsuleinstalltriggerscratc"
+  0000000140df6433 file=14637619 mov qword ptr [rdx+0x68], rsi
+  0000000140df6437 file=14637623 mov qword ptr [rdx+0x80], 0x5
+  0000000140df6442 file=14637634 lea rsi, ptr [rip+0x2bb553b]                  mem=0x1439ab984 file=60469124 ref=0x1439ab984 file=60469124 "amd64gcing MB, stackother got= ..."
+  0000000140df6449 file=14637641 mov qword ptr [rdx+0x78], rsi
+  0000000140df644d file=14637645 mov eax, 0x20
+  0000000140df6452 file=14637650 lea rbx, ptr [rip+0x89397cf]                  mem=0x14972fc28 file=158528040
+  0000000140df6459 file=14637657 mov ecx, 0x1
+  0000000140df645e file=14637662 data16 nop
+  0000000140df6460 file=14637664 call 0x140025860                              target=0x140025860 runtime.mallocgcSmallScanNoHeaderSC4
+  0000000140df6465 file=14637669 cmp dword ptr [rip+0xbc12f04], 0x0            mem=0x14ca09370 file=-1
+  0000000140df646c file=14637676 jnz 0x140df6475                               target=0x140df6475
+  0000000140df646e file=14637678 mov rdx, qword ptr [rsp+0x20]
+  0000000140df6473 file=14637683 jmp 0x140df6495                               target=0x140df6495
+  0000000140df6475 file=14637685 mov rcx, qword ptr [rip+0xbba811c]            mem=0x14c99e598 file=-1
+  0000000140df647c file=14637692 nop dword ptr [rax], eax
+  0000000140df6480 file=14637696 call 0x140098060                              target=0x140098060 runtime.gcWriteBarrier3
+  0000000140df6485 file=14637701 mov rdx, qword ptr [rsp+0x20]
+  0000000140df648a file=14637706 mov qword ptr [r11], rdx
+  0000000140df648d file=14637709 mov qword ptr [r11+0x8], rax
+  0000000140df6491 file=14637713 mov qword ptr [r11+0x10], rcx
+  0000000140df6495 file=14637717 mov qword ptr [rax+0x18], rdx
+  0000000140df6499 file=14637721 mov qword ptr [rip+0xbba80f8], rax            mem=0x14c99e598 file=-1
+  0000000140df64a0 file=14637728 leave
+  0000000140df64a1 file=14637729 ret
+  0000000140df64a2 file=14637730 call 0x140096360                              target=0x140096360 runtime.morestack
+  0000000140df64a7 file=14637735 jmp 0x140df63e0                               target=0x140df63e0 google3/third_party/jetski/language_server/metadata_provider/metadata_provider.Initialize.func1
+  0000000140df64ac file=14637740 int3
+  0000000140df64ad file=14637741 int3
+  0000000140df64ae file=14637742 int3
+  0000000140df64af file=14637743 int3
+  0000000140df64b0 file=14637744 int3
+  0000000140df64b1 file=14637745 int3
+  0000000140df64b2 file=14637746 int3
+  0000000140df64b3 file=14637747 int3
+  0000000140df64b4 file=14637748 int3
+  0000000140df64b5 file=14637749 int3
+  0000000140df64b6 file=14637750 int3
+  0000000140df64b7 file=14637751 int3
+  0000000140df64b8 file=14637752 int3
+  0000000140df64b9 file=14637753 int3
+  0000000140df64ba file=14637754 int3
+  0000000140df64bb file=14637755 int3
+  0000000140df64bc file=14637756 int3
+  0000000140df64bd file=14637757 int3
+  0000000140df64be file=14637758 int3
+  0000000140df64bf file=14637759 int3
+
+SOURCE W1-ua.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent VA=0x142842720 FILE=42212640 SIZE=2976
+  0000000142842720 file=42212640 lea r12, ptr [rsp+0xfffffe90]
+  0000000142842728 file=42212648 cmp r12, qword ptr [r14+0x10]
+  000000014284272c file=42212652 jbe 0x14284325e                               target=0x14284325e
+  0000000142842732 file=42212658 push rbp
+  0000000142842733 file=42212659 mov rbp, rsp
+  0000000142842736 file=42212662 sub rsp, 0x1e8
+  000000014284273d file=42212669 mov qword ptr [rsp+0x208], rcx
+  0000000142842745 file=42212677 mov byte ptr [rsp+0x228], r9b
+  000000014284274d file=42212685 mov qword ptr [rsp+0x220], r8
+  0000000142842755 file=42212693 mov qword ptr [rsp+0x218], rsi
+  000000014284275d file=42212701 mov qword ptr [rsp+0x200], rbx
+  0000000142842765 file=42212709 mov qword ptr [rsp+0x1f8], rax
+  000000014284276d file=42212717 test rdi, rdi
+  0000000142842770 file=42212720 jnz 0x142842796                               target=0x142842796
+  0000000142842772 file=42212722 mov rcx, qword ptr [rip+0xa16357f]            mem=0x14c9a5cf8 file=-1
+  0000000142842779 file=42212729 nop
+  000000014284277a file=42212730 test rcx, rcx
+  000000014284277d file=42212733 jz 0x142842788                                target=0x142842788
+  000000014284277f file=42212735 mov rdx, qword ptr [rip+0xa16356a]            mem=0x14c9a5cf0 file=-1
+  0000000142842786 file=42212742 jmp 0x14284279c                               target=0x14284279c
+  0000000142842788 file=42212744 mov ecx, 0xb
+  000000014284278d file=42212749 lea rdx, ptr [rip+0x11e5f30]                  mem=0x143a286c4 file=60980420 ref=0x143a286c4 file=60980420 "antigravitymarketplacedescriptiondatachannelCancelLogin"
+  0000000142842794 file=42212756 jmp 0x14284279c                               target=0x14284279c
+  0000000142842796 file=42212758 mov rdx, rcx
+  0000000142842799 file=42212761 mov rcx, rdi
+  000000014284279c file=42212764 mov qword ptr [rsp+0xc0], rcx
+  00000001428427a4 file=42212772 mov qword ptr [rsp+0x1e0], rdx
+  00000001428427ac file=42212780 call 0x140df60e0                              target=0x140df60e0 google3/third_party/jetski/language_server/metadata_provider/metadata_provider.SafeGetMetadata
+  00000001428427b1 file=42212785 test rax, rax
+  00000001428427b4 file=42212788 jz 0x1428427c2                                target=0x1428427c2
+  00000001428427b6 file=42212790 mov rdx, qword ptr [rax+0x18]
+  00000001428427ba file=42212794 mov r8, qword ptr [rax+0x20]
+  00000001428427be file=42212798 data16 nop
+  00000001428427c0 file=42212800 jmp 0x1428427c7                               target=0x1428427c7
+  00000001428427c2 file=42212802 xor r8d, r8d
+  00000001428427c5 file=42212805 xor edx, edx
+  00000001428427c7 file=42212807 mov qword ptr [rsp+0x50], r8
+  00000001428427cc file=42212812 mov qword ptr [rsp+0xd8], rdx
+  00000001428427d4 file=42212820 mov rdx, qword ptr [rip+0xa16352d]            mem=0x14c9a5d08 file=-1
+  00000001428427db file=42212827 mov qword ptr [rsp+0x48], rdx
+  00000001428427e0 file=42212832 mov rdx, qword ptr [rip+0xa163519]            mem=0x14c9a5d00 file=-1
+  00000001428427e7 file=42212839 mov qword ptr [rsp+0xd0], rdx
+  00000001428427ef file=42212847 lea rdx, ptr [rip+0x6b218ca]                  mem=0x1493640c0 file=154547904
+  00000001428427f6 file=42212854 mov qword ptr [rsp+0x1a8], rdx
+  00000001428427fe file=42212862 lea rdx, ptr [rip+0x1afbeeb]                  mem=0x14433e6f0 file=70507760 ref=0x1439c9ddf file=60593119 "windows/u/\\d+/Bearer checkedskippeddroppedstartupsurfacepreviewsuccessversionupdatedpluginsorderBycorporaAppDataunknownfile://google3capsuleinstalltriggerscratc"
+  0000000142842805 file=42212869 mov qword ptr [rsp+0x1b0], rdx
+  000000014284280d file=42212877 lea rax, ptr [rip+0x11ccb19]                  mem=0x143a0f32d file=60877101 ref=0x143a0f32d file=60877101 "os_type=%spurpose=%s%s/%s (%s)User-Agentdrop_blockcontainerdSSH_CLIENTconn_statemaxResultsrunTriggeraiplatformrawPredictgemini-2.5rewriteUrino timeoutidempotent"
+  0000000142842814 file=42212884 mov ebx, 0xa
+  0000000142842819 file=42212889 lea rcx, ptr [rsp+0x1a8]
+  0000000142842821 file=42212897 mov edi, 0x1
+  0000000142842826 file=42212902 mov esi, edi
+  0000000142842828 file=42212904 call 0x140145900                              target=0x140145900 fmt.Sprintf
+  000000014284282d file=42212909 mov qword ptr [rsp+0x1d8], rax
+  0000000142842835 file=42212917 mov qword ptr [rsp+0xb8], rbx
+  000000014284283d file=42212925 lea rdx, ptr [rip+0x6b2187c]                  mem=0x1493640c0 file=154547904
+  0000000142842844 file=42212932 mov qword ptr [rsp+0x198], rdx
+  000000014284284c file=42212940 lea rdx, ptr [rip+0x1afbead]                  mem=0x14433e700 file=70507776 ref=0x1439ab984 file=60469124 "amd64gcing MB, stackother got= ..."
+  0000000142842853 file=42212947 mov qword ptr [rsp+0x1a0], rdx
+  000000014284285b file=42212955 lea rax, ptr [rip+0x118788d]                  mem=0x1439ca0ef file=60593903 ref=0x1439ca0ef file=60593903 "arch=%sURL: %s[%s] %s%s: %s"
+  0000000142842862 file=42212962 mov ebx, 0x7
+  0000000142842867 file=42212967 lea rcx, ptr [rsp+0x198]
+  000000014284286f file=42212975 mov edi, 0x1
+  0000000142842874 file=42212980 mov esi, edi
+  0000000142842876 file=42212982 call 0x140145900                              target=0x140145900 fmt.Sprintf
+  000000014284287b file=42212987 mov qword ptr [rsp+0x1d0], rax
+  0000000142842883 file=42212995 mov qword ptr [rsp+0xb0], rbx
+  000000014284288b file=42213003 xor eax, eax
+  000000014284288d file=42213005 mov ebx, 0x3
+  0000000142842892 file=42213010 xor ecx, ecx
+  0000000142842894 file=42213012 mov edi, ebx
+  0000000142842896 file=42213014 lea rsi, ptr [rip+0x6b21823]                  mem=0x1493640c0 file=154547904
+  000000014284289d file=42213021 nop dword ptr [rax], eax
+  00000001428428a0 file=42213024 call 0x140092260                              target=0x140092260 runtime.growslice
+  00000001428428a5 file=42213029 mov qword ptr [rax+0x8], 0xc
+  00000001428428ad file=42213037 cmp dword ptr [rip+0xa1c6abc], 0x0            mem=0x14ca09370 file=-1
+  00000001428428b4 file=42213044 jnz 0x1428428c8                               target=0x1428428c8
+  00000001428428b6 file=42213046 mov rdx, qword ptr [rsp+0x1d8]
+  00000001428428be file=42213054 mov r8, qword ptr [rsp+0x1d0]
+  00000001428428c6 file=42213062 jmp 0x1428428fb                               target=0x1428428fb
+  00000001428428c8 file=42213064 mov rdx, qword ptr [rax]
+  00000001428428cb file=42213067 mov r8, qword ptr [rax+0x10]
+  00000001428428cf file=42213071 mov r9, qword ptr [rax+0x20]
+  00000001428428d3 file=42213075 call 0x1400980a0                              target=0x1400980a0 runtime.gcWriteBarrier5
+  00000001428428d8 file=42213080 mov qword ptr [r11], rdx
+  00000001428428db file=42213083 mov rdx, qword ptr [rsp+0x1d8]
+  00000001428428e3 file=42213091 mov qword ptr [r11+0x8], rdx
+  00000001428428e7 file=42213095 mov qword ptr [r11+0x10], r8
+  00000001428428eb file=42213099 mov r8, qword ptr [rsp+0x1d0]
+  00000001428428f3 file=42213107 mov qword ptr [r11+0x18], r8
+  00000001428428f7 file=42213111 mov qword ptr [r11+0x20], r9
+  00000001428428fb file=42213115 mov qword ptr [rsp+0x78], rcx
+  0000000142842900 file=42213120 mov qword ptr [rsp+0xf8], rax
+  0000000142842908 file=42213128 lea r9, ptr [rip+0x11ff298]                   mem=0x143a41ba7 file=61084071 ref=0x143a41ba7 file=61084071 "aidev_clienthost_path=%s Trace: 0x%s Sherlog: %sagentPluginscascadeNuxesstartCascadeworkspaceUrilistProjectslistTriggersnot modifiedHTTP 304: %wGrpc-TimeoutGrpc"
+  000000014284290f file=42213135 mov qword ptr [rax], r9
+  0000000142842912 file=42213138 mov r9, qword ptr [rsp+0xb8]
+  000000014284291a file=42213146 mov qword ptr [rax+0x18], r9
+  000000014284291e file=42213150 mov qword ptr [rax+0x10], rdx
+  0000000142842922 file=42213154 mov rdx, qword ptr [rsp+0xb0]
+  000000014284292a file=42213162 mov qword ptr [rax+0x28], rdx
+  000000014284292e file=42213166 mov qword ptr [rax+0x20], r8
+  0000000142842932 file=42213170 mov rdx, qword ptr [rip+0xa1c5097]            mem=0x14ca079d0 file=-1
+  0000000142842939 file=42213177 test rdx, rdx
+  000000014284293c file=42213180 jnz 0x142842962                               target=0x142842962
+  000000014284293e file=42213182 mov rax, qword ptr [rip+0xa04f2bb]            mem=0x14c891c00 file=210307584 ref=0x14433da30 file=70504496 "1021296516"
+  0000000142842945 file=42213189 mov rbx, qword ptr [rip+0xa04f2bc]            mem=0x14c891c08 file=210307592
+  000000014284294c file=42213196 nop
+  000000014284294d file=42213197 call 0x1400d8360                              target=0x1400d8360 strconv.Atoi
+
+SOURCE W1-requests.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).fetchLoadCodeAssistResponse VA=0x14285f2c0 FILE=42330304 SIZE=4128
+  000000014285f5f4 file=42331124 mov edi, 0x1
+  000000014285f5f9 file=42331129 xor esi, esi
+  000000014285f5fb file=42331131 mov r8d, esi
+  000000014285f5fe file=42331134 lea r9, ptr [rip+0x13f0449]                   mem=0x143c4fa4e file=63238222 ref=0x143c4fa4e file=63238222 "AICode FetchLicenses rejected the token for missing scope; falling back to CCPA LoadCodeAssist: %vUSER_STOP: the user stopped the browser task; stop immediately"
+  000000014285f605 file=42331141 mov r10d, 0x62
+  000000014285f60b file=42331147 call 0x1402a7ae0                              target=0x1402a7ae0 google3/base/go/log.ctxlogf
+  000000014285f610 file=42331152 lea rax, ptr [rip+0x74e75a9]                  mem=0x149d46bc0 file=164913600
+  000000014285f617 file=42331159 call 0x1400248a0                              target=0x1400248a0 runtime.newobject
+  000000014285f61c file=42331164 mov qword ptr [rsp+0xf8], rax
+  000000014285f624 file=42331172 mov dword ptr [rax+0x8], 0x9
+  000000014285f62b file=42331179 movd dword ptr [rax+0x58], xmm15
+  000000014285f631 file=42331185 mov eax, 0x30
+  000000014285f636 file=42331190 lea rbx, ptr [rip+0x731d5db]                  mem=0x149b7cc18 file=163037720
+  000000014285f63d file=42331197 mov ecx, 0x1
+  000000014285f642 file=42331202 call 0x140025ba0                              target=0x140025ba0 runtime.mallocgcSmallScanNoHeaderSC5
+  000000014285f647 file=42331207 cmp dword ptr [rip+0xa1a9d22], 0x0            mem=0x14ca09370 file=-1
+  000000014285f64e file=42331214 jnz 0x14285f65a                               target=0x14285f65a
+  000000014285f650 file=42331216 mov rdx, qword ptr [rsp+0xf8]
+  000000014285f658 file=42331224 jmp 0x14285f66a                               target=0x14285f66a
+  000000014285f65a file=42331226 call 0x140098020                              target=0x140098020 runtime.gcWriteBarrier1
+  000000014285f65f file=42331231 mov rdx, qword ptr [rsp+0xf8]
+  000000014285f667 file=42331239 mov qword ptr [r11], rdx
+  000000014285f66a file=42331242 mov qword ptr [rsp+0xe0], rax
+  000000014285f672 file=42331250 mov qword ptr [rax+0x10], rdx
+  000000014285f676 file=42331254 mov eax, 0x10
+  000000014285f67b file=42331259 lea rbx, ptr [rip+0x6b04a3e]                  mem=0x1493640c0 file=154547904
+
+SOURCE W1-requests.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).OnboardUser VA=0x1428604a0 FILE=42334880 SIZE=2144
+  0000000142860590 file=42335120 mov rcx, qword ptr [rsp+0x140]
+  0000000142860598 file=42335128 jmp 0x1428605aa                               target=0x1428605aa
+  000000014286059a file=42335130 call 0x140098020                              target=0x140098020 runtime.gcWriteBarrier1
+  000000014286059f file=42335135 mov rcx, qword ptr [rsp+0x140]
+  00000001428605a7 file=42335143 mov qword ptr [r11], rcx
+  00000001428605aa file=42335146 mov qword ptr [rsp+0x98], rax
+  00000001428605b2 file=42335154 mov qword ptr [rax+0x8], rcx
+  00000001428605b6 file=42335158 lea rax, ptr [rip+0x74e6603]                  mem=0x149d46bc0 file=164913600
+  00000001428605bd file=42335165 nop dword ptr [rax], eax
+  00000001428605c0 file=42335168 call 0x1400248a0                              target=0x1400248a0 runtime.newobject
+  00000001428605c5 file=42335173 mov dword ptr [rax+0x8], 0x9
+  00000001428605cc file=42335180 movd dword ptr [rax+0x58], xmm15
+  00000001428605d2 file=42335186 cmp dword ptr [rip+0xa1a8d97], 0x0            mem=0x14ca09370 file=-1
+  00000001428605d9 file=42335193 jnz 0x1428605e5                               target=0x1428605e5
+  00000001428605db file=42335195 mov rdx, qword ptr [rsp+0x98]
+  00000001428605e3 file=42335203 jmp 0x1428605fd                               target=0x1428605fd
+  00000001428605e5 file=42335205 mov rdx, qword ptr [rsp+0x98]
+  00000001428605ed file=42335213 mov rsi, qword ptr [rdx+0x20]
+  00000001428605f1 file=42335217 call 0x140098040                              target=0x140098040 runtime.gcWriteBarrier2
+  00000001428605f6 file=42335222 mov qword ptr [r11], rax
+  00000001428605f9 file=42335225 mov qword ptr [r11+0x8], rsi
+  00000001428605fd file=42335229 mov qword ptr [rdx+0x20], rax
+  0000000142860601 file=42335233 mov rsi, qword ptr [rsp+0x100]
+
+SOURCE M1-codeassist.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.BuildGenerateContentRequest VA=0x1021e3ac0 FILE=35535552 SIZE=4128
+  00000001021e3ac0 file=35535552 f9400b90 ldr x16, [x28,#16]
+  00000001021e3ac4 file=35535556 d10d03f1 sub x17, sp, #0x340
+  00000001021e3ac8 file=35535560 eb10023f cmp x17, x16
+  00000001021e3acc file=35535564 54008009 b.ls .+0x1000                            target=0x1021e4acc
+  00000001021e3ad0 file=35535568 d10f03f4 sub x20, sp, #0x3c0
+  00000001021e3ad4 file=35535572 a93ffa9d stp x29, x30, [x20,#-8]
+  00000001021e3ad8 file=35535576 9100029f mov sp, x20
+  00000001021e3adc file=35535580 d10023fd sub x29, sp, #0x8
+  00000001021e3ae0 file=35535584 f901e7e0 str x0, [sp,#968]
+  00000001021e3ae4 file=35535588 a9401003 ldp x3, x4, [x0]
+  00000001021e3ae8 file=35535592 f90103e3 str x3, [sp,#512]
+  00000001021e3aec file=35535596 f900d7e4 str x4, [sp,#424]
+  00000001021e3af0 file=35535600 a9411003 ldp x3, x4, [x0,#16]
+  00000001021e3af4 file=35535604 f9005fe3 str x3, [sp,#184]
+  00000001021e3af8 file=35535608 f90113e4 str x4, [sp,#544]
+  00000001021e3afc file=35535612 a9421003 ldp x3, x4, [x0,#32]
+  00000001021e3b00 file=35535616 a91313e3 stp x3, x4, [sp,#304]
+  00000001021e3b04 file=35535620 a9439003 ldp x3, x4, [x0,#56]
+  00000001021e3b08 file=35535624 f90047e4 str x4, [sp,#136]
+  00000001021e3b0c file=35535628 f900bfe3 str x3, [sp,#376]
+  00000001021e3b10 file=35535632 a9449003 ldp x3, x4, [x0,#72]
+  00000001021e3b14 file=35535636 f9004be3 str x3, [sp,#144]
+  00000001021e3b18 file=35535640 f900c7e4 str x4, [sp,#392]
+  00000001021e3b1c file=35535644 a9459003 ldp x3, x4, [x0,#88]
+  00000001021e3b20 file=35535648 f90043e4 str x4, [sp,#128]
+  00000001021e3b24 file=35535652 f900bbe3 str x3, [sp,#368]
+  00000001021e3b28 file=35535656 f00503db adrp x27, .+0xa07b000
+  00000001021e3b2c file=35535660 f9427b61 ldr x1, [x27,#1264]
+  00000001021e3b30 file=35535664 b9806802 ldrsw x2, [x0,#104]
+  00000001021e3b34 file=35535668 b002fae0 adrp x0, .+0x5f5d000
+  00000001021e3b38 file=35535672 9125e000 add x0, x0, #0x978
+  00000001021e3b3c file=35535676 97789591 bl .+0xfffffffffde25644                  target=0x100009180 runtime.mapaccess1_fast32
+  00000001021e3b40 file=35535680 a9401003 ldp x3, x4, [x0]
+  00000001021e3b44 file=35535684 f90067e4 str x4, [sp,#200]
+  00000001021e3b48 file=35535688 f900e3e3 str x3, [sp,#448]
+  00000001021e3b4c file=35535692 f00503db adrp x27, .+0xa07b000
+  00000001021e3b50 file=35535696 f9427f61 ldr x1, [x27,#1272]
+  00000001021e3b54 file=35535700 f941e7e3 ldr x3, [sp,#968]
+  00000001021e3b58 file=35535704 b9807062 ldrsw x2, [x3,#112]
+  00000001021e3b5c file=35535708 f002fae0 adrp x0, .+0x5f5f000
+  00000001021e3b60 file=35535712 91014000 add x0, x0, #0x50
+  00000001021e3b64 file=35535716 97789623 bl .+0xfffffffffde2588c                  target=0x1000093f0 runtime.mapaccess2_fast32
+  00000001021e3b68 file=35535720 a9401003 ldp x3, x4, [x0]
+  00000001021e3b6c file=35535724 7200003f tst w1, #0x1
+  00000001021e3b70 file=35535728 f940e3e5 ldr x5, [sp,#448]
+  00000001021e3b74 file=35535732 9a851063 csel x3, x3, x5, ne
+  00000001021e3b78 file=35535736 f900e3e3 str x3, [sp,#448]
+  00000001021e3b7c file=35535740 f94067e5 ldr x5, [sp,#200]
+  00000001021e3b80 file=35535744 9a851084 csel x4, x4, x5, ne
+  00000001021e3b84 file=35535748 f90067e4 str x4, [sp,#200]
+  00000001021e3b88 file=35535752 aa1f03e0 mov x0, xzr
+  00000001021e3b8c file=35535756 14000007 b .+0x1c                                 target=0x1021e3ba8
+  00000001021e48d0 file=35539152 b9436365 ldr w5, [x27,#864]
+  00000001021e48d4 file=35539156 34000085 cbz w5, .+0x10                           target=0x1021e48e4
+  00000001021e48d8 file=35539160 f9408885 ldr x5, [x4,#272]
+  00000001021e48dc file=35539164 977ab541 bl .+0xfffffffffdead504                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021e48e0 file=35539168 a9001720 stp x0, x5, [x25]
+  00000001021e48e4 file=35539172 f9008880 str x0, [x4,#272]
+  00000001021e48e8 file=35539176 f941e7e4 ldr x4, [sp,#968]
+  00000001021e48ec file=35539180 3941d484 ldrb w4, [x4,#117]
+  00000001021e48f0 file=35539184 36000264 tbz w4, #0, .+0x4c                       target=0x1021e493c
+  00000001021e48f4 file=35539188 b27e03e0 orr x0, xzr, #0x4
+  00000001021e48f8 file=35539192 b0031341 adrp x1, .+0x6269000
+  00000001021e48fc file=35539196 9115a021 add x1, x1, #0x568
+  00000001021e4900 file=35539200 b24003e2 orr x2, xzr, #0x1
+  00000001021e4904 file=35539204 9778fa4b bl .+0xfffffffffde3e92c                  target=0x100023230 runtime.mallocgcTinySC2
+  00000001021e4908 file=35539208 b24003e3 orr x3, xzr, #0x1
+  00000001021e490c file=35539212 b9000003 str w3, [x0]
+  00000001021e4910 file=35539216 b24003e3 orr x3, xzr, #0x1
+  00000001021e4914 file=35539220 f94107e4 ldr x4, [sp,#520]
+  00000001021e4918 file=35539224 a9078c83 stp x3, x3, [x4,#120]
+  00000001021e491c file=35539228 d005067b adrp x27, .+0xa0ce000
+  00000001021e4920 file=35539232 b9436363 ldr w3, [x27,#864]
+  00000001021e4924 file=35539236 34000083 cbz w3, .+0x10                           target=0x1021e4934
+  00000001021e4928 file=35539240 f9403883 ldr x3, [x4,#112]
+  00000001021e492c file=35539244 977ab52d bl .+0xfffffffffdead4b4                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021e4930 file=35539248 a9000f20 stp x0, x3, [x25]
+  00000001021e4934 file=35539252 f9003880 str x0, [x4,#112]
+  00000001021e4938 file=35539256 aa0403e3 mov x3, x4
+  00000001021e493c file=35539260 aa0303e0 mov x0, x3
+  00000001021e4940 file=35539264 aa1f03e1 mov x1, xzr
+  00000001021e4944 file=35539268 aa1f03e2 mov x2, xzr
+  00000001021e4948 file=35539272 a97ffbfd ldp x29, x30, [sp,#-8]
+  00000001021e494c file=35539276 910f03ff add sp, sp, #0x3c0
+
+SOURCE M1-codeassist.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).StreamGenerateContent VA=0x1021e4d30 FILE=35540272 SIZE=1728
+  00000001021e4ed8 file=35540696 a9027d1f stp xzr, xzr, [x8,#32]
+  00000001021e4edc file=35540700 a9037d1f stp xzr, xzr, [x8,#48]
+  00000001021e4ee0 file=35540704 f9408be8 ldr x8, [sp,#272]
+  00000001021e4ee4 file=35540708 a9462508 ldp x8, x9, [x8,#96]
+  00000001021e4ee8 file=35540712 a90a27e8 stp x8, x9, [sp,#160]
+  00000001021e4eec file=35540716 a95227e8 ldp x8, x9, [sp,#288]
+  00000001021e4ef0 file=35540720 a90b27e8 stp x8, x9, [sp,#176]
+  00000001021e4ef4 file=35540724 92407408 and x8, x0, #0x3fffffff
+  00000001021e4ef8 file=35540728 d28d36c9 mov x9, #0x69b6
+  00000001021e4efc file=35540732 f2b5ed89 movk x9, #0xaf6c, lsl #16
+  00000001021e4f00 file=35540736 f2d7a0a9 movk x9, #0xbd05, lsl #32
+  00000001021e4f04 file=35540740 f2f0c6e9 movk x9, #0x8637, lsl #48
+  00000001021e4f08 file=35540744 9bc97d08 umulh x8, x8, x9
+  00000001021e4f0c file=35540748 d353fd08 lsr x8, x8, #19
+  00000001021e4f10 file=35540752 d2807d09 mov x9, #0x3e8
+  00000001021e4f14 file=35540756 9b092028 madd x8, x1, x9, x8
+  00000001021e4f18 file=35540760 d29b0009 mov x9, #0xd800
+  00000001021e4f1c file=35540764 f2a24589 movk x9, #0x122c, lsl #16
+  00000001021e4f20 file=35540768 f2c71069 movk x9, #0x3883, lsl #32
+  00000001021e4f24 file=35540772 cb090104 sub x4, x8, x9
+  00000001021e4f28 file=35540776 f9403fe5 ldr x5, [sp,#120]
+  00000001021e4f2c file=35540780 a90c17e4 stp x4, x5, [sp,#192]
+  00000001021e4f30 file=35540784 f9402fe6 ldr x6, [sp,#88]
+  00000001021e4f34 file=35540788 f9006be6 str x6, [sp,#208]
+  00000001021e4f38 file=35540792 b9804fe7 ldrsw x7, [sp,#76]
+  00000001021e4f3c file=35540796 b900dbe7 str w7, [sp,#216]
+  00000001021e4f40 file=35540800 a94a07e0 ldp x0, x1, [sp,#160]
+  00000001021e4f44 file=35540804 a94b0fe2 ldp x2, x3, [sp,#176]
+  00000001021e4f48 file=35540808 97fffee6 bl .+0xfffffffffffffb98                  target=0x1021e4ae0 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.computeRequestID
+  00000001021e4f4c file=35540812 f9408be8 ldr x8, [sp,#272]
+  00000001021e4f50 file=35540816 f9001101 str x1, [x8,#32]
+  00000001021e4f54 file=35540820 d005067b adrp x27, .+0xa0ce000
+  00000001021e4f58 file=35540824 b9436369 ldr w9, [x27,#864]
+  00000001021e4f5c file=35540828 34000089 cbz w9, .+0x10                           target=0x1021e4f6c
+  00000001021e4f60 file=35540832 f9400d01 ldr x1, [x8,#24]
+  00000001021e4f64 file=35540836 977ab39f bl .+0xfffffffffdeace7c                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021e4f68 file=35540840 a9000720 stp x0, x1, [x25]
+  00000001021e4f6c file=35540844 f9000d00 str x0, [x8,#24]
+  00000001021e4f70 file=35540848 f9407fe1 ldr x1, [sp,#248]
+  00000001021e4f74 file=35540852 a9400021 ldp x1, x0, [x1]
+  00000001021e4f78 file=35540856 f9402821 ldr x1, [x1,#80]
+  00000001021e4f7c file=35540860 d63f0020 blr x1
+  00000001021e4f80 file=35540864 f9408be2 ldr x2, [sp,#272]
+  00000001021e4f84 file=35540868 f9002c41 str x1, [x2,#88]
+  00000001021e4f88 file=35540872 d005067b adrp x27, .+0xa0ce000
+  00000001021e4f8c file=35540876 b9436361 ldr w1, [x27,#864]
+  00000001021e4f90 file=35540880 34000081 cbz w1, .+0x10                           target=0x1021e4fa0
+  00000001021e4f94 file=35540884 f9402843 ldr x3, [x2,#80]
+  00000001021e4f98 file=35540888 977ab392 bl .+0xfffffffffdeace48                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021e4f9c file=35540892 a9000f20 stp x0, x3, [x25]
+  00000001021e4fa0 file=35540896 f9002840 str x0, [x2,#80]
+  00000001021e4fa4 file=35540900 b4000062 cbz x2, .+0xc                            target=0x1021e4fb0
+  00000001021e4fa8 file=35540904 f9401443 ldr x3, [x2,#40]
+  00000001021e4fac file=35540908 14000002 b .+0x8                                  target=0x1021e4fb4
+  00000001021e4fb0 file=35540912 aa1f03e3 mov x3, xzr
+  00000001021e4fb4 file=35540916 f9005c7f str xzr, [x3,#184]
+  00000001021e4fb8 file=35540920 d005067b adrp x27, .+0xa0ce000
+  00000001021e4fbc file=35540924 b9436364 ldr w4, [x27,#864]
+  00000001021e4fc0 file=35540928 340000a4 cbz w4, .+0x14                           target=0x1021e4fd4
+  00000001021e4fc4 file=35540932 f9405864 ldr x4, [x3,#176]
+  00000001021e4fc8 file=35540936 f9402045 ldr x5, [x2,#64]
+  00000001021e4fcc file=35540940 977ab385 bl .+0xfffffffffdeace14                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021e4fd0 file=35540944 a9001724 stp x4, x5, [x25]
+  00000001021e4fd4 file=35540948 f900587f str xzr, [x3,#176]
+  00000001021e4fd8 file=35540952 a9047c5f stp xzr, xzr, [x2,#64]
+  00000001021e4fdc file=35540956 f9407fe3 ldr x3, [sp,#248]
+  00000001021e4fe0 file=35540960 a9400063 ldp x3, x0, [x3]
+  00000001021e4fe4 file=35540964 f9404063 ldr x3, [x3,#128]
+  00000001021e4fe8 file=35540968 a9500be1 ldp x1, x2, [sp,#256]
+  00000001021e4fec file=35540972 d63f0060 blr x3
+  00000001021e4ff0 file=35540976 b5001782 cbnz x2, .+0x2f0                         target=0x1021e52e0
+  00000001021e4ff4 file=35540980 f100443f cmp x1, #0x11
+  00000001021e4ff8 file=35540984 5400096c b.gt .+0x12c                             target=0x1021e5124
+  00000001021e4ffc file=35540988 f1001c3f cmp x1, #0x7
+  00000001021e5000 file=35540992 54000281 b.ne .+0x50                              target=0x1021e5050
+  00000001021e5004 file=35540996 b9400005 ldr w5, [x0]
+
+SOURCE M1-codeassist.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.marshalCCPARequest VA=0x1021e53f0 FILE=35542000 SIZE=240
+  00000001021e53f0 file=35542000 f9400b90 ldr x16, [x28,#16]
+  00000001021e53f4 file=35542004 d10083f1 sub x17, sp, #0x20
+  00000001021e53f8 file=35542008 eb10023f cmp x17, x16
+  00000001021e53fc file=35542012 54000649 b.ls .+0xc8                              target=0x1021e54c4
+  00000001021e5400 file=35542016 f8160ffe str x30, [sp,#-160]!
+  00000001021e5404 file=35542020 f81f83fd stur x29, [sp,#-8]
+  00000001021e5408 file=35542024 d10023fd sub x29, sp, #0x8
+  00000001021e540c file=35542028 9101a3ef add x15, sp, #0x68
+  00000001021e5410 file=35542032 a9007dff stp xzr, xzr, [x15]
+  00000001021e5414 file=35542036 a9017dff stp xzr, xzr, [x15,#16]
+  00000001021e5418 file=35542040 a9027dff stp xzr, xzr, [x15,#32]
+  00000001021e541c file=35542044 b4000060 cbz x0, .+0xc                            target=0x1021e5428
+  00000001021e5420 file=35542048 f940140f ldr x15, [x0,#40]
+  00000001021e5424 file=35542052 14000002 b .+0x8                                  target=0x1021e542c
+  00000001021e5428 file=35542056 aa1f03ef mov x15, xzr
+  00000001021e542c file=35542060 b400006f cbz x15, .+0xc                           target=0x1021e5438
+  00000001021e5430 file=35542064 f94055ef ldr x15, [x15,#168]
+  00000001021e5434 file=35542068 14000002 b .+0x8                                  target=0x1021e543c
+  00000001021e5438 file=35542072 aa1f03ef mov x15, xzr
+  00000001021e543c file=35542076 b400006f cbz x15, .+0xc                           target=0x1021e5448
+  00000001021e5440 file=35542080 f94089ef ldr x15, [x15,#272]
+  00000001021e5444 file=35542084 14000002 b .+0x8                                  target=0x1021e544c
+  00000001021e5448 file=35542088 aa1f03ef mov x15, xzr
+  00000001021e544c file=35542092 b40000af cbz x15, .+0x14                          target=0x1021e5460
+  00000001021e5450 file=35542096 f9400def ldr x15, [x15,#24]
+  00000001021e5454 file=35542100 b400006f cbz x15, .+0xc                           target=0x1021e5460
+  00000001021e5458 file=35542104 b98001ef ldrsw x15, [x15]
+  00000001021e545c file=35542108 14000002 b .+0x8                                  target=0x1021e5464
+  00000001021e5460 file=35542112 aa1f03ef mov x15, xzr
+  00000001021e5464 file=35542116 d10015ef sub x15, x15, #0x5
+  00000001021e5468 file=35542120 710005ff cmp w15, #0x1
+  00000001021e546c file=35542124 54000068 b.hi .+0xc                               target=0x1021e5478
+  00000001021e5470 file=35542128 b24003ef orr x15, xzr, #0x1
+  00000001021e5474 file=35542132 39020bef strb w15, [sp,#130]
+  00000001021e5478 file=35542136 a9470be1 ldp x1, x2, [sp,#112]
+  00000001021e547c file=35542140 a948a7e8 ldp x8, x9, [sp,#136]
+  00000001021e5480 file=35542144 3941a3ef ldrb w15, [sp,#104]
+  00000001021e5484 file=35542148 394203e3 ldrb w3, [sp,#128]
+  00000001021e5488 file=35542152 394207e4 ldrb w4, [sp,#129]
+  00000001021e548c file=35542156 39420be5 ldrb w5, [sp,#130]
+  00000001021e5490 file=35542160 39420fe6 ldrb w6, [sp,#131]
+  00000001021e5494 file=35542164 394213e7 ldrb w7, [sp,#132]
+  00000001021e5498 file=35542168 aa1f03ea mov x10, xzr
+  00000001021e549c file=35542172 aa1f03eb mov x11, xzr
+  00000001021e54a0 file=35542176 aa1f03ec mov x12, xzr
+  00000001021e54a4 file=35542180 f0036a8d adrp x13, .+0x6d53000
+  00000001021e54a8 file=35542184 911f21ad add x13, x13, #0x7c8
+  00000001021e54ac file=35542188 aa0003ee mov x14, x0
+  00000001021e54b0 file=35542192 aa0f03e0 mov x0, x15
+  00000001021e54b4 file=35542196 97890183 bl .+0xfffffffffe24060c                  target=0x100425ac0 google3/third_party/golang/protobuf/v2/encoding/protojson/protojson.MarshalOptions.marshal
+  00000001021e54b8 file=35542200 f85f83fd ldur x29, [sp,#-8]
+  00000001021e54bc file=35542204 f84a07fe ldr x30, [sp],#160
+  00000001021e54c0 file=35542208 d65f03c0 ret
+  00000001021e54c4 file=35542212 f90007e0 str x0, [sp,#8]
+  00000001021e54c8 file=35542216 aa1e03e3 mov x3, x30
+  00000001021e54cc file=35542220 977aaa61 bl .+0xfffffffffdeaa984                  target=0x10008fe50 runtime.morestack_noctxt
+  00000001021e54d0 file=35542224 f94007e0 ldr x0, [sp,#8]
+  00000001021e54d4 file=35542228 17ffffc7 b .+0xffffffffffffff1c                   target=0x1021e53f0 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.marshalCCPARequest
+  00000001021e54d8 file=35542232 00000000 .word 0x00000000
+  00000001021e54dc file=35542236 00000000 .word 0x00000000
+
+SOURCE M1-codeassist.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).streamGenerateContentFromCCPA VA=0x1021e54e0 FILE=35542240 SIZE=2000
+  00000001021e56ac file=35542700 b005067b adrp x27, .+0xa0cd000
+  00000001021e56b0 file=35542704 b9436361 ldr w1, [x27,#864]
+  00000001021e56b4 file=35542708 34000081 cbz w1, .+0x10                           target=0x1021e56c4
+  00000001021e56b8 file=35542712 f9400006 ldr x6, [x0]
+  00000001021e56bc file=35542716 977ab1c5 bl .+0xfffffffffdeac714                  target=0x100091dd0 runtime.gcWriteBarrier1
+  00000001021e56c0 file=35542720 f9000326 str x6, [x25]
+  00000001021e56c4 file=35542724 d0008726 adrp x6, .+0x10e6000
+  00000001021e56c8 file=35542728 911d34c6 add x6, x6, #0x74d                       ref=0x1032cb74d file=53262157 "ssegptadcat:rt:dnseof*/*1:1wslPronpxEOFnewGet%2f%2F0"
+  00000001021e56cc file=35542732 f9000006 str x6, [x0]
+  00000001021e56d0 file=35542736 f9412fe0 ldr x0, [sp,#600]
+  00000001021e56d4 file=35542740 f94133e1 ldr x1, [sp,#608]
+  00000001021e56d8 file=35542744 f94137e2 ldr x2, [sp,#616]
+  00000001021e56dc file=35542748 900091c3 adrp x3, .+0x1238000
+  00000001021e56e0 file=35542752 910a4c63 add x3, x3, #0x293                       ref=0x10341d293 file=54645395 "streamGenerateContentgemini-4-hydrogen-lowgemini-4-argon-mediumgemini-3.8-flash-highgemini-3.7-flash-highgemini-3.6-flash-highclaude-sonnet-"
+  00000001021e56e4 file=35542756 d28002a4 mov x4, #0x15
+  00000001021e56e8 file=35542760 910743e5 add x5, sp, #0x1d0
+  00000001021e56ec file=35542764 940017cd bl .+0x5f34                              target=0x1021eb620 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).constructCodeAssistEndpointWithParams
+  00000001021e56f0 file=35542768 b5000382 cbnz x2, .+0x70                          target=0x1021e5760
+  00000001021e56f4 file=35542772 f90037e1 str x1, [sp,#104]
+  00000001021e56f8 file=35542776 f9005be0 str x0, [sp,#176]
+  00000001021e56fc file=35542780 d2800500 mov x0, #0x28
+  00000001021e5700 file=35542784 f00338c1 adrp x1, .+0x671b000
+  00000001021e5704 file=35542788 91026021 add x1, x1, #0x98
+  00000001021e5708 file=35542792 b24003e2 orr x2, xzr, #0x1
+  00000001021e570c file=35542796 9778f411 bl .+0xfffffffffde3d044                  target=0x100022750 runtime.mallocgcSmallScanNoHeaderSC5
+  00000001021e5940 file=35543360 9130dc00 add x0, x0, #0xc37                       ref=0x103371c37 file=53943351 "Content-Typevscode-file:http://[::1]UnauthorizedPLUGIN_ROOT=PLUGIN_DATA=user_refreshshelves_flagconversationtoken_expirypre_tls_dialHasAuthT"
+  00000001021e5944 file=35543364 b27e07e1 orr x1, xzr, #0xc
+  00000001021e5948 file=35543368 97854ad6 bl .+0xfffffffffe152b58                  target=0x1003384a0 net/textproto.CanonicalMIMEHeaderKey
+  00000001021e594c file=35543372 f9011fe0 str x0, [sp,#568]
+  00000001021e5950 file=35543376 f90043e1 str x1, [sp,#128]
+  00000001021e5954 file=35543380 b27c03e0 orr x0, xzr, #0x10
+  00000001021e5958 file=35543384 b002ee21 adrp x1, .+0x5dc5000
+  00000001021e595c file=35543388 9119c021 add x1, x1, #0x670
+  00000001021e5960 file=35543392 b24003e2 orr x2, xzr, #0x1
+  00000001021e5964 file=35543396 9778f0eb bl .+0xfffffffffde3c3ac                  target=0x100021d10 runtime.mallocgcSmallScanNoHeaderSC2
+  00000001021e5968 file=35543400 f9011be0 str x0, [sp,#560]
+  00000001021e596c file=35543404 d0008f02 adrp x2, .+0x11e2000
+  00000001021e5970 file=35543408 912e4c42 add x2, x2, #0xb93                       ref=0x1033c7b93 file=54295443 "application/json0123456789abcdefauth unavailableunknown model %qcustomization_idinvalid repo_uripost_cursor_textchunks_abandonedGetGrantedSc"
+  00000001021e5974 file=35543412 b27c03e3 orr x3, xzr, #0x10
+  00000001021e5978 file=35543416 a9000c02 stp x2, x3, [x0]
+  00000001021e597c file=35543420 d0034ea0 adrp x0, .+0x69d6000
+  00000001021e5980 file=35543424 91166000 add x0, x0, #0x598
+  00000001021e5984 file=35543428 f94053e1 ldr x1, [sp,#160]
+  00000001021e5988 file=35543432 f9411fe2 ldr x2, [sp,#568]
+  00000001021e598c file=35543436 f94043e3 ldr x3, [sp,#128]
+  00000001021e5990 file=35543440 977894ec bl .+0xfffffffffde253b0                  target=0x10000ad40 runtime.mapassign_faststr
+  00000001021e5994 file=35543444 b24003e2 orr x2, xzr, #0x1
+  00000001021e5998 file=35543448 a9008802 stp x2, x2, [x0,#8]
+  00000001021e599c file=35543452 b005067b adrp x27, .+0xa0cd000
+  00000001021e59a0 file=35543456 b9436362 ldr w2, [x27,#864]
+  00000001021e59a4 file=35543460 35000062 cbnz w2, .+0xc                           target=0x1021e59b0
+  00000001021e59a8 file=35543464 f9411be3 ldr x3, [sp,#560]
+  00000001021e59ac file=35543468 14000005 b .+0x14                                 target=0x1021e59c0
+  00000001021e59b0 file=35543472 f9400002 ldr x2, [x0]
+  00000001021e59b4 file=35543476 977ab10b bl .+0xfffffffffdeac42c                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021e59b8 file=35543480 f9411be3 ldr x3, [sp,#560]
+  00000001021e59bc file=35543484 a9000b23 stp x3, x2, [x25]
+  00000001021e59c0 file=35543488 f9000003 str x3, [x0]
+  00000001021e59c4 file=35543492 f9412fe0 ldr x0, [sp,#600]
+  00000001021e59c8 file=35543496 f9404fe1 ldr x1, [sp,#152]
+  00000001021e59cc file=35543500 94001bd5 bl .+0x6f54                              target=0x1021ec920 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).setHeaders
+  00000001021e59d0 file=35543504 b27c03e0 orr x0, xzr, #0x10
+  00000001021e59d4 file=35543508 d0032861 adrp x1, .+0x650e000
+  00000001021e59d8 file=35543512 91156021 add x1, x1, #0x558
+  00000001021e59dc file=35543516 b24003e2 orr x2, xzr, #0x1
+  00000001021e59e0 file=35543520 9778f0cc bl .+0xfffffffffde3c330                  target=0x100021d10 runtime.mallocgcSmallScanNoHeaderSC2
+  00000001021e59e4 file=35543524 d00001c2 adrp x2, .+0x3a000
+  00000001021e59e8 file=35543528 91258042 add x2, x2, #0x960
+  00000001021e59ec file=35543532 f9000002 str x2, [x0]
+  00000001021e59f0 file=35543536 b005067b adrp x27, .+0xa0cd000
+
+SOURCE M1-codeassist.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.userAgent VA=0x1021ec050 FILE=35569744 SIZE=2256
+  00000001021ec050 file=35569744 f9400b90 ldr x16, [x28,#16]
+  00000001021ec054 file=35569748 d10603f1 sub x17, sp, #0x180
+  00000001021ec058 file=35569752 eb10023f cmp x17, x16
+  00000001021ec05c file=35569756 54004489 b.ls .+0x890                             target=0x1021ec8ec
+  00000001021ec060 file=35569760 d10803f4 sub x20, sp, #0x200
+  00000001021ec064 file=35569764 a93ffa9d stp x29, x30, [x20,#-8]
+  00000001021ec068 file=35569768 9100029f mov sp, x20
+  00000001021ec06c file=35569772 d10023fd sub x29, sp, #0x8
+  00000001021ec070 file=35569776 f9010fe2 str x2, [sp,#536]
+  00000001021ec074 file=35569780 3908e3e6 strb w6, [sp,#568]
+  00000001021ec078 file=35569784 f9011be5 str x5, [sp,#560]
+  00000001021ec07c file=35569788 f90117e4 str x4, [sp,#552]
+  00000001021ec080 file=35569792 f9010be1 str x1, [sp,#528]
+  00000001021ec084 file=35569796 f90107e0 str x0, [sp,#520]
+  00000001021ec088 file=35569800 b5000163 cbnz x3, .+0x2c                          target=0x1021ec0b4
+  00000001021ec08c file=35569804 d00503db adrp x27, .+0xa07a000
+  00000001021ec090 file=35569808 9132037b add x27, x27, #0xc80
+  00000001021ec094 file=35569812 a9402367 ldp x7, x8, [x27]
+  00000001021ec098 file=35569816 d503201f nop
+  00000001021ec09c file=35569820 f100011f cmp x8, #0x0
+  00000001021ec0a0 file=35569824 d2800169 mov x9, #0xb
+  00000001021ec0a4 file=35569828 9a891103 csel x3, x8, x9, ne
+  00000001021ec0a8 file=35569832 90008b68 adrp x8, .+0x116c000
+  00000001021ec0ac file=35569836 91393508 add x8, x8, #0xe4d                       ref=0x103358e4d file=53841485 "antigravitymarketplacedescriptiondatachannelCancelLogin"
+  00000001021ec0b0 file=35569840 9a8810e2 csel x2, x7, x8, ne
+  00000001021ec0b4 file=35569844 f9006be3 str x3, [sp,#208]
+  00000001021ec0b8 file=35569848 f900fbe2 str x2, [sp,#496]
+  00000001021ec0bc file=35569852 97a6df6d bl .+0xfffffffffe9b7db4                  target=0x100ba3e70 google3/third_party/jetski/language_server/metadata_provider/metadata_provider.SafeGetMetadata
+  00000001021ec0c0 file=35569856 b4000060 cbz x0, .+0xc                            target=0x1021ec0cc
+  00000001021ec0c4 file=35569860 a9419805 ldp x5, x6, [x0,#24]
+  00000001021ec0c8 file=35569864 14000003 b .+0xc                                  target=0x1021ec0d4
+  00000001021ec0cc file=35569868 aa1f03e6 mov x6, xzr
+  00000001021ec0d0 file=35569872 aa1f03e5 mov x5, xzr
+  00000001021ec0d4 file=35569876 f90033e6 str x6, [sp,#96]
+  00000001021ec0d8 file=35569880 f90077e5 str x5, [sp,#232]
+  00000001021ec0dc file=35569884 d00503db adrp x27, .+0xa07a000
+  00000001021ec0e0 file=35569888 9132437b add x27, x27, #0xc90
+  00000001021ec0e4 file=35569892 a9401b65 ldp x5, x6, [x27]
+  00000001021ec0e8 file=35569896 f9002fe6 str x6, [sp,#88]
+
+SOURCE M1-codeassist.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).setHeaders VA=0x1021ec920 FILE=35572000 SIZE=848
+  00000001021ec920 file=35572000 f9400b90 ldr x16, [x28,#16]
+  00000001021ec924 file=35572004 d10043f1 sub x17, sp, #0x10
+  00000001021ec928 file=35572008 eb10023f cmp x17, x16
+  00000001021ec92c file=35572012 54001969 b.ls .+0x32c                             target=0x1021ecc58
+  00000001021ec930 file=35572016 f8170ffe str x30, [sp,#-144]!
+  00000001021ec934 file=35572020 f81f83fd stur x29, [sp,#-8]
+  00000001021ec938 file=35572024 d10023fd sub x29, sp, #0x8
+  00000001021ec93c file=35572028 f90053e1 str x1, [sp,#160]
+  00000001021ec940 file=35572032 a94f8823 ldp x3, x2, [x1,#248]
+  00000001021ec944 file=35572036 b50000a3 cbnz x3, .+0x14                          target=0x1021ec958
+  00000001021ec948 file=35572040 b0036d83 adrp x3, .+0x6db1000
+  00000001021ec94c file=35572044 9118a063 add x3, x3, #0x628
+  00000001021ec950 file=35572048 d0050602 adrp x2, .+0xa0c2000
+  00000001021ec954 file=35572052 911e0042 add x2, x2, #0x780
+  00000001021ec958 file=35572056 f9004fe0 str x0, [sp,#152]
+  00000001021ec95c file=35572060 aa0303e1 mov x1, x3
+  00000001021ec960 file=35572064 97fffd98 bl .+0xfffffffffffff660                  target=0x1021ebfc0 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).userAgent
+  00000001021ec964 file=35572068 f9001fe1 str x1, [sp,#56]
+  00000001021ec968 file=35572072 f9002be0 str x0, [sp,#80]
+  00000001021ec96c file=35572076 f94053e3 ldr x3, [sp,#160]
+  00000001021ec970 file=35572080 f9401c63 ldr x3, [x3,#56]
+  00000001021ec974 file=35572084 f9003be3 str x3, [sp,#112]
+  00000001021ec978 file=35572088 d503201f nop
+  00000001021ec97c file=35572092 f0008a80 adrp x0, .+0x1153000
+  00000001021ec980 file=35572096 9132d000 add x0, x0, #0xcb4                       ref=0x10333fcb4 file=53738676 "User-Agentdrop_blockcontainerdSSH_CLIENTconn_statemaxResultsrunTriggeraiplatformrawPredictgemini-2.5rewriteUrino timeoutidempotentclose_page"
+  00000001021ec984 file=35572100 d2800141 mov x1, #0xa
+  00000001021ec988 file=35572104 97852ec6 bl .+0xfffffffffe14bb18                  target=0x1003384a0 net/textproto.CanonicalMIMEHeaderKey
+  00000001021ec98c file=35572108 f90043e0 str x0, [sp,#128]
+  00000001021ec990 file=35572112 f90027e1 str x1, [sp,#72]
+  00000001021ec994 file=35572116 b27c03e0 orr x0, xzr, #0x10
+  00000001021ec998 file=35572120 d002ede1 adrp x1, .+0x5dbe000
+  00000001021ec99c file=35572124 9119c021 add x1, x1, #0x670
+  00000001021ec9a0 file=35572128 b24003e2 orr x2, xzr, #0x1
+  00000001021ec9a4 file=35572132 9778d4db bl .+0xfffffffffde3536c                  target=0x100021d10 runtime.mallocgcSmallScanNoHeaderSC2
+  00000001021ec9a8 file=35572136 f9401fe3 ldr x3, [sp,#56]
+  00000001021ec9ac file=35572140 f9000403 str x3, [x0,#8]
+  00000001021ec9b0 file=35572144 d005063b adrp x27, .+0xa0c6000
+  00000001021ec9b4 file=35572148 b9436363 ldr w3, [x27,#864]
+  00000001021ec9b8 file=35572152 35000063 cbnz w3, .+0xc                           target=0x1021ec9c4
+  00000001021ec9bc file=35572156 f9402be4 ldr x4, [sp,#80]
+  00000001021ec9c0 file=35572160 14000004 b .+0x10                                 target=0x1021ec9d0
+  00000001021ec9c4 file=35572164 977a9503 bl .+0xfffffffffdea540c                  target=0x100091dd0 runtime.gcWriteBarrier1
+  00000001021ec9c8 file=35572168 f9402be4 ldr x4, [sp,#80]
+  00000001021ec9cc file=35572172 f9000324 str x4, [x25]
+  00000001021ec9d0 file=35572176 f9003fe0 str x0, [sp,#120]
+  00000001021ec9d4 file=35572180 f9000004 str x4, [x0]
+  00000001021ec9d8 file=35572184 f0034e60 adrp x0, .+0x69cf000
+  00000001021ec9dc file=35572188 91166000 add x0, x0, #0x598
+  00000001021ec9e0 file=35572192 f9403be1 ldr x1, [sp,#112]
+  00000001021ec9e4 file=35572196 f94043e2 ldr x2, [sp,#128]
+  00000001021ec9e8 file=35572200 f94027e3 ldr x3, [sp,#72]
+  00000001021ec9ec file=35572204 977878d5 bl .+0xfffffffffde1e354                  target=0x10000ad40 runtime.mapassign_faststr
+  00000001021ec9f0 file=35572208 b24003e4 orr x4, xzr, #0x1
+  00000001021ec9f4 file=35572212 a9009004 stp x4, x4, [x0,#8]
+  00000001021ec9f8 file=35572216 d005063b adrp x27, .+0xa0c6000
+  00000001021ec9fc file=35572220 b9436364 ldr w4, [x27,#864]
+  00000001021eca00 file=35572224 35000064 cbnz w4, .+0xc                           target=0x1021eca0c
+  00000001021eca04 file=35572228 f9403fe4 ldr x4, [sp,#120]
+  00000001021eca08 file=35572232 14000005 b .+0x14                                 target=0x1021eca1c
+  00000001021eca0c file=35572236 f9400003 ldr x3, [x0]
+  00000001021eca10 file=35572240 977a94f4 bl .+0xfffffffffdea53d0                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021eca14 file=35572244 f9403fe4 ldr x4, [sp,#120]
+  00000001021eca18 file=35572248 a9000f24 stp x4, x3, [x25]
+  00000001021eca1c file=35572252 f9000004 str x4, [x0]
+  00000001021eca20 file=35572256 f94053e3 ldr x3, [sp,#160]
+  00000001021eca24 file=35572260 a94f8064 ldp x4, x0, [x3,#248]
+  00000001021eca28 file=35572264 b50000a4 cbnz x4, .+0x14                          target=0x1021eca3c
+  00000001021eca2c file=35572268 b0036d84 adrp x4, .+0x6db1000
+  00000001021eca30 file=35572272 9118a084 add x4, x4, #0x628
+  00000001021eca34 file=35572276 d0050600 adrp x0, .+0xa0c2000
+  00000001021eca38 file=35572280 911e0000 add x0, x0, #0x780
+  00000001021eca3c file=35572284 f9401883 ldr x3, [x4,#48]                         load[0x108f9d658]=0x1000bf8a0
+  00000001021eca40 file=35572288 f00319a1 adrp x1, .+0x6337000
+  00000001021eca44 file=35572292 91336021 add x1, x1, #0xcd8
+  00000001021eca48 file=35572296 d0050602 adrp x2, .+0xa0c2000
+  00000001021eca4c file=35572300 911e0042 add x2, x2, #0x780
+  00000001021eca50 file=35572304 d63f0060 blr x3
+  00000001021eca54 file=35572308 90031083 adrp x3, .+0x6210000
+  00000001021eca58 file=35572312 91372063 add x3, x3, #0xdc8
+  00000001021eca5c file=35572316 eb03001f cmp x0, x3
+  00000001021eca60 file=35572320 54000061 b.ne .+0xc                               target=0x1021eca6c
+  00000001021eca64 file=35572324 a9400c22 ldp x2, x3, [x1]
+  00000001021eca68 file=35572328 14000003 b .+0xc                                  target=0x1021eca74
+  00000001021eca6c file=35572332 aa1f03e3 mov x3, xzr
+  00000001021eca70 file=35572336 aa1f03e2 mov x2, xzr
+  00000001021eca74 file=35572340 b4000603 cbz x3, .+0xc0                           target=0x1021ecb34
+  00000001021eca78 file=35572344 f90023e3 str x3, [sp,#64]
+  00000001021eca7c file=35572348 f9002fe2 str x2, [sp,#88]
+  00000001021eca80 file=35572352 f94053e2 ldr x2, [sp,#160]
+  00000001021eca84 file=35572356 f9401c42 ldr x2, [x2,#56]
+  00000001021eca88 file=35572360 f90037e2 str x2, [sp,#104]
+  00000001021eca8c file=35572364 d503201f nop
+  00000001021eca90 file=35572368 b0009180 adrp x0, .+0x1231000
+  00000001021eca94 file=35572372 91103400 add x0, x0, #0x40d                       ref=0x10341d40d file=54645773 "X-Goog-Request-Reasonvertex request is nilcontainer environmentno OAuth token for %svoice_rap_dial_failedgetGitHubPullRequestsconversation_g"
+  00000001021eca98 file=35572376 d28002a1 mov x1, #0x15
+  00000001021eca9c file=35572380 97852e81 bl .+0xfffffffffe14ba04                  target=0x1003384a0 net/textproto.CanonicalMIMEHeaderKey
+  00000001021ecaa0 file=35572384 f90043e0 str x0, [sp,#128]
+  00000001021ecaa4 file=35572388 f90027e1 str x1, [sp,#72]
+  00000001021ecaa8 file=35572392 b27c03e0 orr x0, xzr, #0x10
+  00000001021ecaac file=35572396 d002ede1 adrp x1, .+0x5dbe000
+  00000001021ecab0 file=35572400 9119c021 add x1, x1, #0x670
+  00000001021ecab4 file=35572404 b24003e2 orr x2, xzr, #0x1
+  00000001021ecab8 file=35572408 9778d496 bl .+0xfffffffffde35258                  target=0x100021d10 runtime.mallocgcSmallScanNoHeaderSC2
+  00000001021ecabc file=35572412 f94023e2 ldr x2, [sp,#64]
+  00000001021ecac0 file=35572416 f9000402 str x2, [x0,#8]
+  00000001021ecac4 file=35572420 d005063b adrp x27, .+0xa0c6000
+  00000001021ecac8 file=35572424 b9436362 ldr w2, [x27,#864]
+  00000001021ecacc file=35572428 35000062 cbnz w2, .+0xc                           target=0x1021ecad8
+  00000001021ecad0 file=35572432 f9402fe4 ldr x4, [sp,#88]
+  00000001021ecad4 file=35572436 14000004 b .+0x10                                 target=0x1021ecae4
+  00000001021ecad8 file=35572440 977a94be bl .+0xfffffffffdea52f8                  target=0x100091dd0 runtime.gcWriteBarrier1
+  00000001021ecadc file=35572444 f9402fe4 ldr x4, [sp,#88]
+  00000001021ecae0 file=35572448 f9000324 str x4, [x25]
+  00000001021ecae4 file=35572452 f9003fe0 str x0, [sp,#120]
+  00000001021ecae8 file=35572456 f9000004 str x4, [x0]
+  00000001021ecaec file=35572460 f0034e60 adrp x0, .+0x69cf000
+  00000001021ecaf0 file=35572464 91166000 add x0, x0, #0x598
+  00000001021ecaf4 file=35572468 f94037e1 ldr x1, [sp,#104]
+  00000001021ecaf8 file=35572472 f94043e2 ldr x2, [sp,#128]
+  00000001021ecafc file=35572476 f94027e3 ldr x3, [sp,#72]
+  00000001021ecb00 file=35572480 97787890 bl .+0xfffffffffde1e240                  target=0x10000ad40 runtime.mapassign_faststr
+  00000001021ecb04 file=35572484 b24003e4 orr x4, xzr, #0x1
+  00000001021ecb08 file=35572488 a9009004 stp x4, x4, [x0,#8]
+  00000001021ecb0c file=35572492 d005063b adrp x27, .+0xa0c6000
+  00000001021ecb10 file=35572496 b9436364 ldr w4, [x27,#864]
+  00000001021ecb14 file=35572500 35000064 cbnz w4, .+0xc                           target=0x1021ecb20
+  00000001021ecb18 file=35572504 f9403fe3 ldr x3, [sp,#120]
+  00000001021ecb1c file=35572508 14000005 b .+0x14                                 target=0x1021ecb30
+  00000001021ecb20 file=35572512 f9400002 ldr x2, [x0]
+  00000001021ecb24 file=35572516 977a94af bl .+0xfffffffffdea52bc                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021ecb28 file=35572520 f9403fe3 ldr x3, [sp,#120]
+  00000001021ecb2c file=35572524 a9000b23 stp x3, x2, [x25]
+  00000001021ecb30 file=35572528 f9000003 str x3, [x0]
+  00000001021ecb34 file=35572532 f94053e1 ldr x1, [sp,#160]
+  00000001021ecb38 file=35572536 a9400c22 ldp x2, x3, [x1]
+  00000001021ecb3c file=35572540 f100107f cmp x3, #0x4
+  00000001021ecb40 file=35572544 54000581 b.ne .+0xb0                              target=0x1021ecbf0
+  00000001021ecb44 file=35572548 b9400042 ldr w2, [x2]
+  00000001021ecb48 file=35572552 d289ea03 mov x3, #0x4f50
+  00000001021ecb4c file=35572556 f2aa8a63 movk x3, #0x5453, lsl #16
+  00000001021ecb50 file=35572560 6b03005f cmp w2, w3
+  00000001021ecb54 file=35572564 540004e1 b.ne .+0x9c                              target=0x1021ecbf0
+  00000001021ecb58 file=35572568 f9401c22 ldr x2, [x1,#56]
+  00000001021ecb5c file=35572572 f90033e2 str x2, [sp,#96]
+  00000001021ecb60 file=35572576 d503201f nop
+  00000001021ecb64 file=35572580 b0008c20 adrp x0, .+0x1185000
+  00000001021ecb68 file=35572584 9130dc00 add x0, x0, #0xc37                       ref=0x103371c37 file=53943351 "Content-Typevscode-file:http://[::1]UnauthorizedPLUGIN_ROOT=PLUGIN_DATA=user_refreshshelves_flagconversationtoken_expirypre_tls_dialHasAuthT"
+  00000001021ecb6c file=35572588 b27e07e1 orr x1, xzr, #0xc
+  00000001021ecb70 file=35572592 97852e4c bl .+0xfffffffffe14b930                  target=0x1003384a0 net/textproto.CanonicalMIMEHeaderKey
+  00000001021ecb74 file=35572596 f90043e0 str x0, [sp,#128]
+  00000001021ecb78 file=35572600 f90027e1 str x1, [sp,#72]
+  00000001021ecb7c file=35572604 b27c03e0 orr x0, xzr, #0x10
+  00000001021ecb80 file=35572608 d002ede1 adrp x1, .+0x5dbe000
+  00000001021ecb84 file=35572612 9119c021 add x1, x1, #0x670
+  00000001021ecb88 file=35572616 b24003e2 orr x2, xzr, #0x1
+  00000001021ecb8c file=35572620 9778d461 bl .+0xfffffffffde35184                  target=0x100021d10 runtime.mallocgcSmallScanNoHeaderSC2
+  00000001021ecb90 file=35572624 f9003fe0 str x0, [sp,#120]
+  00000001021ecb94 file=35572628 f0008ec2 adrp x2, .+0x11db000
+  00000001021ecb98 file=35572632 912e4c42 add x2, x2, #0xb93                       ref=0x1033c7b93 file=54295443 "application/json0123456789abcdefauth unavailableunknown model %qcustomization_idinvalid repo_uripost_cursor_textchunks_abandonedGetGrantedSc"
+  00000001021ecb9c file=35572636 b27c03e3 orr x3, xzr, #0x10
+  00000001021ecba0 file=35572640 a9000c02 stp x2, x3, [x0]
+  00000001021ecba4 file=35572644 f0034e60 adrp x0, .+0x69cf000
+  00000001021ecba8 file=35572648 91166000 add x0, x0, #0x598
+  00000001021ecbac file=35572652 f94033e1 ldr x1, [sp,#96]
+  00000001021ecbb0 file=35572656 f94043e2 ldr x2, [sp,#128]
+  00000001021ecbb4 file=35572660 f94027e3 ldr x3, [sp,#72]
+  00000001021ecbb8 file=35572664 97787862 bl .+0xfffffffffde1e188                  target=0x10000ad40 runtime.mapassign_faststr
+  00000001021ecbbc file=35572668 b24003e2 orr x2, xzr, #0x1
+  00000001021ecbc0 file=35572672 a9008802 stp x2, x2, [x0,#8]
+  00000001021ecbc4 file=35572676 d005063b adrp x27, .+0xa0c6000
+  00000001021ecbc8 file=35572680 b9436362 ldr w2, [x27,#864]
+  00000001021ecbcc file=35572684 35000062 cbnz w2, .+0xc                           target=0x1021ecbd8
+  00000001021ecbd0 file=35572688 f9403fe3 ldr x3, [sp,#120]
+  00000001021ecbd4 file=35572692 14000005 b .+0x14                                 target=0x1021ecbe8
+  00000001021ecbd8 file=35572696 f9400002 ldr x2, [x0]
+  00000001021ecbdc file=35572700 977a9481 bl .+0xfffffffffdea5204                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021ecbe0 file=35572704 f9403fe3 ldr x3, [sp,#120]
+  00000001021ecbe4 file=35572708 a9000b23 stp x3, x2, [x25]
+  00000001021ecbe8 file=35572712 f9000003 str x3, [x0]
+  00000001021ecbec file=35572716 f94053e1 ldr x1, [sp,#160]
+  00000001021ecbf0 file=35572720 f9404fe2 ldr x2, [sp,#152]
+  00000001021ecbf4 file=35572724 a9400042 ldp x2, x0, [x2]
+  00000001021ecbf8 file=35572728 f9404842 ldr x2, [x2,#144]
+  00000001021ecbfc file=35572732 d63f0040 blr x2
+  00000001021ecc00 file=35572736 f94053e2 ldr x2, [sp,#160]
+  00000001021ecc04 file=35572740 f9400843 ldr x3, [x2,#16]
+  00000001021ecc08 file=35572744 b4000223 cbz x3, .+0x44                           target=0x1021ecc4c
+  00000001021ecc0c file=35572748 a9438460 ldp x0, x1, [x3,#56]
+  00000001021ecc10 file=35572752 d503201f nop
+  00000001021ecc14 file=35572756 90008ee2 adrp x2, .+0x11dc000
+  00000001021ecc18 file=35572760 91054c42 add x2, x2, #0x153                       ref=0x1033c8153 file=54296915 "/v1alpha/remote:fetchSandboxPortlistEnvironmentsmarked_as_unreaddisconnectPluginupload, finalizechat/completionsstreamRawPredictinvalid_argu"
+  00000001021ecc1c file=35572764 b27c03e3 orr x3, xzr, #0x10
+  00000001021ecc20 file=35572768 977897cc bl .+0xfffffffffde25f30                  target=0x100012b50 internal/stringslite.Index
+  00000001021ecc24 file=35572772 b7f80140 tbnz x0, #63, .+0x28                     target=0x1021ecc4c
+  00000001021ecc28 file=35572776 f94053e3 ldr x3, [sp,#160]
+  00000001021ecc2c file=35572780 a94f8861 ldp x1, x2, [x3,#248]
+  00000001021ecc30 file=35572784 b50000a1 cbnz x1, .+0x14                          target=0x1021ecc44
+  00000001021ecc34 file=35572788 b0036d81 adrp x1, .+0x6db1000
+  00000001021ecc38 file=35572792 9118a021 add x1, x1, #0x628
+  00000001021ecc3c file=35572796 d0050602 adrp x2, .+0xa0c2000
+  00000001021ecc40 file=35572800 911e0042 add x2, x2, #0x780
+  00000001021ecc44 file=35572804 f9404fe0 ldr x0, [sp,#152]
+  00000001021ecc48 file=35572808 97ff4276 bl .+0xfffffffffffd09d8                  target=0x1021bd620 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).maybeOverrideQuotaProject
+  00000001021ecc4c file=35572812 f85f83fd ldur x29, [sp,#-8]
+  00000001021ecc50 file=35572816 f84907fe ldr x30, [sp],#144
+  00000001021ecc54 file=35572820 d65f03c0 ret
+  00000001021ecc58 file=35572824 a90087e0 stp x0, x1, [sp,#8]
+  00000001021ecc5c file=35572828 aa1e03e3 mov x3, x30
+  00000001021ecc60 file=35572832 977a8c7c bl .+0xfffffffffdea31f0                  target=0x10008fe50 runtime.morestack_noctxt
+  00000001021ecc64 file=35572836 a94087e0 ldp x0, x1, [sp,#8]
+  00000001021ecc68 file=35572840 17ffff2e b .+0xfffffffffffffcb8                   target=0x1021ec920 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).setHeaders
+  00000001021ecc6c file=35572844 00000000 .word 0x00000000
+
+SOURCE M1-codeassist.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).fetchAvailableModels VA=0x1021f1b80 FILE=35593088 SIZE=1472
+  00000001021f1b80 file=35593088 f9400b90 ldr x16, [x28,#16]
+  00000001021f1b84 file=35593092 d10103f1 sub x17, sp, #0x40
+  00000001021f1b88 file=35593096 eb10023f cmp x17, x16
+  00000001021f1b8c file=35593100 54002c89 b.ls .+0x590                             target=0x1021f211c
+  00000001021f1b90 file=35593104 f8140ffe str x30, [sp,#-192]!
+  00000001021f1b94 file=35593108 f81f83fd stur x29, [sp,#-8]
+  00000001021f1b98 file=35593112 d10023fd sub x29, sp, #0x8
+  00000001021f1b9c file=35593116 f90067e0 str x0, [sp,#200]
+  00000001021f1ba0 file=35593120 a90d0be1 stp x1, x2, [sp,#208]
+  00000001021f1ba4 file=35593124 a9400003 ldp x3, x0, [x0]
+  00000001021f1ba8 file=35593128 f9404063 ldr x3, [x3,#128]
+  00000001021f1bac file=35593132 d63f0060 blr x3
+  00000001021f1bb0 file=35593136 b5002522 cbnz x2, .+0x4a4                         target=0x1021f2054
+  00000001021f1bb4 file=35593140 b4002261 cbz x1, .+0x44c                          target=0x1021f2000
+  00000001021f1bb8 file=35593144 f100383f cmp x1, #0xe
+  00000001021f1bbc file=35593148 540002e1 b.ne .+0x5c                              target=0x1021f1c18
+  00000001021f1bc0 file=35593152 f9400006 ldr x6, [x0]
+  00000001021f1bc4 file=35593156 d28cace7 mov x7, #0x6567
+  00000001021f1bc8 file=35593160 f2ad2da7 movk x7, #0x696d, lsl #16
+  00000001021f1bcc file=35593164 f2cd2dc7 movk x7, #0x696e, lsl #32
+  00000001021f1bd0 file=35593168 f2ec2be7 movk x7, #0x615f, lsl #48
+  00000001021f1bd4 file=35593172 eb0700df cmp x6, x7
+  00000001021f1bd8 file=35593176 54000201 b.ne .+0x40                              target=0x1021f1c18
+  00000001021f1bdc file=35593180 b9400806 ldr w6, [x0,#8]
+  00000001021f1be0 file=35593184 d28d2e07 mov x7, #0x6970
+  00000001021f1be4 file=35593188 f2ad6be7 movk x7, #0x6b5f, lsl #16
+  00000001021f1be8 file=35593192 6b0700df cmp w6, w7
+  00000001021f1bec file=35593196 54000161 b.ne .+0x2c                              target=0x1021f1c18
+  00000001021f1bf0 file=35593200 79401806 ldrh w6, [x0,#12]
+  00000001021f1bf4 file=35593204 d28f2ca7 mov x7, #0x7965
+  00000001021f1bf8 file=35593208 6b0700df cmp w6, w7
+  00000001021f1bfc file=35593212 540000e1 b.ne .+0x1c                              target=0x1021f1c18
+  00000001021f1c00 file=35593216 97eeedd0 bl .+0xffffffffffbbb740                  target=0x101dad340 google3/third_party/jetski/models/geminimodels/geminimodels.Catalog
+  00000001021f1c04 file=35593220 aa1f03e1 mov x1, xzr
+  00000001021f1c08 file=35593224 aa1f03e2 mov x2, xzr
+  00000001021f1c0c file=35593228 f85f83fd ldur x29, [sp,#-8]
+  00000001021f1c10 file=35593232 f84c07fe ldr x30, [sp],#192
+  00000001021f1c14 file=35593236 d65f03c0 ret
+  00000001021f1c18 file=35593240 f9002fe1 str x1, [sp,#88]
+  00000001021f1c1c file=35593244 f90043e0 str x0, [sp,#128]
+  00000001021f1c20 file=35593248 f1001c3f cmp x1, #0x7
+  00000001021f1c24 file=35593252 540002e1 b.ne .+0x5c                              target=0x1021f1c80
+  00000001021f1c28 file=35593256 b9400006 ldr w6, [x0]
+  00000001021f1c2c file=35593260 d28c2ce7 mov x7, #0x6167
+  00000001021f1c30 file=35593264 f2acae87 movk x7, #0x6574, lsl #16
+  00000001021f1c34 file=35593268 6b0700df cmp w6, w7
+  00000001021f1c38 file=35593272 54000241 b.ne .+0x48                              target=0x1021f1c80
+  00000001021f1c3c file=35593276 79400806 ldrh w6, [x0,#4]
+  00000001021f1c40 file=35593280 d28c2ee7 mov x7, #0x6177
+  00000001021f1c44 file=35593284 6b0700df cmp w6, w7
+  00000001021f1c48 file=35593288 540001c1 b.ne .+0x38                              target=0x1021f1c80
+  00000001021f1c4c file=35593292 39401806 ldrb w6, [x0,#6]
+  00000001021f1c50 file=35593296 7101e4df cmp w6, #0x79
+  00000001021f1c54 file=35593300 54000161 b.ne .+0x2c                              target=0x1021f1c80
+  00000001021f1c58 file=35593304 f94067e6 ldr x6, [sp,#200]
+  00000001021f1c5c file=35593308 a94000c7 ldp x7, x0, [x6]
+  00000001021f1c60 file=35593312 b4002067 cbz x7, .+0x40c                          target=0x1021f206c
+  00000001021f1c64 file=35593316 f94004e1 ldr x1, [x7,#8]
+  00000001021f1c68 file=35593320 9004fbe8 adrp x8, .+0x9f7c000
+  00000001021f1c6c file=35593324 91344108 add x8, x8, #0xd10
+  00000001021f1c70 file=35593328 c8dffd09 ldar x9, [x8]
+  00000001021f1c74 file=35593332 f940012a ldr x10, [x9]
+  00000001021f1c78 file=35593336 b94010e7 ldr w7, [x7,#16]
+  00000001021f1c7c file=35593340 14000116 b .+0x458                                target=0x1021f20d4
+  00000001021f1c80 file=35593344 97ffff94 bl .+0xfffffffffffffe50                  target=0x1021f1ad0 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.isBAICFetchConfigEnabled
+  00000001021f1c84 file=35593348 360000a0 tbz w0, #0, .+0x14                       target=0x1021f1c98
+  00000001021f1c88 file=35593352 a94c87e0 ldp x0, x1, [sp,#200]
+  00000001021f1c8c file=35593356 f9406fe2 ldr x2, [sp,#216]
+  00000001021f1c90 file=35593360 97ff7ffc bl .+0xfffffffffffdfff0                  target=0x1021d1c80 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).IsBusinessLicensed
+  00000001021f1c94 file=35593364 37001aa0 tbnz w0, #0, .+0x354                     target=0x1021f1fe8
+  00000001021f1c98 file=35593368 f94067e1 ldr x1, [sp,#200]
+  00000001021f1c9c file=35593372 a9400021 ldp x1, x0, [x1]
+  00000001021f1ca0 file=35593376 f9400c21 ldr x1, [x1,#24]
+  00000001021f1ca4 file=35593380 d63f0020 blr x1
+  00000001021f1ca8 file=35593384 f1000c3f cmp x1, #0x3
+  00000001021f1cac file=35593388 54000141 b.ne .+0x28                              target=0x1021f1cd4
+  00000001021f1cb0 file=35593392 79400003 ldrh w3, [x0]
+  00000001021f1cb4 file=35593396 d28c8c24 mov x4, #0x6461
+  00000001021f1cb8 file=35593400 6b04007f cmp w3, w4
+  00000001021f1cbc file=35593404 540000c1 b.ne .+0x18                              target=0x1021f1cd4
+  00000001021f1cc0 file=35593408 39400803 ldrb w3, [x0,#2]
+  00000001021f1cc4 file=35593412 71018c7f cmp w3, #0x63
+  00000001021f1cc8 file=35593416 54000061 b.ne .+0xc                               target=0x1021f1cd4
+  00000001021f1ccc file=35593420 97fffddd bl .+0xfffffffffffff774                  target=0x1021f1440 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.buildDefaultAvailableModels
+  00000001021f1cd0 file=35593424 1400007e b .+0x1f8                                target=0x1021f1ec8
+  00000001021f1cd4 file=35593428 a94c87e0 ldp x0, x1, [sp,#200]
+  00000001021f1cd8 file=35593432 f9406fe2 ldr x2, [sp,#216]
+  00000001021f1cdc file=35593436 94004bf5 bl .+0x12fd4                             target=0x102204cb0 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).getCAICProject
+  00000001021f1ce0 file=35593440 b5001782 cbnz x2, .+0x2f0                         target=0x1021f1fd0
+  00000001021f1ce4 file=35593444 f9003fe0 str x0, [sp,#120]
+  00000001021f1ce8 file=35593448 f9002be1 str x1, [sp,#80]
+  00000001021f1cec file=35593452 f94067e3 ldr x3, [sp,#200]
+  00000001021f1cf0 file=35593456 a9400063 ldp x3, x0, [x3]
+  00000001021f1cf4 file=35593460 f9401863 ldr x3, [x3,#48]
+  00000001021f1cf8 file=35593464 a94d0be1 ldp x1, x2, [sp,#208]
+  00000001021f1cfc file=35593468 d63f0060 blr x3
+  00000001021f1d00 file=35593472 b4000401 cbz x1, .+0x80                           target=0x1021f1d80
+  00000001021f1d04 file=35593476 a908ffff stp xzr, xzr, [sp,#136]
+  00000001021f1d08 file=35593480 b4000041 cbz x1, .+0x8                            target=0x1021f1d10
+  00000001021f1d0c file=35593484 f9400421 ldr x1, [x1,#8]
+  00000001021f1d10 file=35593488 a9088be1 stp x1, x2, [sp,#136]
+  00000001021f1d14 file=35593492 d00094c0 adrp x0, .+0x129a000
+  00000001021f1d18 file=35593496 911e1800 add x0, x0, #0x786                       ref=0x10348b786 file=55097222 "failed to get entitlement: %wKeyring %s timed out after %vkeyring %s timed out after %vMaking Gateway request to: %shttps://aicode.googleapi"
+  00000001021f1d1c file=35593500 d28003a1 mov x1, #0x1d
+  00000001021f1d20 file=35593504 910223e2 add x2, sp, #0x88
+  00000001021f1d24 file=35593508 b24003e3 orr x3, xzr, #0x1
+  00000001021f1d28 file=35593512 aa0303e4 mov x4, x3
+  00000001021f1d2c file=35593516 977c75e9 bl .+0xfffffffffdf1d7a4                  target=0x10010f4d0 fmt.errorf
+  00000001021f1d30 file=35593520 b50001c0 cbnz x0, .+0x38                          target=0x1021f1d68
+  00000001021f1d34 file=35593524 d503201f nop
+  00000001021f1d38 file=35593528 b27c03e0 orr x0, xzr, #0x10
+  00000001021f1d3c file=35593532 f00321a1 adrp x1, .+0x6437000
+  00000001021f1d40 file=35593536 9129e021 add x1, x1, #0xa78
+  00000001021f1d44 file=35593540 b24003e2 orr x2, xzr, #0x1
+  00000001021f1d48 file=35593544 9778bff2 bl .+0xfffffffffde2ffc8                  target=0x100021d10 runtime.mallocgcSmallScanNoHeaderSC2
+  00000001021f1d4c file=35593548 d00094c3 adrp x3, .+0x129a000
+  00000001021f1d50 file=35593552 911e1863 add x3, x3, #0x786                       ref=0x10348b786 file=55097222 "failed to get entitlement: %wKeyring %s timed out after %vkeyring %s timed out after %vMaking Gateway request to: %shttps://aicode.googleapi"
+  00000001021f1d54 file=35593556 d28003a4 mov x4, #0x1d
+  00000001021f1d58 file=35593560 a9001003 stp x3, x4, [x0]
+  00000001021f1d5c file=35593564 aa0003e1 mov x1, x0
+  00000001021f1d60 file=35593568 b0036a20 adrp x0, .+0x6d45000
+  00000001021f1d64 file=35593572 913fa000 add x0, x0, #0xfe8
+  00000001021f1d68 file=35593576 aa0103e2 mov x2, x1
+  00000001021f1d6c file=35593580 aa0003e1 mov x1, x0
+  00000001021f1d70 file=35593584 aa1f03e0 mov x0, xzr
+  00000001021f1d74 file=35593588 f85f83fd ldur x29, [sp,#-8]
+  00000001021f1d78 file=35593592 f84c07fe ldr x30, [sp],#192
+  00000001021f1d7c file=35593596 d65f03c0 ret
+  00000001021f1d80 file=35593600 f9003be0 str x0, [sp,#112]
+  00000001021f1d84 file=35593604 d2800a00 mov x0, #0x50
+  00000001021f1d88 file=35593608 900354e1 adrp x1, .+0x6a9c000
+  00000001021f1d8c file=35593612 912d6021 add x1, x1, #0xb58
+  00000001021f1d90 file=35593616 b24003e2 orr x2, xzr, #0x1
+  00000001021f1d94 file=35593620 9778c433 bl .+0xfffffffffde310cc                  target=0x100022e60 runtime.mallocgcSmallScanNoHeaderSC7
+  00000001021f1d98 file=35593624 f9402be3 ldr x3, [sp,#80]
+  00000001021f1d9c file=35593628 f9000803 str x3, [x0,#16]
+  00000001021f1da0 file=35593632 b005061b adrp x27, .+0xa0c1000
+  00000001021f1da4 file=35593636 b9436363 ldr w3, [x27,#864]
+  00000001021f1da8 file=35593640 35000063 cbnz w3, .+0xc                           target=0x1021f1db4
+  00000001021f1dac file=35593644 f9403fe3 ldr x3, [sp,#120]
+  00000001021f1db0 file=35593648 14000004 b .+0x10                                 target=0x1021f1dc0
+  00000001021f1db4 file=35593652 977a8007 bl .+0xfffffffffdea001c                  target=0x100091dd0 runtime.gcWriteBarrier1
+  00000001021f1db8 file=35593656 f9403fe3 ldr x3, [sp,#120]
+  00000001021f1dbc file=35593660 f9000323 str x3, [x25]
+  00000001021f1dc0 file=35593664 f90033e0 str x0, [sp,#96]
+  00000001021f1dc4 file=35593668 f9000403 str x3, [x0,#8]
+  00000001021f1dc8 file=35593672 f9403be1 ldr x1, [sp,#112]
+  00000001021f1dcc file=35593676 b40005a1 cbz x1, .+0xb4                           target=0x1021f1e80
+  00000001021f1dd0 file=35593680 f9400423 ldr x3, [x1,#8]
+  00000001021f1dd4 file=35593684 b4000563 cbz x3, .+0xac                           target=0x1021f1e80
+  00000001021f1dd8 file=35593688 f94067e3 ldr x3, [sp,#200]
+  00000001021f1ddc file=35593692 a9400063 ldp x3, x0, [x3]
+  00000001021f1de0 file=35593696 f9401c63 ldr x3, [x3,#56]
+  00000001021f1de4 file=35593700 a94d0be1 ldp x1, x2, [sp,#208]
+  00000001021f1de8 file=35593704 d63f0060 blr x3
+  00000001021f1dec file=35593708 b50003e2 cbnz x2, .+0x7c                          target=0x1021f1e68
+  00000001021f1df0 file=35593712 f94033e3 ldr x3, [sp,#96]
+  00000001021f1df4 file=35593716 f9001c61 str x1, [x3,#56]
+  00000001021f1df8 file=35593720 b005061b adrp x27, .+0xa0c1000
+  00000001021f1dfc file=35593724 b9436364 ldr w4, [x27,#864]
+  00000001021f1e00 file=35593728 34000084 cbz w4, .+0x10                           target=0x1021f1e10
+  00000001021f1e04 file=35593732 f9401864 ldr x4, [x3,#48]
+  00000001021f1e08 file=35593736 977a7ff6 bl .+0xfffffffffde9ffd8                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021f1e0c file=35593740 a9001320 stp x0, x4, [x25]
+  00000001021f1e10 file=35593744 f9001860 str x0, [x3,#48]
+  00000001021f1e14 file=35593748 d2800500 mov x0, #0x28
+  00000001021f1e18 file=35593752 b00341c1 adrp x1, .+0x6839000
+  00000001021f1e1c file=35593756 91006021 add x1, x1, #0x18
+  00000001021f1e20 file=35593760 b24003e2 orr x2, xzr, #0x1
+  00000001021f1e24 file=35593764 9778c24b bl .+0xfffffffffde3092c                  target=0x100022750 runtime.mallocgcSmallScanNoHeaderSC5
+  00000001021f1e28 file=35593768 f9403be3 ldr x3, [sp,#112]
+  00000001021f1e2c file=35593772 a9401063 ldp x3, x4, [x3]
+  00000001021f1e30 file=35593776 f9000804 str x4, [x0,#16]
+  00000001021f1e34 file=35593780 b005061b adrp x27, .+0xa0c1000
+  00000001021f1e38 file=35593784 b9436364 ldr w4, [x27,#864]
+  00000001021f1e3c file=35593788 35000064 cbnz w4, .+0xc                           target=0x1021f1e48
+  00000001021f1e40 file=35593792 f94033e1 ldr x1, [sp,#96]
+  00000001021f1e44 file=35593796 14000006 b .+0x18                                 target=0x1021f1e5c
+  00000001021f1e48 file=35593800 f94033e1 ldr x1, [sp,#96]
+  00000001021f1e4c file=35593804 f9401422 ldr x2, [x1,#40]
+  00000001021f1e50 file=35593808 977a7fe8 bl .+0xfffffffffde9ffa0                  target=0x100091df0 runtime.gcWriteBarrier3
+  00000001021f1e54 file=35593812 a9000323 stp x3, x0, [x25]
+  00000001021f1e58 file=35593816 f9000b22 str x2, [x25,#16]
+  00000001021f1e5c file=35593820 f9000403 str x3, [x0,#8]
+  00000001021f1e60 file=35593824 f9001420 str x0, [x1,#40]
+  00000001021f1e64 file=35593828 14000007 b .+0x1c                                 target=0x1021f1e80
+  00000001021f1e68 file=35593832 aa1f03e0 mov x0, xzr
+  00000001021f1e6c file=35593836 aa0203e1 mov x1, x2
+  00000001021f1e70 file=35593840 aa0303e2 mov x2, x3
+  00000001021f1e74 file=35593844 f85f83fd ldur x29, [sp,#-8]
+  00000001021f1e78 file=35593848 f84c07fe ldr x30, [sp],#192
+  00000001021f1e7c file=35593852 d65f03c0 ret
+  00000001021f1e80 file=35593856 b00363e0 adrp x0, .+0x6c7d000
+  00000001021f1e84 file=35593860 912ac000 add x0, x0, #0xab0
+  00000001021f1e88 file=35593864 9778bd62 bl .+0xfffffffffde2f588                  target=0x100021410 runtime.newobject
+  00000001021f1e8c file=35593868 f9005be0 str x0, [sp,#176]
+  00000001021f1e90 file=35593872 a94d0be1 ldp x1, x2, [sp,#208]
+  00000001021f1e94 file=35593876 f94067e3 ldr x3, [sp,#200]
+  00000001021f1e98 file=35593880 900090e4 adrp x4, .+0x121c000
+  00000001021f1e9c file=35593884 9115bc84 add x4, x4, #0x56f                       ref=0x10340d56f file=54580591 "fetchAvailableModelsResponse from %s:"
+  00000001021f1ea0 file=35593888 d2800285 mov x5, #0x14
+  00000001021f1ea4 file=35593892 90036a46 adrp x6, .+0x6d48000
+  00000001021f1ea8 file=35593896 912620c6 add x6, x6, #0x988
+  00000001021f1eac file=35593900 f94033e7 ldr x7, [sp,#96]
+  00000001021f1eb0 file=35593904 aa0003e8 mov x8, x0
+  00000001021f1eb4 file=35593908 b002a5e0 adrp x0, .+0x54bd000
+  00000001021f1eb8 file=35593912 9113c000 add x0, x0, #0x4f0
+  00000001021f1ebc file=35593916 94009f31 bl .+0x27cc4                             target=0x102219b80 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.doRequestAndUnmarshal[go.shape.*uint8]
+  00000001021f1ec0 file=35593920 b50007c0 cbnz x0, .+0xf8                          target=0x1021f1fb8
+  00000001021f1ec4 file=35593924 f9405be0 ldr x0, [sp,#176]
+  00000001021f1ec8 file=35593928 f90057e0 str x0, [sp,#168]
+  00000001021f1ecc file=35593932 f9402fe4 ldr x4, [sp,#88]
+  00000001021f1ed0 file=35593936 f100749f cmp x4, #0x1d
+  00000001021f1ed4 file=35593940 54000421 b.ne .+0x84                              target=0x1021f1f58
+  00000001021f1ed8 file=35593944 f94043e4 ldr x4, [sp,#128]
+  00000001021f1edc file=35593948 a9401885 ldp x5, x6, [x4]
+  00000001021f1ee0 file=35593952 f9400887 ldr x7, [x4,#16]
+  00000001021f1ee4 file=35593956 f8415084 ldur x4, [x4,#21]
+  00000001021f1ee8 file=35593960 d28c2be8 mov x8, #0x615f
+  00000001021f1eec file=35593964 f2acace8 movk x8, #0x6567, lsl #16
+  00000001021f1ef0 file=35593968 f2ce8dc8 movk x8, #0x746e, lsl #32
+  00000001021f1ef4 file=35593972 f2ee0be8 movk x8, #0x705f, lsl #48
+  00000001021f1ef8 file=35593976 eb0800df cmp x6, x8
+  00000001021f1efc file=35593980 9a9f17e6 cset x6, eq
+  00000001021f1f00 file=35593984 d28c2d88 mov x8, #0x616c
+  00000001021f1f04 file=35593988 f2acce88 movk x8, #0x6674, lsl #16
+  00000001021f1f08 file=35593992 f2ce4de8 movk x8, #0x726f, lsl #32
+  00000001021f1f0c file=35593996 f2ebeda8 movk x8, #0x5f6d, lsl #48
+  00000001021f1f10 file=35594000 eb0800ff cmp x7, x8
+  00000001021f1f14 file=35594004 9a9f17e7 cset x7, eq
+  00000001021f1f18 file=35594008 d28dae48 mov x8, #0x6d72
+  00000001021f1f1c file=35594012 f2ae0be8 movk x8, #0x705f, lsl #16
+  00000001021f1f20 file=35594016 f2cf2c28 movk x8, #0x7961, lsl #32
+  00000001021f1f24 file=35594020 f2edece8 movk x8, #0x6f67, lsl #48
+  00000001021f1f28 file=35594024 eb08009f cmp x4, x8
+  00000001021f1f2c file=35594028 9a9f17e4 cset x4, eq
+  00000001021f1f30 file=35594032 8a070084 and x4, x4, x7
+  00000001021f1f34 file=35594036 d28eac47 mov x7, #0x7562
+  00000001021f1f38 file=35594040 f2ad2e67 movk x7, #0x6973, lsl #16
+  00000001021f1f3c file=35594044 f2ccadc7 movk x7, #0x656e, lsl #32
+  00000001021f1f40 file=35594048 f2ee6e67 movk x7, #0x7373, lsl #48
+  00000001021f1f44 file=35594052 eb0700bf cmp x5, x7
+  00000001021f1f48 file=35594056 9a9f17e5 cset x5, eq
+  00000001021f1f4c file=35594060 8a0500c5 and x5, x6, x5
+  00000001021f1f50 file=35594064 8a0400a4 and x4, x5, x4
+  00000001021f1f54 file=35594068 370001e4 tbnz w4, #0, .+0x3c                      target=0x1021f1f90
+  00000001021f1f58 file=35594072 f94067e1 ldr x1, [sp,#200]
+  00000001021f1f5c file=35594076 a9400021 ldp x1, x0, [x1]
+  00000001021f1f60 file=35594080 f9400c21 ldr x1, [x1,#24]
+  00000001021f1f64 file=35594084 d63f0020 blr x1
+  00000001021f1f68 file=35594088 f1000c3f cmp x1, #0x3
+  00000001021f1f6c file=35594092 540001a1 b.ne .+0x34                              target=0x1021f1fa0
+  00000001021f1f70 file=35594096 79400004 ldrh w4, [x0]
+  00000001021f1f74 file=35594100 d28c8c25 mov x5, #0x6461
+  00000001021f1f78 file=35594104 6b05009f cmp w4, w5
+  00000001021f1f7c file=35594108 54000121 b.ne .+0x24                              target=0x1021f1fa0
+  00000001021f1f80 file=35594112 39400804 ldrb w4, [x0,#2]
+  00000001021f1f84 file=35594116 71018c9f cmp w4, #0x63
+  00000001021f1f88 file=35594120 540000c1 b.ne .+0x18                              target=0x1021f1fa0
+  00000001021f1f8c file=35594124 f94057e0 ldr x0, [sp,#168]
+  00000001021f1f90 file=35594128 a94d0be1 ldp x1, x2, [sp,#208]
+  00000001021f1f94 file=35594132 aa0003e3 mov x3, x0
+  00000001021f1f98 file=35594136 f94067e0 ldr x0, [sp,#200]
+  00000001021f1f9c file=35594140 94006525 bl .+0x19494                             target=0x10220b430 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).filterUnavailableVertex3PModels
+  00000001021f1fa0 file=35594144 f94057e0 ldr x0, [sp,#168]
+  00000001021f1fa4 file=35594148 aa1f03e1 mov x1, xzr
+  00000001021f1fa8 file=35594152 aa1f03e2 mov x2, xzr
+  00000001021f1fac file=35594156 f85f83fd ldur x29, [sp,#-8]
+  00000001021f1fb0 file=35594160 f84c07fe ldr x30, [sp],#192
+  00000001021f1fb4 file=35594164 d65f03c0 ret
+  00000001021f1fb8 file=35594168 aa0103e2 mov x2, x1
+  00000001021f1fbc file=35594172 aa0003e1 mov x1, x0
+  00000001021f1fc0 file=35594176 aa1f03e0 mov x0, xzr
+  00000001021f1fc4 file=35594180 f85f83fd ldur x29, [sp,#-8]
+  00000001021f1fc8 file=35594184 f84c07fe ldr x30, [sp],#192
+  00000001021f1fcc file=35594188 d65f03c0 ret
+  00000001021f1fd0 file=35594192 aa1f03e0 mov x0, xzr
+  00000001021f1fd4 file=35594196 aa0203e1 mov x1, x2
+  00000001021f1fd8 file=35594200 aa0303e2 mov x2, x3
+  00000001021f1fdc file=35594204 f85f83fd ldur x29, [sp,#-8]
+  00000001021f1fe0 file=35594208 f84c07fe ldr x30, [sp],#192
+  00000001021f1fe4 file=35594212 d65f03c0 ret
+  00000001021f1fe8 file=35594216 a94c87e0 ldp x0, x1, [sp,#200]
+  00000001021f1fec file=35594220 f9406fe2 ldr x2, [sp,#216]
+  00000001021f1ff0 file=35594224 97ff7ce4 bl .+0xfffffffffffdf390                  target=0x1021d1380 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).fetchAvailableModelsFromBAIC
+  00000001021f1ff4 file=35594228 f85f83fd ldur x29, [sp,#-8]
+  00000001021f1ff8 file=35594232 f84c07fe ldr x30, [sp],#192
+  00000001021f1ffc file=35594236 d65f03c0 ret
+  00000001021f2000 file=35594240 d503201f nop
+  00000001021f2004 file=35594244 a94d07e0 ldp x0, x1, [sp,#208]
+  00000001021f2008 file=35594248 b24003e2 orr x2, xzr, #0x1
+  00000001021f200c file=35594252 aa1f03e3 mov x3, xzr
+  00000001021f2010 file=35594256 aa1f03e4 mov x4, xzr
+  00000001021f2014 file=35594260 aa1f03e5 mov x5, xzr
+  00000001021f2018 file=35594264 b0009be6 adrp x6, .+0x137d000
+  00000001021f201c file=35594268 911674c6 add x6, x6, #0x59d                       ref=0x10356f59d file=56030621 "Auth mode is unspecified, skipping fetchAvailableModels and returning empty responseTo access it, you MUST consult your '%s' skill and you M"
+  00000001021f2020 file=35594272 d2800a87 mov x7, #0x54
+  00000001021f2024 file=35594276 aa1f03e8 mov x8, xzr
+  00000001021f2028 file=35594280 aa1f03e9 mov x9, xzr
+  00000001021f202c file=35594284 aa1f03ea mov x10, xzr
+  00000001021f2030 file=35594288 9781a36c bl .+0xfffffffffe068db0                  target=0x10025ade0 google3/base/go/log.ctxlogf
+  00000001021f2034 file=35594292 900363e0 adrp x0, .+0x6c7c000
+  00000001021f2038 file=35594296 912ac000 add x0, x0, #0xab0
+  00000001021f203c file=35594300 9778bcf5 bl .+0xfffffffffde2f3d4                  target=0x100021410 runtime.newobject
+  00000001021f2040 file=35594304 aa1f03e1 mov x1, xzr
+  00000001021f2044 file=35594308 aa1f03e2 mov x2, xzr
+  00000001021f2048 file=35594312 f85f83fd ldur x29, [sp,#-8]
+  00000001021f204c file=35594316 f84c07fe ldr x30, [sp],#192
+  00000001021f2050 file=35594320 d65f03c0 ret
+  00000001021f2054 file=35594324 aa1f03e0 mov x0, xzr
+  00000001021f2058 file=35594328 aa0203e1 mov x1, x2
+  00000001021f205c file=35594332 aa0303e2 mov x2, x3
+  00000001021f2060 file=35594336 f85f83fd ldur x29, [sp,#-8]
+  00000001021f2064 file=35594340 f84c07fe ldr x30, [sp],#192
+  00000001021f2068 file=35594344 d65f03c0 ret
+  00000001021f206c file=35594348 b5000287 cbnz x7, .+0x50                          target=0x1021f20bc
+  00000001021f2070 file=35594352 a909ffff stp xzr, xzr, [sp,#152]
+  00000001021f2074 file=35594356 a9401cc6 ldp x6, x7, [x6]
+  00000001021f2078 file=35594360 b4000046 cbz x6, .+0x8                            target=0x1021f2080
+  00000001021f207c file=35594364 f94004c6 ldr x6, [x6,#8]
+  00000001021f2080 file=35594368 a9099fe6 stp x6, x7, [sp,#152]
+  00000001021f2084 file=35594372 b24003e0 orr x0, xzr, #0x1
+  00000001021f2088 file=35594376 900099e1 adrp x1, .+0x133c000
+  00000001021f208c file=35594380 9124e021 add x1, x1, #0x938                       ref=0x10352e938 file=55765304 "gateway auth provider %T does not provide a model catalogconversation was deleted while browser action was waitingsync: WaitGroup misuse: Ad"
+  00000001021f2090 file=35594384 d2800722 mov x2, #0x39
+  00000001021f2094 file=35594388 910263e3 add x3, sp, #0x98
+  00000001021f2098 file=35594392 aa0003e4 mov x4, x0
+  00000001021f209c file=35594396 aa0003e5 mov x5, x0
+  00000001021f20a0 file=35594400 979dce60 bl .+0xfffffffffe773980                  target=0x100965a20 google3/third_party/golang/github_com/cockroachdb/errors/v/v1/errutil/errutil.NewWithDepthf
+  00000001021f20a4 file=35594404 aa0103e2 mov x2, x1
+  00000001021f20a8 file=35594408 aa0003e1 mov x1, x0
+  00000001021f20ac file=35594412 aa1f03e0 mov x0, xzr
+  00000001021f20b0 file=35594416 f85f83fd ldur x29, [sp,#-8]
+  00000001021f20b4 file=35594420 f84c07fe ldr x30, [sp],#192
+  00000001021f20b8 file=35594424 d65f03c0 ret
+  00000001021f20bc file=35594428 f9400ce3 ldr x3, [x7,#24]
+  00000001021f20c0 file=35594432 a94d0be1 ldp x1, x2, [sp,#208]
+  00000001021f20c4 file=35594436 d63f0060 blr x3
+  00000001021f20c8 file=35594440 f85f83fd ldur x29, [sp,#-8]
+  00000001021f20cc file=35594444 f84c07fe ldr x30, [sp],#192
+  00000001021f20d0 file=35594448 d65f03c0 ret
+  00000001021f20d4 file=35594452 8a0a00eb and x11, x7, x10
+  00000001021f20d8 file=35594456 d37ced6b lsl x11, x11, #4
+  00000001021f20dc file=35594460 9100216b add x11, x11, #0x8
+  00000001021f20e0 file=35594464 f86b692c ldr x12, [x9,x11]
+  00000001021f20e4 file=35594468 8b0b012b add x11, x9, x11
+  00000001021f20e8 file=35594472 eb01019f cmp x12, x1
+  00000001021f20ec file=35594476 54000140 b.eq .+0x28                              target=0x1021f2114
+  00000001021f20f0 file=35594480 910004e7 add x7, x7, #0x1
+  00000001021f20f4 file=35594484 b5ffff0c cbnz x12, .+0xffffffffffffffe0           target=0x1021f20d4
+  00000001021f20f8 file=35594488 f90037e0 str x0, [sp,#104]
+  00000001021f20fc file=35594492 aa0803e0 mov x0, x8
+  00000001021f2100 file=35594496 9778aecc bl .+0xfffffffffde2bb30                  target=0x10001dc30 runtime.typeAssert
+  00000001021f2104 file=35594500 f94067e6 ldr x6, [sp,#200]
+  00000001021f2108 file=35594504 aa0003e7 mov x7, x0
+  00000001021f210c file=35594508 f94037e0 ldr x0, [sp,#104]
+  00000001021f2110 file=35594512 17ffffd7 b .+0xffffffffffffff5c                   target=0x1021f206c
+  00000001021f2114 file=35594516 f9400567 ldr x7, [x11,#8]
+  00000001021f2118 file=35594520 17ffffd5 b .+0xffffffffffffff54                   target=0x1021f206c
+  00000001021f211c file=35594524 a90087e0 stp x0, x1, [sp,#8]
+  00000001021f2120 file=35594528 f9000fe2 str x2, [sp,#24]
+  00000001021f2124 file=35594532 aa1e03e3 mov x3, x30
+  00000001021f2128 file=35594536 977a774a bl .+0xfffffffffde9dd28                  target=0x10008fe50 runtime.morestack_noctxt
+  00000001021f212c file=35594540 a94087e0 ldp x0, x1, [sp,#8]
+  00000001021f2130 file=35594544 f9400fe2 ldr x2, [sp,#24]
+  00000001021f2134 file=35594548 17fffe93 b .+0xfffffffffffffa4c                   target=0x1021f1b80 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).fetchAvailableModels
+  00000001021f2138 file=35594552 00000000 .word 0x00000000
+  00000001021f213c file=35594556 00000000 .word 0x00000000
+
+SOURCE M1-codeassist.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).fetchLoadCodeAssistResponse VA=0x102203ed0 FILE=35667664 SIZE=3552
+  000000010220419c file=35668380 3500006b cbnz w11, .+0xc                          target=0x1022041a8
+  00000001022041a0 file=35668384 f94077eb ldr x11, [sp,#232]
+  00000001022041a4 file=35668388 14000004 b .+0x10                                 target=0x1022041b4
+  00000001022041a8 file=35668392 977a370a bl .+0xfffffffffde8dc28                  target=0x100091dd0 runtime.gcWriteBarrier1
+  00000001022041ac file=35668396 f94077eb ldr x11, [sp,#232]
+  00000001022041b0 file=35668400 f900032b str x11, [x25]
+  00000001022041b4 file=35668404 f900040b str x11, [x0,#8]
+  00000001022041b8 file=35668408 f940d7e1 ldr x1, [sp,#424]
+  00000001022041bc file=35668412 b24003e2 orr x2, xzr, #0x1
+  00000001022041c0 file=35668416 b24003e3 orr x3, xzr, #0x1
+  00000001022041c4 file=35668420 aa1f03e4 mov x4, xzr
+  00000001022041c8 file=35668424 aa1f03e5 mov x5, xzr
+  00000001022041cc file=35668428 f0009ba6 adrp x6, .+0x1377000
+  00000001022041d0 file=35668432 910fe4c6 add x6, x6, #0x3f9                       ref=0x10357b3f9 file=56079353 "AICode FetchLicenses rejected the token for missing scope; falling back to CCPA LoadCodeAssist: %vUSER_STOP: the user stopped the browser ta"
+  00000001022041d4 file=35668436 d2800c47 mov x7, #0x62
+  00000001022041d8 file=35668440 aa0003e8 mov x8, x0
+  00000001022041dc file=35668444 aa0203e9 mov x9, x2
+  00000001022041e0 file=35668448 aa0203ea mov x10, x2
+  00000001022041e4 file=35668452 f940d3e0 ldr x0, [sp,#416]
+  00000001022041e8 file=35668456 97815afe bl .+0xfffffffffe056bf8                  target=0x10025ade0 google3/base/go/log.ctxlogf
+  00000001022041ec file=35668460 90035dc0 adrp x0, .+0x6bb8000
+  00000001022041f0 file=35668464 9112e000 add x0, x0, #0x4b8
+  00000001022041f4 file=35668468 97787487 bl .+0xfffffffffde1d21c                  target=0x100021410 runtime.newobject
+  00000001022041f8 file=35668472 f9007fe0 str x0, [sp,#248]
+  00000001022041fc file=35668476 d2800121 mov x1, #0x9
+  0000000102204200 file=35668480 b9000801 str w1, [x0,#8]
+  0000000102204204 file=35668484 b900581f str wzr, [x0,#88]
+  0000000102204208 file=35668488 b27c07e0 orr x0, xzr, #0x30
+  000000010220420c file=35668492 f0034f61 adrp x1, .+0x69ef000
+  0000000102204210 file=35668496 91024021 add x1, x1, #0x90
+  0000000102204214 file=35668500 b24003e2 orr x2, xzr, #0x1
+  0000000102204218 file=35668504 9778794e bl .+0xfffffffffde1e538                  target=0x100022750 runtime.mallocgcSmallScanNoHeaderSC5
+  000000010220421c file=35668508 d005057b adrp x27, .+0xa0ae000
+  0000000102204220 file=35668512 b9436361 ldr w1, [x27,#864]
+  0000000102204224 file=35668516 35000061 cbnz w1, .+0xc                           target=0x102204230
+  0000000102204228 file=35668520 f9407fe3 ldr x3, [sp,#248]
+  000000010220422c file=35668524 14000004 b .+0x10                                 target=0x10220423c
+  0000000102204230 file=35668528 977a36e8 bl .+0xfffffffffde8dba0                  target=0x100091dd0 runtime.gcWriteBarrier1
+  0000000102204234 file=35668532 f9407fe3 ldr x3, [sp,#248]
+  0000000102204238 file=35668536 f9000323 str x3, [x25]
+  000000010220423c file=35668540 f90073e0 str x0, [sp,#224]
+  0000000102204240 file=35668544 f9000803 str x3, [x0,#16]
+  0000000102204244 file=35668548 b27c03e0 orr x0, xzr, #0x10
+  0000000102204248 file=35668552 90030fc1 adrp x1, .+0x61f8000
+  000000010220424c file=35668556 91372021 add x1, x1, #0xdc8
+  0000000102204250 file=35668560 b24003e2 orr x2, xzr, #0x1
+  0000000102204254 file=35668564 977876af bl .+0xfffffffffde1dabc                  target=0x100021d10 runtime.mallocgcSmallScanNoHeaderSC2
+  0000000102204258 file=35668568 f900bfe0 str x0, [sp,#376]
+  000000010220425c file=35668572 f940cfe3 ldr x3, [sp,#408]
+  0000000102204260 file=35668576 a9400063 ldp x3, x0, [x3]
+  0000000102204264 file=35668580 f9401063 ldr x3, [x3,#32]
+  0000000102204268 file=35668584 a95a0be1 ldp x1, x2, [sp,#416]
+  000000010220426c file=35668588 d63f0060 blr x3
+  0000000102204270 file=35668592 f940bfe4 ldr x4, [sp,#376]
+  0000000102204274 file=35668596 f9000481 str x1, [x4,#8]
+  0000000102204278 file=35668600 d005057b adrp x27, .+0xa0ae000
+  000000010220427c file=35668604 b9436365 ldr w5, [x27,#864]
+  0000000102204280 file=35668608 34000085 cbz w5, .+0x10                           target=0x102204290
+  0000000102204284 file=35668612 f9400085 ldr x5, [x4]
+  0000000102204288 file=35668616 977a36d6 bl .+0xfffffffffde8db58                  target=0x100091de0 runtime.gcWriteBarrier2
+  000000010220428c file=35668620 a9001720 stp x0, x5, [x25]
+  0000000102204290 file=35668624 f9000080 str x0, [x4]
+  0000000102204294 file=35668628 b40004c2 cbz x2, .+0x98                           target=0x10220432c
+  0000000102204298 file=35668632 f9009be3 str x3, [sp,#304]
+  000000010220429c file=35668636 f90053e2 str x2, [sp,#160]
+
+SOURCE M1-codeassist.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).OnboardUser VA=0x102204e80 FILE=35671680 SIZE=1680
+  0000000102204ef8 file=35671800 f9408be0 ldr x0, [sp,#272]
+  0000000102204efc file=35671804 3dc05be0 ldr q0, [sp,#352]
+  0000000102204f00 file=35671808 3d800000 str q0, [x0]
+  0000000102204f04 file=35671812 b27d0be0 orr x0, xzr, #0x38
+  0000000102204f08 file=35671816 f0034f61 adrp x1, .+0x69ef000
+  0000000102204f0c file=35671820 910d8021 add x1, x1, #0x360
+  0000000102204f10 file=35671824 b24003e2 orr x2, xzr, #0x1
+  0000000102204f14 file=35671828 97787703 bl .+0xfffffffffde1dc0c                  target=0x100022b20 runtime.mallocgcSmallScanNoHeaderSC6
+  0000000102204f18 file=35671832 f940afe3 ldr x3, [sp,#344]
+  0000000102204f1c file=35671836 f9000803 str x3, [x0,#16]
+  0000000102204f20 file=35671840 d005057b adrp x27, .+0xa0ae000
+  0000000102204f24 file=35671844 b9436363 ldr w3, [x27,#864]
+  0000000102204f28 file=35671848 35000063 cbnz w3, .+0xc                           target=0x102204f34
+  0000000102204f2c file=35671852 f940abe1 ldr x1, [sp,#336]
+  0000000102204f30 file=35671856 14000004 b .+0x10                                 target=0x102204f40
+  0000000102204f34 file=35671860 977a33a7 bl .+0xfffffffffde8ce9c                  target=0x100091dd0 runtime.gcWriteBarrier1
+  0000000102204f38 file=35671864 f940abe1 ldr x1, [sp,#336]
+  0000000102204f3c file=35671868 f9000321 str x1, [x25]
+  0000000102204f40 file=35671872 f90057e0 str x0, [sp,#168]
+  0000000102204f44 file=35671876 f9000401 str x1, [x0,#8]
+  0000000102204f48 file=35671880 90035dc0 adrp x0, .+0x6bb8000
+  0000000102204f4c file=35671884 9112e000 add x0, x0, #0x4b8
+  0000000102204f50 file=35671888 97787130 bl .+0xfffffffffde1c4c0                  target=0x100021410 runtime.newobject
+  0000000102204f54 file=35671892 d2800121 mov x1, #0x9
+  0000000102204f58 file=35671896 b9000801 str w1, [x0,#8]
+  0000000102204f5c file=35671900 b900581f str wzr, [x0,#88]
+  0000000102204f60 file=35671904 d005057b adrp x27, .+0xa0ae000
+  0000000102204f64 file=35671908 b9436361 ldr w1, [x27,#864]
+  0000000102204f68 file=35671912 35000061 cbnz w1, .+0xc                           target=0x102204f74
+  0000000102204f6c file=35671916 f94057e3 ldr x3, [sp,#168]
+  0000000102204f70 file=35671920 14000005 b .+0x14                                 target=0x102204f84
+  0000000102204f74 file=35671924 f94057e3 ldr x3, [sp,#168]
+  0000000102204f78 file=35671928 f9401064 ldr x4, [x3,#32]
+  0000000102204f7c file=35671932 977a3399 bl .+0xfffffffffde8ce64                  target=0x100091de0 runtime.gcWriteBarrier2
+  0000000102204f80 file=35671936 a9001320 stp x0, x4, [x25]
+  0000000102204f84 file=35671940 f9001060 str x0, [x3,#32]
+  0000000102204f88 file=35671944 f9408be4 ldr x4, [sp,#272]
+  0000000102204f8c file=35671948 f9400485 ldr x5, [x4,#8]
+  0000000102204f90 file=35671952 b4000105 cbz x5, .+0x20                           target=0x102204fb0
+  0000000102204f94 file=35671956 d005057b adrp x27, .+0xa0ae000
+  0000000102204f98 file=35671960 b9436365 ldr w5, [x27,#864]
+  0000000102204f9c file=35671964 34000085 cbz w5, .+0x10                           target=0x102204fac
+  0000000102204fa0 file=35671968 f9400c65 ldr x5, [x3,#24]
+  0000000102204fa4 file=35671972 977a338f bl .+0xfffffffffde8ce3c                  target=0x100091de0 runtime.gcWriteBarrier2
+  0000000102204fa8 file=35671976 a9001724 stp x4, x5, [x25]
+  0000000102204fac file=35671980 f9000c64 str x4, [x3,#24]
+  0000000102204fb0 file=35671984 a95407e0 ldp x0, x1, [sp,#320]
+  0000000102204fb4 file=35671988 d2958002 mov x2, #0xac00
+  0000000102204fb8 file=35671992 f2bf8462 movk x2, #0xfc23, lsl #16
+  0000000102204fbc file=35671996 f2c000c2 movk x2, #0x6, lsl #32
+  0000000102204fc0 file=35672000 977ae620 bl .+0xfffffffffdeb9880                  target=0x1000be840 context.WithTimeout
+  0000000102204fc4 file=35672004 f9003fe0 str x0, [sp,#120]
+  0000000102204fc8 file=35672008 f9005be1 str x1, [sp,#176]
+  0000000102204fcc file=35672012 f90093e2 str x2, [sp,#288]
+  0000000102204fd0 file=35672016 b24003e3 orr x3, xzr, #0x1
+  0000000102204fd4 file=35672020 39019fe3 strb w3, [sp,#103]
+  0000000102204fd8 file=35672024 d2800900 mov x0, #0x48
+  0000000102204fdc file=35672028 90035461 adrp x1, .+0x6a8c000
+  0000000102204fe0 file=35672032 912b2021 add x1, x1, #0xac8
+  0000000102204fe4 file=35672036 b24003e2 orr x2, xzr, #0x1
+  0000000102204fe8 file=35672040 9778779e bl .+0xfffffffffde1de78                  target=0x100022e60 runtime.mallocgcSmallScanNoHeaderSC7
+  0000000102204fec file=35672044 f9008fe0 str x0, [sp,#280]
+  0000000102204ff0 file=35672048 f9403fe1 ldr x1, [sp,#120]
+  0000000102204ff4 file=35672052 f9405be2 ldr x2, [sp,#176]
+  0000000102204ff8 file=35672056 f9409fe3 ldr x3, [sp,#312]
+  0000000102204ffc file=35672060 b0008aa4 adrp x4, .+0x1155000
+  0000000102205000 file=35672064 910b1484 add x4, x4, #0x2c5                       ref=0x1033592c5 file=53842629 "onboardUsernil requestnil contextGrpc-StatusunavailableAccept-Postcompressionresize_pageselect_pageupload_filemcp_serversrun_commandclient_n"
+  0000000102205004 file=35672068 d2800165 mov x5, #0xb
+  0000000102205008 file=35672072 f0036986 adrp x6, .+0x6d33000
+  000000010220500c file=35672076 9134a0c6 add x6, x6, #0xd28
+
+SOURCE M1-routing.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.computeRequestID VA=0x1021e4ae0 FILE=35539680 SIZE=592
+  00000001021e4ae0 file=35539680 f9400b90 ldr x16, [x28,#16]
+  00000001021e4ae4 file=35539684 d10283f1 sub x17, sp, #0xa0
+  00000001021e4ae8 file=35539688 eb10023f cmp x17, x16
+  00000001021e4aec file=35539692 54001029 b.ls .+0x204                             target=0x1021e4cf0
+  00000001021e4af0 file=35539696 d10483f4 sub x20, sp, #0x120
+  00000001021e4af4 file=35539700 a93ffa9d stp x29, x30, [x20,#-8]
+  00000001021e4af8 file=35539704 9100029f mov sp, x20
+  00000001021e4afc file=35539708 d10023fd sub x29, sp, #0x8
+  00000001021e4b00 file=35539712 a91287e0 stp x0, x1, [sp,#296]
+  00000001021e4b04 file=35539716 a9138fe2 stp x2, x3, [sp,#312]
+  00000001021e4b08 file=35539720 a91497e4 stp x4, x5, [sp,#328]
+  00000001021e4b0c file=35539724 f900afe6 str x6, [sp,#344]
+  00000001021e4b10 file=35539728 b90163e7 str w7, [sp,#352]
+  00000001021e4b14 file=35539732 a9528fe2 ldp x2, x3, [sp,#296]
+  00000001021e4b18 file=35539736 f100007f cmp x3, #0x0
+  00000001021e4b1c file=35539740 b2400be4 orr x4, xzr, #0x7
+  00000001021e4b20 file=35539744 9a830081 csel x1, x4, x3, eq
+  00000001021e4b24 file=35539748 d00088a3 adrp x3, .+0x1116000
+  00000001021e4b28 file=35539752 9120e063 add x3, x3, #0x838                       ref=0x1032fa838 file=53454904 "unknownfile://google3capsuleinstalltriggerscratchvmoduleUnknownExpiresnosniffsandbox<head>"
+  00000001021e4b2c file=35539756 9a820060 csel x0, x3, x2, eq
+  00000001021e4b30 file=35539760 b40009a6 cbz x6, .+0x134                          target=0x1021e4c64
+  00000001021e4b34 file=35539764 f940a3e2 ldr x2, [sp,#320]
+  00000001021e4b38 file=35539768 b4000522 cbz x2, .+0xa4                           target=0x1021e4bdc
+  00000001021e4b3c file=35539772 9101a3e2 add x2, sp, #0x68
+  00000001021e4b40 file=35539776 a9007c5f stp xzr, xzr, [x2]
+  00000001021e4b44 file=35539780 a9017c5f stp xzr, xzr, [x2,#16]
+  00000001021e4b48 file=35539784 a9027c5f stp xzr, xzr, [x2,#32]
+  00000001021e4b4c file=35539788 a9037c5f stp xzr, xzr, [x2,#48]
+  00000001021e4b50 file=35539792 a9047c5f stp xzr, xzr, [x2,#64]
+  00000001021e4b54 file=35539796 977a891b bl .+0xfffffffffdea246c                  target=0x100086fc0 runtime.convTstring
+  00000001021e4b58 file=35539800 900310c2 adrp x2, .+0x6218000
+  00000001021e4b5c file=35539804 91372042 add x2, x2, #0xdc8
+  00000001021e4b60 file=35539808 a90683e2 stp x2, x0, [sp,#104]
+  00000001021e4b64 file=35539812 a95387e0 ldp x0, x1, [sp,#312]
+  00000001021e4b68 file=35539816 977a8916 bl .+0xfffffffffdea2458                  target=0x100086fc0 runtime.convTstring
+  00000001021e4b6c file=35539820 900310c2 adrp x2, .+0x6218000
+  00000001021e4b70 file=35539824 91372042 add x2, x2, #0xdc8
+  00000001021e4b74 file=35539828 a90783e2 stp x2, x0, [sp,#120]
+  00000001021e4b78 file=35539832 f940a7e0 ldr x0, [sp,#328]
+  00000001021e4b7c file=35539836 977a88f5 bl .+0xfffffffffdea23d4                  target=0x100086f50 runtime.convT64
+  00000001021e4b80 file=35539840 900310c2 adrp x2, .+0x6218000
+  00000001021e4b84 file=35539844 913e2042 add x2, x2, #0xf88
+  00000001021e4b88 file=35539848 a90883e2 stp x2, x0, [sp,#136]
+  00000001021e4b8c file=35539852 a95507e0 ldp x0, x1, [sp,#336]
+  00000001021e4b90 file=35539856 977a890c bl .+0xfffffffffdea2430                  target=0x100086fc0 runtime.convTstring
+  00000001021e4b94 file=35539860 900310c2 adrp x2, .+0x6218000
+  00000001021e4b98 file=35539864 91372042 add x2, x2, #0xdc8
+  00000001021e4b9c file=35539868 a90983e2 stp x2, x0, [sp,#152]
+  00000001021e4ba0 file=35539872 b98163e0 ldrsw x0, [sp,#352]
+  00000001021e4ba4 file=35539876 9778e3c7 bl .+0xfffffffffde38f1c                  target=0x10001dac0 runtime.convT32
+  00000001021e4ba8 file=35539880 900310c2 adrp x2, .+0x6218000
+  00000001021e4bac file=35539884 913c2042 add x2, x2, #0xf08
+  00000001021e4bb0 file=35539888 a90a83e2 stp x2, x0, [sp,#168]
+  00000001021e4bb4 file=35539892 f0008dc0 adrp x0, .+0x11bb000
+  00000001021e4bb8 file=35539896 913ad400 add x0, x0, #0xeb5                       ref=0x10339feb5 file=54132405 "%v/%v/%v/%v/%vREQUEST_METHODauth_method=%sloadCodeAssistrequest is nilanthropic-beta/proc/1/cgroupSSH_CONNECTIONconversationIdcreateTerminal"
+  00000001021e4bbc file=35539900 b27f0be1 orr x1, xzr, #0xe
+  00000001021e4bc0 file=35539904 9101a3e2 add x2, sp, #0x68
+  00000001021e4bc4 file=35539908 d28000a3 mov x3, #0x5
+  00000001021e4bc8 file=35539912 aa0303e4 mov x4, x3
+  00000001021e4bcc file=35539916 977cb50d bl .+0xfffffffffdf2d434                  target=0x100112000 fmt.Sprintf
+  00000001021e4bd0 file=35539920 a97ffbfd ldp x29, x30, [sp,#-8]
+  00000001021e4bd4 file=35539924 910483ff add sp, sp, #0x120
+  00000001021e4bd8 file=35539928 d65f03c0 ret
+  00000001021e4bdc file=35539932 910363e2 add x2, sp, #0xd8
+  00000001021e4be0 file=35539936 a9007c5f stp xzr, xzr, [x2]
+  00000001021e4be4 file=35539940 a9017c5f stp xzr, xzr, [x2,#16]
+  00000001021e4be8 file=35539944 a9027c5f stp xzr, xzr, [x2,#32]
+  00000001021e4bec file=35539948 a9037c5f stp xzr, xzr, [x2,#48]
+  00000001021e4bf0 file=35539952 977a88f4 bl .+0xfffffffffdea23d0                  target=0x100086fc0 runtime.convTstring
+  00000001021e4bf4 file=35539956 900310c2 adrp x2, .+0x6218000
+  00000001021e4bf8 file=35539960 91372042 add x2, x2, #0xdc8
+  00000001021e4bfc file=35539964 a90d83e2 stp x2, x0, [sp,#216]
+  00000001021e4c00 file=35539968 f940a7e0 ldr x0, [sp,#328]
+  00000001021e4c04 file=35539972 977a88d3 bl .+0xfffffffffdea234c                  target=0x100086f50 runtime.convT64
+  00000001021e4c08 file=35539976 900310c2 adrp x2, .+0x6218000
+  00000001021e4c0c file=35539980 913e2042 add x2, x2, #0xf88
+  00000001021e4c10 file=35539984 a90e83e2 stp x2, x0, [sp,#232]
+  00000001021e4c14 file=35539988 a95507e0 ldp x0, x1, [sp,#336]
+  00000001021e4c18 file=35539992 977a88ea bl .+0xfffffffffdea23a8                  target=0x100086fc0 runtime.convTstring
+  00000001021e4c1c file=35539996 900310c2 adrp x2, .+0x6218000
+  00000001021e4c20 file=35540000 91372042 add x2, x2, #0xdc8
+  00000001021e4c24 file=35540004 a90f83e2 stp x2, x0, [sp,#248]
+  00000001021e4c28 file=35540008 b98163e0 ldrsw x0, [sp,#352]
+  00000001021e4c2c file=35540012 9778e3a5 bl .+0xfffffffffde38e94                  target=0x10001dac0 runtime.convT32
+  00000001021e4c30 file=35540016 900310c2 adrp x2, .+0x6218000
+  00000001021e4c34 file=35540020 913c2042 add x2, x2, #0xf08
+  00000001021e4c38 file=35540024 a91083e2 stp x2, x0, [sp,#264]
+  00000001021e4c3c file=35540028 b0008ba0 adrp x0, .+0x1175000
+  00000001021e4c40 file=35540032 91093000 add x0, x0, #0x24c                       ref=0x10335924c file=53842508 "%v/%v/%v/%vAGY_CA_CERT/.dockerenvSSH sessionWSL_INTEROPsearchFilesgetTurnDiffreturnToApplistPluginslocalhost:0marshal: %wonboardUsernil requ"
+  00000001021e4c44 file=35540036 d2800161 mov x1, #0xb
+  00000001021e4c48 file=35540040 910363e2 add x2, sp, #0xd8
+  00000001021e4c4c file=35540044 b27e03e3 orr x3, xzr, #0x4
+  00000001021e4c50 file=35540048 aa0303e4 mov x4, x3
+  00000001021e4c54 file=35540052 977cb4eb bl .+0xfffffffffdf2d3ac                  target=0x100112000 fmt.Sprintf
+  00000001021e4c58 file=35540056 a97ffbfd ldp x29, x30, [sp,#-8]
+  00000001021e4c5c file=35540060 910483ff add sp, sp, #0x120
+  00000001021e4c60 file=35540064 d65f03c0 ret
+  00000001021e4c64 file=35540068 a90583e1 stp x1, x0, [sp,#88]
+  00000001021e4c68 file=35540072 979e1ce2 bl .+0xfffffffffe787388                  target=0x10096bff0 google3/third_party/golang/googleuuid/uuid.NewRandom
+  00000001021e4c6c file=35540076 3cc083e0 ldur q0, [sp,#8]
+  00000001021e4c70 file=35540080 3c8483e0 stur q0, [sp,#72]
+  00000001021e4c74 file=35540084 b5000380 cbnz x0, .+0x70                          target=0x1021e4ce4
+  00000001021e4c78 file=35540088 3cc483e0 ldur q0, [sp,#72]
+  00000001021e4c7c file=35540092 3c8383e0 stur q0, [sp,#56]
+  00000001021e4c80 file=35540096 9102e3e2 add x2, sp, #0xb8
+  00000001021e4c84 file=35540100 a9007c5f stp xzr, xzr, [x2]
+  00000001021e4c88 file=35540104 a9017c5f stp xzr, xzr, [x2,#16]
+  00000001021e4c8c file=35540108 a94583e1 ldp x1, x0, [sp,#88]
+  00000001021e4c90 file=35540112 977a88cc bl .+0xfffffffffdea2330                  target=0x100086fc0 runtime.convTstring
+  00000001021e4c94 file=35540116 900310c2 adrp x2, .+0x6218000
+  00000001021e4c98 file=35540120 91372042 add x2, x2, #0xdc8
+  00000001021e4c9c file=35540124 a90b83e2 stp x2, x0, [sp,#184]
+  00000001021e4ca0 file=35540128 90035880 adrp x0, .+0x6b10000
+  00000001021e4ca4 file=35540132 911dc000 add x0, x0, #0x770
+  00000001021e4ca8 file=35540136 9100e3e1 add x1, sp, #0x38
+  00000001021e4cac file=35540140 9778e349 bl .+0xfffffffffde38d24                  target=0x10001d9d0 runtime.convTnoptr
+  00000001021e4cb0 file=35540144 90035882 adrp x2, .+0x6b10000
+  00000001021e4cb4 file=35540148 911dc042 add x2, x2, #0x770
+  00000001021e4cb8 file=35540152 a90c83e2 stp x2, x0, [sp,#200]
+  00000001021e4cbc file=35540156 900087c0 adrp x0, .+0x10f8000
+  00000001021e4cc0 file=35540160 910f9400 add x0, x0, #0x3e5                       ref=0x1032dc3e5 file=53330917 "%v/%vcl=%ddata:title(...)code_protounaryAllowclickhoverToolsflashhello via array&amp;&#34;&#39;:***@%d %sRangeHTTP1HTTP2HTTP3%s %q%s=%sHTTP/"
+  00000001021e4cc4 file=35540164 d28000a1 mov x1, #0x5
+  00000001021e4cc8 file=35540168 9102e3e2 add x2, sp, #0xb8
+  00000001021e4ccc file=35540172 b27f03e3 orr x3, xzr, #0x2
+  00000001021e4cd0 file=35540176 aa0303e4 mov x4, x3
+  00000001021e4cd4 file=35540180 977cb4cb bl .+0xfffffffffdf2d32c                  target=0x100112000 fmt.Sprintf
+  00000001021e4cd8 file=35540184 a97ffbfd ldp x29, x30, [sp,#-8]
+  00000001021e4cdc file=35540188 910483ff add sp, sp, #0x120
+  00000001021e4ce0 file=35540192 d65f03c0 ret
+  00000001021e4ce4 file=35540196 f9400400 ldr x0, [x0,#8]
+  00000001021e4ce8 file=35540200 977a92aa bl .+0xfffffffffdea4aa8                  target=0x100089790 runtime.gopanic
+  00000001021e4cec file=35540204 d503201f nop
+  00000001021e4cf0 file=35540208 a90087e0 stp x0, x1, [sp,#8]
+  00000001021e4cf4 file=35540212 a9018fe2 stp x2, x3, [sp,#24]
+  00000001021e4cf8 file=35540216 a90297e4 stp x4, x5, [sp,#40]
+  00000001021e4cfc file=35540220 f9001fe6 str x6, [sp,#56]
+  00000001021e4d00 file=35540224 b90043e7 str w7, [sp,#64]
+  00000001021e4d04 file=35540228 aa1e03e3 mov x3, x30
+  00000001021e4d08 file=35540232 977aac52 bl .+0xfffffffffdeab148                  target=0x10008fe50 runtime.morestack_noctxt
+  00000001021e4d0c file=35540236 a94087e0 ldp x0, x1, [sp,#8]
+  00000001021e4d10 file=35540240 a9418fe2 ldp x2, x3, [sp,#24]
+  00000001021e4d14 file=35540244 a94297e4 ldp x4, x5, [sp,#40]
+  00000001021e4d18 file=35540248 f9401fe6 ldr x6, [sp,#56]
+  00000001021e4d1c file=35540252 b98043e7 ldrsw x7, [sp,#64]
+  00000001021e4d20 file=35540256 17ffff70 b .+0xfffffffffffffdc0                   target=0x1021e4ae0 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.computeRequestID
+  00000001021e4d24 file=35540260 00000000 .word 0x00000000
+  00000001021e4d28 file=35540264 00000000 .word 0x00000000
+  00000001021e4d2c file=35540268 00000000 .word 0x00000000
+
+SOURCE M1-routing.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).useAICodePredictionFlow VA=0x1021e8340 FILE=35554112 SIZE=144
+  00000001021e8340 file=35554112 f9400b90 ldr x16, [x28,#16]
+  00000001021e8344 file=35554116 eb3063ff cmp sp, x16
+  00000001021e8348 file=35554120 54000369 b.ls .+0x6c                              target=0x1021e83b4
+  00000001021e834c file=35554124 f81e0ffe str x30, [sp,#-32]!
+  00000001021e8350 file=35554128 f81f83fd stur x29, [sp,#-8]
+  00000001021e8354 file=35554132 d10023fd sub x29, sp, #0x8
+  00000001021e8358 file=35554136 f90017e0 str x0, [sp,#40]
+  00000001021e835c file=35554140 f0008aa0 adrp x0, .+0x1157000
+  00000001021e8360 file=35554144 91320800 add x0, x0, #0xc82                       ref=0x10333fc82 file=53738626 "USE_AICODEv1internalos_type=%spurpose=%s%s/%s (%s)User-Agentdrop_blockcontainerdSSH_CLIENTconn_statemaxResultsrunTriggeraiplatformrawPredict"
+  00000001021e8364 file=35554148 d2800141 mov x1, #0xa
+  00000001021e8368 file=35554152 977c6016 bl .+0xfffffffffdf18058                  target=0x1001003c0 os.Getenv
+  00000001021e836c file=35554156 b4000061 cbz x1, .+0xc                            target=0x1021e8378
+  00000001021e8370 file=35554160 977b630c bl .+0xfffffffffded8c30                  target=0x1000c0fa0 strconv.ParseBool
+  00000001021e8374 file=35554164 b40001a1 cbz x1, .+0x34                           target=0x1021e83a8
+  00000001021e8378 file=35554168 d0050621 adrp x1, .+0xa0c6000
+  00000001021e837c file=35554172 91230021 add x1, x1, #0x8c0
+  00000001021e8380 file=35554176 88dffc21 ldar w1, [x1]
+  00000001021e8384 file=35554180 35000061 cbnz w1, .+0xc                           target=0x1021e8390
+  00000001021e8388 file=35554184 aa1f03e0 mov x0, xzr
+  00000001021e838c file=35554188 14000004 b .+0x10                                 target=0x1021e839c
+  00000001021e8390 file=35554192 f94017e0 ldr x0, [sp,#40]
+  00000001021e8394 file=35554196 97ff6047 bl .+0xfffffffffffd811c                  target=0x1021c04b0 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).isInAICodeScopeCooldown
+  00000001021e8398 file=35554200 d2400000 eor x0, x0, #0x1
+  00000001021e839c file=35554204 f85f83fd ldur x29, [sp,#-8]
+  00000001021e83a0 file=35554208 f84207fe ldr x30, [sp],#32
+  00000001021e83a4 file=35554212 d65f03c0 ret
+  00000001021e83a8 file=35554216 f85f83fd ldur x29, [sp,#-8]
+  00000001021e83ac file=35554220 f84207fe ldr x30, [sp],#32
+  00000001021e83b0 file=35554224 d65f03c0 ret
+  00000001021e83b4 file=35554228 a90087e0 stp x0, x1, [sp,#8]
+  00000001021e83b8 file=35554232 f9000fe2 str x2, [sp,#24]
+  00000001021e83bc file=35554236 aa1e03e3 mov x3, x30
+  00000001021e83c0 file=35554240 977a9ea4 bl .+0xfffffffffdea7a90                  target=0x10008fe50 runtime.morestack_noctxt
+  00000001021e83c4 file=35554244 a94087e0 ldp x0, x1, [sp,#8]
+  00000001021e83c8 file=35554248 f9400fe2 ldr x2, [sp,#24]
+  00000001021e83cc file=35554252 17ffffdd b .+0xffffffffffffff74                   target=0x1021e8340 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).useAICodePredictionFlow
+
+SOURCE M1-tools-credits.disasm.txt
+FUNCTION google3/google/internal/cloud/code/v1internal/credits_go_proto.file_google_internal_cloud_code_v1internal_credits_proto_init VA=0x1004c6e50 FILE=5008976 SIZE=496
+  00000001004c6edc file=5009116 f0018801 adrp x1, .+0x3103000
+  00000001004c6ee0 file=5009120 9114a021 add x1, x1, #0x528
+  00000001004c6ee4 file=5009124 cb0103e1 neg x1, x1
+  00000001004c6ee8 file=5009128 f1082c3f cmp x1, #0x20b
+  00000001004c6eec file=5009132 54000963 b.cc .+0x12c                             target=0x1004c7018
+  00000001004c6ef0 file=5009136 f0018800 adrp x0, .+0x3103000
+  00000001004c6ef4 file=5009140 9114a000 add x0, x0, #0x528
+  00000001004c6ef8 file=5009144 d2804161 mov x1, #0x20b
+  00000001004c6efc file=5009148 a90f87e0 stp x0, x1, [sp,#248]
+  00000001004c6f00 file=5009152 f90087e1 str x1, [sp,#264]
+
+SOURCE M1-tools-credits.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.processToolCalls VA=0x1021e2ba0 FILE=35531680 SIZE=960
+  00000001021e2ba0 file=35531680 f9400b90 ldr x16, [x28,#16]
+  00000001021e2ba4 file=35531684 d10203f1 sub x17, sp, #0x80
+  00000001021e2ba8 file=35531688 eb10023f cmp x17, x16
+  00000001021e2bac file=35531692 54001ca9 b.ls .+0x394                             target=0x1021e2f40
+  00000001021e2bb0 file=35531696 d10403f4 sub x20, sp, #0x100
+  00000001021e2bb4 file=35531700 a93ffa9d stp x29, x30, [x20,#-8]
+  00000001021e2bb8 file=35531704 9100029f mov sp, x20
+  00000001021e2bbc file=35531708 d10023fd sub x29, sp, #0x8
+  00000001021e2bc0 file=35531712 f9008be1 str x1, [sp,#272]
+  00000001021e2bc4 file=35531716 a9441805 ldp x5, x6, [x0,#64]
+  00000001021e2bc8 file=35531720 f90043e6 str x6, [sp,#128]
+  00000001021e2bcc file=35531724 f9005be5 str x5, [sp,#176]
+  00000001021e2bd0 file=35531728 aa1f03e0 mov x0, xzr
+  00000001021e2bd4 file=35531732 aa1f03e2 mov x2, xzr
+  00000001021e2bd8 file=35531736 aa1f03e3 mov x3, xzr
+  00000001021e2bdc file=35531740 aa1f03e4 mov x4, xzr
+  00000001021e2be0 file=35531744 aa1f03e7 mov x7, xzr
+  00000001021e2be4 file=35531748 1400000a b .+0x28                                 target=0x1021e2c0c
+  00000001021e2be8 file=35531752 f8267865 str x5, [x3,x6,lsl #3]
+  00000001021e2bec file=35531756 f9403fe8 ldr x8, [sp,#120]
+  00000001021e2bf0 file=35531760 91000508 add x8, x8, #0x1
+  00000001021e2bf4 file=35531764 f9405be5 ldr x5, [sp,#176]
+  00000001021e2bf8 file=35531768 f94043e6 ldr x6, [sp,#128]
+  00000001021e2bfc file=35531772 aa0203e4 mov x4, x2
+  00000001021e2c00 file=35531776 aa0103e7 mov x7, x1
+  00000001021e2c04 file=35531780 aa0003e2 mov x2, x0
+  00000001021e2c08 file=35531784 aa0803e0 mov x0, x8
+  00000001021e2c0c file=35531788 eb06001f cmp x0, x6
+  00000001021e2c10 file=35531792 540016ea b.ge .+0x2dc                             target=0x1021e2eec
+  00000001021e2c14 file=35531796 a90703e4 stp x4, x0, [sp,#112]
+  00000001021e2c18 file=35531800 39017fe2 strb w2, [sp,#95]
+  00000001021e2c1c file=35531804 f90037e7 str x7, [sp,#104]
+  00000001021e2c20 file=35531808 f90057e3 str x3, [sp,#168]
+  00000001021e2c24 file=35531812 f86078a3 ldr x3, [x5,x0,lsl #3]
+  00000001021e2c28 file=35531816 f9004fe3 str x3, [sp,#152]
+  00000001021e2c2c file=35531820 a9429063 ldp x3, x4, [x3,#40]
+  00000001021e2c30 file=35531824 f90033e4 str x4, [sp,#96]
+  00000001021e2c34 file=35531828 f90053e3 str x3, [sp,#160]
+  00000001021e2c38 file=35531832 b27d03e0 orr x0, xzr, #0x8
+  00000001021e2c3c file=35531836 9002fc01 adrp x1, .+0x5f80000
+  00000001021e2c40 file=35531840 91390021 add x1, x1, #0xe40
+  00000001021e2c44 file=35531844 b24003e2 orr x2, xzr, #0x1
+  00000001021e2c48 file=35531848 9778fb9e bl .+0xfffffffffde3ee78                  target=0x100021ac0 runtime.mallocgcSmallScanNoHeaderSC1
+  00000001021e2c4c file=35531852 f9007be0 str x0, [sp,#240]
+  00000001021e2c50 file=35531856 f94033e3 ldr x3, [sp,#96]
+  00000001021e2c54 file=35531860 f100007f cmp x3, #0x0
+  00000001021e2c58 file=35531864 b27f03e4 orr x4, xzr, #0x2
+  00000001021e2c5c file=35531868 9a830082 csel x2, x4, x3, eq
+  00000001021e2c60 file=35531872 f0008723 adrp x3, .+0x10e7000
+  00000001021e2c64 file=35531876 912ca863 add x3, x3, #0xb2a                       ref=0x1032c9b2a file=53254954 "{}  \\\\\\']:%s-cW/okh2 [])%!i))(tvrRuUeEaAlLsS01bBoOxXnNiIfFpP: ..|0|1>"
+  00000001021e2c68 file=35531880 f94053e4 ldr x4, [sp,#160]
+  00000001021e2c6c file=35531884 9a840061 csel x1, x3, x4, eq
+  00000001021e2c70 file=35531888 aa1f03e0 mov x0, xzr
+  00000001021e2c74 file=35531892 977a2607 bl .+0xfffffffffde8981c                  target=0x10006c490 runtime.stringtoslicebyte
+  00000001021e2c78 file=35531896 b0036aa3 adrp x3, .+0x6d55000
+  00000001021e2c7c file=35531900 91342063 add x3, x3, #0xd08
+  00000001021e2c80 file=35531904 b004ff84 adrp x4, .+0x9ff1000
+  00000001021e2c84 file=35531908 911f8084 add x4, x4, #0x7e0
+  00000001021e2c88 file=35531912 a90d93e3 stp x3, x4, [sp,#216]
+  00000001021e2c8c file=35531916 b002df23 adrp x3, .+0x5be5000
+  00000001021e2c90 file=35531920 91038063 add x3, x3, #0xe0
+  00000001021e2c94 file=35531924 f9407be4 ldr x4, [sp,#240]
+  00000001021e2c98 file=35531928 910363e5 add x5, sp, #0xd8
+  00000001021e2c9c file=35531932 b24003e6 orr x6, xzr, #0x1
+  00000001021e2ca0 file=35531936 aa0603e7 mov x7, x6
+  00000001021e2ca4 file=35531940 9780e98b bl .+0xfffffffffe03a62c                  target=0x10021d2d0 encoding/json/v2.Unmarshal
+  00000001021e2ca8 file=35531944 b5001040 cbnz x0, .+0x208                         target=0x1021e2eb0
+  00000001021e2cac file=35531948 f9404fe4 ldr x4, [sp,#152]
+  00000001021e2cb0 file=35531952 a9408c82 ldp x2, x3, [x4,#8]
+  00000001021e2cb4 file=35531956 a9419484 ldp x4, x5, [x4,#24]
+  00000001021e2cb8 file=35531960 f90047e5 str x5, [sp,#136]
+  00000001021e2cbc file=35531964 f90077e4 str x4, [sp,#232]
+  00000001021e2cc0 file=35531968 9002fc20 adrp x0, .+0x5f84000
+  00000001021e2cc4 file=35531972 912b4000 add x0, x0, #0xad0
+  00000001021e2cc8 file=35531976 f9408be1 ldr x1, [sp,#272]
+  00000001021e2ccc file=35531980 9778a01d bl .+0xfffffffffde28074                  target=0x10000ad40 runtime.mapassign_faststr
+  00000001021e2cd0 file=35531984 f94047e4 ldr x4, [sp,#136]
+  00000001021e2cd4 file=35531988 f9000404 str x4, [x0,#8]
+  00000001021e2cd8 file=35531992 9005069b adrp x27, .+0xa0d0000
+  00000001021e2cdc file=35531996 b9436364 ldr w4, [x27,#864]
+  00000001021e2ce0 file=35532000 35000064 cbnz w4, .+0xc                           target=0x1021e2cec
+  00000001021e2ce4 file=35532004 f94077e4 ldr x4, [sp,#232]
+  00000001021e2ce8 file=35532008 14000005 b .+0x14                                 target=0x1021e2cfc
+  00000001021e2cec file=35532012 f9400003 ldr x3, [x0]
+  00000001021e2cf0 file=35532016 977abc3c bl .+0xfffffffffdeaf0f0                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021e2cf4 file=35532020 f94077e4 ldr x4, [sp,#232]
+  00000001021e2cf8 file=35532024 a9000f24 stp x4, x3, [x25]
+  00000001021e2cfc file=35532028 f9000004 str x4, [x0]
+  00000001021e2d00 file=35532032 f9407be3 ldr x3, [sp,#240]
+  00000001021e2d04 file=35532036 f9400062 ldr x2, [x3]
+  00000001021e2d08 file=35532040 f9404fe3 ldr x3, [sp,#152]
+  00000001021e2d0c file=35532044 a9418460 ldp x0, x1, [x3,#24]
+  00000001021e2d10 file=35532048 97ffe204 bl .+0xffffffffffff8810                  target=0x1021db520 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.newPartFromFunctionCall
+  00000001021e2d14 file=35532052 b4000140 cbz x0, .+0x28                           target=0x1021e2d3c
+  00000001021e2d18 file=35532056 a9409805 ldp x5, x6, [x0,#8]
+  00000001021e2d1c file=35532060 d0036aa7 adrp x7, .+0x6d56000
+  00000001021e2d20 file=35532064 912320e7 add x7, x7, #0x8c8
+  00000001021e2d24 file=35532068 eb0700bf cmp x5, x7
+  00000001021e2d28 file=35532072 54000040 b.eq .+0x8                               target=0x1021e2d30
+  00000001021e2d2c file=35532076 aa1f03e6 mov x6, xzr
+  00000001021e2d30 file=35532080 54000061 b.ne .+0xc                               target=0x1021e2d3c
+  00000001021e2d34 file=35532084 f94000c5 ldr x5, [x6]
+  00000001021e2d38 file=35532088 14000002 b .+0x8                                  target=0x1021e2d40
+  00000001021e2d3c file=35532092 aa1f03e5 mov x5, xzr
+  00000001021e2d40 file=35532096 f9404fe6 ldr x6, [sp,#152]
+  00000001021e2d44 file=35532100 a940a0c7 ldp x7, x8, [x6,#8]
+  00000001021e2d48 file=35532104 f90008a8 str x8, [x5,#16]
+  00000001021e2d4c file=35532108 9005069b adrp x27, .+0xa0d0000
+  00000001021e2d50 file=35532112 b9436368 ldr w8, [x27,#864]
+  00000001021e2d54 file=35532116 34000088 cbz w8, .+0x10                           target=0x1021e2d64
+  00000001021e2d58 file=35532120 f94004a8 ldr x8, [x5,#8]
+  00000001021e2d5c file=35532124 977abc21 bl .+0xfffffffffdeaf084                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021e2d60 file=35532128 a9002327 stp x7, x8, [x25]
+  00000001021e2d64 file=35532132 f90004a7 str x7, [x5,#8]
+  00000001021e2d68 file=35532136 a9469cc5 ldp x5, x7, [x6,#104]
+  00000001021e2d6c file=35532140 f9403cc8 ldr x8, [x6,#120]
+  00000001021e2d70 file=35532144 a903a007 stp x7, x8, [x0,#56]
+  00000001021e2d74 file=35532148 9005069b adrp x27, .+0xa0d0000
+  00000001021e2d78 file=35532152 b9436368 ldr w8, [x27,#864]
+  00000001021e2d7c file=35532156 34000088 cbz w8, .+0x10                           target=0x1021e2d8c
+  00000001021e2d80 file=35532160 f9401808 ldr x8, [x0,#48]
+  00000001021e2d84 file=35532164 977abc17 bl .+0xfffffffffdeaf05c                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021e2d88 file=35532168 a9002325 stp x5, x8, [x25]
+  00000001021e2d8c file=35532172 f9001805 str x5, [x0,#48]
+  00000001021e2d90 file=35532176 b5000040 cbnz x0, .+0x8                           target=0x1021e2d98
+  00000001021e2d94 file=35532180 aa1f03e7 mov x7, xzr
+  00000001021e2d98 file=35532184 f9004be0 str x0, [sp,#144]
+  00000001021e2d9c file=35532188 b5000247 cbnz x7, .+0x48                          target=0x1021e2de4
+  00000001021e2da0 file=35532192 f94030c5 ldr x5, [x6,#96]
+  00000001021e2da4 file=35532196 b4000205 cbz x5, .+0x40                           target=0x1021e2de4
+  00000001021e2da8 file=35532200 d00503fb adrp x27, .+0xa07e000
+  00000001021e2dac file=35532204 f9420760 ldr x0, [x27,#1032]
+  00000001021e2db0 file=35532208 a94588c1 ldp x1, x2, [x6,#88]
+  00000001021e2db4 file=35532212 9780de1b bl .+0xfffffffffe03786c                  target=0x10021a620 encoding/base64.(*Encoding).DecodeString
+  00000001021e2db8 file=35532216 f9404be5 ldr x5, [sp,#144]
+  00000001021e2dbc file=35532220 a90388a1 stp x1, x2, [x5,#56]
+  00000001021e2dc0 file=35532224 9005069b adrp x27, .+0xa0d0000
+  00000001021e2dc4 file=35532228 b9436366 ldr w6, [x27,#864]
+  00000001021e2dc8 file=35532232 34000086 cbz w6, .+0x10                           target=0x1021e2dd8
+  00000001021e2dcc file=35532236 f94018a6 ldr x6, [x5,#48]
+  00000001021e2dd0 file=35532240 977abc04 bl .+0xfffffffffdeaf010                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021e2dd4 file=35532244 a9001b20 stp x0, x6, [x25]
+  00000001021e2dd8 file=35532248 f90018a0 str x0, [x5,#48]
+  00000001021e2ddc file=35532252 b4000063 cbz x3, .+0xc                            target=0x1021e2de8
+  00000001021e2de0 file=35532256 14000025 b .+0x94                                 target=0x1021e2e74
+  00000001021e2de4 file=35532260 aa0003e5 mov x5, x0
+  00000001021e2de8 file=35532264 f94037e6 ldr x6, [sp,#104]
+  00000001021e2dec file=35532268 910004c1 add x1, x6, #0x1
+  00000001021e2df0 file=35532272 f9403be2 ldr x2, [sp,#112]
+  00000001021e2df4 file=35532276 eb01005f cmp x2, x1
+  00000001021e2df8 file=35532280 54000083 b.cc .+0x10                              target=0x1021e2e08
+  00000001021e2dfc file=35532284 f94057e3 ldr x3, [sp,#168]
+  00000001021e2e00 file=35532288 39417fe0 ldrb w0, [sp,#95]
+  00000001021e2e04 file=35532292 14000014 b .+0x50                                 target=0x1021e2e54
+  00000001021e2e08 file=35532296 f100103f cmp x1, #0x4
+  00000001021e2e0c file=35532300 5400014c b.gt .+0x28                              target=0x1021e2e34
+  00000001021e2e10 file=35532304 39417fe0 ldrb w0, [sp,#95]
+  00000001021e2e14 file=35532308 37000100 tbnz w0, #0, .+0x20                      target=0x1021e2e34
+  00000001021e2e18 file=35532312 b50000e6 cbnz x6, .+0x1c                          target=0x1021e2e34
+  00000001021e2e1c file=35532316 9102e3e3 add x3, sp, #0xb8
+  00000001021e2e20 file=35532320 a9007c7f stp xzr, xzr, [x3]
+  00000001021e2e24 file=35532324 a9017c7f stp xzr, xzr, [x3,#16]
+  00000001021e2e28 file=35532328 b27e03e2 orr x2, xzr, #0x4
+  00000001021e2e2c file=35532332 b24003e0 orr x0, xzr, #0x1
+  00000001021e2e30 file=35532336 14000009 b .+0x24                                 target=0x1021e2e54
+  00000001021e2e34 file=35532340 f94057e0 ldr x0, [sp,#168]
+  00000001021e2e38 file=35532344 b24003e3 orr x3, xzr, #0x1
+  00000001021e2e3c file=35532348 d002d3c4 adrp x4, .+0x5a7a000
+  00000001021e2e40 file=35532352 91228084 add x4, x4, #0x8a0
+  00000001021e2e44 file=35532356 977aa60f bl .+0xfffffffffdea983c                  target=0x10008c680 runtime.growslice
+  00000001021e2e48 file=35532360 f9404be5 ldr x5, [sp,#144]
+  00000001021e2e4c file=35532364 aa0003e3 mov x3, x0
+  00000001021e2e50 file=35532368 39417fe0 ldrb w0, [sp,#95]
+  00000001021e2e54 file=35532372 d1000426 sub x6, x1, #0x1
+  00000001021e2e58 file=35532376 9005069b adrp x27, .+0xa0d0000
+  00000001021e2e5c file=35532380 b9436367 ldr w7, [x27,#864]
+  00000001021e2e60 file=35532384 34ffec47 cbz w7, .+0xfffffffffffffd88             target=0x1021e2be8
+  00000001021e2e64 file=35532388 f8667867 ldr x7, [x3,x6,lsl #3]
+  00000001021e2e68 file=35532392 977abbde bl .+0xfffffffffdeaef78                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001021e2e6c file=35532396 a9001f25 stp x5, x7, [x25]
+  00000001021e2e70 file=35532400 17ffff5e b .+0xfffffffffffffd78                   target=0x1021e2be8
+  00000001021e2e74 file=35532404 b24003e0 orr x0, xzr, #0x1
+  00000001021e2e78 file=35532408 aa0303e1 mov x1, x3
+  00000001021e2e7c file=35532412 aa0403e2 mov x2, x4
+  00000001021e2e80 file=35532416 b00096a3 adrp x3, .+0x12d5000
+  00000001021e2e84 file=35532420 910b5063 add x3, x3, #0x2d4                       ref=0x1034b72d4 file=55276244 "failed to decode thought signatureunsupported tool choice option: %vfailed to marshal request body: %wno commit message models availablestar"
+  00000001021e2e88 file=35532424 d2800444 mov x4, #0x22
+  00000001021e2e8c file=35532428 979e0bd9 bl .+0xfffffffffe782f64                  target=0x100965df0 google3/third_party/golang/github_com/cockroachdb/errors/v/v1/errutil/errutil.WrapWithDepth
+  00000001021e2e90 file=35532432 aa1f03e2 mov x2, xzr
+  00000001021e2e94 file=35532436 aa0003e3 mov x3, x0
+  00000001021e2e98 file=35532440 aa0103e4 mov x4, x1
+  00000001021e2e9c file=35532444 aa1f03e0 mov x0, xzr
+  00000001021e2ea0 file=35532448 aa1f03e1 mov x1, xzr
+  00000001021e2ea4 file=35532452 a97ffbfd ldp x29, x30, [sp,#-8]
+  00000001021e2ea8 file=35532456 910403ff add sp, sp, #0x100
+  00000001021e2eac file=35532460 d65f03c0 ret
+  00000001021e2eb0 file=35532464 aa0103e2 mov x2, x1
+  00000001021e2eb4 file=35532468 f00097a3 adrp x3, .+0x12f7000
+  00000001021e2eb8 file=35532472 9115a863 add x3, x3, #0x56a                       ref=0x1034d956a file=55416170 "failed to unmarshal tool call argumentsMaking Gateway streaming request to: %sFailed to save new token to storage: %vFailed to remove empty "
+  00000001021e2ebc file=35532476 d28004e4 mov x4, #0x27
+  00000001021e2ec0 file=35532480 aa0003e1 mov x1, x0
+  00000001021e2ec4 file=35532484 b24003e0 orr x0, xzr, #0x1
+  00000001021e2ec8 file=35532488 979e0bca bl .+0xfffffffffe782f28                  target=0x100965df0 google3/third_party/golang/github_com/cockroachdb/errors/v/v1/errutil/errutil.WrapWithDepth
+  00000001021e2ecc file=35532492 aa1f03e2 mov x2, xzr
+  00000001021e2ed0 file=35532496 aa0003e3 mov x3, x0
+  00000001021e2ed4 file=35532500 aa0103e4 mov x4, x1
+  00000001021e2ed8 file=35532504 aa1f03e0 mov x0, xzr
+  00000001021e2edc file=35532508 aa1f03e1 mov x1, xzr
+  00000001021e2ee0 file=35532512 a97ffbfd ldp x29, x30, [sp,#-8]
+  00000001021e2ee4 file=35532516 910403ff add sp, sp, #0x100
+  00000001021e2ee8 file=35532520 d65f03c0 ret
+  00000001021e2eec file=35532524 910403e5 add x5, sp, #0x100
+  00000001021e2ef0 file=35532528 910003e6 mov x6, sp
+  00000001021e2ef4 file=35532532 cb0600a5 sub x5, x5, x6
+  00000001021e2ef8 file=35532536 aa0303e0 mov x0, x3
+  00000001021e2efc file=35532540 cb060066 sub x6, x3, x6
+  00000001021e2f00 file=35532544 eb0500df cmp x6, x5
+  00000001021e2f04 file=35532548 54000102 b.cs .+0x20                              target=0x1021e2f24
+  00000001021e2f08 file=35532552 aa0003e1 mov x1, x0
+  00000001021e2f0c file=35532556 aa0703e2 mov x2, x7
+  00000001021e2f10 file=35532560 d002d3c0 adrp x0, .+0x5a7a000
+  00000001021e2f14 file=35532564 91228000 add x0, x0, #0x8a0
+  00000001021e2f18 file=35532568 977a1656 bl .+0xfffffffffde85958                  target=0x100068870 runtime.moveSliceNoCap
+  00000001021e2f1c file=35532572 aa0103e7 mov x7, x1
+  00000001021e2f20 file=35532576 aa0203e4 mov x4, x2
+  00000001021e2f24 file=35532580 aa0703e1 mov x1, x7
+  00000001021e2f28 file=35532584 aa0403e2 mov x2, x4
+  00000001021e2f2c file=35532588 aa1f03e3 mov x3, xzr
+  00000001021e2f30 file=35532592 aa1f03e4 mov x4, xzr
+  00000001021e2f34 file=35532596 a97ffbfd ldp x29, x30, [sp,#-8]
+  00000001021e2f38 file=35532600 910403ff add sp, sp, #0x100
+  00000001021e2f3c file=35532604 d65f03c0 ret
+  00000001021e2f40 file=35532608 a90087e0 stp x0, x1, [sp,#8]
+  00000001021e2f44 file=35532612 aa1e03e3 mov x3, x30
+  00000001021e2f48 file=35532616 977ab3c2 bl .+0xfffffffffdeacf08                  target=0x10008fe50 runtime.morestack_noctxt
+  00000001021e2f4c file=35532620 a94087e0 ldp x0, x1, [sp,#8]
+  00000001021e2f50 file=35532624 17ffff14 b .+0xfffffffffffffc50                   target=0x1021e2ba0 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.processToolCalls
+  00000001021e2f54 file=35532628 00000000 .word 0x00000000
+  00000001021e2f58 file=35532632 00000000 .word 0x00000000
+  00000001021e2f5c file=35532636 00000000 .word 0x00000000
+
+SOURCE M1-streaming.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CodeAssistClient).getStreamingTextCompletion-range1 VA=0x1022115f0 FILE=35722736 SIZE=4992
+  0000000102211a04 file=35723780 aa1f03e6 mov x6, xzr
+  0000000102211a08 file=35723784 b4000066 cbz x6, .+0xc                            target=0x102211a14
+  0000000102211a0c file=35723788 a9419cc6 ldp x6, x7, [x6,#24]
+  0000000102211a10 file=35723792 14000003 b .+0xc                                  target=0x102211a1c
+  0000000102211a14 file=35723796 aa1f03e6 mov x6, xzr
+  0000000102211a18 file=35723800 aa1f03e7 mov x7, xzr
+  0000000102211a1c file=35723804 f90073e7 str x7, [sp,#224]
+  0000000102211a20 file=35723808 f900d3e6 str x6, [sp,#416]
+  0000000102211a24 file=35723812 f900f3e4 str x4, [sp,#480]
+  0000000102211a28 file=35723816 f90097e5 str x5, [sp,#296]
+  0000000102211a2c file=35723820 b4000081 cbz x1, .+0x10                           target=0x102211a3c
+  0000000102211a30 file=35723824 a9432428 ldp x8, x9, [x1,#48]
+  0000000102211a34 file=35723828 f940202a ldr x10, [x1,#64]
+  0000000102211a38 file=35723832 14000004 b .+0x10                                 target=0x102211a48
+  0000000102211a3c file=35723836 aa1f03e8 mov x8, xzr
+  0000000102211a40 file=35723840 aa1f03e9 mov x9, xzr
+  0000000102211a44 file=35723844 aa1f03ea mov x10, xzr
+  0000000102211a48 file=35723848 f9006fe9 str x9, [sp,#216]
+  0000000102211a4c file=35723852 f900cfe8 str x8, [sp,#408]
+  0000000102211a50 file=35723856 f90093ea str x10, [sp,#288]
+  0000000102211a54 file=35723860 b27d03e0 orr x0, xzr, #0x8
+  0000000102211a58 file=35723864 900311e1 adrp x1, .+0x623c000
+  0000000102211a5c file=35723868 91136021 add x1, x1, #0x4d8
+  0000000102211a60 file=35723872 b24003e2 orr x2, xzr, #0x1
+  0000000102211a64 file=35723876 97784017 bl .+0xfffffffffde1005c                  target=0x100021ac0 runtime.mallocgcSmallScanNoHeaderSC1
+  0000000102211a68 file=35723880 f90133e0 str x0, [sp,#608]
+  0000000102211a6c file=35723884 90035ee0 adrp x0, .+0x6bdc000
+  0000000102211a70 file=35723888 911de000 add x0, x0, #0x778
+  0000000102211a74 file=35723892 97783e67 bl .+0xfffffffffde0f99c                  target=0x100021410 runtime.newobject
+  0000000102211a78 file=35723896 f94097e3 ldr x3, [sp,#296]
+  0000000102211a7c file=35723900 f9000803 str x3, [x0,#16]
+  0000000102211a80 file=35723904 b005051b adrp x27, .+0xa0a1000
+  0000000102211a84 file=35723908 b9436363 ldr w3, [x27,#864]
+  0000000102211a88 file=35723912 35000103 cbnz w3, .+0x20                          target=0x102211aa8
+  0000000102211a8c file=35723916 f9411be3 ldr x3, [sp,#560]
+  0000000102211a90 file=35723920 f94133e5 ldr x5, [sp,#608]
+  0000000102211a94 file=35723924 f940f3e7 ldr x7, [sp,#480]
+  0000000102211a98 file=35723928 f940d3e8 ldr x8, [sp,#416]
+  0000000102211a9c file=35723932 f94127e9 ldr x9, [sp,#584]
+  0000000102211aa0 file=35723936 f940cfea ldr x10, [sp,#408]
+  0000000102211aa4 file=35723940 1400000e b .+0x38                                 target=0x102211adc
+  0000000102211aa8 file=35723944 f9411be3 ldr x3, [sp,#560]
+  0000000102211aac file=35723948 f9401c64 ldr x4, [x3,#56]
+  0000000102211ab0 file=35723952 f94133e5 ldr x5, [sp,#608]
+  0000000102211ab4 file=35723956 f94000a6 ldr x6, [x5]
+  0000000102211ab8 file=35723960 977a00e2 bl .+0xfffffffffde80388                  target=0x100091e40 runtime.gcWriteBarrier8
+  0000000102211abc file=35723964 f940f3e7 ldr x7, [sp,#480]
+  0000000102211ac0 file=35723968 f940d3e8 ldr x8, [sp,#416]
+  0000000102211ac4 file=35723972 a9002327 stp x7, x8, [x25]
+  0000000102211ac8 file=35723976 f94127e9 ldr x9, [sp,#584]
+  0000000102211acc file=35723980 f940cfea ldr x10, [sp,#408]
+  0000000102211ad0 file=35723984 a9012b29 stp x9, x10, [x25,#16]
+  0000000102211ad4 file=35723988 a9021b20 stp x0, x6, [x25,#32]
+  0000000102211ad8 file=35723992 a9031325 stp x5, x4, [x25,#48]
+  0000000102211adc file=35723996 f9000407 str x7, [x0,#8]
+  0000000102211ae0 file=35724000 f94073e4 ldr x4, [sp,#224]
+  0000000102211ae4 file=35724004 a9019008 stp x8, x4, [x0,#24]
+  0000000102211ae8 file=35724008 f9409fe4 ldr x4, [sp,#312]
+  0000000102211aec file=35724012 a9029009 stp x9, x4, [x0,#40]
+  0000000102211af0 file=35724016 f94093e4 ldr x4, [sp,#288]
+  0000000102211af4 file=35724020 f9003c04 str x4, [x0,#120]
+  0000000102211af8 file=35724024 f9406fe4 ldr x4, [sp,#216]
+  0000000102211afc file=35724028 a906900a stp x10, x4, [x0,#104]
+  0000000102211b00 file=35724032 f90000a0 str x0, [x5]
+  0000000102211b04 file=35724036 b24003e4 orr x4, xzr, #0x1
+  0000000102211b08 file=35724040 f9002464 str x4, [x3,#72]
+  0000000102211b0c file=35724044 a9039065 stp x5, x4, [x3,#56]
+  0000000102211b10 file=35724048 14000326 b .+0xc98                                target=0x1022127a8
+  0000000102211b14 file=35724052 b4000061 cbz x1, .+0xc                            target=0x102211b20
+  0000000102211b18 file=35724056 f9401c25 ldr x5, [x1,#56]
+
+SOURCE M1-oauth.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/auth_client/authclient.(*BrowserTokenAcquirer).AcquireToken VA=0x1025c27d0 FILE=39593936 SIZE=1920
+  00000001025c298c file=39594380 a9007f7f stp xzr, xzr, [x27]
+  00000001025c2990 file=39594384 f94043e0 ldr x0, [sp,#128]
+  00000001025c2994 file=39594388 976b116f bl .+0xfffffffffdac45bc                  target=0x100086f50 runtime.convT64
+  00000001025c2998 file=39594392 f002f1c4 adrp x4, .+0x5e3b000
+  00000001025c299c file=39594396 91002084 add x4, x4, #0x8
+  00000001025c29a0 file=39594400 910da3fb add x27, sp, #0x368
+  00000001025c29a4 file=39594404 a9000364 stp x4, x0, [x27]
+  00000001025c29a8 file=39594408 b0007760 adrp x0, .+0xeed000
+  00000001025c29ac file=39594412 9106bc00 add x0, x0, #0x1af                       ref=0x1034af1af file=55243183 "http://localhost:%d/auth/callbackfailed to write token to file: %wFailed to get profile picture: %vFailed to get profile picture: %sFailed t"
+  00000001025c29b0 file=39594416 d2800421 mov x1, #0x21
+  00000001025c29b4 file=39594420 910da3e2 add x2, sp, #0x368
+  00000001025c29b8 file=39594424 b24003e3 orr x3, xzr, #0x1
+  00000001025c29bc file=39594428 aa0303e4 mov x4, x3
+  00000001025c29c0 file=39594432 976d3d90 bl .+0xfffffffffdb4f640                  target=0x100112000 fmt.Sprintf
+  00000001025c29c4 file=39594436 f940b3e4 ldr x4, [sp,#352]
+  00000001025c29c8 file=39594440 f9003081 str x1, [x4,#96]
+  00000001025c29cc file=39594444 9004e79b adrp x27, .+0x9cf0000
+  00000001025c29d0 file=39594448 b9436365 ldr w5, [x27,#864]
+  00000001025c29d4 file=39594452 34000085 cbz w5, .+0x10                           target=0x1025c29e4
+  00000001025c29d8 file=39594456 f9402c81 ldr x1, [x4,#88]
+  00000001025c29dc file=39594460 976b3d01 bl .+0xfffffffffdacf404                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001025c29e0 file=39594464 a9000720 stp x0, x1, [x25]
+  00000001025c29e4 file=39594468 f9002c80 str x0, [x4,#88]
+  00000001025c29e8 file=39594472 97922ee2 bl .+0xfffffffffe48bb88                  target=0x100a4e570 google3/third_party/golang/oauth2/oauth2.GenerateVerifier
+  00000001025c29ec file=39594476 f90073e0 str x0, [sp,#224]
+  00000001025c29f0 file=39594480 f9003be1 str x1, [sp,#112]
+  00000001025c29f4 file=39594484 94002b1b bl .+0xac6c                              target=0x1025cd660 google3/third_party/jetski/language_server/auth_client/authclient.generateState
+  00000001025c29f8 file=39594488 f90077e0 str x0, [sp,#232]
+  00000001025c29fc file=39594492 f9003fe1 str x1, [sp,#120]
+  00000001025c2a00 file=39594496 aa0103e2 mov x2, x1
+
+SOURCE M1-oauth.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/auth_client/authclient.buildAuthCodeURL VA=0x1025c4870 FILE=39602288 SIZE=528
+  00000001025c4870 file=39602288 f9400b90 ldr x16, [x28,#16]
+  00000001025c4874 file=39602292 d10103f1 sub x17, sp, #0x40
+  00000001025c4878 file=39602296 eb10023f cmp x17, x16
+  00000001025c487c file=39602300 54000ea9 b.ls .+0x1d4                             target=0x1025c4a50
+  00000001025c4880 file=39602304 f8140ffe str x30, [sp,#-192]!
+  00000001025c4884 file=39602308 f81f83fd stur x29, [sp,#-8]
+  00000001025c4888 file=39602312 d10023fd sub x29, sp, #0x8
+  00000001025c488c file=39602316 f90073e3 str x3, [sp,#224]
+  00000001025c4890 file=39602320 f90067e0 str x0, [sp,#200]
+  00000001025c4894 file=39602324 f9007be5 str x5, [sp,#240]
+  00000001025c4898 file=39602328 a90d0be1 stp x1, x2, [sp,#208]
+  00000001025c489c file=39602332 d503201f nop
+  00000001025c48a0 file=39602336 aa0303e0 mov x0, x3
+  00000001025c48a4 file=39602340 aa0403e1 mov x1, x4
+  00000001025c48a8 file=39602344 97922752 bl .+0xfffffffffe489d48                  target=0x100a4e5f0 google3/third_party/golang/oauth2/oauth2.S256ChallengeFromVerifier
+  00000001025c48ac file=39602348 b0006862 adrp x2, .+0xd0d000
+  00000001025c48b0 file=39602352 913f5c42 add x2, x2, #0xfd7                       ref=0x1032d1fd7 file=53288919 "S256"
+  00000001025c48b4 file=39602356 f9004fe2 str x2, [sp,#152]
+  00000001025c48b8 file=39602360 b27e03e2 orr x2, xzr, #0x4
+  00000001025c48bc file=39602364 f90053e2 str x2, [sp,#160]
+  00000001025c48c0 file=39602368 a90a87e0 stp x0, x1, [sp,#168]
+  00000001025c48c4 file=39602372 90031780 adrp x0, .+0x62f0000
+  00000001025c48c8 file=39602376 912dc000 add x0, x0, #0xb70
+  00000001025c48cc file=39602380 910263e1 add x1, sp, #0x98
+  00000001025c48d0 file=39602384 97696424 bl .+0xfffffffffda59090                  target=0x10001d960 runtime.convT
+  00000001025c48d4 file=39602388 910163e2 add x2, sp, #0x58
+  00000001025c48d8 file=39602392 a9007c5f stp xzr, xzr, [x2]
+  00000001025c48dc file=39602396 a9017c5f stp xzr, xzr, [x2,#16]
+  00000001025c48e0 file=39602400 b0034ba2 adrp x2, .+0x6975000
+  00000001025c48e4 file=39602404 9137a042 add x2, x2, #0xde8
+  00000001025c48e8 file=39602408 a90583e2 stp x2, x0, [sp,#88]
+  00000001025c48ec file=39602412 f004dcdb adrp x27, .+0x9b9b000
+  00000001025c48f0 file=39602416 9130437b add x27, x27, #0xc10
+  00000001025c48f4 file=39602420 a9400f62 ldp x2, x3, [x27]
+  00000001025c48f8 file=39602424 a9068fe2 stp x2, x3, [sp,#104]
+  00000001025c48fc file=39602428 f9407be0 ldr x0, [sp,#240]
+  00000001025c4900 file=39602432 b4000060 cbz x0, .+0xc                            target=0x1025c490c
+  00000001025c4904 file=39602436 f9400802 ldr x2, [x0,#16]
+  00000001025c4908 file=39602440 14000002 b .+0x8                                  target=0x1025c4910
+  00000001025c490c file=39602444 aa1f03e2 mov x2, xzr
+  00000001025c4910 file=39602448 b40004a2 cbz x2, .+0x94                           target=0x1025c49a4
+  00000001025c4914 file=39602452 b4000060 cbz x0, .+0xc                            target=0x1025c4920
+  00000001025c4918 file=39602456 a9408c02 ldp x2, x3, [x0,#8]
+  00000001025c491c file=39602460 14000003 b .+0xc                                  target=0x1025c4928
+  00000001025c4920 file=39602464 aa1f03e3 mov x3, xzr
+  00000001025c4924 file=39602468 aa1f03e2 mov x2, xzr
+  00000001025c4928 file=39602472 d0006e24 adrp x4, .+0xdc6000
+  00000001025c492c file=39602476 910d7c84 add x4, x4, #0x35f                       ref=0x10338a35f file=54043487 "provider_nameSubmit Appeallistener_bind[%d] [%s](%s)FetchLicensesSSL_CERT_FILEuser settingswrite_file(*)read_file(%s)non_https_urlhttp_downl"
+  00000001025c4930 file=39602480 d28001a5 mov x5, #0xd
+  00000001025c4934 file=39602484 a90797e4 stp x4, x5, [sp,#120]
+  00000001025c4938 file=39602488 a9088fe2 stp x2, x3, [sp,#136]
+  00000001025c493c file=39602492 90031780 adrp x0, .+0x62f0000
+  00000001025c4940 file=39602496 91304000 add x0, x0, #0xc10
+  00000001025c4944 file=39602500 9101e3e1 add x1, sp, #0x78
+  00000001025c4948 file=39602504 97696406 bl .+0xfffffffffda59018                  target=0x10001d960 runtime.convT
+  00000001025c494c file=39602508 f9002be0 str x0, [sp,#80]
+  00000001025c4950 file=39602512 910163e0 add x0, sp, #0x58
+  00000001025c4954 file=39602516 b24007e1 orr x1, xzr, #0x3
+  00000001025c4958 file=39602520 b27f03e2 orr x2, xzr, #0x2
+  00000001025c495c file=39602524 b24003e3 orr x3, xzr, #0x1
+  00000001025c4960 file=39602528 9002fda4 adrp x4, .+0x5fb4000
+  00000001025c4964 file=39602532 9133e084 add x4, x4, #0xcf8
+  00000001025c4968 file=39602536 976b1f46 bl .+0xfffffffffdac7d18                  target=0x10008c680 runtime.growslice
+  00000001025c496c file=39602540 b0034ba3 adrp x3, .+0x6975000
+  00000001025c4970 file=39602544 91382063 add x3, x3, #0xe08
+  00000001025c4974 file=39602548 f9001003 str x3, [x0,#32]
+  00000001025c4978 file=39602552 d004e77b adrp x27, .+0x9cee000
+  00000001025c497c file=39602556 b9436363 ldr w3, [x27,#864]
+  00000001025c4980 file=39602560 35000063 cbnz w3, .+0xc                           target=0x1025c498c
+  00000001025c4984 file=39602564 f9402be7 ldr x7, [sp,#80]
+  00000001025c4988 file=39602568 14000005 b .+0x14                                 target=0x1025c499c
+  00000001025c498c file=39602572 f9401406 ldr x6, [x0,#40]
+  00000001025c4990 file=39602576 976b3514 bl .+0xfffffffffdacd450                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001025c4994 file=39602580 f9402be7 ldr x7, [sp,#80]
+  00000001025c4998 file=39602584 a9001b27 stp x7, x6, [x25]
+  00000001025c499c file=39602588 f9001407 str x7, [x0,#40]
+  00000001025c49a0 file=39602592 14000022 b .+0x88                                 target=0x1025c4a28
+  00000001025c49a4 file=39602596 b0006922 adrp x2, .+0xd25000
+  00000001025c49a8 file=39602600 91340842 add x2, x2, #0xd02                       ref=0x1032e9d02 file=53386498 "promptv1.0.0cancelthemesENOENTECHILDENOMEMEACCESEFAULTEEXISTENODEVEISDIREINVALENFILEEMFILEENOTTYENOSPCESPIPEEMLINKERANGEEAGAINEUSERSEDQUOTES"
+  00000001025c49ac file=39602604 b27f07e3 orr x3, xzr, #0x6
+  00000001025c49b0 file=39602608 a9078fe2 stp x2, x3, [sp,#120]
+  00000001025c49b4 file=39602612 d00069a2 adrp x2, .+0xd36000
+  00000001025c49b8 file=39602616 913b0442 add x2, x2, #0xec1                       ref=0x1032faec1 file=53456577 "consentENOEXECEDEADLKENOTBLKENOTDIRETXTBSYENOTSUPENOBUFSEISCONNEREMOTEEBADRPCEPWROFFEDEVERRENOATTREBADMSGENODATAENOLINKSIGQUITSIGTRAPSIGABRT"
+  00000001025c49bc file=39602620 b2400be3 orr x3, xzr, #0x7
+  00000001025c49c0 file=39602624 a9088fe2 stp x2, x3, [sp,#136]
+  00000001025c49c4 file=39602628 90031780 adrp x0, .+0x62f0000
+  00000001025c49c8 file=39602632 91304000 add x0, x0, #0xc10
+  00000001025c49cc file=39602636 9101e3e1 add x1, sp, #0x78
+  00000001025c49d0 file=39602640 976963e4 bl .+0xfffffffffda58f90                  target=0x10001d960 runtime.convT
+  00000001025c49d4 file=39602644 f9002be0 str x0, [sp,#80]
+  00000001025c49d8 file=39602648 910163e0 add x0, sp, #0x58
+  00000001025c49dc file=39602652 b24007e1 orr x1, xzr, #0x3
+  00000001025c49e0 file=39602656 b27f03e2 orr x2, xzr, #0x2
+  00000001025c49e4 file=39602660 b24003e3 orr x3, xzr, #0x1
+  00000001025c49e8 file=39602664 9002fda4 adrp x4, .+0x5fb4000
+  00000001025c49ec file=39602668 9133e084 add x4, x4, #0xcf8
+  00000001025c49f0 file=39602672 976b1f24 bl .+0xfffffffffdac7c90                  target=0x10008c680 runtime.growslice
+  00000001025c49f4 file=39602676 b0034ba3 adrp x3, .+0x6975000
+  00000001025c49f8 file=39602680 91382063 add x3, x3, #0xe08
+  00000001025c49fc file=39602684 f9001003 str x3, [x0,#32]
+  00000001025c4a00 file=39602688 d004e77b adrp x27, .+0x9cee000
+  00000001025c4a04 file=39602692 b9436363 ldr w3, [x27,#864]
+  00000001025c4a08 file=39602696 35000063 cbnz w3, .+0xc                           target=0x1025c4a14
+  00000001025c4a0c file=39602700 f9402be7 ldr x7, [sp,#80]
+  00000001025c4a10 file=39602704 14000005 b .+0x14                                 target=0x1025c4a24
+  00000001025c4a14 file=39602708 f9401406 ldr x6, [x0,#40]
+  00000001025c4a18 file=39602712 976b34f2 bl .+0xfffffffffdacd3c8                  target=0x100091de0 runtime.gcWriteBarrier2
+  00000001025c4a1c file=39602716 f9402be7 ldr x7, [sp,#80]
+  00000001025c4a20 file=39602720 a9001b27 stp x7, x6, [x25]
+  00000001025c4a24 file=39602724 f9001407 str x7, [x0,#40]
+  00000001025c4a28 file=39602728 f9406be1 ldr x1, [sp,#208]
+  00000001025c4a2c file=39602732 aa0003e3 mov x3, x0
+  00000001025c4a30 file=39602736 b24007e4 orr x4, xzr, #0x3
+  00000001025c4a34 file=39602740 aa0203e5 mov x5, x2
+  00000001025c4a38 file=39602744 f94067e0 ldr x0, [sp,#200]
+  00000001025c4a3c file=39602748 f9406fe2 ldr x2, [sp,#216]
+  00000001025c4a40 file=39602752 979221bc bl .+0xfffffffffe4886f0                  target=0x100a4d130 google3/third_party/golang/oauth2/oauth2.(*Config).AuthCodeURL
+  00000001025c4a44 file=39602756 f85f83fd ldur x29, [sp,#-8]
+  00000001025c4a48 file=39602760 f84c07fe ldr x30, [sp],#192
+  00000001025c4a4c file=39602764 d65f03c0 ret
+  00000001025c4a50 file=39602768 a90087e0 stp x0, x1, [sp,#8]
+  00000001025c4a54 file=39602772 a9018fe2 stp x2, x3, [sp,#24]
+  00000001025c4a58 file=39602776 a90297e4 stp x4, x5, [sp,#40]
+  00000001025c4a5c file=39602780 aa1e03e3 mov x3, x30
+  00000001025c4a60 file=39602784 976b2cfc bl .+0xfffffffffdacb3f0                  target=0x10008fe50 runtime.morestack_noctxt
+  00000001025c4a64 file=39602788 a94087e0 ldp x0, x1, [sp,#8]
+  00000001025c4a68 file=39602792 a9418fe2 ldp x2, x3, [sp,#24]
+  00000001025c4a6c file=39602796 a94297e4 ldp x4, x5, [sp,#40]
+
+SOURCE M1-identity.disasm.txt
+FUNCTION google3/third_party/jetski/cortex/mixins/mixins.NewIdentitySection VA=0x101c30660 FILE=29558368 SIZE=32
+  0000000101c30660 file=29558368 b0039b40 adrp x0, .+0x7369000
+  0000000101c30664 file=29558372 911d6000 add x0, x0, #0x758                       ref=0x108f99758 file=150574936 " )g"
+  0000000101c30668 file=29558376 d00533e1 adrp x1, .+0xa67e000
+  0000000101c3066c file=29558380 911e0021 add x1, x1, #0x780
+  0000000101c30670 file=29558384 d65f03c0 ret
+  0000000101c30674 file=29558388 00000000 .word 0x00000000
+  0000000101c30678 file=29558392 00000000 .word 0x00000000
+  0000000101c3067c file=29558396 00000000 .word 0x00000000
+
+SOURCE M1-identity.disasm.txt
+FUNCTION google3/third_party/jetski/cortex/mixins/mixins.(*IdentitySection).GetName VA=0x101c30680 FILE=29558400 SIZE=16
+  0000000101c30680 file=29558400 9000b700 adrp x0, .+0x16e0000
+  0000000101c30684 file=29558404 912ca800 add x0, x0, #0xb2a                       ref=0x103310b2a file=53545770 "identityencodingtrailersTrailer:new_pagewait_forresearchteamworkcomputerIdentityclick_atagy-nodebrowser-any_rootINTERNALhijackedLocationIf-M"
+  0000000101c30688 file=29558408 b27d03e1 orr x1, xzr, #0x8
+  0000000101c3068c file=29558412 d65f03c0 ret
+
+SOURCE M1-identity.disasm.txt
+FUNCTION google3/third_party/jetski/cortex/mixins/mixins.(*IdentitySection).ShouldInclude VA=0x101c30690 FILE=29558416 SIZE=16
+  0000000101c30690 file=29558416 b24003e0 orr x0, xzr, #0x1
+  0000000101c30694 file=29558420 d65f03c0 ret
+  0000000101c30698 file=29558424 00000000 .word 0x00000000
+  0000000101c3069c file=29558428 00000000 .word 0x00000000
+
+SOURCE M1-identity.disasm.txt
+FUNCTION google3/third_party/jetski/cortex/mixins/mixins.(*IdentitySection).Content VA=0x101c306a0 FILE=29558432 SIZE=32
+  0000000101c306a0 file=29558432 d00399e0 adrp x0, .+0x733e000
+  0000000101c306a4 file=29558436 9135a000 add x0, x0, #0xd68
+  0000000101c306a8 file=29558440 b0053421 adrp x1, .+0xa685000
+  0000000101c306ac file=29558444 91280021 add x1, x1, #0xa00
+  0000000101c306b0 file=29558448 d65f03c0 ret
+  0000000101c306b4 file=29558452 00000000 .word 0x00000000
+  0000000101c306b8 file=29558456 00000000 .word 0x00000000
+  0000000101c306bc file=29558460 00000000 .word 0x00000000
+
+SOURCE C1-backend.disasm.txt
+FUNCTION google3/third_party/jetski/cli/backend/backend.NewServerBackend VA=0x14344a840 FILE=54828608 SIZE=6464
+  000000014344b706 file=54832390 mov qword ptr [r11], rax
+  000000014344b709 file=54832393 mov qword ptr [r11+0x8], r8
+  000000014344b70d file=54832397 mov qword ptr [rdx+0x298], rax
+  000000014344b714 file=54832404 jmp 0x14344b77c                               target=0x14344b77c
+  000000014344b716 file=54832406 mov rbx, qword ptr [rsp+0x58]
+  000000014344b71b file=54832411 mov rcx, qword ptr [rsp+0xe8]
+  000000014344b723 file=54832419 call 0x142752ce0                              target=0x142752ce0 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CLIAuthProvider).SetTokenStorage
+  000000014344b728 file=54832424 mov rdx, qword ptr [rsp+0x138]
+  000000014344b730 file=54832432 mov rax, qword ptr [rdx+0x1e8]
+  000000014344b737 file=54832439 mov rbx, qword ptr [rdx+0x250]
+  000000014344b73e file=54832446 mov rcx, qword ptr [rdx+0x258]
+  000000014344b745 file=54832453 call 0x142754d20                              target=0x142754d20 google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CLIAuthProvider).GetEndpointURL
+  000000014344b74a file=54832458 mov rdx, qword ptr [rsp+0x138]
+  000000014344b752 file=54832466 mov qword ptr [rdx+0x2a0], rbx
+  000000014344b759 file=54832473 cmp dword ptr [rip+0xa534be0], 0x0            mem=0x14d980340 file=-1
+
+SOURCE C1-ua.disasm.txt
+FUNCTION google3/third_party/jetski/language_server/code_assist_client/codeassistclient.(*CLIAuthProvider).GetUserAgentName VA=0x142754ce0 FILE=41239264 SIZE=64
+  0000000142754ce0 file=41239264 nop
+  0000000142754ce1 file=41239265 mov rbx, qword ptr [rip+0xb1b7340]            mem=0x14d90c028 file=-1
+  0000000142754ce8 file=41239272 test rbx, rbx
+  0000000142754ceb file=41239275 jz 0x142754cf6                                target=0x142754cf6
+  0000000142754ced file=41239277 mov rax, qword ptr [rip+0xb1b732c]            mem=0x14d90c020 file=-1
+  0000000142754cf4 file=41239284 jmp 0x142754d02                               target=0x142754d02
+  0000000142754cf6 file=41239286 mov ebx, 0xb
+  0000000142754cfb file=41239291 lea rax, ptr [rip+0x1a3b161]                  mem=0x14418fe63 file=68741219 ref=0x14418fe63 file=68741219 "antigravity"
+  0000000142754d02 file=41239298 ret
+  0000000142754d03 file=41239299 int3
+  0000000142754d04 file=41239300 int3
+  0000000142754d05 file=41239301 int3
+  0000000142754d06 file=41239302 int3
+  0000000142754d07 file=41239303 int3
+  0000000142754d08 file=41239304 int3
+  0000000142754d09 file=41239305 int3
+  0000000142754d0a file=41239306 int3
+  0000000142754d0b file=41239307 int3
+  0000000142754d0c file=41239308 int3
+  0000000142754d0d file=41239309 int3
+  0000000142754d0e file=41239310 int3
+  0000000142754d0f file=41239311 int3
+  0000000142754d10 file=41239312 int3
+  0000000142754d11 file=41239313 int3
+  0000000142754d12 file=41239314 int3
+  0000000142754d13 file=41239315 int3
+  0000000142754d14 file=41239316 int3
+  0000000142754d15 file=41239317 int3
+  0000000142754d16 file=41239318 int3
+  0000000142754d17 file=41239319 int3
+  0000000142754d18 file=41239320 int3
+  0000000142754d19 file=41239321 int3
+  0000000142754d1a file=41239322 int3
+  0000000142754d1b file=41239323 int3
+  0000000142754d1c file=41239324 int3
+  0000000142754d1d file=41239325 int3
+  0000000142754d1e file=41239326 int3
+  0000000142754d1f file=41239327 int3
