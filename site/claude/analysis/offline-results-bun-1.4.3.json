@@ -1,0 +1,1063 @@
+{
+  "runtime": {
+    "bun_version": "1.4.3",
+    "bun_revision": "c6da4a4d3010e5553438c60f6bd76d981976867c",
+    "process_version": "v26.3.0",
+    "platform": "win32",
+    "arch": "x64",
+    "process_tag": "[object process]"
+  },
+  "properties": {
+    "X-Stainless-Lang": "js",
+    "X-Stainless-Package-Version": "0.128.0",
+    "X-Stainless-OS": "Windows",
+    "X-Stainless-Arch": "x64",
+    "X-Stainless-Runtime": "node",
+    "X-Stainless-Runtime-Version": "v26.3.0"
+  },
+  "platformDomains": {
+    "os": [
+      {
+        "input": "darwin",
+        "output": "MacOS"
+      },
+      {
+        "input": "win32",
+        "output": "Windows"
+      },
+      {
+        "input": "linux",
+        "output": "Linux"
+      },
+      {
+        "input": "android",
+        "output": "Android"
+      },
+      {
+        "input": "freebsd",
+        "output": "FreeBSD"
+      },
+      {
+        "input": "openbsd",
+        "output": "OpenBSD"
+      },
+      {
+        "input": "ios",
+        "output": "iOS"
+      },
+      {
+        "input": "ios-simulator",
+        "output": "iOS"
+      },
+      {
+        "input": "sunos",
+        "output": "Other:sunos"
+      },
+      {
+        "input": "unknown",
+        "output": "Other:unknown"
+      },
+      {
+        "input": "",
+        "output": "Unknown"
+      }
+    ],
+    "arch": [
+      {
+        "input": "x32",
+        "output": "x32"
+      },
+      {
+        "input": "x86_64",
+        "output": "x64"
+      },
+      {
+        "input": "x64",
+        "output": "x64"
+      },
+      {
+        "input": "arm",
+        "output": "arm"
+      },
+      {
+        "input": "aarch64",
+        "output": "arm64"
+      },
+      {
+        "input": "arm64",
+        "output": "arm64"
+      },
+      {
+        "input": "ia32",
+        "output": "other:ia32"
+      },
+      {
+        "input": "riscv64",
+        "output": "other:riscv64"
+      },
+      {
+        "input": "unknown",
+        "output": "other:unknown"
+      },
+      {
+        "input": "",
+        "output": "unknown"
+      }
+    ]
+  },
+  "branchResults": [
+    {
+      "name": "Deno wins over Edge and process",
+      "result": {
+        "X-Stainless-Lang": "js",
+        "X-Stainless-Package-Version": "0.128.0",
+        "X-Stainless-OS": "Linux",
+        "X-Stainless-Arch": "arm64",
+        "X-Stainless-Runtime": "deno",
+        "X-Stainless-Runtime-Version": "2.synthetic"
+      }
+    },
+    {
+      "name": "Edge wins over process",
+      "result": {
+        "X-Stainless-Lang": "js",
+        "X-Stainless-Package-Version": "0.128.0",
+        "X-Stainless-OS": "Unknown",
+        "X-Stainless-Arch": "other:edge.synthetic",
+        "X-Stainless-Runtime": "edge",
+        "X-Stainless-Runtime-Version": "v26.3.0"
+      }
+    },
+    {
+      "name": "Bun process branch",
+      "result": {
+        "X-Stainless-Lang": "js",
+        "X-Stainless-Package-Version": "0.128.0",
+        "X-Stainless-OS": "Windows",
+        "X-Stainless-Arch": "x64",
+        "X-Stainless-Runtime": "node",
+        "X-Stainless-Runtime-Version": "v26.3.0"
+      }
+    },
+    {
+      "name": "unknown globals",
+      "result": {
+        "X-Stainless-Lang": "js",
+        "X-Stainless-Package-Version": "0.128.0",
+        "X-Stainless-OS": "Unknown",
+        "X-Stainless-Arch": "unknown",
+        "X-Stainless-Runtime": "unknown",
+        "X-Stainless-Runtime-Version": "unknown"
+      }
+    }
+  ],
+  "billingExamples": [
+    {
+      "input": "Hello, Claude Code!",
+      "cli_version": "2.1.325",
+      "indices_zero_based": [
+        4,
+        7,
+        20
+      ],
+      "code_units": [
+        "o",
+        "C",
+        "0"
+      ],
+      "fingerprint": "b5b",
+      "minimal_header": "x-anthropic-billing-header: cc_version=2.1.325.b5b; cc_entrypoint=cli; cch=00000;"
+    },
+    {
+      "input": "",
+      "cli_version": "2.1.325",
+      "indices_zero_based": [
+        4,
+        7,
+        20
+      ],
+      "code_units": [
+        "0",
+        "0",
+        "0"
+      ],
+      "fingerprint": "ff3",
+      "minimal_header": "x-anthropic-billing-header: cc_version=2.1.325.ff3; cc_entrypoint=cli; cch=00000;"
+    },
+    {
+      "input": "abcd😀ghijklmnopqrstu中",
+      "cli_version": "2.1.325",
+      "indices_zero_based": [
+        4,
+        7,
+        20
+      ],
+      "code_units": [
+        "\ud83d",
+        "h",
+        "u"
+      ],
+      "fingerprint": "cac",
+      "minimal_header": "x-anthropic-billing-header: cc_version=2.1.325.cac; cc_entrypoint=cli; cch=00000;"
+    }
+  ],
+  "entrypointExamples": [
+    {
+      "entry": "cli",
+      "ua": "claude-cli/2.1.325 (external, cli, workload/cron)",
+      "billing": "x-anthropic-billing-header: cc_version=2.1.325.abc; cc_entrypoint=cli; cch=00000; cc_workload=cron;"
+    },
+    {
+      "entry": "sdk-cli",
+      "ua": "claude-cli/2.1.325 (external, sdk-cli)",
+      "billing": "x-anthropic-billing-header: cc_version=2.1.325.abc; cc_entrypoint=sdk-cli; cch=00000;"
+    },
+    {
+      "entry": "local-agent",
+      "ua": "claude-cli/2.1.325 (external, local-agent)",
+      "billing": "x-anthropic-billing-header: cc_version=2.1.325.abc; cc_entrypoint=local-agent; cch=00000;"
+    },
+    {
+      "entry": "claude-desktop-3p",
+      "ua": "claude-cli/2.1.325 (external, claude-desktop-3p)",
+      "billing": "x-anthropic-billing-header: cc_version=2.1.325.abc; cc_entrypoint=claude-desktop-3p; cch=00000;"
+    }
+  ],
+  "extendedBilling": "x-anthropic-billing-header: cc_version=2.1.325.abc; cc_entrypoint=cli; cch=00000; cc_is_subagent=true; cc_prev_req=req_TEST; cc_prompt_id=00000000-0000-4000-8000-000000000001; cc_turn_origin=user; cc_prompt_index=0; cc_turn_index=1; cc_prev_msg=msg_TEST; cc_prev_prompt_index=2; cc_prev_turn_index=3; cc_dispatch_entrypoint=fixture;",
+  "metadata": {
+    "user_id": "{\"extra\":\"fixture\",\"device_id\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"account_uuid\":\"00000000-0000-4000-8000-000000000002\",\"session_id\":\"00000000-0000-4000-8000-000000000001\"}"
+  },
+  "oversizedMetadata": {
+    "device_id": "0000000000000000000000000000000000000000000000000000000000000000",
+    "account_uuid": "00000000-0000-4000-8000-000000000002",
+    "session_id": "00000000-0000-4000-8000-000000000001"
+  },
+  "systemExamples": [
+    {
+      "provider": "firstParty",
+      "input": {},
+      "output": "You are Claude Code, Anthropic's official CLI for Claude."
+    },
+    {
+      "provider": "firstParty",
+      "input": {
+        "isNonInteractive": true
+      },
+      "output": "You are a Claude agent, built on Anthropic's Claude Agent SDK."
+    },
+    {
+      "provider": "firstParty",
+      "input": {
+        "isNonInteractive": true,
+        "hasAppendSystemPrompt": true
+      },
+      "output": "You are Claude Code, Anthropic's official CLI for Claude, running within the Claude Agent SDK."
+    },
+    {
+      "provider": "firstParty",
+      "input": {
+        "recorded": "synthetic recorded prefix"
+      },
+      "output": "synthetic recorded prefix"
+    },
+    {
+      "provider": "vertex",
+      "input": {
+        "isNonInteractive": true
+      },
+      "output": "You are Claude Code, Anthropic's official CLI for Claude."
+    }
+  ],
+  "endpointExamples": [
+    {
+      "url": "/v1/messages/count_tokens?beta=true",
+      "body": {
+        "model": "synthetic-model",
+        "messages": [
+          {
+            "role": "user",
+            "content": "test"
+          }
+        ]
+      },
+      "headers": [
+        [
+          "anthropic-beta",
+          "claude-code-20250219,oauth-2025-04-20,token-counting-2024-11-01"
+        ]
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://offline.invalid/v1/messages?beta=true",
+      "method": "POST",
+      "headers": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "anthropic-beta",
+          "claude-code-20250219"
+        ],
+        [
+          "anthropic-dangerous-direct-browser-access",
+          "true"
+        ],
+        [
+          "anthropic-version",
+          "2023-06-01"
+        ],
+        [
+          "authorization",
+          "Bearer SYNTHETIC_OFFLINE"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "claude-cli/2.1.325 (external, cli)"
+        ],
+        [
+          "x-app",
+          "cli"
+        ],
+        [
+          "x-claude-code-session-id",
+          "00000000-0000-4000-8000-000000000001"
+        ],
+        [
+          "x-stainless-arch",
+          "x64"
+        ],
+        [
+          "x-stainless-lang",
+          "js"
+        ],
+        [
+          "x-stainless-os",
+          "Windows"
+        ],
+        [
+          "x-stainless-package-version",
+          "0.128.0"
+        ],
+        [
+          "x-stainless-retry-count",
+          "0"
+        ],
+        [
+          "x-stainless-runtime",
+          "node"
+        ],
+        [
+          "x-stainless-runtime-version",
+          "v26.3.0"
+        ],
+        [
+          "x-stainless-timeout",
+          "600"
+        ]
+      ],
+      "body": {
+        "model": "synthetic-model",
+        "max_tokens": 1,
+        "messages": [
+          {
+            "role": "user",
+            "content": "test"
+          }
+        ],
+        "stream": false,
+        "metadata": {
+          "user_id": "{\"extra\":\"fixture\",\"device_id\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"account_uuid\":\"00000000-0000-4000-8000-000000000002\",\"session_id\":\"00000000-0000-4000-8000-000000000001\"}"
+        },
+        "system": [
+          {
+            "type": "text",
+            "text": "x-anthropic-billing-header: cc_version=2.1.325.b5b; cc_entrypoint=cli; cch=00000;"
+          },
+          {
+            "type": "text",
+            "text": "You are Claude Code, Anthropic's official CLI for Claude."
+          }
+        ]
+      },
+      "auth": "oauth"
+    },
+    {
+      "url": "https://offline.invalid/v1/messages?beta=true",
+      "method": "POST",
+      "headers": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "anthropic-beta",
+          "claude-code-20250219"
+        ],
+        [
+          "anthropic-dangerous-direct-browser-access",
+          "true"
+        ],
+        [
+          "anthropic-version",
+          "2023-06-01"
+        ],
+        [
+          "authorization",
+          "Bearer SYNTHETIC_OFFLINE"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "claude-cli/2.1.325 (external, cli)"
+        ],
+        [
+          "x-app",
+          "cli"
+        ],
+        [
+          "x-claude-code-session-id",
+          "00000000-0000-4000-8000-000000000001"
+        ],
+        [
+          "x-stainless-arch",
+          "x64"
+        ],
+        [
+          "x-stainless-helper-method",
+          "stream"
+        ],
+        [
+          "x-stainless-lang",
+          "js"
+        ],
+        [
+          "x-stainless-os",
+          "Windows"
+        ],
+        [
+          "x-stainless-package-version",
+          "0.128.0"
+        ],
+        [
+          "x-stainless-retry-count",
+          "0"
+        ],
+        [
+          "x-stainless-runtime",
+          "node"
+        ],
+        [
+          "x-stainless-runtime-version",
+          "v26.3.0"
+        ],
+        [
+          "x-stainless-timeout",
+          "600"
+        ]
+      ],
+      "body": {
+        "model": "synthetic-model",
+        "max_tokens": 1,
+        "messages": [
+          {
+            "role": "user",
+            "content": "test"
+          }
+        ],
+        "stream": true,
+        "metadata": {
+          "user_id": "{\"extra\":\"fixture\",\"device_id\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"account_uuid\":\"00000000-0000-4000-8000-000000000002\",\"session_id\":\"00000000-0000-4000-8000-000000000001\"}"
+        },
+        "system": [
+          {
+            "type": "text",
+            "text": "x-anthropic-billing-header: cc_version=2.1.325.b5b; cc_entrypoint=cli; cch=00000;"
+          },
+          {
+            "type": "text",
+            "text": "You are Claude Code, Anthropic's official CLI for Claude."
+          }
+        ]
+      },
+      "auth": "oauth"
+    },
+    {
+      "url": "https://offline.invalid/v1/messages?beta=true",
+      "method": "POST",
+      "headers": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "anthropic-beta",
+          "claude-code-20250219"
+        ],
+        [
+          "anthropic-dangerous-direct-browser-access",
+          "true"
+        ],
+        [
+          "anthropic-version",
+          "2023-06-01"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "claude-cli/2.1.325 (external, cli)"
+        ],
+        [
+          "x-api-key",
+          "SYNTHETIC_OFFLINE"
+        ],
+        [
+          "x-app",
+          "cli"
+        ],
+        [
+          "x-claude-code-session-id",
+          "00000000-0000-4000-8000-000000000001"
+        ],
+        [
+          "x-stainless-arch",
+          "x64"
+        ],
+        [
+          "x-stainless-lang",
+          "js"
+        ],
+        [
+          "x-stainless-os",
+          "Windows"
+        ],
+        [
+          "x-stainless-package-version",
+          "0.128.0"
+        ],
+        [
+          "x-stainless-retry-count",
+          "0"
+        ],
+        [
+          "x-stainless-runtime",
+          "node"
+        ],
+        [
+          "x-stainless-runtime-version",
+          "v26.3.0"
+        ],
+        [
+          "x-stainless-timeout",
+          "600"
+        ]
+      ],
+      "body": {
+        "model": "synthetic-model",
+        "max_tokens": 1,
+        "messages": [
+          {
+            "role": "user",
+            "content": "test"
+          }
+        ],
+        "stream": false,
+        "metadata": {
+          "user_id": "{\"extra\":\"fixture\",\"device_id\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"account_uuid\":\"00000000-0000-4000-8000-000000000002\",\"session_id\":\"00000000-0000-4000-8000-000000000001\"}"
+        },
+        "system": [
+          {
+            "type": "text",
+            "text": "x-anthropic-billing-header: cc_version=2.1.325.b5b; cc_entrypoint=cli; cch=00000;"
+          },
+          {
+            "type": "text",
+            "text": "You are Claude Code, Anthropic's official CLI for Claude."
+          }
+        ]
+      },
+      "auth": "api_key"
+    },
+    {
+      "url": "https://offline.invalid/v1/messages?beta=true",
+      "method": "POST",
+      "headers": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "anthropic-beta",
+          "claude-code-20250219"
+        ],
+        [
+          "anthropic-dangerous-direct-browser-access",
+          "true"
+        ],
+        [
+          "anthropic-version",
+          "2023-06-01"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "claude-cli/2.1.325 (external, cli)"
+        ],
+        [
+          "x-api-key",
+          "SYNTHETIC_OFFLINE"
+        ],
+        [
+          "x-app",
+          "cli"
+        ],
+        [
+          "x-claude-code-session-id",
+          "00000000-0000-4000-8000-000000000001"
+        ],
+        [
+          "x-stainless-arch",
+          "x64"
+        ],
+        [
+          "x-stainless-helper-method",
+          "stream"
+        ],
+        [
+          "x-stainless-lang",
+          "js"
+        ],
+        [
+          "x-stainless-os",
+          "Windows"
+        ],
+        [
+          "x-stainless-package-version",
+          "0.128.0"
+        ],
+        [
+          "x-stainless-retry-count",
+          "0"
+        ],
+        [
+          "x-stainless-runtime",
+          "node"
+        ],
+        [
+          "x-stainless-runtime-version",
+          "v26.3.0"
+        ],
+        [
+          "x-stainless-timeout",
+          "600"
+        ]
+      ],
+      "body": {
+        "model": "synthetic-model",
+        "max_tokens": 1,
+        "messages": [
+          {
+            "role": "user",
+            "content": "test"
+          }
+        ],
+        "stream": true,
+        "metadata": {
+          "user_id": "{\"extra\":\"fixture\",\"device_id\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"account_uuid\":\"00000000-0000-4000-8000-000000000002\",\"session_id\":\"00000000-0000-4000-8000-000000000001\"}"
+        },
+        "system": [
+          {
+            "type": "text",
+            "text": "x-anthropic-billing-header: cc_version=2.1.325.b5b; cc_entrypoint=cli; cch=00000;"
+          },
+          {
+            "type": "text",
+            "text": "You are Claude Code, Anthropic's official CLI for Claude."
+          }
+        ]
+      },
+      "auth": "api_key"
+    }
+  ],
+  "wireProbe": {
+    "input": [
+      [
+        "Z-Last",
+        "z"
+      ],
+      [
+        "X-App",
+        "cli"
+      ],
+      [
+        "A-First",
+        "a"
+      ],
+      [
+        "User-Agent",
+        "synthetic-probe"
+      ]
+    ],
+    "iteration": [
+      [
+        "a-first",
+        "a"
+      ],
+      [
+        "user-agent",
+        "synthetic-probe"
+      ],
+      [
+        "x-app",
+        "cli"
+      ],
+      [
+        "z-last",
+        "z"
+      ]
+    ],
+    "raw": "POST /wire HTTP/1.1\r\nA-First: a\r\nUser-Agent: synthetic-probe\r\nX-App: cli\r\nZ-Last: z\r\nConnection: keep-alive\r\nAccept: */*\r\nHost: 127.0.0.1:12193\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nContent-Length: 2\r\n\r\n",
+    "sdk_raw": "POST /sdk-wire HTTP/1.1\r\nAccept: application/json\r\nAuthorization: Bearer SYNTHETIC_OFFLINE\r\nContent-Type: application/json\r\nUser-Agent: claude-cli/2.1.325 (external, cli)\r\nanthropic-beta: claude-code-20250219\r\nanthropic-dangerous-direct-browser-access: true\r\nanthropic-version: 2023-06-01\r\nx-app: cli\r\nx-claude-code-session-id: 00000000-0000-4000-8000-000000000001\r\nx-stainless-arch: x64\r\nx-stainless-helper-method: stream\r\nx-stainless-lang: js\r\nx-stainless-os: Windows\r\nx-stainless-package-version: 0.128.0\r\nx-stainless-retry-count: 0\r\nx-stainless-runtime: node\r\nx-stainless-runtime-version: v26.3.0\r\nx-stainless-timeout: 600\r\nConnection: keep-alive\r\nHost: 127.0.0.1:12195\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nContent-Length: 2\r\n\r\n",
+    "protocol": "HTTP/1.1",
+    "scope": "independent Bun tool, loopback HTTP; not Claude TLS"
+  },
+  "used": [
+    {
+      "module": "/$bunfs/root/chunk-0rxs30cc.js",
+      "symbol": "b0",
+      "start": 1045,
+      "end": 1057,
+      "binaryOffset": 283347232,
+      "sha256": "52473cc2d0d435fd1589727f5bd78260006321dd07c5b52f3adb549e394ddeb4"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0rxs30cc.js",
+      "symbol": "se",
+      "start": 1138,
+      "end": 1377,
+      "binaryOffset": 283347325,
+      "sha256": "5005424d925c5af60064078facdc46ca5dad28d7abd7862c973840bb476a03ff"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0rxs30cc.js",
+      "symbol": "ae",
+      "start": 1381,
+      "end": 2649,
+      "binaryOffset": 283347568,
+      "sha256": "d623f6f34fa4742a65dd8a5be358134876d08a903f14a9e46649f6cdd0c99b86"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0rxs30cc.js",
+      "symbol": "ce",
+      "start": 2650,
+      "end": 3283,
+      "binaryOffset": 283348837,
+      "sha256": "880c93cd2b83661e9032d7e74aca5a5433f7b261026b2f28c007ad949d57ae30"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0rxs30cc.js",
+      "symbol": "H",
+      "start": 3287,
+      "end": 3468,
+      "binaryOffset": 283349474,
+      "sha256": "b301ff8152e0da46aeebaced824c799d1e023fbbf40193dd73bf12b6e865d441"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0rxs30cc.js",
+      "symbol": "L",
+      "start": 3469,
+      "end": 3757,
+      "binaryOffset": 283349656,
+      "sha256": "2ccb10d7102a27b0f1b8276cf3fb5bc0debd20b45adb25adde8e65a7532578dc"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0rxs30cc.js",
+      "symbol": "CGr",
+      "start": 3760,
+      "end": 3779,
+      "binaryOffset": 283349947,
+      "sha256": "d71f76fed33ddc751fa58fc6c8d3b2a3a057da35d61f3eb817ba3097a47fd7bd"
+    },
+    {
+      "module": "/$bunfs/root/chunk-gpympest.js",
+      "symbol": "F",
+      "start": 1763,
+      "end": 1779,
+      "binaryOffset": 286835566,
+      "sha256": "8dda4c31fa18455fa2d8affe35d6f0c97a45f0ba6f5e185f6d70a8cb6e0c49fd"
+    },
+    {
+      "module": "/$bunfs/root/chunk-gpympest.js",
+      "symbol": "j",
+      "start": 1780,
+      "end": 2012,
+      "binaryOffset": 286835583,
+      "sha256": "3bc94f0bee91b89e99a08e4671f60227556ce0cf4f1b8f0e5685d81db38a02f7"
+    },
+    {
+      "module": "/$bunfs/root/chunk-gpympest.js",
+      "symbol": "T$s",
+      "start": 2012,
+      "end": 2145,
+      "binaryOffset": 286835815,
+      "sha256": "5581ac1b661f67de91177425e87f99fcbc91bc590269baf8b1efaa24a3965dab"
+    },
+    {
+      "module": "/$bunfs/root/chunk-e44qnbvj.js",
+      "symbol": "FW",
+      "start": 654637,
+      "end": 655462,
+      "binaryOffset": 282074777,
+      "sha256": "45759692273d69c14fdae5eb3d56f32c0201553df9bb2ed5e8f4f8f7a5704bfd"
+    },
+    {
+      "module": "/$bunfs/root/chunk-e44qnbvj.js",
+      "symbol": "K5",
+      "start": 943649,
+      "end": 943721,
+      "binaryOffset": 282363789,
+      "sha256": "38e83afa8e42845db8172749b370797a41bd46e16a50856574c56adcbdaad689"
+    },
+    {
+      "module": "/$bunfs/root/chunk-e44qnbvj.js",
+      "symbol": "oJs",
+      "start": 943722,
+      "end": 943797,
+      "binaryOffset": 282363862,
+      "sha256": "ad818fa404df55a62a7d80fd90789800a6eb0b84826977188203b2900cdf6966"
+    },
+    {
+      "module": "/$bunfs/root/chunk-e44qnbvj.js",
+      "symbol": "sJs",
+      "start": 943842,
+      "end": 946118,
+      "binaryOffset": 282363982,
+      "sha256": "397aefb66ae9b97d7eeccbfd415c9dc3fa7aed97a95b3b13c15f22ec6e01dad7"
+    },
+    {
+      "module": "/$bunfs/root/chunk-e44qnbvj.js",
+      "symbol": "Vc",
+      "start": 947368,
+      "end": 947447,
+      "binaryOffset": 282367508,
+      "sha256": "0fecc576093fbb2a9fc42038279411e367195b4e220b343e13e1b8cc8a4dceb6"
+    },
+    {
+      "module": "/$bunfs/root/chunk-e44qnbvj.js",
+      "symbol": "W5",
+      "start": 947648,
+      "end": 947662,
+      "binaryOffset": 282367788,
+      "sha256": "0b1869aa3dd88b447cd09c1532edfd90b09e1fbb9b80f13b7d521e7de8ef29d3"
+    },
+    {
+      "module": "/$bunfs/root/chunk-gpympest.js",
+      "symbol": "L",
+      "start": 2692,
+      "end": 2739,
+      "binaryOffset": 286836495,
+      "sha256": "1bd4fe3cd69f7f158b3719813c0dce764a055c6bc1b6d0c724e244fabdbb6754"
+    },
+    {
+      "module": "/$bunfs/root/chunk-gpympest.js",
+      "symbol": "k",
+      "start": 2740,
+      "end": 2745,
+      "binaryOffset": 286836543,
+      "sha256": "8781e37f64c142b930da1612954f3153632b4a7f460291cbc1a3cc46de70ad01"
+    },
+    {
+      "module": "/$bunfs/root/chunk-gpympest.js",
+      "symbol": "B",
+      "start": 2746,
+      "end": 2897,
+      "binaryOffset": 286836549,
+      "sha256": "d434f541c0068a0dbcabc0ac7564575130e3ef6f9c0d32c6a31059cdd348d642"
+    },
+    {
+      "module": "/$bunfs/root/chunk-gpympest.js",
+      "symbol": "Cqe",
+      "start": 5670,
+      "end": 6356,
+      "binaryOffset": 286839473,
+      "sha256": "b38d03062a57a76555bd99eb8196b580052c34b049987bbf5969d9b3bb80d285"
+    },
+    {
+      "module": "/$bunfs/root/chunk-gpympest.js",
+      "symbol": "T",
+      "start": 2901,
+      "end": 2962,
+      "binaryOffset": 286836704,
+      "sha256": "06c3468cdd84a7d0889331feddfad467c59ef9503e9e358c23693c1978ed60eb"
+    },
+    {
+      "module": "/$bunfs/root/chunk-gpympest.js",
+      "symbol": "v",
+      "start": 2963,
+      "end": 3061,
+      "binaryOffset": 286836766,
+      "sha256": "68c5dcb1204c664db840127c20e4f20de9cc1be06abd817ab74f499497ec212f"
+    },
+    {
+      "module": "/$bunfs/root/chunk-gpympest.js",
+      "symbol": "U",
+      "start": 3062,
+      "end": 3128,
+      "binaryOffset": 286836865,
+      "sha256": "06e9a6797b5069c40644ba8a392235e1dc07efcdc492e5d34ef1603d017ef540"
+    },
+    {
+      "module": "/$bunfs/root/chunk-gpympest.js",
+      "symbol": "XNr",
+      "start": 3184,
+      "end": 3348,
+      "binaryOffset": 286836987,
+      "sha256": "74a0cbcf5384b88f9b4d81ee2be1f74f04a34c1cfdbc36f407d97ae6286e7357"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "r_",
+      "start": 45773,
+      "end": 46207,
+      "binaryOffset": 283562803,
+      "sha256": "4be938f3f4a3779b6a308df1567785eec7d8aa01e45f9ef8eb31b6b8dc513e57"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "Os",
+      "start": 46211,
+      "end": 46229,
+      "binaryOffset": 283563241,
+      "sha256": "103d80f778e5d5856e4e0880e152a7801791b9486e1f102daaa51ab0622d8682"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "o_",
+      "start": 46230,
+      "end": 46264,
+      "binaryOffset": 283563260,
+      "sha256": "87445cbf6cbdb6727277ccb5066da3b946cbec0f8527b46434e82448d026988c"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "s_",
+      "start": 46265,
+      "end": 46431,
+      "binaryOffset": 283563295,
+      "sha256": "79cb433b07d2d51c8c9c0342680bd1cd35b6952e63017a386d177824a1d40868"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "T",
+      "start": 46432,
+      "end": 46818,
+      "binaryOffset": 283563462,
+      "sha256": "29ea7602daf14751e954d14e0a2cfb123c23af126b2c0f7412648dbfa6b2e2ac"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "authHeaders",
+      "start": 169832,
+      "end": 170189,
+      "binaryOffset": 283686862,
+      "sha256": "423cebfb2e04c7893212f343f8d6caed5a8b3227c1a8db51aa0cd46bd4be5b5f"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "apiKeyAuth",
+      "start": 170189,
+      "end": 170275,
+      "binaryOffset": 283687219,
+      "sha256": "8bc6e325ad0e918217f9f932ed0e11e18bcd95424cdbc60e4d938a3d4a134c3d"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "bearerAuth",
+      "start": 170275,
+      "end": 170381,
+      "binaryOffset": 283687305,
+      "sha256": "5f15ff090e7b5763fa96f5de09638aa715e78790468497d3ab88257929a8a7cd"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "getUserAgent",
+      "start": 170412,
+      "end": 170454,
+      "binaryOffset": 283687442,
+      "sha256": "0a2ee4c09878ba27b8f6444ef7c6f67afa421a37f78df3b249f9e004d73919a5"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "buildHeaders",
+      "start": 177931,
+      "end": 178432,
+      "binaryOffset": 283694961,
+      "sha256": "145c587282935138935b23d5c828d34ddf459c352bd2bea0b5eb0e5b837f3f92"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "$n",
+      "start": 52009,
+      "end": 52051,
+      "binaryOffset": 283569039,
+      "sha256": "4c8193a6d3415532295b5ce30c03e1ac7325f163a520dd9dd37d636ba3fcce0e"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "qr",
+      "start": 52052,
+      "end": 52113,
+      "binaryOffset": 283569082,
+      "sha256": "3297d73c12837befc352dfa367daa9eeb9384b083499ebf87ddb4332ecd7c9f5"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "Za",
+      "start": 52113,
+      "end": 52374,
+      "binaryOffset": 283569143,
+      "sha256": "40e443cc82da5855edc3f0f6f082b00da3562bed51ebcbea7d246c846fb261ea"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "Ls",
+      "start": 52374,
+      "end": 52474,
+      "binaryOffset": 283569404,
+      "sha256": "69e0735207adbbbda69a3322f2ccc454ea9bc0601d81f34abd04015039cd8f58"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "Ei",
+      "start": 119473,
+      "end": 121385,
+      "binaryOffset": 283636503,
+      "sha256": "88374ec5909d5a0d24ef56e725e1c1d53305e0a56e9cea2ffd01afd31a5ba910"
+    },
+    {
+      "module": "/$bunfs/root/chunk-0s5xarq7.js",
+      "symbol": "Bc",
+      "start": 121386,
+      "end": 121685,
+      "binaryOffset": 283638416,
+      "sha256": "16b8fe1c0ca4dca435cfb7da04f28d0c5e4bf5829d448a17746b9650208160e3"
+    }
+  ],
+  "officialBinaryExecuted": false,
+  "anthropicRequests": 0
+}

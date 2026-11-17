@@ -1,0 +1,730 @@
+[
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.push(llt)",
+    "offset": 3090825,
+    "binaryOffset": 291793447,
+    "guards": [
+      {
+        "test": "Pin()&&(Lx()||Ee.advisorModel!==void 0)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "vn.push(llt);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.push(zW)",
+    "offset": 3090898,
+    "binaryOffset": 291793520,
+    "guards": [
+      {
+        "test": "xe(()=>U1t(Nt))&&wn.thinking.supported&&!vn.includes(zW)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "vn.push(zW);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.push(Ui)",
+    "offset": 3096028,
+    "binaryOffset": 291798650,
+    "guards": [
+      {
+        "test": "Ui&&gi!==\"bedrock\"&&!To&&!Tv()",
+        "branch": "then"
+      },
+      {
+        "test": "!vn.includes(Ui)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "vn.push(Ui)"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.push(ije)",
+    "offset": 3097074,
+    "binaryOffset": 291799696,
+    "guards": [
+      {
+        "test": "Jd&&!vn.includes(ije)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "vn.push(ije);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((eo)=>!dd(Ht,eo)&&!(Uu&&eo===y3)&&!(cd&&eo===DY))",
+    "offset": 3101776,
+    "binaryOffset": 291804398,
+    "guards": [
+      {
+        "test": "vn=vn.filter((eo)=>!dd(Ht,eo)&&!(Uu&&eo===y3)&&!(cd&&eo===DY)),_o!==void 0",
+        "branch": "test"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "if(vn=vn.filter((eo)=>!dd(Ht,eo)&&!(Uu&&eo===y3)&&!(cd&&eo===DY)),_o!==void 0){let eo=xe(()=>z7n(vo,{isAgenticQuery:ln})),Vo=(_s)=>{if(eo.includes(_s)){if(!vn.includes(_s))vn.push(_s)}else vn=vn.filter((_a)=>_a!==_s)};if(!zl)Vo(PS);if(!Uu)Vo(y3);if(!cd)Vo(DY);vn=xe(()=>Pna(Ht,vn,vo,Tn)),Vo(yee)}"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.push(_s)",
+    "offset": 3101942,
+    "binaryOffset": 291804564,
+    "guards": [
+      {
+        "test": "vn=vn.filter((eo)=>!dd(Ht,eo)&&!(Uu&&eo===y3)&&!(cd&&eo===DY)),_o!==void 0",
+        "branch": "then"
+      },
+      {
+        "test": "eo.includes(_s)",
+        "branch": "then"
+      },
+      {
+        "test": "!vn.includes(_s)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "vn.push(_s)"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((_a)=>_a!==_s)",
+    "offset": 3101962,
+    "binaryOffset": 291804584,
+    "guards": [
+      {
+        "test": "vn=vn.filter((eo)=>!dd(Ht,eo)&&!(Uu&&eo===y3)&&!(cd&&eo===DY)),_o!==void 0",
+        "branch": "then"
+      },
+      {
+        "test": "eo.includes(_s)",
+        "branch": "else"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "vn=vn.filter((_a)=>_a!==_s)"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.push(_9)",
+    "offset": 3102166,
+    "binaryOffset": 291804788,
+    "guards": [
+      {
+        "test": "Nr&&!vn.includes(_9)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "vn.push(_9);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((eo)=>eo!==w3)",
+    "offset": 3111947,
+    "binaryOffset": 291814569,
+    "guards": [
+      {
+        "test": "!xC&&!nye()",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "vn=vn.filter((eo)=>eo!==w3);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Vo)=>Vo!==HTe)",
+    "offset": 3119416,
+    "binaryOffset": 291822038,
+    "guards": [],
+    "shortCircuit": [],
+    "statement": "return vn=vn.filter((Vo)=>Vo!==HTe),Zb=IW===\"updates\"&&mo.display!==void 0?\"withoutUpdates\":\"withoutField\",`retry:thinking-display-unclaimed:${Zb}`"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((_a)=>_a!==zW)",
+    "offset": 3120953,
+    "binaryOffset": 291823575,
+    "guards": [],
+    "shortCircuit": [],
+    "statement": "return t(`[thinking] HTTP ${eo.status} that no earlier recovery took; sending the request again without the ${zW.header} beta`,{level:\"warn\"}),vn=vn.filter((_a)=>_a!==zW),BD=Vo?\"spent\":\"resent\",\"retry:thinking-token-count-unclaimed\""
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((_s)=>_s!==_9)",
+    "offset": 3121536,
+    "binaryOffset": 291824158,
+    "guards": [
+      {
+        "test": "OD===\"idle\"&&b$&&vn.includes(_9)&&Vo&&eo.type!==\"billing_error\"&&!dv(eo)&&!P$(eo)&&uzn()",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "return OD=\"retrying\",wW=eo.requestID??void 0,vn=vn.filter((_s)=>_s!==_9),eS?.forceCreate(\"clear_at_header_retired\"),\"retry:kept-reminder-unrecognised-400\""
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Vo)=>Vo!==_9)",
+    "offset": 3122652,
+    "binaryOffset": 291825274,
+    "guards": [
+      {
+        "test": "Zhe(eo),vn.includes(_9)&&mCn(eo)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "return vn=vn.filter((Vo)=>Vo!==_9),Wh(Ht,_9),fgt(),sx(),eS?.forceCreate(\"clear_at_header_retired\"),c(\"api_kept_reminder_clear_at\",\"server_rejected\"),t(\"[reminders] the server rejected the clear_at beta header or field (HTTP 400); retrying without them. For the rest of this session earlier reminders are not re-sent, and requests that can use a Message Threads thread get no reminder.\",{level:\"warn\"}),\"retry:kept-reminder-clear-at\";"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Qc)=>Qc!==nC||!Vf())",
+    "offset": 3129686,
+    "binaryOffset": 291832308,
+    "guards": [],
+    "shortCircuit": [],
+    "statement": "Ea=vn.filter((Qc)=>Qc!==nC||!Vf())"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(nC)",
+    "offset": 3129767,
+    "binaryOffset": 291832389,
+    "guards": [
+      {
+        "test": "!Ea.includes(nC)&&!Vf()&&b4t(eo.model)!==null",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(nC);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.splice(Ea.indexOf(gH),1)",
+    "offset": 3129828,
+    "binaryOffset": 291832450,
+    "guards": [
+      {
+        "test": "Ea.includes(gH)&&!S0e(Dl)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.splice(Ea.indexOf(gH),1);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(b3)",
+    "offset": 3130064,
+    "binaryOffset": 291832686,
+    "guards": [
+      {
+        "test": "(JAa.has(Ee.querySource)||Ee.sendSideQueryBeta===!0||(Ee.querySource===\"hook_agent\"||Ee.modelCallNames!==void 0)&&HVe())&&Dl===\"firstParty\"&&OS()&&Ni()&&S0e(Dl)&&!i.ANTHROPIC_UNIX_SOCKET&&!Ea.includes(b3)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(b3);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(ib)",
+    "offset": 3131752,
+    "binaryOffset": 291834374,
+    "guards": [
+      {
+        "test": "gy&&Bb(Ht,ib)&&!Ea.includes(ib)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(ib);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(w3)",
+    "offset": 3132641,
+    "binaryOffset": 291835263,
+    "guards": [
+      {
+        "test": "xC",
+        "branch": "then"
+      },
+      {
+        "test": "!Ea.includes(w3)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(w3);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.splice(Qc,1)",
+    "offset": 3132992,
+    "binaryOffset": 291835614,
+    "guards": [
+      {
+        "test": "Qc!==-1",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.splice(Qc,1)"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(HTe)",
+    "offset": 3133296,
+    "binaryOffset": 291835918,
+    "guards": [
+      {
+        "test": "(O_?.type===\"adaptive\"||O_?.type===\"enabled\")&&HV&&!(\"thinking\"in yc)&&!dd(Ht,HTe)&&Zb===\"idle\"&&!i.CLAUDE_CODE_SIMULATE_PROXY_USAGE",
+        "branch": "then"
+      },
+      {
+        "test": "O_={...O_,display:\"updates\"},!Ea.includes(HTe)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(HTe);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(alt)",
+    "offset": 3133378,
+    "binaryOffset": 291836000,
+    "guards": [
+      {
+        "test": "Umt(Nt)&&!Ea.includes(alt)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(alt);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(S3t)",
+    "offset": 3134505,
+    "binaryOffset": 291837127,
+    "guards": [
+      {
+        "test": "IV=zC?eo.model:void 0,eo.fastModeSent=zC,SV&&!Ea.includes(S3t)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(S3t);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(E2)",
+    "offset": 3134561,
+    "binaryOffset": 291837183,
+    "guards": [
+      {
+        "test": "E2&&YE&&B7n()&&ln&&!Ea.includes(E2)",
+        "branch": "then"
+      },
+      {
+        "test": "Ea.push(E2),U7n()",
+        "branch": "test"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "if(Ea.push(E2),U7n())t(`auto-mode 3P: sending afk-mode beta '${E2.header}' to ${Dl} via betas header`)"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(SSn)",
+    "offset": 3134699,
+    "binaryOffset": 291837321,
+    "guards": [
+      {
+        "test": "Yj===\"1h\"&&OS()&&!Ea.includes(SSn)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(SSn);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(N$.beta)",
+    "offset": 3134760,
+    "binaryOffset": 291837382,
+    "guards": [
+      {
+        "test": "N$",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(N$.beta),Ex=N$.body;"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(DAt)",
+    "offset": 3134841,
+    "binaryOffset": 291837463,
+    "guards": [
+      {
+        "test": "Bb(Ht,DAt)&&vye",
+        "branch": "then"
+      },
+      {
+        "test": "!Ea.includes(DAt)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(DAt);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(b3t)",
+    "offset": 3134956,
+    "binaryOffset": 291837578,
+    "guards": [
+      {
+        "test": "wV()&&!Ea.includes(b3t)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(b3t);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(hH)",
+    "offset": 3134993,
+    "binaryOffset": 291837615,
+    "guards": [
+      {
+        "test": "iW&&!Ea.includes(hH)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(hH);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.splice(Qc,1)",
+    "offset": 3135272,
+    "binaryOffset": 291837894,
+    "guards": [
+      {
+        "test": "E3!==null",
+        "branch": "then"
+      },
+      {
+        "test": "GW",
+        "branch": "then"
+      },
+      {
+        "test": "Ea[Qc]===E3",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.splice(Qc,1)"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(E3)",
+    "offset": 3135454,
+    "binaryOffset": 291838076,
+    "guards": [
+      {
+        "test": "E3!==null",
+        "branch": "then"
+      },
+      {
+        "test": "GW",
+        "branch": "else"
+      },
+      {
+        "test": "(xw!==null||Bb(Ht,E3)||Ee.querySource===\"resume_cache_warm\"&&Cw===void 0&&vl.toolResultCuts===void 0&&Het(\"sdk\",void 0,Ee.model)&&!Ezn(Td))&&!Ea.includes(E3)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(E3)"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.push(b3)",
+    "offset": 3135524,
+    "binaryOffset": 291838146,
+    "guards": [
+      {
+        "test": "Ee.querySource===\"resume_cache_warm\"&&!Ea.includes(b3)",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "Ea.push(b3);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "Ea.filter((Qc)=>!_a(Qc)&&(!aT||Qc===ilt))",
+    "offset": 3135543,
+    "binaryOffset": 291838165,
+    "guards": [],
+    "shortCircuit": [],
+    "statement": "vx=Ea.filter((Qc)=>!_a(Qc)&&(!aT||Qc===ilt))"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((eo)=>eo!==llt)",
+    "offset": 3147028,
+    "binaryOffset": 291849650,
+    "guards": [
+      {
+        "test": "!Lx()",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "vn=vn.filter((eo)=>eo!==llt)"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((vc)=>vc!==fw)",
+    "offset": 3151719,
+    "binaryOffset": 291854341,
+    "guards": [
+      {
+        "test": "_s!==void 0",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "return gf=null,vn=vn.filter((vc)=>vc!==fw),Dna(Ht,_s),sx(),l(\"tengu_inline_tools_refused_retry\",{cause:f(_s)}),\"retry:inline-tools-strip\""
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Yf)=>Yf!==nE&&Yf!==fw)",
+    "offset": 3152074,
+    "binaryOffset": 291854696,
+    "guards": [
+      {
+        "test": "Ea!==void 0",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "return vn=vn.filter((Yf)=>Yf!==nE&&Yf!==fw),Mna(Ht,Ea,Ee.model,vc),sx(),pKe(),MLt(),\"retry:tool-change-strip\""
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((vc)=>vc!==DY)",
+    "offset": 3152317,
+    "binaryOffset": 291854939,
+    "guards": [
+      {
+        "test": "yc&&ddt(eo)&&!Dl&&!hd",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "return Td=Xp(C$e(Td),\"error_recovery\"),vn=vn.filter((vc)=>vc!==DY),Wh(Ht,DY),t(`[per-turn-timing] the server refused the current-time statement (${d(eo)}); leaving it out for the rest of this conversation (until /clear or /compact)`,{level:\"warn\"}),\"retry:per-turn-timing-strip\";"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Fh)=>Fh!==DY)",
+    "offset": 3153058,
+    "binaryOffset": 291855680,
+    "guards": [
+      {
+        "test": "Bp&&(Dl||hd)",
+        "branch": "then"
+      },
+      {
+        "test": "Td=Xp(Dl?Bp():pce(Td),\"error_recovery\"),Bp=null,yc",
+        "branch": "then"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "vn=vn.filter((Fh)=>Fh!==DY);"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Fh)=>Fh!==PS&&Fh!==y3&&Fh!==nE&&Fh!==fw&&Fh!==_9)",
+    "offset": 3153102,
+    "binaryOffset": 291855724,
+    "guards": [
+      {
+        "test": "Bp&&(Dl||hd)",
+        "branch": "then"
+      },
+      {
+        "test": "Dl",
+        "branch": "then"
+      },
+      {
+        "test": "Ky=sy,vn=vn.filter((Fh)=>Fh!==PS&&Fh!==y3&&Fh!==nE&&Fh!==fw&&Fh!==_9),Wh(Ht,PS),Cw=void 0,fLs(Ht),sx(),pKe(),MLt(),pu!==null",
+        "branch": "test"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "if(Ky=sy,vn=vn.filter((Fh)=>Fh!==PS&&Fh!==y3&&Fh!==nE&&Fh!==fw&&Fh!==_9),Wh(Ht,PS),Cw=void 0,fLs(Ht),sx(),pKe(),MLt(),pu!==null)c(\"mcp_late_tool_additions\",\"rejected_with_mid_conv_system\"),pu=null"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Fh)=>Fh!==y3)",
+    "offset": 3153300,
+    "binaryOffset": 291855922,
+    "guards": [
+      {
+        "test": "Bp&&(Dl||hd)",
+        "branch": "then"
+      },
+      {
+        "test": "hd",
+        "branch": "then"
+      },
+      {
+        "test": "vn=vn.filter((Fh)=>Fh!==y3),bo(y3,CCn(eo)),rM!==null",
+        "branch": "test"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "if(vn=vn.filter((Fh)=>Fh!==y3),bo(y3,CCn(eo)),rM!==null)c(\"api_per_turn_effort\",\"server_rejected\")"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Ea)=>Ea!==w3)",
+    "offset": 3159458,
+    "binaryOffset": 291862080,
+    "guards": [],
+    "shortCircuit": [],
+    "statement": "return xC=!1,ax=void 0,vn=vn.filter((Ea)=>Ea!==w3),Wh(Ht,w3),t(_s?\"[thinking] server rejected the thinking-binding-controls beta; dropping the header and the block_binding value for this conversation and retrying.\":\"[thinking] an HTTP 400 that does not name the thinking-binding-controls beta arrived on a request that carried it; guessing the platform refuses that beta, so retrying once without it and leaving it off for this conversation. The only loss is the API's list of the thinking blocks it dropped.\",{level:\"warn\"}),l(\"tengu_thinking_binding_rejected_retry\",{model:Ft(Ee.model)}),\"retry:thinking-binding-controls\""
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Vo)=>Vo!==zW)",
+    "offset": 3160146,
+    "binaryOffset": 291862768,
+    "guards": [],
+    "shortCircuit": [],
+    "statement": "return vn=vn.filter((Vo)=>Vo!==zW),Wh(Ht,zW),wD.push(zW),t(\"[thinking-token-count] server rejected the beta; dropping it for this conversation and retrying.\",{level:\"warn\"}),l(\"tengu_thinking_token_count_rejected_retry\",{model:Ft(Ee.model),provider:Pv(),unnamed:!0}),\"retry:thinking-token-count-beta\""
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((_a)=>!_s.has(_a))",
+    "offset": 3160616,
+    "binaryOffset": 291863238,
+    "guards": [
+      {
+        "test": "vn=vn.filter((_a)=>!_s.has(_a)),_s.has(gH)",
+        "branch": "test"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "if(vn=vn.filter((_a)=>!_s.has(_a)),_s.has(gH))m(\"api_tool_provenance\",\"refused\");"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Vo)=>Vo!==nC)",
+    "offset": 3161955,
+    "binaryOffset": 291864577,
+    "guards": [],
+    "shortCircuit": [],
+    "statement": "vn=vn.filter((Vo)=>Vo!==nC),h2o(Ee.model),l(\"tengu_beta_400_healed\",{beta:cue([nC.header]),model:Ft(Ee.model),provider:Pv(),status:400,unnamed:eo})"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Vo)=>Vo!==yP)",
+    "offset": 3162195,
+    "binaryOffset": 291864817,
+    "guards": [],
+    "shortCircuit": [],
+    "statement": "return IYe(yP),vn=vn.filter((Vo)=>Vo!==yP),t(\"[program-use-case] server rejected the program-use-case-ids beta header; the use case is not named again in this process\",{level:\"warn\"}),c(\"api_program_use_case\",\"header_rejected\"),\"retry:program-use-case-beta\""
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((_s)=>_s!==yP)",
+    "offset": 3162543,
+    "binaryOffset": 291865165,
+    "guards": [
+      {
+        "test": "vn=vn.filter((_s)=>_s!==yP),Vo",
+        "branch": "test"
+      }
+    ],
+    "shortCircuit": [],
+    "statement": "if(vn=vn.filter((_s)=>_s!==yP),Vo)return k6o(Ee.model),t(\"[program-use-case] a request naming the turn's use case got a 404; this turn names nothing on that model\",{level:\"warn\"}),c(\"api_program_use_case\",\"not_found\"),\"retry:program-use-case-not-held\";"
+  },
+  {
+    "module": "/$bunfs/root/chunk-wqb2b4v0.js",
+    "function": "Eos",
+    "operation": "vn.filter((Vo)=>Vo!==alt)",
+    "offset": 3163063,
+    "binaryOffset": 291865685,
+    "guards": [],
+    "shortCircuit": [],
+    "statement": "return qhi(),IYe(alt),vn=vn.filter((Vo)=>Vo!==alt),t(\"[thinking-resumption] server rejected the thinking-resumption beta header; disabled for this process\",{level:\"warn\"}),c(\"query_thinking_block_resumption\",\"header_rejected\"),Ir?\"surface:resume-prefill\":\"retry:thinking-resumption-beta\""
+  }
+]

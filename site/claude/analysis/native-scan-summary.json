@@ -1,0 +1,544 @@
+{
+  "sample": "S1",
+  "version": "2.1.325",
+  "scope": "decoded embedded JS modules; native prefix searched separately",
+  "module_count": 3055,
+  "negative_result_limit": "absence in decoded strings is not proof a runtime/env cannot supply the value",
+  "results": {
+    "X-Stainless-": {
+      "count": 34,
+      "locations": [
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1422,
+          "binary_offset": 283347609,
+          "excerpt": "s:0)===\"[object process]\")return\"node\";return\"unknown\"}var ae=()=>{let e=se();if(e===\"deno\")return{\"X-Stainless-Lang\":\"js\",\"X-Stainless-Package-Version\":b0,\"X-Stainless-OS\":L(Deno.build.os),\"X-Stainless-Arch\":H(Deno.build.arch),\"X-Stainless-Runtime\":\"d"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1446,
+          "binary_offset": 283347633,
+          "excerpt": "\")return\"node\";return\"unknown\"}var ae=()=>{let e=se();if(e===\"deno\")return{\"X-Stainless-Lang\":\"js\",\"X-Stainless-Package-Version\":b0,\"X-Stainless-OS\":L(Deno.build.os),\"X-Stainless-Arch\":H(Deno.build.arch),\"X-Stainless-Runtime\":\"deno\",\"X-Stainless-Runtim"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1479,
+          "binary_offset": 283347666,
+          "excerpt": "r ae=()=>{let e=se();if(e===\"deno\")return{\"X-Stainless-Lang\":\"js\",\"X-Stainless-Package-Version\":b0,\"X-Stainless-OS\":L(Deno.build.os),\"X-Stainless-Arch\":H(Deno.build.arch),\"X-Stainless-Runtime\":\"deno\",\"X-Stainless-Runtime-Version\":typeof Deno.version==="
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1513,
+          "binary_offset": 283347700,
+          "excerpt": ")return{\"X-Stainless-Lang\":\"js\",\"X-Stainless-Package-Version\":b0,\"X-Stainless-OS\":L(Deno.build.os),\"X-Stainless-Arch\":H(Deno.build.arch),\"X-Stainless-Runtime\":\"deno\",\"X-Stainless-Runtime-Version\":typeof Deno.version===\"string\"?Deno.version:Deno.version"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1551,
+          "binary_offset": 283347738,
+          "excerpt": "inless-Package-Version\":b0,\"X-Stainless-OS\":L(Deno.build.os),\"X-Stainless-Arch\":H(Deno.build.arch),\"X-Stainless-Runtime\":\"deno\",\"X-Stainless-Runtime-Version\":typeof Deno.version===\"string\"?Deno.version:Deno.version?.deno??\"unknown\"};if(typeof EdgeRunti"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1580,
+          "binary_offset": 283347767,
+          "excerpt": "-Stainless-OS\":L(Deno.build.os),\"X-Stainless-Arch\":H(Deno.build.arch),\"X-Stainless-Runtime\":\"deno\",\"X-Stainless-Runtime-Version\":typeof Deno.version===\"string\"?Deno.version:Deno.version?.deno??\"unknown\"};if(typeof EdgeRuntime<\"u\")return{\"X-Stainless-La"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1718,
+          "binary_offset": 283347905,
+          "excerpt": "no.version===\"string\"?Deno.version:Deno.version?.deno??\"unknown\"};if(typeof EdgeRuntime<\"u\")return{\"X-Stainless-Lang\":\"js\",\"X-Stainless-Package-Version\":b0,\"X-Stainless-OS\":\"Unknown\",\"X-Stainless-Arch\":`other:${EdgeRuntime}`,\"X-Stainless-Runtime\":\"edge"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1742,
+          "binary_offset": 283347929,
+          "excerpt": "no.version:Deno.version?.deno??\"unknown\"};if(typeof EdgeRuntime<\"u\")return{\"X-Stainless-Lang\":\"js\",\"X-Stainless-Package-Version\":b0,\"X-Stainless-OS\":\"Unknown\",\"X-Stainless-Arch\":`other:${EdgeRuntime}`,\"X-Stainless-Runtime\":\"edge\",\"X-Stainless-Runtime-V"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1775,
+          "binary_offset": 283347962,
+          "excerpt": "nknown\"};if(typeof EdgeRuntime<\"u\")return{\"X-Stainless-Lang\":\"js\",\"X-Stainless-Package-Version\":b0,\"X-Stainless-OS\":\"Unknown\",\"X-Stainless-Arch\":`other:${EdgeRuntime}`,\"X-Stainless-Runtime\":\"edge\",\"X-Stainless-Runtime-Version\":globalThis.process?.versi"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1802,
+          "binary_offset": 283347989,
+          "excerpt": "ime<\"u\")return{\"X-Stainless-Lang\":\"js\",\"X-Stainless-Package-Version\":b0,\"X-Stainless-OS\":\"Unknown\",\"X-Stainless-Arch\":`other:${EdgeRuntime}`,\"X-Stainless-Runtime\":\"edge\",\"X-Stainless-Runtime-Version\":globalThis.process?.version??\"unknown\"};if(e===\"node"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1844,
+          "binary_offset": 283348031,
+          "excerpt": "Stainless-Package-Version\":b0,\"X-Stainless-OS\":\"Unknown\",\"X-Stainless-Arch\":`other:${EdgeRuntime}`,\"X-Stainless-Runtime\":\"edge\",\"X-Stainless-Runtime-Version\":globalThis.process?.version??\"unknown\"};if(e===\"node\")return{\"X-Stainless-Lang\":\"js\",\"X-Stainl"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 1873,
+          "binary_offset": 283348060,
+          "excerpt": ",\"X-Stainless-OS\":\"Unknown\",\"X-Stainless-Arch\":`other:${EdgeRuntime}`,\"X-Stainless-Runtime\":\"edge\",\"X-Stainless-Runtime-Version\":globalThis.process?.version??\"unknown\"};if(e===\"node\")return{\"X-Stainless-Lang\":\"js\",\"X-Stainless-Package-Version\":b0,\"X-St"
+        }
+      ]
+    },
+    "anthropic-beta": {
+      "count": 228,
+      "locations": [
+        {
+          "module": "/$bunfs/root/chunk-29cd2nzs.js",
+          "index": 173,
+          "module_offset": 159162,
+          "binary_offset": 280416860,
+          "excerpt": "ion\")e[s]=void 0;return e}function Bz(){let e={},s=Tv();for(let[n,r]of rye()){if(n.toLowerCase()!==\"anthropic-beta\")continue;let l=r.split(\",\").map((h)=>h.trim()).filter(Boolean),c=l.filter((h)=>!ESn(h));if(s)e[n]=void 0;else if(c.length!==l.length)e[n]="
+        },
+        {
+          "module": "/$bunfs/root/chunk-e44qnbvj.js",
+          "index": 205,
+          "module_offset": 340316,
+          "binary_offset": 281760456,
+          "excerpt": ";try{let h=await EY(1e4,({timeout:y,signal:E})=>Yt.get(s,{headers:{\"User-Agent\":Pi(),\"x-api-key\":r,\"anthropic-beta\":Hu,\"Cache-Control\":\"no-cache\"},params:{account_uuid:n},timeout:y,signal:E,...En}));return tk(h.data)}catch(h){if(Ph(h))c(\"oauth_profile_fe"
+        },
+        {
+          "module": "/$bunfs/root/chunk-e44qnbvj.js",
+          "index": 205,
+          "module_offset": 409557,
+          "binary_offset": 281829697,
+          "excerpt": "return fg(j)}let U=Wn();if(U?.accessToken&&lg())return fg({Authorization:`Bearer ${U.accessToken}`,\"anthropic-beta\":Hu});if(!h)throw Error(\"No auth available\");return fg({\"x-api-key\":h})};async function D(){try{let U;try{U=await M()}catch(Y){let J=Yt.isA"
+        },
+        {
+          "module": "/$bunfs/root/chunk-e44qnbvj.js",
+          "index": 205,
+          "module_offset": 656607,
+          "binary_offset": 282076747,
+          "excerpt": ",n()]);if(s!==null)return{headers:{...h?.extraHeaders,Authorization:`Bearer ${await s.getToken()}`,\"anthropic-beta\":Hu}}}catch(n){return t(`WIF auth header resolution failed: ${n instanceof Error?n.message:String(n)}`,{level:\"error\"}),{headers:{},error:n"
+        },
+        {
+          "module": "/$bunfs/root/chunk-e44qnbvj.js",
+          "index": 205,
+          "module_offset": 657142,
+          "binary_offset": 282077282,
+          "excerpt": "en available\",reasonCode:\"no_oauth_token\"};return{headers:{Authorization:`Bearer ${r.accessToken}`,\"anthropic-beta\":Hu}}}if(ke()===\"gateway\")return{headers:{},error:\"Not available when using a Cloud gateway\",reasonCode:\"gateway\"};let n=iT();if(!n){let r="
+        },
+        {
+          "module": "/$bunfs/root/chunk-e44qnbvj.js",
+          "index": 205,
+          "module_offset": 885211,
+          "binary_offset": 282305351,
+          "excerpt": "==\"v1alpha2\"?{url:`${n}/v1/code/sessions`,headers:A0(r)}:{url:`${n}/v1/sessions`,headers:{...A0(r),\"anthropic-beta\":Lyn}}}function cAt(e){if(!Yt.isAxiosError(e))return!1;if(!e.response)return!0;if(e.response.status>=500)return!0;return!1}function fWo(e,n"
+        },
+        {
+          "module": "/$bunfs/root/chunk-e44qnbvj.js",
+          "index": 205,
+          "module_offset": 913256,
+          "binary_offset": 282333396,
+          "excerpt": "Token;if(!Oat(ae)||!ce)return{ok:!1,reason:\"no-auth\",detail:qM};if(v={Authorization:`Bearer ${ce}`,\"anthropic-beta\":Hu},s.recoverOAuth401&&(ae?.refreshToken||ASe()))D=ce}else if(s.auth!==\"none\"){await Lh(s);let ae=s.auth===\"async\"?await S2():gse(),ce=ae."
+        },
+        {
+          "module": "/$bunfs/root/chunk-e44qnbvj.js",
+          "index": 205,
+          "module_offset": 1031680,
+          "binary_offset": 282451820,
+          "excerpt": "r===\"api\")return{headers:{\"x-api-key\":n}};if(r===\"oat\")return{headers:{Authorization:`Bearer ${n}`,\"anthropic-beta\":Hu}};return}function ly(e){try{return new URL(e).protocol===\"https:\"}catch{return!1}}function _X(e){if(e instanceof fy)return\"kill_switch\""
+        },
+        {
+          "module": "/$bunfs/root/chunk-e44qnbvj.js",
+          "index": 205,
+          "module_offset": 1043862,
+          "binary_offset": 282464002,
+          "excerpt": "..cN(Qr()),hasWorkspaceTrust:()=>!0,getAuthHeaders:async()=>({headers:{Authorization:`Bearer ${r}`,\"anthropic-beta\":Hu}}),refreshOAuthTokenIfNeeded:async()=>!1,saveGlobalConfig:()=>{},logExposure:()=>!1,profileFlagHost:()=>{return},takesOnlyFlags:()=>{re"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 9323,
+          "binary_offset": 283355510,
+          "excerpt": ".baseURL}${s3o}`,o;try{o=await e.fetch(r,{method:\"POST\",headers:{\"Content-Type\":\"application/json\",\"anthropic-beta\":`${S5t},${bFa}`,\"User-Agent\":e.userAgent||`anthropic-sdk-typescript/${b0} oidcFederationProvider`},body:JSON.stringify(s)})}catch(_){throw"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 11324,
+          "binary_offset": 283357511,
+          "excerpt": ".baseURL}${s3o}`,w;try{w=await e.fetch(p,{method:\"POST\",headers:{\"Content-Type\":\"application/json\",\"anthropic-beta\":S5t,\"User-Agent\":e.userAgent||`anthropic-sdk-typescript/${b0} userOAuthProvider`},body:JSON.stringify(_)})}catch(I){throw new Im(`User OAu"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0s5xarq7.js",
+          "index": 321,
+          "module_offset": 48090,
+          "binary_offset": 283565120,
+          "excerpt": "kspace_id:h}=n??{};return this._client.get(H`/v1/deployment_runs/${e}?beta=true`,{...r,headers:T([{\"anthropic-beta\":[...s??[],\"managed-agents-2026-04-01\"].toString(),...h!=null?{\"anthropic-workspace-id\":h}:void 0},r?.headers])})}list(e={},n){let{betas:r,"
+        }
+      ]
+    },
+    "cc_entrypoint": {
+      "count": 1,
+      "locations": [
+        {
+          "module": "/$bunfs/root/chunk-e44qnbvj.js",
+          "index": 205,
+          "module_offset": 946002,
+          "binary_offset": 282366142,
+          "excerpt": "stParty\"&&Ni()?` cc_dispatch_entrypoint=${Rn};`:\"\",We=`x-anthropic-billing-header: cc_version=${M}; cc_entrypoint=${D};${H}${j}${Y}${J}${q}${ue}${Ae}${Ce}${Ue}${fn}${At}${Zr}`;return t(`attribution header ${We}`),We}var Sa=\"local_projects\";function M3r("
+        }
+      ]
+    },
+    "cch=": {
+      "count": 1,
+      "locations": [
+        {
+          "module": "/$bunfs/root/chunk-e44qnbvj.js",
+          "index": 205,
+          "module_offset": 944521,
+          "binary_offset": 282364661,
+          "excerpt": "{e}`,D=O6()??process.env.CLAUDE_CODE_ENTRYPOINT??\"unknown\",H=v===\"firstParty\"&&Ni()||v===\"vertex\"?\" cch=00000;\":\"\",U=Ol(),j=U?` cc_workload=${U};`:\"\",Y=tC(n)&&!n.isMainSession?\" cc_is_subagent=true;\":\"\",J=r!==void 0&&/^req_[A-Za-z0-9_-]{1,36}$/"
+        }
+      ]
+    },
+    "fine-grained-tool-streaming": {
+      "count": 0,
+      "locations": []
+    },
+    "mid-conversation-output-config-2026-07-01": {
+      "count": 0,
+      "locations": []
+    },
+    "redact-thinking-2026-02-12": {
+      "count": 1,
+      "locations": [
+        {
+          "module": "/$bunfs/root/chunk-29cd2nzs.js",
+          "index": 173,
+          "module_offset": 155060,
+          "binary_offset": 280412758,
+          "excerpt": "tl\",\"extended-cache-ttl-2025-04-11\"),S3t=M(\"speed\",\"fast-mode-2026-02-01\"),cXn=M(\"redact_thinking\",\"redact-thinking-2026-02-12\"),alt=M(\"thinking_resumption\",\"thinking-resumption-2026-07-17\"),zW=M(\"thinking_token_count\",\"thinking-token-count-2026-05-13\"),E2=M(\"afk_mo"
+        }
+      ]
+    },
+    "inline-tools-2026-09-15": {
+      "count": 1,
+      "locations": [
+        {
+          "module": "/$bunfs/root/chunk-29cd2nzs.js",
+          "index": 173,
+          "module_offset": 155988,
+          "binary_offset": 280413686,
+          "excerpt": "9-09\"),nE=M(\"mid_conv_tool_change\",\"mid-conversation-tool-changes-2026-07-01\"),fw=M(\"inline_tools\",\"inline-tools-2026-09-15\"),Uz=M(\"server_side_fallback\",\"server-side-fallback-2026-06-01\"),yP=M(\"program_use_case_ids\",\"program-use-case-ids-2026-09-17\"),yk=M(\"serve"
+        }
+      ]
+    },
+    "process.version": {
+      "count": 45,
+      "locations": [
+        {
+          "module": "/$bunfs/root/chunk-bdfv2ky4.js",
+          "index": 50,
+          "module_offset": 39201,
+          "binary_offset": 278274531,
+          "excerpt": "ath===null)return!1;if(!this.deps.isAnt&&!this.isDebugMode())return!1;if(typeof process>\"u\"||typeof process.versions>\"u\"||typeof process.versions.node>\"u\")return!1;return Ce(e,this.filter)}resolveDirToFile(e){return this.resolvedLogPath=M(e,`${this.deps.s"
+        },
+        {
+          "module": "/$bunfs/root/chunk-bdfv2ky4.js",
+          "index": 50,
+          "module_offset": 39230,
+          "binary_offset": 278274560,
+          "excerpt": "deps.isAnt&&!this.isDebugMode())return!1;if(typeof process>\"u\"||typeof process.versions>\"u\"||typeof process.versions.node>\"u\")return!1;return Ce(e,this.filter)}resolveDirToFile(e){return this.resolvedLogPath=M(e,`${this.deps.sessionId()}.txt`),this.resolv"
+        },
+        {
+          "module": "/$bunfs/root/chunk-428zme0n.js",
+          "index": 56,
+          "module_offset": 64663,
+          "binary_offset": 278379184,
+          "excerpt": "sCI:Pe(!1),platform:[\"win32\",\"darwin\"].includes(\"darwin\")?\"darwin\":\"linux\",arch:\"arm64\",nodeVersion:process.version,terminal:nE(),isSSH:q,getPackageManagers(){return T().getPackageManagers()},getRuntimes(){return T().getRuntimes()},isRunningWithBun:Dm,isW"
+        },
+        {
+          "module": "/$bunfs/root/chunk-29cd2nzs.js",
+          "index": 173,
+          "module_offset": 147397,
+          "binary_offset": 280405095,
+          "excerpt": "S]:[process.argv[0],...process.execArgv,...process.argv.slice(1)],[oe.ATTR_PROCESS_RUNTIME_VERSION]:process.versions.node,[oe.ATTR_PROCESS_RUNTIME_NAME]:\"nodejs\",[oe.ATTR_PROCESS_RUNTIME_DESCRIPTION]:\"Node.js\"};if(process.argv.length>1)s[oe.ATTR_PROCESS_C"
+        },
+        {
+          "module": "/$bunfs/root/chunk-s69m30yj.js",
+          "index": 177,
+          "module_offset": 1885,
+          "binary_offset": 281204655,
+          "excerpt": "rototypeOf(process.chdir,xe)}var xe;kt.exports=Fr;function Fr(e){if(oe.hasOwnProperty(\"O_SYMLINK\")&&process.version.match(/^v0\\.6\\.[0-2]|^v0\\.5\\./))r(e);if(!e.lutimes)n(e);if(e.chown=l(e.chown),e.fchown=l(e.fchown),e.lchown=l(e.lchown),e.chmod=a(e.chmod),"
+        },
+        {
+          "module": "/$bunfs/root/chunk-s69m30yj.js",
+          "index": 177,
+          "module_offset": 9883,
+          "binary_offset": 281212653,
+          "excerpt": "ir;e.readdir=E;var h=/^v[0-5]\\./;function E(b,M,P){if(typeof M===\"function\")P=M,M=null;var z=h.test(process.version)?function(j,B,L,J){return k(j,V(j,B,L,J))}:function(j,B,L,J){return k(j,B,V(j,B,L,J))};return z(b,M,P);function V(Y,j,B,L){return function("
+        },
+        {
+          "module": "/$bunfs/root/chunk-s69m30yj.js",
+          "index": 177,
+          "module_offset": 10206,
+          "binary_offset": 281212976,
+          "excerpt": "|Date.now(),Date.now()]);else{if(U&&U.sort)U.sort();if(typeof B===\"function\")B.call(this,J,U)}}}}if(process.version.substr(0,4)===\"v0.8\"){var v=jr(e);N=v.ReadStream,Z=v.WriteStream}var y=e.ReadStream;if(y)N.prototype=Object.create(y.prototype),N.prototype"
+        },
+        {
+          "module": "/$bunfs/root/chunk-j4rnsfg4.js",
+          "index": 210,
+          "module_offset": 594,
+          "binary_offset": 282486736,
+          "excerpt": ",m=c===\"windows\"||c===\"wsl\",h=m?\"alt+v\":\"ctrl+v\",b=c!==\"windows\"||(Dm()?uVr(\"1.4.4\",\">=1.2.23\"):uVr(process.versions.node,\">=22.17.0 <23.0.0 || >=24.2.0\")),f=b?\"shift+tab\":\"meta+m\",u2=[{context:\"Global\",bindings:{\"ctrl+c\":\"app:interrupt\",\"ctrl+d\":\"app:exi"
+        },
+        {
+          "module": "/$bunfs/root/chunk-0rxs30cc.js",
+          "index": 285,
+          "module_offset": 2206,
+          "binary_offset": 283348393,
+          "excerpt": "This.process.arch??\"unknown\"),\"X-Stainless-Runtime\":\"node\",\"X-Stainless-Runtime-Version\":globalThis.process.version??\"unknown\"};let n=ce();if(n)return{\"X-Stainless-Lang\":\"js\",\"X-Stainless-Package-Version\":b0,\"X-Stainless-OS\":\"Unknown\",\"X-Stainless-Arch\":\""
+        },
+        {
+          "module": "/$bunfs/root/chunk-rsqzfbnr.js",
+          "index": 404,
+          "module_offset": 7575,
+          "binary_offset": 284951259,
+          "excerpt": "ength===1)h.setAttribute(\"a\",s=!s)}}Ce.nextTick=Ce.setImmediate})();Ce.isNodejs=typeof process<\"u\"&&process.versions&&process.versions.node;Ce.globalScope=function(){if(Ce.isNodejs)return global;return typeof self>\"u\"?window:self}();Ce.isArray=Array.isArr"
+        },
+        {
+          "module": "/$bunfs/root/chunk-rsqzfbnr.js",
+          "index": 404,
+          "module_offset": 7593,
+          "binary_offset": 284951277,
+          "excerpt": "ribute(\"a\",s=!s)}}Ce.nextTick=Ce.setImmediate})();Ce.isNodejs=typeof process<\"u\"&&process.versions&&process.versions.node;Ce.globalScope=function(){if(Ce.isNodejs)return global;return typeof self>\"u\"?window:self}();Ce.isArray=Array.isArray||function(e){re"
+        },
+        {
+          "module": "/$bunfs/root/chunk-rsqzfbnr.js",
+          "index": 404,
+          "module_offset": 86275,
+          "binary_offset": 285029959,
+          "excerpt": "(function(wme,wC){var Qo=Mn();dr();var mg=null;if(Qo.util.isNodejs&&!Qo.options.usePureJavaScript&&!process.versions[\"node-webkit\"])mg=Ve(\"crypto\");var e6=wC.exports=Qo.prng=Qo.prng||{};e6.create=function(e){var n={plugin:e,key:null,seed:null,time:null,re"
+        }
+      ]
+    },
+    "getPlatformProperties": {
+      "count": 0,
+      "locations": []
+    },
+    "CLAUDE_CODE_ENTRYPOINT": {
+      "count": 122,
+      "locations": [
+        {
+          "module": "/$bunfs/root/chunk-kyvw0bed.js",
+          "index": 5,
+          "module_offset": 731,
+          "binary_offset": 277878629,
+          "excerpt": "ooks/hooks-worker/hooks-worker.js\",DD_SOURCEMAP_GROUP:\"darwin\"}.VERSION}`}function Gh(e=process.env.CLAUDE_CODE_ENTRYPOINT){switch(e){case\"claude-vscode\":return\"claude_code_vscode\";case\"remote\":case\"remote_baku\":case\"remote_cowork\":case\"remote_desktop\":case\"remo"
+        },
+        {
+          "module": "/$bunfs/root/chunk-428zme0n.js",
+          "index": 56,
+          "module_offset": 30798,
+          "binary_offset": 278345319,
+          "excerpt": "I,CLAUDE_CODE_EMIT_TOOL_USE_SUMMARIES:()=>zI,CLAUDE_CODE_EMIT_USER_PROMPT_SUBMIT_HOOK_EVENTS:()=>QI,CLAUDE_CODE_ENTRYPOINT:()=>yS,CLAUDE_CODE_ENTRYPOINT_ON_REQUESTS:()=>vS,CLAUDE_CODE_ENVIRONMENT_KIND:()=>VS,CLAUDE_CODE_ENVIRONMENT_RUNNER_VERSION:()=>$S,CLAUDE_C"
+        },
+        {
+          "module": "/$bunfs/root/chunk-428zme0n.js",
+          "index": 56,
+          "module_offset": 30828,
+          "binary_offset": 278345349,
+          "excerpt": "MMARIES:()=>zI,CLAUDE_CODE_EMIT_USER_PROMPT_SUBMIT_HOOK_EVENTS:()=>QI,CLAUDE_CODE_ENTRYPOINT:()=>yS,CLAUDE_CODE_ENTRYPOINT_ON_REQUESTS:()=>vS,CLAUDE_CODE_ENVIRONMENT_KIND:()=>VS,CLAUDE_CODE_ENVIRONMENT_RUNNER_VERSION:()=>$S,CLAUDE_CODE_EVAL_CONFINED:()=>Fi,CLAUD"
+        },
+        {
+          "module": "/$bunfs/root/chunk-gg7nabmz.js",
+          "index": 71,
+          "module_offset": 1801,
+          "binary_offset": 278582598,
+          "excerpt": "void 0}var qdi=new Set(Object.keys(Eqo));function D(e){return qdi.has(e)}function Op(){return vvn(i.CLAUDE_CODE_ENTRYPOINT)}function vvn(e){return e&&D(e)?e:void 0}function V1a(){return Gt()?vvn(O6()):Op()}var s=new Set([\"claude-desktop\",\"claude-desktop-3p\",\"loc"
+        },
+        {
+          "module": "/$bunfs/root/chunk-gg7nabmz.js",
+          "index": 71,
+          "module_offset": 1997,
+          "binary_offset": 278582794,
+          "excerpt": "6()):Op()}var s=new Set([\"claude-desktop\",\"claude-desktop-3p\",\"local-agent\"]);function Vd(){let e=i.CLAUDE_CODE_ENTRYPOINT;return e!==void 0&&s.has(e)}function Q7r(){let e=i.CLAUDE_CODE_ENTRYPOINT;return e===\"claude-desktop\"||e===\"local-agent\"?i.CLAUDE_CODE_DESK"
+        },
+        {
+          "module": "/$bunfs/root/chunk-gg7nabmz.js",
+          "index": 71,
+          "module_offset": 2071,
+          "binary_offset": 278582868,
+          "excerpt": "\"]);function Vd(){let e=i.CLAUDE_CODE_ENTRYPOINT;return e!==void 0&&s.has(e)}function Q7r(){let e=i.CLAUDE_CODE_ENTRYPOINT;return e===\"claude-desktop\"||e===\"local-agent\"?i.CLAUDE_CODE_DESKTOP_APP_VERSION?.trim()||void 0:void 0}function Z7r(){let e=i.CLAUDE_CODE_"
+        },
+        {
+          "module": "/$bunfs/root/chunk-gg7nabmz.js",
+          "index": 71,
+          "module_offset": 2221,
+          "binary_offset": 278583018,
+          "excerpt": "||e===\"local-agent\"?i.CLAUDE_CODE_DESKTOP_APP_VERSION?.trim()||void 0:void 0}function Z7r(){let e=i.CLAUDE_CODE_ENTRYPOINT;return i.CLAUDE_CODE_PROVIDER_MANAGED_BY_HOST&&!i.CLAUDE_CODE_REMOTE&&!Rqo()&&(e===\"claude-desktop-3p\"||e===\"local-agent\"&&i.CLAUDE_CODE_DE"
+        },
+        {
+          "module": "/$bunfs/root/chunk-gg7nabmz.js",
+          "index": 71,
+          "module_offset": 2481,
+          "binary_offset": 278583278,
+          "excerpt": "DESKTOP_APP_VERSION===\"\")}var f=new Set([\"claude-desktop-3p\",\"local-agent\"]);function vct(){let e=i.CLAUDE_CODE_ENTRYPOINT;return e!==void 0&&f.has(e)}function TPt(e){return s.has(e===\"local_agent\"?\"local-agent\":e)}function q1a(e){return e!==void 0&&(s.has(e)||e"
+        },
+        {
+          "module": "/$bunfs/root/chunk-gg7nabmz.js",
+          "index": 71,
+          "module_offset": 2960,
+          "binary_offset": 278583757,
+          "excerpt": "1a(){return!1}function vqo(){let e=ol();return e!==void 0&&s.has(e)}function rM(){let e=Gt()?$X():i.CLAUDE_CODE_ENTRYPOINT;return e!==void 0&&Evn.has(e)}function s1(){{let e=i.CLAUDE_CODE_ENTRYPOINT;return i.CLAUDE_CODE_PROVIDER_MANAGED_BY_HOST&&i.CLAUDE_CODE_US"
+        },
+        {
+          "module": "/$bunfs/root/chunk-gg7nabmz.js",
+          "index": 71,
+          "module_offset": 3036,
+          "binary_offset": 278583833,
+          "excerpt": " rM(){let e=Gt()?$X():i.CLAUDE_CODE_ENTRYPOINT;return e!==void 0&&Evn.has(e)}function s1(){{let e=i.CLAUDE_CODE_ENTRYPOINT;return i.CLAUDE_CODE_PROVIDER_MANAGED_BY_HOST&&i.CLAUDE_CODE_USE_GATEWAY&&(e!==void 0&&kct.has(e)||l())}return!1}function eYr(){return s1()"
+        },
+        {
+          "module": "/$bunfs/root/chunk-gg7nabmz.js",
+          "index": 71,
+          "module_offset": 3343,
+          "binary_offset": 278584140,
+          "excerpt": "GATEWAY_LINEAGE&&!!i.CLAUDE_CODE_HOST_CREDS_FILE}var tYr=\"claude-desktop-3p\";function am(){return i.CLAUDE_CODE_ENTRYPOINT===\"remote_cowork\"}function J_(){return Gt()&&$X()===\"remote_cowork\"}var r=new Set(tnr);function K2(){let e=i.CLAUDE_CODE_ENTRYPOINT;return "
+        },
+        {
+          "module": "/$bunfs/root/chunk-gg7nabmz.js",
+          "index": 71,
+          "module_offset": 3475,
+          "binary_offset": 278584272,
+          "excerpt": "_cowork\"}function J_(){return Gt()&&$X()===\"remote_cowork\"}var r=new Set(tnr);function K2(){let e=i.CLAUDE_CODE_ENTRYPOINT;return e!==void 0&&r.has(e)}function cV(){let e=ol();return e!==void 0&&r.has(e)}function fE(){let e=Gt()?$X():void 0;return e!==void 0&&r."
+        }
+      ]
+    },
+    "undici": {
+      "count": 5,
+      "locations": [
+        {
+          "module": "/$bunfs/root/chunk-wryttfdq.js",
+          "index": 19,
+          "module_offset": 7099,
+          "binary_offset": 277920310,
+          "excerpt": "_-]{1,30}(?:\\/[a-z0-9_-]{1,40}){0,3}|<anonymous>|\\[eval\\](?:-wrapper)?|native|unknown|cli|claude|ws|undici|node-fetch|isomorphic-fetch|vercel_fetch|utf-8-validate)(?::\\d{1,8}){2})$/,fLe=new Set([\"ENOSPC\",\"EDQUOT\",\"ENFILE\",\"EMFILE\"]);function oj(n"
+        },
+        {
+          "module": "/$bunfs/root/chunk-czf5t2nc.js",
+          "index": 114,
+          "module_offset": 2370,
+          "binary_offset": 279365213,
+          "excerpt": "(n)=>e.file.startsWith(n))}var mt=[\"node:\",\"bun:\",\"internal:\"],gt=new Set([\"native\",\"unknown\",\"ws\",\"undici\",\"node-fetch\",\"isomorphic-fetch\",\"vercel_fetch\",\"utf-8-validate\"]);function Ce(e){return gt.has(e)||mt.some((n)=>e.startsWith(n))}function "
+        },
+        {
+          "module": "/$bunfs/root/chunk-3kfrp6r4.js",
+          "index": 147,
+          "module_offset": 108313,
+          "binary_offset": 280035874,
+          "excerpt": "tion Jo(e){let{agents:r}=ne(),n=r.get(e);if(!n)n=Zo(e),r.set(e,n);return n}function Zo(e){let r=Ve(\"undici\"),n=sx(),o=aA(),s={httpProxy:e,httpsProxy:e,noProxy:Mdt({no_proxy:i.no_proxy,NO_PROXY:i.NO_PROXY})};if(n||o){let a={...n&&{cert:n.cert,key:"
+        },
+        {
+          "module": "/$bunfs/root/chunk-3kfrp6r4.js",
+          "index": 147,
+          "module_offset": 113188,
+          "binary_offset": 280040749,
+          "excerpt": "s!==void 0):void 0;if(pt.id=Yt.interceptors.request.use((s)=>ts(s,o)),r){if(!$e.installed)GNa();Ve(\"undici\").setGlobalDispatcher(Jo(r)),$e.installed=!0}else if($e.installed){let s=Ve(\"undici\");s.setGlobalDispatcher(new s.Agent),$e.installed=!1}}f"
+        },
+        {
+          "module": "/$bunfs/root/chunk-3kfrp6r4.js",
+          "index": 147,
+          "module_offset": 113272,
+          "binary_offset": 280040833,
+          "excerpt": "alled)GNa();Ve(\"undici\").setGlobalDispatcher(Jo(r)),$e.installed=!0}else if($e.installed){let s=Ve(\"undici\");s.setGlobalDispatcher(new s.Agent),$e.installed=!1}}function Iai(e){if(i5t()===e||!gEn())return;let r=Yt.defaults.proxy===!1;Q3();try{iS("
+        }
+      ]
+    }
+  },
+  "native_markers": {
+    "BoringSSL": {
+      "count": 21,
+      "locations": [
+        {
+          "binary_offset": 115467831,
+          "excerpt": "alue in its result. Cast that column to text, or use .raw().BoringSSL Failed to load CA fileInvalid CA fileInvalid CAInvalid ciphersFailed to parse CRLFailed to set ECDH curvequery is too l"
+        },
+        {
+          "binary_offset": 115565150,
+          "excerpt": " is too long\u0000\u0000a safe integerCustom engines not supported by BoringSSLArgon2 derivation failedsize + offset\u0000\u0000\u0000\u0000PBKDF2 derivation failedScrypt failed\u0000The buffer was detached or resized before"
+        },
+        {
+          "binary_offset": 119187157,
+          "excerpt": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000a\b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\n\u0000\u0000\u0000\r\u0000\t\u0000\u000e \b\u0018\u001a\n\u0010\u0012\u001e\u001c\u0004\f\u0006\u0002\u0014\u0016Expected BoringSSL algorithm for HMACunreachableint castTryFromIntError\u0000\u0000\u0000\u0000\u0000\u0014E o0Lbô\u0000\u0000,\u0001,\u0001\u0018\u0001;\u0001\\\u0001ñ\u0000\u0018\u0001ñ\u0000ñ\u0000½\u0000½\u0000½\u0000½\u0000½\u0000½\u0000½\u0000½\u0000i\u0001I\u0001\u0001\u0002\u0000\u0000T\u0000\"'\u0016AI)"
+        },
+        {
+          "binary_offset": 119360391,
+          "excerpt": "raCACertificates\u0000NodeTLSCppParseCACertificates\u0000NodeTLSCppPutBoringSSLErrorForTesting\u0000NodeTLSCppSelectServerName\u0000NodeTLSCppTakeBoringSSLErrorQueueForTesting\u0000NodeURL.cpp\u0000NodeUtilTypesModule.c"
+        }
+      ]
+    },
+    "boringssl": {
+      "count": 176,
+      "locations": [
+        {
+          "binary_offset": 121640298,
+          "excerpt": "eUsage\u0000cpus\u0000networkInterfaces\u0000processId\u0000arch\u0000platform\u0000arm64\u0000boringssl\u000089a2ff2be775267283a2c8e35044e49ddab5e5aa\u00001.1.0\u0000llhttp\u00009.4.2\u00005945551d9ea1e3c83dbf5b198b00a3ec51aee395\u0000picohttpparser\u0000f4d"
+        },
+        {
+          "binary_offset": 121643663,
+          "excerpt": "h\u0000asan\u0000tls_alpn\u0000tls_sni\u0000tls_ocsp\u0000cached_builtins\u0000openssl_is_boringssl\u0000quic\u0000require_module\u0000getReport\u0000reportOnFatalError\u0000reportOnSignal\u0000reportOnUncaughtException\u0000excludeEnv\u0000writeReport\u0000bool W"
+        },
+        {
+          "binary_offset": 121717868,
+          "excerpt": "\n\u0000%tx-%tx r-xp 00000000 00:00 0            %s\n\u0000../../vendor/boringssl/crypto/fipsmodule/digest/digest.cc.inc\u0000ab\u0000../../vendor/boringssl/crypto/bytestring/cbb.cc\u0000%llu\u0000SHA512-256\u0000MD5-SHA1\u0000RIPE"
+        },
+        {
+          "binary_offset": 121717933,
+          "excerpt": "gssl/crypto/fipsmodule/digest/digest.cc.inc\u0000ab\u0000../../vendor/boringssl/crypto/bytestring/cbb.cc\u0000%llu\u0000SHA512-256\u0000MD5-SHA1\u0000RIPEMD160\u0000DSA-SHA\u0000dsaWithSHA\u0000DSA-SHA1\u0000dsaWithSHA1\u0000ecdsa-with-SHA1\u0000DSA"
+        }
+      ]
+    },
+    "OpenSSL": {
+      "count": 8,
+      "locations": [
+        {
+          "binary_offset": 113107269,
+          "excerpt": "uthorities during installation\n      --use-openssl-ca   Use OpenSSL's default CA store instead of the bundled one during installation\n      --use-bundled-ca   Use bundled CA store during "
+        },
+        {
+          "binary_offset": 113108274,
+          "excerpt": "s during installation\n      \u001b[36m--use-openssl-ca\u001b[0m   Use OpenSSL's default CA store instead of the bundled one during installation\n      \u001b[36m--use-bundled-ca\u001b[0m   Use bundled CA stor"
+        },
+        {
+          "binary_offset": 113225645,
+          "excerpt": "he system's trusted certificate authoritiesuse-system-caUse OpenSSL's default CA store instead of the bundled oneuse-openssl-caUse bundled CA storeuse-bundled-cano-orphanssequentialhot\u0000no"
+        },
+        {
+          "binary_offset": 119554786,
+          "excerpt": "he system's trusted certificate authoritiesuse-system-caUse OpenSSL's default CA store instead of the bundled oneuse-openssl-caUse bundled CA storeuse-bundled-caDisplay this menu and exit"
+        }
+      ]
+    },
+    "node/v26.12.1": {
+      "count": 1,
+      "locations": [
+        {
+          "binary_offset": 113195328,
+          "excerpt": "syncsourcehutnpm_config_user_agent\u0000\u0000*\u0000\u0000\u0000\u0000\u0000\u0000\u0000bun/1.4.4 npm/? node/v26.12.1 darwin arm64\u0000\u0000\u0000\u0000\u0000\u0000npm_execpathlinkclonefile:// \t\u0000\u0000yarn runaddautocleancreatededupedlxexplaingenerate-lock-entrygenerate"
+        }
+      ]
+    },
+    "node/v26.3.0": {
+      "count": 0,
+      "locations": []
+    }
+  },
+  "official_binary_executed": false
+}

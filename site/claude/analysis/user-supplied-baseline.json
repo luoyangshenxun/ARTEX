@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "provenance": "USER-SUPPLIED in v2 request; not independently read from production DB or Subway source",
+  "date": "2026-11-17",
+  "source_root": "orca/workspaces/alice-issue/alice/subway/backend/internal/",
+  "production_sha": "f314f5d7",
+  "subway": {
+    "cli_version": "2.1.326",
+    "builtin_fallback": "2.1.258",
+    "sdk_version": "0.94.0",
+    "os": "Linux",
+    "arch": "arm64",
+    "runtime": "node",
+    "runtime_version": "v24.3.0",
+    "tls_ja3": "44f88fca027f27bab4bb08d4af15f23e",
+    "tls_template_comment": "captured from Claude Code (Node.js 24.x)",
+    "alpn": ["http/1.1"],
+    "fingerprint_profiles_table_empty": true,
+    "mimic_headers_override_bound_fingerprint": true
+  },
+  "capture_timestamp_local": "2026-11-17 13:35",
+  "team_profiles": [
+    {"os":"MacOS","arch":"arm64","runtime_version":"v26.12.1","sdk_version":"0.128.0","cli_version":"2.1.314","samples":421,"keys":15,"ua_suffix":"external, sdk-cli"},
+    {"os":"MacOS","arch":"arm64","runtime_version":"v26.3.0","sdk_version":"0.112.1","cli_version":"2.1.280","samples":239,"keys":6,"ua_suffix":"external, cli"},
+    {"os":"MacOS","arch":"arm64","runtime_version":"v26.12.1","sdk_version":"0.128.0","cli_version":"2.1.318","samples":21,"keys":3,"ua_suffix":"external, cli, workload/cron"},
+    {"os":"MacOS","arch":"arm64","runtime_version":"v26.12.1","sdk_version":"0.128.0","cli_version":"2.1.325","samples":10,"keys":2,"ua_suffix":"external, local-agent, agent-sdk/0.3.325"},
+    {"os":"Windows","arch":"x64","runtime_version":"v26.3.0","sdk_version":"0.128.0","cli_version":"2.1.296","samples":9,"keys":2,"ua_suffix":"external, cli"},
+    {"os":"MacOS","arch":"arm64","runtime_version":"v26.12.1","sdk_version":"0.128.0","cli_version":"2.1.325","samples":4,"keys":1,"ua_suffix":"external, claude-desktop-3p, agent-sdk/0.3.325"},
+    {"os":"Windows","arch":"x64","runtime_version":"v26.3.0","sdk_version":"0.128.0","cli_version":"2.1.310","samples":3,"keys":1,"ua_suffix":"external, sdk-cli"}
+  ],
+  "linux_captures_present": false,
+  "notes": [
+    "Absence of Linux team captures is not proof no official Linux build exists.",
+    "UA version pair aggregates are user-provided, not runtime-capture evidence generated here.",
+    "The claim that npm main 2.1.326 still points to 2.1.325 was checked again: S7 points to 2.1.326 at this acquisition time."
+  ]
+}

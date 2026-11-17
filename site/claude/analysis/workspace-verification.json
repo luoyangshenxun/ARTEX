@@ -1,153 +1,124 @@
 {
-  "status": "PASS",
-  "recordedAt": "2026-11-17T04:34:50.072Z",
-  "scope": "workspace preparation only; scanner content checks use synthetic fixtures",
-  "assertions": [
-    "four Node scripts parse",
-    "scaffold structure and UTF-8",
-    "missing inputs exit 2",
-    "case-insensitive header lookup",
-    "UTF-8 byte offsets and line numbers",
-    "25-hit sample and 26-match count",
-    "cache exclusion",
-    "source hashes unchanged",
-    "patch reconstruction",
-    "baseline/modified/rollback observations",
-    "PowerShell entry point",
-    "tracked whitespace"
-  ],
-  "records": [
+  "schema_version": 2,
+  "date": "2026-11-17T07:43:40.971Z",
+  "command": "node H:\\orca\\rea\\site\\claude\\analysis\\verify-analysis.mjs",
+  "cwd": "H:\\orca\\rea",
+  "checks": [
     {
-      "label": "syntax scan-static.mjs",
-      "command": [
-        "F:\\Program Files\\nodejs\\node.exe",
-        "--check",
-        "H:\\orca\\rea\\site\\claude\\analysis\\scan-static.mjs"
-      ],
-      "cwd": "H:\\orca\\rea",
-      "stdout": "",
-      "stderr": "",
-      "exitStatus": 0,
-      "executionError": null
+      "name": "REPORTS",
+      "reopened": 13,
+      "status": "PASS"
     },
     {
-      "label": "syntax verify-scaffold.mjs",
-      "command": [
-        "F:\\Program Files\\nodejs\\node.exe",
-        "--check",
-        "H:\\orca\\rea\\site\\claude\\analysis\\verify-scaffold.mjs"
-      ],
-      "cwd": "H:\\orca\\rea",
-      "stdout": "",
-      "stderr": "",
-      "exitStatus": 0,
-      "executionError": null
+      "name": "EVIDENCE",
+      "entries": 239,
+      "originalByteSpans": 226,
+      "originalBinaries": 27,
+      "packagedSources": 13,
+      "missingSamples": 0,
+      "mode": "original-artifact-byte-check",
+      "status": "PASS"
     },
     {
-      "label": "syntax transaction/check-state.mjs",
-      "command": [
-        "F:\\Program Files\\nodejs\\node.exe",
-        "--check",
-        "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\check-state.mjs"
-      ],
-      "cwd": "H:\\orca\\rea",
-      "stdout": "",
-      "stderr": "",
-      "exitStatus": 0,
-      "executionError": null
+      "name": "VERSION_COVERAGE",
+      "nativeRows": 27,
+      "preciseAdjacentTransitions": 5,
+      "first": "2.1.258",
+      "last": "2.1.326",
+      "status": "PASS"
     },
     {
-      "label": "syntax transaction/verify-transaction.mjs",
-      "command": [
-        "F:\\Program Files\\nodejs\\node.exe",
-        "--check",
-        "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\verify-transaction.mjs"
-      ],
-      "cwd": "H:\\orca\\rea",
-      "stdout": "",
-      "stderr": "",
-      "exitStatus": 0,
-      "executionError": null
+      "name": "PROFILE_COHERENCE",
+      "coherent": {
+        "verdict": "static-coherent",
+        "sample": "S3",
+        "evidence": "VERSION-S3",
+        "warnings": [
+          "Official runtime not executed; runtime version is inferred from native compatibility constant",
+          "UA/billing/betas/account/session/TLS require their own contextual evidence"
+        ],
+        "scope": "Published native Claude Code builds with default identification headers; custom header overrides and arbitrary embedded SDK applications are outside this domain"
+      },
+      "wrongSDK": {
+        "verdict": "contradiction",
+        "problems": [
+          "sdk_version differs from sampled build",
+          "runtime_version_reported differs from sampled build"
+        ],
+        "samples": [
+          "S3"
+        ],
+        "scope": "Published native Claude Code builds with default identification headers; custom header overrides and arbitrary embedded SDK applications are outside this domain"
+      },
+      "currentSubway": {
+        "verdict": "contradiction",
+        "problems": [
+          "sdk_version differs from sampled build",
+          "runtime_version_reported differs from sampled build"
+        ],
+        "samples": [
+          "V2.1.326-linux-arm64"
+        ],
+        "scope": "Published native Claude Code builds with default identification headers; custom header overrides and arbitrary embedded SDK applications are outside this domain"
+      },
+      "status": "PASS"
     },
     {
-      "label": "scaffold",
-      "command": [
-        "F:\\Program Files\\nodejs\\node.exe",
-        "H:\\orca\\rea\\site\\claude\\analysis\\verify-scaffold.mjs"
+      "name": "BUN_1.4.1",
+      "revision": "4661e494f052c83c80dade1318e5710238340be6",
+      "node": "v26.3.0",
+      "fingerprintExamples": [
+        "b5b",
+        "ff3",
+        "cac"
       ],
-      "cwd": "H:\\orca\\rea",
-      "stdout": "REOPENED H:\\orca\\rea\\site\\claude\\analysis\\analysis-manifest.json bytes=2297 SHA256=d6427dce73d28e2bed01cb51cb34b639cbe1fe23fded8893044251c29bf7dcd7\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\report_overview.md bytes=2494 SHA256=9403b2304d03eeea7adcf4125440ea551c6596dca01657e293c1eced057e2e1b\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\claude-real-fingerprint.md bytes=6961 SHA256=3c62c14ffebda1ba9287964fc6a97f5ae00e2bb5419759ad2e3fbcb4a74fc898\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\fingerprint-domain-rules.md bytes=3653 SHA256=7cc34911face8b498ed0de6fd754866f7bed08e7cfa00394cb62e4bbfa8f85ed\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\beta-matrix.md bytes=2066 SHA256=7634d4ce53b061f345b4aeb7c1c68fc771dad6ce31d2d14122d55bb35ba78259\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\billing-fields.md bytes=2256 SHA256=733b6da357b0a7c9099f17020258a4d5a094e6d7edfa4cfb658a3360d143356b\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\oauth-auth.md bytes=2019 SHA256=edf75eca7a08a4d9bddb24db5c11ae6c9349397f0c30578863d79ba640e15dc3\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\tls-features.md bytes=1584 SHA256=32203c68a39a71aaedeca68392d2c239e3e5afa11d45c5064bb254085d25a155\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\subway-diff.md bytes=1775 SHA256=82ba7363a8c9e91bc2313018cb2614b1ae92da2fe8428ad20565328939b48d27\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\scan-static.mjs bytes=3686 SHA256=8f87c0cb01d3906b0130a474986bcf1c6f8f7ccb579d97ba59971548167e7697\nSCAFFOLD_VERIFICATION=PASS files=10\n",
-      "stderr": "",
-      "exitStatus": 0,
-      "executionError": null
+      "fetchInterceptions": 4,
+      "loopbackCaptures": 2,
+      "status": "PASS"
     },
     {
-      "label": "missing inputs",
-      "command": [
-        "F:\\Program Files\\nodejs\\node.exe",
-        "H:\\orca\\rea\\site\\claude\\analysis\\scan-static.mjs",
-        "--cli-root",
-        "H:\\orca\\rea\\site\\claude\\analysis\\raw\\scanner-fixture\\missing-cli",
-        "--sdk-root",
-        "H:\\orca\\rea\\site\\claude\\analysis\\raw\\scanner-fixture\\missing-sdk",
-        "--output",
-        "H:\\orca\\rea\\site\\claude\\analysis\\raw\\missing-inputs-scan.json"
+      "name": "BUN_1.4.3",
+      "revision": "c6da4a4d3010e5553438c60f6bd76d981976867c",
+      "node": "v26.3.0",
+      "fingerprintExamples": [
+        "b5b",
+        "ff3",
+        "cac"
       ],
-      "cwd": "H:\\orca\\rea",
-      "stdout": "{\"status\":\"missing-inputs\",\"output\":\"H:\\\\orca\\\\rea\\\\site\\\\claude\\\\analysis\\\\raw\\\\missing-inputs-scan.json\",\"scannedFiles\":0,\"matchedFiles\":0,\"missingRoots\":[{\"label\":\"claude-code\",\"root\":\"H:\\\\orca\\\\rea\\\\site\\\\claude\\\\analysis\\\\raw\\\\scanner-fixture\\\\missing-cli\"},{\"label\":\"sdk\",\"root\":\"H:\\\\orca\\\\rea\\\\site\\\\claude\\\\analysis\\\\raw\\\\scanner-fixture\\\\missing-sdk\"}]}\n",
-      "stderr": "",
-      "exitStatus": 2,
-      "executionError": null
+      "fetchInterceptions": 4,
+      "loopbackCaptures": 2,
+      "status": "PASS"
     },
     {
-      "label": "synthetic scan",
-      "command": [
-        "F:\\Program Files\\nodejs\\node.exe",
-        "H:\\orca\\rea\\site\\claude\\analysis\\scan-static.mjs",
-        "--cli-root",
-        "H:\\orca\\rea\\site\\claude\\analysis\\raw\\scanner-fixture\\cli",
-        "--sdk-root",
-        "H:\\orca\\rea\\site\\claude\\analysis\\raw\\scanner-fixture\\sdk",
-        "--output",
-        "H:\\orca\\rea\\site\\claude\\analysis\\raw\\synthetic-scan.json"
+      "name": "BUN_1.4.4",
+      "revision": "38afee6c84fcf48c0edb2466aa4b27d287a59c30",
+      "node": "v26.3.0",
+      "fingerprintExamples": [
+        "b5b",
+        "ff3",
+        "cac"
       ],
-      "cwd": "H:\\orca\\rea",
-      "stdout": "{\"status\":\"scanned\",\"output\":\"H:\\\\orca\\\\rea\\\\site\\\\claude\\\\analysis\\\\raw\\\\synthetic-scan.json\",\"scannedFiles\":2,\"matchedFiles\":2,\"missingRoots\":[]}\n",
-      "stderr": "",
-      "exitStatus": 0,
-      "executionError": null
+      "fetchInterceptions": 4,
+      "loopbackCaptures": 2,
+      "status": "PASS"
     },
     {
-      "label": "transaction via PowerShell entry",
-      "command": [
-        "powershell.exe",
-        "-NoProfile",
-        "-ExecutionPolicy",
-        "Bypass",
-        "-File",
-        "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\verify-transaction.ps1"
-      ],
-      "cwd": "H:\\orca\\rea",
-      "stdout": "REOPENED H:\\orca\\rea\\site\\claude\\analysis\\transaction\\MODIFIED_FILE.md bytes=198 SHA256=79bd3d6292973bf397eded0e0e7cea3ca376bf6f0aa4ce5cd4bd168b5e6db53f\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\transaction\\DIFF_FILE.patch bytes=381 SHA256=0caa3c1da8fb674893844a63410255959cccfa8c6833ee84b148166e3c51b032\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\transaction\\VERIFICATION.txt bytes=2612 SHA256=0d042bed02b9ed67bfe01895fb17533e591bc438be0bd4cace715021938362ab\nREOPENED H:\\orca\\rea\\site\\claude\\analysis\\transaction\\ROLLBACK.sh bytes=570 SHA256=db080a99596e1e97cf93e7e4ff37999dfa6a142777a6093af453f8dd3b3232df\nOBSERVED BASELINE: status=pending; exit=0\nOBSERVED MODIFIED: status=scaffolded; exit=0\nOBSERVED ROLLBACK: status=pending; exit=0\nREAPPLY: status=scaffolded\nTRANSACTION_VERIFICATION=PASS\n",
-      "stderr": "",
-      "exitStatus": 0,
-      "executionError": null,
-      "recheckedAt": "2026-11-17T05:04:59.719Z"
+      "name": "BETA_MATRIX",
+      "messages": 128,
+      "count_tokens": 8,
+      "controlled_context": true,
+      "production_unique": false,
+      "status": "PASS"
     },
     {
-      "label": "tracked whitespace",
-      "command": [
-        "git",
-        "diff",
-        "--check",
-        "--",
-        "site/README.md"
-      ],
-      "cwd": "H:\\orca\\rea",
-      "stdout": "",
-      "stderr": "",
-      "exitStatus": 0,
-      "executionError": null
+      "name": "METADATA_TRANSITION",
+      "before": "2.1.77 legacy",
+      "after": "2.1.78 JSON",
+      "adjacent": true,
+      "status": "PASS"
     }
-  ]
+  ],
+  "result": "PASS",
+  "official_claude_executed": false,
+  "anthropic_api_requests": 0
 }

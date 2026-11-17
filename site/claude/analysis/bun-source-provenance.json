@@ -1,0 +1,86 @@
+[
+  {
+    "revision": "bun-v1.4.4",
+    "file": "src/env.zig",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "bun-v1.4.4",
+    "file": "src/bun.js/bindings/BunProcess.cpp",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "bun-v1.4.4",
+    "file": "src/standalone_graph/StandaloneModuleGraph.rs",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "6634fc3b5",
+    "file": "src/env.zig",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "6634fc3b5",
+    "file": "src/bun.js/bindings/BunProcess.cpp",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "6634fc3b5",
+    "file": "src/standalone_graph/StandaloneModuleGraph.rs",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "bun-v1.4.3",
+    "file": "src/env.zig",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "bun-v1.4.3",
+    "file": "src/bun.js/bindings/BunProcess.cpp",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "bun-v1.4.3",
+    "file": "src/standalone_graph/StandaloneModuleGraph.rs",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "bun-v1.4.1",
+    "file": "src/env.zig",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "bun-v1.4.1",
+    "file": "src/bun.js/bindings/BunProcess.cpp",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "bun-v1.4.1",
+    "file": "src/standalone_graph/StandaloneModuleGraph.rs",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "bun-v1.4.4",
+    "file": "src/http.zig",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  },
+  {
+    "revision": "bun-v1.4.4",
+    "file": "src/bun.js/webcore/response.zig",
+    "error": "TypeError: fetch failed",
+    "cause": "Error: read ECONNRESET"
+  }
+]

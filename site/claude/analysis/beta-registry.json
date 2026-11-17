@@ -1,0 +1,295 @@
+{
+  "sample": "S1",
+  "cli_version": "2.1.325",
+  "scope": "CLI beta registry; not all tokens present in the generated SDK",
+  "entries": [
+    {
+      "symbol": "_Sn",
+      "name": "claude_code",
+      "header": "claude-code-20250219",
+      "evidence": "BETA-CONSTANT-_Sn"
+    },
+    {
+      "symbol": "ilt",
+      "name": "oauth_auth",
+      "header": "oauth-2025-04-20",
+      "evidence": "BETA-CONSTANT-ilt"
+    },
+    {
+      "symbol": "dXn",
+      "name": "interleaved_thinking",
+      "header": "interleaved-thinking-2025-05-14",
+      "evidence": "BETA-CONSTANT-dXn"
+    },
+    {
+      "symbol": "nC",
+      "name": "long_context",
+      "header": "context-1m-2025-08-07",
+      "evidence": "BETA-CONSTANT-nC"
+    },
+    {
+      "symbol": "DTe",
+      "name": "context_management",
+      "header": "context-management-2025-06-27",
+      "evidence": "BETA-CONSTANT-DTe"
+    },
+    {
+      "symbol": "yee",
+      "name": "structured_outputs",
+      "header": "structured-outputs-2025-12-15",
+      "evidence": "BETA-CONSTANT-yee"
+    },
+    {
+      "symbol": "p6o",
+      "name": "web_search",
+      "header": "web-search-2025-03-05",
+      "evidence": "BETA-CONSTANT-p6o"
+    },
+    {
+      "symbol": "ySn",
+      "name": "tool_search",
+      "header": "advanced-tool-use-2025-11-20",
+      "evidence": "BETA-CONSTANT-ySn"
+    },
+    {
+      "symbol": "MAt",
+      "name": "tool_search",
+      "header": "tool-search-tool-2025-10-19",
+      "evidence": "BETA-CONSTANT-MAt"
+    },
+    {
+      "symbol": "LTe",
+      "name": "effort",
+      "header": "effort-2025-11-24",
+      "evidence": "BETA-CONSTANT-LTe"
+    },
+    {
+      "symbol": "sqr",
+      "name": "task_budgets",
+      "header": "task-budgets-2026-03-13",
+      "evidence": "BETA-CONSTANT-sqr"
+    },
+    {
+      "symbol": "ije",
+      "name": "prompt_caching_scope",
+      "header": "prompt-caching-scope-2026-01-05",
+      "evidence": "BETA-CONSTANT-ije"
+    },
+    {
+      "symbol": "DAt",
+      "name": "prompt_caching_evict",
+      "header": "prompt-caching-evict-2026-05-12",
+      "evidence": "BETA-CONSTANT-DAt"
+    },
+    {
+      "symbol": "hH",
+      "name": "cache_keepalive",
+      "header": "cache-keepalive-2026-09-03",
+      "evidence": "BETA-CONSTANT-hH"
+    },
+    {
+      "symbol": "SSn",
+      "name": "extended_cache_ttl",
+      "header": "extended-cache-ttl-2025-04-11",
+      "evidence": "BETA-CONSTANT-SSn"
+    },
+    {
+      "symbol": "S3t",
+      "name": "speed",
+      "header": "fast-mode-2026-02-01",
+      "evidence": "BETA-CONSTANT-S3t"
+    },
+    {
+      "symbol": "cXn",
+      "name": "redact_thinking",
+      "header": "redact-thinking-2026-02-12",
+      "evidence": "BETA-CONSTANT-cXn"
+    },
+    {
+      "symbol": "alt",
+      "name": "thinking_resumption",
+      "header": "thinking-resumption-2026-07-17",
+      "evidence": "BETA-CONSTANT-alt"
+    },
+    {
+      "symbol": "zW",
+      "name": "thinking_token_count",
+      "header": "thinking-token-count-2026-05-13",
+      "evidence": "BETA-CONSTANT-zW"
+    },
+    {
+      "symbol": "E2",
+      "name": "afk_mode",
+      "header": "afk-mode-2026-01-31",
+      "evidence": "BETA-CONSTANT-E2"
+    },
+    {
+      "symbol": "llt",
+      "name": "advisor_tool",
+      "header": "advisor-tool-2026-03-01",
+      "evidence": "BETA-CONSTANT-llt"
+    },
+    {
+      "symbol": "b3t",
+      "name": "cache_diagnosis",
+      "header": "cache-diagnosis-2026-04-07",
+      "evidence": "BETA-CONSTANT-b3t"
+    },
+    {
+      "symbol": "m6o",
+      "name": "context_hint",
+      "header": "context-hint-2026-04-09",
+      "evidence": "BETA-CONSTANT-m6o"
+    },
+    {
+      "symbol": "uXn",
+      "name": "mcp_servers",
+      "header": "mcp-servers-2025-12-04",
+      "evidence": "BETA-CONSTANT-uXn"
+    },
+    {
+      "symbol": "kx",
+      "name": "files_api",
+      "header": "files-api-2025-04-14",
+      "evidence": "BETA-CONSTANT-kx"
+    },
+    {
+      "symbol": "OQs",
+      "name": "environments",
+      "header": "environments-2025-11-01",
+      "evidence": "BETA-CONSTANT-OQs"
+    },
+    {
+      "symbol": "bSn",
+      "name": "ccr_byoc",
+      "header": "ccr-byoc-2025-07-29",
+      "evidence": "BETA-CONSTANT-bSn"
+    },
+    {
+      "symbol": "gH",
+      "name": "ccr_tool_provenance",
+      "header": "tool-provenance-2026-10-26",
+      "evidence": "BETA-CONSTANT-gH"
+    },
+    {
+      "symbol": "IQs",
+      "name": "tool_provenance_server_url_latch",
+      "header": "x-cc-internal-tool-provenance-server-url",
+      "evidence": "BETA-CONSTANT-IQs"
+    },
+    {
+      "symbol": "PS",
+      "name": "mid_conversation_system",
+      "header": null,
+      "evidence": "BETA-CONSTANT-PS"
+    },
+    {
+      "symbol": "y3",
+      "name": "per_message_effort",
+      "header": "per-turn-control-2026-07-01",
+      "evidence": "BETA-CONSTANT-y3"
+    },
+    {
+      "symbol": "DY",
+      "name": "per_turn_timing",
+      "header": "timing-2026-09-09",
+      "evidence": "BETA-CONSTANT-DY"
+    },
+    {
+      "symbol": "nE",
+      "name": "mid_conv_tool_change",
+      "header": "mid-conversation-tool-changes-2026-07-01",
+      "evidence": "BETA-CONSTANT-nE"
+    },
+    {
+      "symbol": "fw",
+      "name": "inline_tools",
+      "header": "inline-tools-2026-09-15",
+      "evidence": "BETA-CONSTANT-fw"
+    },
+    {
+      "symbol": "Uz",
+      "name": "server_side_fallback",
+      "header": "server-side-fallback-2026-06-01",
+      "evidence": "BETA-CONSTANT-Uz"
+    },
+    {
+      "symbol": "yP",
+      "name": "program_use_case_ids",
+      "header": "program-use-case-ids-2026-09-17",
+      "evidence": "BETA-CONSTANT-yP"
+    },
+    {
+      "symbol": "yk",
+      "name": "server_side_fallback_category",
+      "header": "server-side-fallback-2026-07-01",
+      "evidence": "BETA-CONSTANT-yk"
+    },
+    {
+      "symbol": "S3",
+      "name": "fallback_credit",
+      "header": "fallback-credit-2026-06-01",
+      "evidence": "BETA-CONSTANT-S3"
+    },
+    {
+      "symbol": "fXn",
+      "name": "mid_conv_cache_promotion_latch",
+      "header": "x-cc-internal-mid-conv-cache-promotion",
+      "evidence": "BETA-CONSTANT-fXn"
+    },
+    {
+      "symbol": "MQs",
+      "name": "mid_conv_cache_promotion_ok_latch",
+      "header": "x-cc-internal-mid-conv-cache-promotion-ok",
+      "evidence": "BETA-CONSTANT-MQs"
+    },
+    {
+      "symbol": "DQs",
+      "name": "auto_mode_classifier",
+      "header": "auto-mode-classifier-2026-07-16",
+      "evidence": "BETA-CONSTANT-DQs"
+    },
+    {
+      "symbol": "b3",
+      "name": "claude_code_side_query",
+      "header": "claude-code-side-query-2026-09-29",
+      "evidence": "BETA-CONSTANT-b3"
+    },
+    {
+      "symbol": "ib",
+      "name": "dangerous_tool_use",
+      "header": "dangerous-tool-use-2026-09-03",
+      "evidence": "BETA-CONSTANT-ib"
+    },
+    {
+      "symbol": "HTe",
+      "name": "thinking_display_updates",
+      "header": "thinking-display-updates-2026-08-18",
+      "evidence": "BETA-CONSTANT-HTe"
+    },
+    {
+      "symbol": "LQs",
+      "name": "thinking_display",
+      "header": null,
+      "evidence": "BETA-CONSTANT-LQs"
+    },
+    {
+      "symbol": "w3",
+      "name": "thinking_binding_controls",
+      "header": "thinking-binding-controls-2026-08-01",
+      "evidence": "BETA-CONSTANT-w3"
+    },
+    {
+      "symbol": "E3",
+      "name": "message_threads",
+      "header": "message-threads-2026-08-12",
+      "evidence": "BETA-CONSTANT-E3"
+    },
+    {
+      "symbol": "_9",
+      "name": "mid_conversation_system_clear_at",
+      "header": "mid-conversation-system-clear-at-2026-08-21",
+      "evidence": "BETA-CONSTANT-_9"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 diff --git a/MODIFIED_FILE.md b/MODIFIED_FILE.md
 --- a/MODIFIED_FILE.md
 +++ b/MODIFIED_FILE.md
-@@ -1,4 +1,5 @@
+@@ -1,4 +1,10 @@
 -# Analysis workspace contract
 +# Claude Code static analysis workspace contract
 -
@@ -9,5 +9,10 @@ diff --git a/MODIFIED_FILE.md b/MODIFIED_FILE.md
 -status: pending
 -target: unbound
 +status: scaffolded
-+target: @anthropic-ai/claude-code + @anthropic-ai/sdk
++target: @anthropic-ai/claude-code native + embedded @anthropic-ai/sdk
 +deliverables: fingerprint, domains, beta, billing, oauth, tls, subway-diff
++analysis_revision: v2
++analysis_basis: native-bun-embedded-sdk
++analysis_status: static-analysis-complete-with-runtime-boundaries
++evidence: ../evidence-index.json
++verification: ../workspace-verification.json

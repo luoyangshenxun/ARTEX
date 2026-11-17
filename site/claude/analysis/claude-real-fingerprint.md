@@ -1,113 +1,83 @@
-# Claude Code 真实出站指纹规格表
+# 官方请求构造规格
 
-状态：模板，待导入官方 npm 样本后填写。
-分析日期：2026-11-17。
-范围：`@anthropic-ai/claude-code`、`@anthropic-ai/sdk`、内置网络层。
+记录：2026-11-17；主样本 S1 = 官方 darwin-arm64 2.1.325。证据索引：[evidence-index.json](evidence-index.json)。
 
-填写规则：每一行都要给出 `来源文件:函数/导出符号`、行号或字节偏移、
-取值逻辑、取值域、跨字段约束、版本范围和证据级别。`[待填]` 不得替换为
-单一抓包快照。
+m 是模块内零起始 JS 码元偏移，b 是原始可执行文件绝对字节偏移；编码及跨度 SHA-256 见索引。包内普通源码使用 file-byte。证据级别沿用 literal / call-chain / offline-reproduction / runtime-capture / inference。
 
-## 1. 版本与标识
+## 版本与 UA
 
-| 字段 | 规格/算法 | 取值域或版本关系 | 来源（文件:函数） | 定位 | 证据级别 |
-| --- | --- | --- | --- | --- | --- |
-| CLI package version | [待填] | package.json、构建产物和运行时版本的关系 | [待填] | [待填] | [待填] |
-| SDK package version | [待填] | CLI lockfile/依赖解析结果 | [待填] | [待填] | [待填] |
-| CLI product identifier | [待填] | 固定值或按发行渠道变化 | [待填] | [待填] | [待填] |
-| User-Agent | [待填] | 模板、平台归一化、依赖后缀和版本联动 | [待填] | [待填] | [待填] |
-| CLI version header/body field | [待填] | 与 package version、SDK version 是否绑定 | [待填] | [待填] | [待填] |
+CLI 版本取编译时 VERSION，S1 为 2.1.325；SDK 自己的版本常量独立。主包只有安装 Node 脚本，安装后原生二进制驻留，不能把安装时 Node 版本当运行时。`UA` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:FW` · m=654637 · b=282074777 · call-chain<br>`VERSION-S1` — S1 · `/$bunfs/root/chunk-0rxs30cc.js:SDK package version` · m=1048 · b=283347235 · literal<br>`INSTALL-S5-getPlatformKey` — S5 · `package/install.cjs:getPlatformKey` · m=3710 · file-byte=3718 · call-chain
 
-## 2. HTTP 请求头全集
+`claude-cli/<build-version> (external, <request-entrypoint>[, agent-sdk/<env>][, client-app/<env>][, workload/<context>])`。括号 token 顺序固定如式，external 是字面量。`UA` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:FW` · m=654637 · b=282074777 · call-chain
 
-| 头名（规范化前） | 线值构造 | 取值域/默认/fallback | 联动约束 | 头序/大小写证据 | 来源（文件:函数） | 定位 | 证据级别 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| `User-Agent` | [待填] | [待填] | [待填] | [待填] | [待填] | [待填] | [待填] |
-| `X-Stainless-OS` | [待填] | OS 枚举和未知值处理 | 与 Arch、Runtime 关系 | [待填] | [待填] | [待填] | [待填] |
-| `X-Stainless-Arch` | [待填] | Arch 枚举和未知值处理 | 与 OS 的合法组合 | [待填] | [待填] | [待填] | [待填] |
-| `X-Stainless-Runtime` | [待填] | runtime 名称/Node 识别 | 与 Runtime-Version 关系 | [待填] | [待填] | [待填] | [待填] |
-| `X-Stainless-Runtime-Version` | [待填] | `process.version` 或其他探测值 | 跟随运行时，不等于 package version | [待填] | [待填] | [待填] | [待填] |
-| `X-Stainless-Package-Version` | [待填] | SDK package 版本集合 | 与 CLI version 的对应关系 | [待填] | [待填] | [待填] | [待填] |
-| `anthropic-version` | [待填] | [待填] | API endpoint/SDK 版本要求 | [待填] | [待填] | [待填] | [待填] |
-| `anthropic-beta` | 见 beta 矩阵 | beta token 集合、顺序、去重和场景 | 请求能力、CLI 功能、认证模式 | [待填] | [待填] | [待填] | [待填] |
-| `Authorization` / API key header | [待填] | API key 与 OAuth 的分支 | 与认证模式、endpoint 联动 | [待填] | [待填] | [待填] | [待填] |
-| `Content-Type` | [待填] | [待填] | body 编码 | [待填] | [待填] | [待填] | [待填] |
-| `Accept` / `Accept-Encoding` | [待填] | transport 默认与显式覆盖 | undici/fetch 版本 | [待填] | [待填] | [待填] | [待填] |
-| `Content-Length` | [待填] | UTF-8 body 字节数或 transport 生成 | body 序列化方式 | [待填] | [待填] | [待填] | [待填] |
-| 其他 CLI/代理头 | [待填] | [待填] | [待填] | [待填] | [待填] | [待填] | [待填] |
+| token | 条件 / 联动 | 来源（文件:函数）与证据级别 |
+| --- | --- | --- |
+| cli / sdk-cli | 启动参数 e 同时用于 setInteractive(!e)；无 entrypoint 时 e? sdk-cli:cli；已有 cli 且 e 真也变 sdk-cli；sdk-cli 另有请求级 override 可变 cli。 | `ENTRY-INTERACTIVE` — S1 · `/$bunfs/root/chunk-gg7nabmz.js:l$a` · m=10420 · b=278591217 · call-chain<br>`ENTRY-NORMALIZE` — S1 · `/$bunfs/root/chunk-gg7nabmz.js:N` · m=12688 · b=278593485 · call-chain<br>`ENTRY-SDK-REQUEST-OVERRIDE` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:sPa` · m=946241 · b=282366381 · call-chain |
+| local-agent | CLAUDE_CODE_ENTRYPOINT=local-agent；旧 local_agent 会归一化 | `ENTRY-NORMALIZE` — S1 · `/$bunfs/root/chunk-gg7nabmz.js:N` · m=12688 · b=278593485 · call-chain |
+| claude-desktop-3p | host 设置的 entrypoint；允许单次读取 CLAUDE_CODE_ENTRYPOINT_ON_REQUESTS 覆盖，但限制正则、保留名、remote* 和 local_projects。 | `ENTRY-OVERRIDE` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:iPa` · m=946366 · b=282366506 · call-chain |
+| agent-sdk/<v> | CLAUDE_AGENT_SDK_VERSION 非空；不由 CLI 版本算出，不能硬性要求等于 CLI 的某个派生版本 | `UA` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:FW` · m=654637 · b=282074777 · call-chain |
+| client-app/<x> | CLAUDE_AGENT_SDK_CLIENT_APP 非空，同时可能进 x-client-app 头 | `UA` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:FW` · m=654637 · b=282074777 · call-chain |
+| workload/<x> | 异步上下文 Ol() 的 workload，如 cron；与 billing.cc_workload 同源，不是独立随机后缀 | `BILLING` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:sJs` · m=943842 · b=282363982 · call-chain |
+| 其它 entrypoint | 注册表 Eqo 包含 sdk-ts/sdk-py/mcp/desktop/remote 等；普通 env 路径可保留其它值，注册表不是所有路径统一强制白名单 | `ENTRY-ENUM` — S1 · `/$bunfs/root/chunk-gg7nabmz.js:Eqo` · m=572 · b=278581369 · call-chain |
 
-### 2.1 `X-Stainless-*` 取值域与联动
+通常 UA 与 cc_entrypoint 都用 O6() override，然后环境 entrypoint。UA 的 ownEntrypoint=true 可跳过 override；启动前缺省也不同（UA cli，billing unknown）。system 前导直接依赖交互状态、append prompt、provider；beta 还依赖 source / model / flags，不能从 UA 文本单独推断。可随绑定的真实上下文走，但必须连同 entrypoint、workload、system 与请求来源一起验证。`UA` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:FW` · m=654637 · b=282074777 · call-chain<br>`BILLING` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:sJs` · m=943842 · b=282363982 · call-chain<br>`SYSTEM-PREFIX` — S1 · `/$bunfs/root/chunk-gpympest.js:XNr` · m=3184 · b=286836987 · call-chain<br>`BETA-AGENTIC` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:z7n` · m=535914 · b=281956054 · call-chain
 
-不得只写当前机器的 `linux/x64`。需要记录：
+## HTTP 头全集与合并
 
-- OS 原始值、归一化函数、完整观察到的枚举和未知值分支；
-- Arch 原始值、归一化函数和与 OS 的可行/不可行组合；
-- runtime 名称与 runtime version 的来源；
-- package version 的真源、fallback 和与 CLI version 的关系；
-- 头名大小写是构造层规范、`Headers` 规范化，还是 wire 层观察；
-- 头序是否仅为本地对象顺序，或有同版本 wire 证据。
+| 头 | 取值逻辑 / 取值域 | 来源（文件:函数）与证据级别 |
+| --- | --- | --- |
+| Accept | application/json，流式也如此；不能凭 SSE 改为 text/event-stream | `SDK-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:buildHeaders` · m=177931 · b=283694961 · call-chain |
+| User-Agent | CLI FW 覆盖 SDK Anthropic/JS 默认 UA | `UA` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:FW` · m=654637 · b=282074777 · call-chain |
+| X-Stainless-Lang | js | `ST-PROPS` — S1 · `/$bunfs/root/chunk-0rxs30cc.js:ae` · m=1381 · b=283347568 · call-chain |
+| X-Stainless-Package-Version | 内嵌 SDK b0，本版 0.128.0 | `ST-PROPS` — S1 · `/$bunfs/root/chunk-0rxs30cc.js:ae` · m=1381 · b=283347568 · call-chain |
+| X-Stainless-OS / Arch | process 归一化，取值域见规则表 | `ST-PROPS` — S1 · `/$bunfs/root/chunk-0rxs30cc.js:ae` · m=1381 · b=283347568 · call-chain |
+| X-Stainless-Runtime / Runtime-Version | node / process.version；Bun 兼容层 | `ST-PROPS` — S1 · `/$bunfs/root/chunk-0rxs30cc.js:ae` · m=1381 · b=283347568 · call-chain |
+| X-Stainless-Retry-Count | 每次 SDK 请求尝试计数，String(retryCount)，不是所有重试都恒 0 | `SDK-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:buildHeaders` · m=177931 · b=283694961 · call-chain |
+| X-Stainless-Timeout | timeout 毫秒截断 /1000；常用 600000→600；配置可变，truthy 才带 | `SDK-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:buildHeaders` · m=177931 · b=283694961 · call-chain |
+| anthropic-dangerous-direct-browser-access | CLI client 允许 browser，因此 SDK 加 true | `SDK-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:buildHeaders` · m=177931 · b=283694961 · call-chain |
+| anthropic-version | 2023-06-01 | `SDK-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:buildHeaders` · m=177931 · b=283694961 · call-chain |
+| Content-Type | JSON 序列化 body 通常 application/json；由 bodyHeaders 层决定 | `SDK-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:buildHeaders` · m=177931 · b=283694961 · call-chain |
+| Authorization / X-Api-Key | Bearer OAuth 与 API key auth 分支；合成离线请求分别验证，不使用真实 token | `SDK-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:buildHeaders` · m=177931 · b=283694961 · call-chain |
+| anthropic-user-profile-id / anthropic-workspace-id | SDK create/countTokens 的 user_profile_id/workspace_id 非空时从 body 移到头；不表示普通 CLI 必带 | `SDK-BETA-ENDPOINTS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:Ei` · m=119473 · b=283636503 · call-chain |
+| x-app | 通常 cli；背景形态 Xt() 可为 cli-bg | `CLI-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:Vd` · m=295192 · b=283812222 · call-chain |
+| X-Claude-Code-Session-Id | G() 的会话 ID，与 metadata.session_id 同源 | `CLI-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:Vd` · m=295192 · b=283812222 · call-chain |
+| anthropic-beta | 来自有序 beta 对象数组 header 序列化，SDK 端点可追加固定 beta | `BETA-SERIALIZE` — S1 · `/$bunfs/root/chunk-29cd2nzs.js:v2` · m=157446 · b=280415144 · call-chain |
+| x-stainless-helper-method | SDK stream() helper 带 stream；直接 create({stream:true}) 不据此保证 helper 头 | `SDK-STREAM-HELPER` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:MessageStream.createMessage` · m=151600 · b=283668630 · call-chain |
+| x-stainless-helper | 通用 helper 名合并去重的特殊头，是否出现取决于调用 helper | `SDK-HELPER-MERGE` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:s_` · m=46265 · b=283563295 · call-chain |
+| x-client-request-id | first-party wrapper 条件成立且已有头不存在时生成请求 UUID；不覆盖已有值 | `REQUEST-WRAPPER` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:Sv` · m=322654 · b=283839684 · call-chain |
+| x-claude-remote-container-id / x-claude-remote-session-id | 对应远程环境变量存在时加 | `CLI-CLIENT-OPTIONS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:jB` · m=303560 · b=283820590 · call-chain |
+| x-claude-remote-session-origin / x-claude-remote-chat-conversation-uuid | 远程来源 / 会话上下文 | `CLI-CLIENT-OPTIONS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:jB` · m=303560 · b=283820590 · call-chain |
+| x-client-app | CLAUDE_AGENT_SDK_CLIENT_APP；UA 也含 client-app/<值> | `CLI-CLIENT-OPTIONS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:jB` · m=303560 · b=283820590 · call-chain |
+| x-claude-code-agent-id / x-claude-code-parent-agent-id | agent context 的 ID，经过 PWo 处理 | `CLI-CLIENT-OPTIONS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:jB` · m=303560 · b=283820590 · call-chain |
+| x-claude-code-request-class / x-claude-1p-request-class / x-claude-code-agent-type | 分类器与受信请求上下文条件字段 | `CLI-CLIENT-OPTIONS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:jB` · m=303560 · b=283820590 · call-chain |
+| x-claude-code-auxiliary-type / x-claude-code-prompt-id | 辅助请求类型 / 有效 prompt UUID 的条件字段 | `CLI-CLIENT-OPTIONS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:jB` · m=303560 · b=283820590 · call-chain |
+| anthropic-client-platform / anthropic-client-version | desktop_app 与宿主版本；uun 的 Q7r() 有值且无既有对应 custom header 时补齐 | `HTTP-CUSTOM-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:uun` · m=315497 · b=283832527 · call-chain |
+| x-cowork-enrollment | Tmi() 提供值时由 uun 附加 | `HTTP-CUSTOM-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:uun` · m=315497 · b=283832527 · call-chain |
+| x-claude-code-wiggly-dove | 受功能门控制的请求上下文结构化头；tg 生成上下文、$d 过滤保留字段后加入；不是固定指纹常量 | `HTTP-REQUEST-CONTEXT` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:$d` · m=290964 · b=283807994 · call-chain |
+| x-is-refusal-fallback / x-cc-fallback-latched-by | Sv 在拒绝恢复 / fallback latch 条件成立时附加 true / latch 来源 | `REQUEST-WRAPPER` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:Sv` · m=322654 · b=283839684 · call-chain |
+| anthropic-usage-limit | Sv: messages URL && Ss() && uEt() 时带 slow | `REQUEST-WRAPPER` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:Sv` · m=322654 · b=283839684 · call-chain |
+| x-cc-atis | Sv: provider/host 条件与 eQs() 有值时附加 | `REQUEST-WRAPPER` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:Sv` · m=322654 · b=283839684 · call-chain |
+| x-claude-code-sandy-plover | Sv: messages 且工具头功能开启时记录工具使用信息，构造失败有降级 | `REQUEST-WRAPPER` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:Sv` · m=322654 · b=283839684 · call-chain |
+| x-ssr-client-ip / x-ssr-client-ip-sig / ant-ipcountry | 特定远程 sender-address 上下文；从受信数据源取值，失败则清理，不是根据本机 OS 算出 | `HTTP-SENDER-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:sg` · m=291856 · b=283808886 · call-chain |
+| Host / Connection / Accept-Encoding / Content-Length | 传输层生成，压缩、协议、代理、body 会改变；不是 SDK 固定头 | `HTTP-FETCH` — S1 · `/$bunfs/root/chunk-29cd2nzs.js:dqr` · m=164860 · b=280422558 · call-chain |
+| 任意 ANTHROPIC_CUSTOM_HEADERS 与 options.headers | 用户/host 扩展使头名集合开放；本表覆盖主请求的固有构造层，不能穷举自定义头 | `CLI-CLIENT-OPTIONS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:jB` · m=303560 · b=283820590 · call-chain |
 
-## 3. `anthropic-beta` 协商
+SDK 构造顺序为 Accept、User-Agent、Retry-Count、Timeout、平台属性、browser-access、anthropic-version，然后合并 auth → defaultHeaders → bodyHeaders → options.headers。后层覆盖前层，null 表示删除，x-stainless-helper 有独立的逗号去重逻辑。HTTP Headers 不是“JS 对象插入顺序原样上线”的承诺。`SDK-HEADERS` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:buildHeaders` · m=177931 · b=283694961 · call-chain<br>`SDK-MERGE` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:T` · m=46432 · b=283563462 · call-chain<br>`SDK-ENTRIES` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:r_` · m=45773 · b=283562803 · call-chain<br>`SDK-HELPER-MERGE` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:s_` · m=46265 · b=283563295 · call-chain
 
-完整 token 集合、生成调用链和场景矩阵见 `beta-matrix.md`。主表至少要记录：
+独立 Bun 1.4.4 (38afee6c84fcf48c0edb2466aa4b27d287a59c30) 在 Windows x64、本地 HTTP/1.1 回显中，插入 Z-Last / X-App / A-First / User-Agent 后，Headers 迭代和线序均为 A-First / User-Agent / X-App / Z-Last，保留这些头的原始大小写。实际抽出 SDK 链路合并后另做一次回显：Accept/Authorization/Content-Type/User-Agent 保持该大小写，x-stainless-* 与 session 头成为小写；完整原文保存在 wireProbe.sdk_raw。不能推导官方内嵌 Bun 的 TLS/h2 或 Go 的最终线序；Go map 无显式排序也不能单独证明线上随机，HTTP 栈可能排序。证据级别 offline-reproduction，原始线序见 offline-results-bun-*.json。
 
-| 项目 | 结果 | 来源（文件:函数） | 定位 | 证据级别 |
-| --- | --- | --- | --- | --- |
-| beta 常量全集 | [待填] | [待填] | [待填] | [待填] |
-| CLI 默认 beta | [待填] | [待填] | [待填] | [待填] |
-| SDK 默认 beta | [待填] | [待填] | [待填] | [待填] |
-| 用户配置合并 | [待填] | [待填] | [待填] | [待填] |
-| 顺序与去重 | [待填] | [待填] | [待填] | [待填] |
-| 认证模式影响 | [待填] | [待填] | [待填] | [待填] |
+请求体 JSON 在 Sv 的 gzip 条件 ie 成立时，还经过 vTe/g3r：追加换行及随机 0–256 个空格/制表符；这不改变 JSON 语义，会影响原始字节长度，不能只比较解析后的 body。它不是所有普通 JSON 请求的无条件处理。gzip 及代理分支在 wrapper/fetchOptions 中。`REQUEST-WRAPPER` — S1 · `/$bunfs/root/chunk-0s5xarq7.js:Sv` · m=322654 · b=283839684 · call-chain<br>`BODY-TRAILER` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:vTe` · m=842632 · b=282262772 · call-chain<br>`BODY-TRAILER-LIMIT` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:VXs` · m=842624 · b=282262764 · literal<br>`BODY-TRAILER-BUFFER` — S1 · `/$bunfs/root/chunk-e44qnbvj.js:g3r` · m=842712 · b=282262852 · call-chain
 
-## 4. 请求体身份、计费、元数据和 system prompt
+## system 固定前导
 
-| 路径 | 构造算法 | 取值域/默认/fallback | 与头或场景的联动 | 来源（文件:函数） | 定位 | 证据级别 |
-| --- | --- | --- | --- | --- | --- | --- |
-| `metadata.*` | [待填] | [待填] | [待填] | [待填] | [待填] | [待填] |
-| 计费/用量标识 | [待填] | [待填] | [待填] | [待填] | [待填] | [待填] |
-| installation/session identifier | [待填] | [待填] | [待填] | [待填] | [待填] | [待填] |
-| system prompt | [待填] | 模块、平台、版本和用户配置拼接规则 | [待填] | [待填] | [待填] | [待填] |
-| model/provider fields | [待填] | [待填] | endpoint/beta/auth | [待填] | [待填] | [待填] |
-| tool/stream/request flags | [待填] | [待填] | beta 和 endpoint | [待填] | [待填] | [待填] |
 
-算法拆解和待证伪假设见 `billing-fields.md`。
+| 条件 | 精确文本 | 来源 |
+| --- | --- | --- |
+| Vertex 或普通交互 CLI | You are Claude Code, Anthropic's official CLI for Claude. | `SYSTEM-PREFIX` — S1 · `/$bunfs/root/chunk-gpympest.js:XNr` · m=3184 · b=286836987 · call-chain |
+| 非交互且有 append system prompt | You are Claude Code, Anthropic's official CLI for Claude, running within the Claude Agent SDK. | `SYSTEM-PREFIX` — S1 · `/$bunfs/root/chunk-gpympest.js:XNr` · m=3184 · b=286836987 · call-chain |
+| 非交互且无 append system prompt | You are a Claude agent, built on Anthropic's Claude Agent SDK. | `SYSTEM-PREFIX` — S1 · `/$bunfs/root/chunk-gpympest.js:XNr` · m=3184 · b=286836987 · call-chain |
+| 录制/回放路径 | 存在已记录的前导时使用记录值 | `SYSTEM-PREFIX` — S1 · `/$bunfs/root/chunk-gpympest.js:XNr` · m=3184 · b=286836987 · call-chain |
 
-## 5. 网络层与 TLS 指纹
+上述分支没有“Oauth 才有固定前导”的统一判断。billing 先于前导；后续项目、工具、环境 prompt 随上下文构造。billing 不带 cache_control，其它 system 分块按全局/组织缓存边界决定。`SYSTEM-ORDER` — S1 · `/$bunfs/root/chunk-gpympest.js:Pla` · m=3348 · b=286837151 · call-chain<br>`SYSTEM-CACHE` — S1 · `/$bunfs/root/chunk-gpympest.js:C$s` · m=4032 · b=286837835 · call-chain<br>`SYSTEM-WIRE-CACHE` — S1 · `/$bunfs/root/chunk-wqb2b4v0.js:xos` · m=3236008 · b=291938630 · call-chain
 
-| 项目 | 静态结果 | 运行时结果 | 来源/定位 | 证据级别 |
-| --- | --- | --- | --- | --- |
-| HTTP client | [待填] | [待填] | [待填] | [待填] |
-| `undici` version | [待填] | [待填] | [待填] | [待填] |
-| dispatcher/agent | [待填] | [待填] | [待填] | [待填] |
-| proxy/env handling | [待填] | [待填] | [待填] | [待填] |
-| TLS options | [待填] | [待填] | [待填] | [待填] |
-| JA3/JA4 | 仅记录可由证据支持的来源 | [待填] | [待填] | [待填] |
-
-静态 JS 只能证明配置和调用路径，不能单独证明最终 ClientHello 指纹。
-
-## 6. OAuth / 鉴权流程
-
-| 项目 | API key 模式 | OAuth 模式 | 来源（文件:函数） | 定位 | 证据级别 |
-| --- | --- | --- | --- | --- | --- |
-| client_id | [待填] | [待填] | [待填] | [待填] | [待填] |
-| scopes | [待填] | [待填] | [待填] | [待填] | [待填] |
-| redirect/callback | 不适用或待证 | [待填] | [待填] | [待填] | [待填] |
-| PKCE/state | 不适用或待证 | [待填] | [待填] | [待填] | [待填] |
-| token storage/refresh | 不适用或待证 | [待填] | [待填] | [待填] | [待填] |
-| request headers | [待填] | [待填] | [待填] | [待填] | [待填] |
-| endpoint/base URL | [待填] | [待填] | [待填] | [待填] | [待填] |
-
-## 7. 结论和版本差异
-
-只有完成以上证据列后，才能给出：
-
-- 真实指纹规格表；
-- 字段取值域和合法组合规则；
-- beta 携带矩阵；
-- 计费字段算法；
-- Subway diff；
-- 可选 TLS 特征。
-
-所有跨版本变化必须写成“版本范围 + 算法变化/常量变化 + 来源”，不能只写
-“新版不同”。
+未启动任何官方 Claude 二进制，未调用 Anthropic 接口。离线结果来自独立下载并校验的 Bun 工具，只执行抽取的函数切片及合成依赖；本地 HTTP 回显仅访问 127.0.0.1。独立 Bun 的 revision 与官方内嵌构建不同，不能把其线序、process.version 或 TLS 当作官方完整客户端的实测。

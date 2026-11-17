@@ -1,13 +1,36 @@
 Claude workspace scaffold transaction verification
-Recorded at: 2026-11-17T05:04:58.967Z
+Recorded at: 2026-11-17T07:43:35.671Z
 TARGET: H:\orca\rea\site\claude\analysis\transaction\MODIFIED_FILE.md
 BASELINE: H:\orca\rea\site\claude\analysis\transaction\BASELINE.md
 GOAL: status=pending -> status=scaffolded; bind the CLI and SDK analysis targets.
-Scope: workspace contract only; no official client behavior has been measured.
+Scope: four-role contract replay plus v2 static evidence verification; no official executable launched.
+V2 changed field: analysis_status=static-analysis-complete-with-runtime-boundaries
 
 COMMAND PATCH: ["git","apply","--no-index","--directory=site/claude/analysis/raw/patch-replay","H:\\orca\\rea\\site\\claude\\analysis\\transaction\\DIFF_FILE.patch"]
 CWD: H:\orca\rea
 STDOUT BEGIN
+
+STDOUT END
+STDERR BEGIN
+
+STDERR END
+EXIT STATUS: 0
+SIGNAL: none
+EXECUTION ERROR: none
+
+COMMAND ANALYSIS V2: ["F:\\Program Files\\nodejs\\node.exe","H:\\orca\\rea\\site\\claude\\analysis\\verify-analysis.mjs"]
+CWD: H:\orca\rea
+STDOUT BEGIN
+REPORTS={"reopened":13,"status":"PASS"}
+EVIDENCE={"entries":239,"originalByteSpans":226,"originalBinaries":27,"packagedSources":13,"missingSamples":0,"mode":"original-artifact-byte-check","status":"PASS"}
+VERSION_COVERAGE={"nativeRows":27,"preciseAdjacentTransitions":5,"first":"2.1.258","last":"2.1.326","status":"PASS"}
+PROFILE_COHERENCE={"coherent":{"verdict":"static-coherent","sample":"S3","evidence":"VERSION-S3","warnings":["Official runtime not executed; runtime version is inferred from native compatibility constant","UA/billing/betas/account/session/TLS require their own contextual evidence"],"scope":"Published native Claude Code builds with default identification headers; custom header overrides and arbitrary embedded SDK applications are outside this domain"},"wrongSDK":{"verdict":"contradiction","problems":["sdk_version differs from sampled build","runtime_version_reported differs from sampled build"],"samples":["S3"],"scope":"Published native Claude Code builds with default identification headers; custom header overrides and arbitrary embedded SDK applications are outside this domain"},"currentSubway":{"verdict":"contradiction","problems":["sdk_version differs from sampled build","runtime_version_reported differs from sampled build"],"samples":["V2.1.326-linux-arm64"],"scope":"Published native Claude Code builds with default identification headers; custom header overrides and arbitrary embedded SDK applications are outside this domain"},"status":"PASS"}
+BUN_1.4.1={"revision":"4661e494f052c83c80dade1318e5710238340be6","node":"v26.3.0","fingerprintExamples":["b5b","ff3","cac"],"fetchInterceptions":4,"loopbackCaptures":2,"status":"PASS"}
+BUN_1.4.3={"revision":"c6da4a4d3010e5553438c60f6bd76d981976867c","node":"v26.3.0","fingerprintExamples":["b5b","ff3","cac"],"fetchInterceptions":4,"loopbackCaptures":2,"status":"PASS"}
+BUN_1.4.4={"revision":"38afee6c84fcf48c0edb2466aa4b27d287a59c30","node":"v26.3.0","fingerprintExamples":["b5b","ff3","cac"],"fetchInterceptions":4,"loopbackCaptures":2,"status":"PASS"}
+BETA_MATRIX={"messages":128,"count_tokens":8,"controlled_context":true,"production_unique":false,"status":"PASS"}
+METADATA_TRANSITION={"before":"2.1.77 legacy","after":"2.1.78 JSON","adjacent":true,"status":"PASS"}
+ANALYSIS_VERIFICATION=PASS
 
 STDOUT END
 STDERR BEGIN
@@ -70,8 +93,8 @@ SIGNAL: none
 EXECUTION ERROR: none
 
 BASELINE SHA-256: 65251ede085c6f2fc2497b86ff8759266e32d32097b0841de292cadcfb1e89b1
-MODIFIED SHA-256: 79bd3d6292973bf397eded0e0e7cea3ca376bf6f0aa4ce5cd4bd168b5e6db53f
-PATCH REPLAY SHA-256: 79bd3d6292973bf397eded0e0e7cea3ca376bf6f0aa4ce5cd4bd168b5e6db53f
+MODIFIED SHA-256: dba4d30baa87e2366de5b7261e864dd4b7f42baaa0e93440fb77da20a5bf9069
+PATCH REPLAY SHA-256: dba4d30baa87e2366de5b7261e864dd4b7f42baaa0e93440fb77da20a5bf9069
 ROLLBACK SHA-256: 65251ede085c6f2fc2497b86ff8759266e32d32097b0841de292cadcfb1e89b1
 ROLLBACK HASH MATCHES BASELINE: true
 OBSERVED BASELINE: status=pending; exit=0
@@ -79,7 +102,3 @@ OBSERVED MODIFIED: status=scaffolded; exit=0
 OBSERVED ROLLBACK: status=pending; exit=0
 REAPPLY: status=scaffolded
 TRANSACTION_VERIFICATION=PASS
-
-SUPPLEMENTAL WORKSPACE CHECKS: H:\orca\rea\site\claude\analysis\workspace-verification.json
-RESULT: PASS; missing inputs exit=2; synthetic scanner checks exit=0.
-GIT PREPARATION: equivalent patch removes whitespace-only context; patch replay reverified.

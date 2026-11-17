@@ -1,0 +1,216 @@
+{
+  "schema_version": 2,
+  "scope": "Published native Claude Code builds with default identification headers; custom header overrides and arbitrary embedded SDK applications are outside this domain",
+  "evidence_status": "static artifact validation; official runtime values marked inferred in version-map.json",
+  "sample_index": "sample-provenance.json",
+  "version_map": "version-map.json",
+  "transitions": "version-transitions.json",
+  "platform": {
+    "published_pairs": [
+      [
+        "MacOS",
+        "arm64"
+      ],
+      [
+        "MacOS",
+        "x64"
+      ],
+      [
+        "Windows",
+        "x64"
+      ],
+      [
+        "Windows",
+        "arm64"
+      ],
+      [
+        "Linux",
+        "x64"
+      ],
+      [
+        "Linux",
+        "arm64"
+      ]
+    ],
+    "libc_variants": [
+      "glibc",
+      "musl"
+    ],
+    "note": "Linux libc variants do not change X-Stainless-OS/Arch. Only S1/S2/S3 same-version native bytes were inspected; other pairs from S5 optionalDependencies.",
+    "sdk_os_rules": [
+      {
+        "input": "darwin",
+        "output": "MacOS"
+      },
+      {
+        "input": "win32",
+        "output": "Windows"
+      },
+      {
+        "input": "linux",
+        "output": "Linux"
+      },
+      {
+        "input": "android",
+        "output": "Android"
+      },
+      {
+        "input": "freebsd",
+        "output": "FreeBSD"
+      },
+      {
+        "input": "openbsd",
+        "output": "OpenBSD"
+      },
+      {
+        "input": "ios",
+        "output": "iOS"
+      },
+      {
+        "input": "ios-simulator",
+        "output": "iOS"
+      },
+      {
+        "input": "sunos",
+        "output": "Other:sunos"
+      },
+      {
+        "input": "unknown",
+        "output": "Other:unknown"
+      },
+      {
+        "input": "",
+        "output": "Unknown"
+      }
+    ],
+    "sdk_arch_rules": [
+      {
+        "input": "x32",
+        "output": "x32"
+      },
+      {
+        "input": "x86_64",
+        "output": "x64"
+      },
+      {
+        "input": "x64",
+        "output": "x64"
+      },
+      {
+        "input": "arm",
+        "output": "arm"
+      },
+      {
+        "input": "aarch64",
+        "output": "arm64"
+      },
+      {
+        "input": "arm64",
+        "output": "arm64"
+      },
+      {
+        "input": "ia32",
+        "output": "other:ia32"
+      },
+      {
+        "input": "riscv64",
+        "output": "other:riscv64"
+      },
+      {
+        "input": "unknown",
+        "output": "other:unknown"
+      },
+      {
+        "input": "",
+        "output": "unknown"
+      }
+    ],
+    "evidence": [
+      "ST-OS",
+      "ST-ARCH",
+      "INSTALL-S5-getPlatformKey",
+      "NPM-MANIFEST-S5"
+    ]
+  },
+  "constraints": [
+    {
+      "id": "build-tuple",
+      "rule": "Keep cli_version, sdk_version, bun_version, bun_revision, runtime_version_reported and binary_sha256 from one version-map row. Unsampled versions => unknown, never interpolate as verified.",
+      "evidence": [
+        "ST-PROPS"
+      ]
+    },
+    {
+      "id": "runtime",
+      "rule": "Bun matches SDK process tag; runtime header=node, runtime_version=process.version. No explicit Bun branch. Bun semver alone does not determine process.version.",
+      "evidence": [
+        "ST-DETECT",
+        "ST-PROPS"
+      ]
+    },
+    {
+      "id": "platform",
+      "rule": "For published native clients choose one published OS/Arch pair. SDK enums for iOS/Android/BSD/Other do not establish a published Claude platform.",
+      "evidence": [
+        "ST-OS",
+        "ST-ARCH",
+        "NPM-MANIFEST-S5"
+      ]
+    },
+    {
+      "id": "entrypoint",
+      "rule": "Normal request UA entrypoint and cc_entrypoint both consume request override, then launch environment; workload comes from same async context. UA ownEntrypoint mode and pre-bootstrap defaults are explicit exceptions.",
+      "evidence": [
+        "UA",
+        "BILLING",
+        "ENTRY-OVERRIDE",
+        "ENTRY-SDK-REQUEST-OVERRIDE"
+      ]
+    },
+    {
+      "id": "identity",
+      "rule": "device_id persists, account_uuid belongs to active account, session_id belongs to session; x-client-request-id is per request. These scopes are different.",
+      "evidence": [
+        "DEVICE-ID",
+        "METADATA",
+        "SESSION-ID",
+        "REQUEST-WRAPPER"
+      ]
+    },
+    {
+      "id": "beta",
+      "rule": "Evaluate ordered base/capability/request stages with auth, model facts, policy, feature flags, source and conversation latches; six scenario axes alone are insufficient.",
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-AGENTIC",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "id": "metadata-format",
+      "rule": "Adjacent historical samples 2.1.77 legacy; 2.1.78 JSON. Native 258/280/325 remain JSON. Do not select legacy merely because auth is API key.",
+      "evidence": [
+        "METADATA-HISTORY-2.1.77",
+        "METADATA-HISTORY-2.1.78",
+        "METADATA"
+      ]
+    }
+  ],
+  "linux_arm64_325": {
+    "cli_version": "2.1.325",
+    "sdk_version": "0.128.0",
+    "bun_version": "1.4.4",
+    "bun_revision": "6634fc3b5",
+    "runtime": "node",
+    "runtime_version_reported": "v26.12.1",
+    "os": "Linux",
+    "arch": "arm64",
+    "lang": "js",
+    "sample": "S3",
+    "status": "published and statically coherent; runtime header value inferred, no Linux execution",
+    "evidence": [
+      "VERSION-S3",
+      "ST-CROSS-S3"
+    ]
+  }
+}

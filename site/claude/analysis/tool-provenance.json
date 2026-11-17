@@ -1,0 +1,34 @@
+[
+  {
+    "name": "acorn",
+    "version": "8.15.0",
+    "tarball": "https://registry.npmjs.org/acorn/-/acorn-8.15.0.tgz",
+    "integrity": "sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==",
+    "sha256": "e46eae89bd9761f16d1d25563b837b55b4b78f3ece06ee0b9789cb2644f523b3",
+    "destination": "tools/acorn-8.15.0"
+  },
+  {
+    "name": "@oven/bun-windows-x64",
+    "version": "1.4.4",
+    "tarball": "https://registry.npmjs.org/@oven/bun-windows-x64/-/bun-windows-x64-1.4.4.tgz",
+    "integrity": "sha512-a3LNctBVO8PjePsFZfwDleF2JXYf2BfQ1u/PLRnBDLnC2Riml+4+LgJpKj4xRGhB92KweGyQI5PXaTkP9qypMQ==",
+    "sha256": "2fa598bc6c8d20440929f9c18b6363c15323274dc0fc5031e33ea209e687121c",
+    "destination": "tools/oven_bun-windows-x64-1.4.4"
+  },
+  {
+    "name": "@oven/bun-windows-x64",
+    "version": "1.4.3",
+    "tarball": "https://registry.npmjs.org/@oven/bun-windows-x64/-/bun-windows-x64-1.4.3.tgz",
+    "integrity": "sha512-9pV16qXHTFvZDH61S8hpdpVBbWmvEqekczLF54zTnQHKP28D6yRCNLrD/7jVbXYR61fQYAx4FSBgzCxGCKb3rQ==",
+    "sha256": "31b4faf97bd05d3c3a6528092cc7b7c0f4f81c2b5052b051b375c282ef256ddf",
+    "destination": "tools/oven_bun-windows-x64-1.4.3"
+  },
+  {
+    "name": "@oven/bun-windows-x64",
+    "version": "1.4.1",
+    "tarball": "https://registry.npmjs.org/@oven/bun-windows-x64/-/bun-windows-x64-1.4.1.tgz",
+    "integrity": "sha512-InALswMzIrYIZ9UVZWpDzmvxoDMxY0Zde2B8Khv9h42AxGeOPU0mHS+QOT01nM5l9XLzj02f1n9/3KkQ7YSpmw==",
+    "sha256": "438bcfd12db24f319a29bbb33ce165bab4635183b408eb47cef9c07e2b11d50b",
+    "destination": "tools/oven_bun-windows-x64-1.4.1"
+  }
+]

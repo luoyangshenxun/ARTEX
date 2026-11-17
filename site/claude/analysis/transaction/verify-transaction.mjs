@@ -26,7 +26,8 @@ const ledger = [
   `TARGET: ${modified}`,
   `BASELINE: ${baseline}`,
   'GOAL: status=pending -> status=scaffolded; bind the CLI and SDK analysis targets.',
-  'Scope: workspace contract only; no official client behavior has been measured.',
+  'Scope: four-role contract replay plus v2 static evidence verification; no official executable launched.',
+  'V2 changed field: analysis_status=static-analysis-complete-with-runtime-boundaries',
   '',
 ];
 
@@ -55,6 +56,8 @@ function run(label, executable, args, cwd = repo) {
 try {
   assert.equal(sha256(pristine), '65251ede085c6f2fc2497b86ff8759266e32d32097b0841de292cadcfb1e89b1');
   assert.match(changed.toString('utf8'), /^status: scaffolded$/m);
+  assert.match(changed.toString('utf8'), /^analysis_basis: native-bun-embedded-sdk$/m);
+  assert.match(changed.toString('utf8'), /^analysis_status: static-analysis-complete-with-runtime-boundaries$/m);
   fs.mkdirSync(replay, {recursive: true});
   const replayFile = path.join(replay, 'MODIFIED_FILE.md');
   fs.writeFileSync(replayFile, pristine);
@@ -65,6 +68,7 @@ try {
   ]);
   assert.deepEqual(fs.readFileSync(replayFile), changed, 'patch reconstructs modified bytes');
 
+  run('ANALYSIS V2', process.execPath, [path.resolve(dir, '../verify-analysis.mjs')]);
   assert.equal(run('BASELINE', process.execPath, [check, baseline]), 'status=pending\n');
   assert.equal(run('MODIFIED', process.execPath, [check, modified]), 'status=scaffolded\n');
   fs.writeFileSync(copy, changed);

@@ -1,74 +1,58 @@
 {
-  "workspace": "Claude Code static outbound fingerprint analysis",
-  "status": "scaffold",
-  "createdAt": "2026-11-17",
+  "workspace": "Claude Code native Bun static outbound request analysis",
+  "schema_version": 2,
+  "status": "static-analysis-complete-with-runtime-boundaries",
+  "date": "2026-11-17",
+  "branch": "english-ui",
+  "starting_commit": "d1cf49c90a375108fb8cb9cbba1c9e16edad7791",
   "target": {
-    "cli": {
-      "package": "@anthropic-ai/claude-code",
-      "role": "official CLI",
-      "localRoot": "unpacked/npm/claude-code",
-      "version": "PENDING_PACKAGE_SAMPLE",
-      "sha256": "PENDING_PACKAGE_HASH"
-    },
-    "sdk": {
-      "package": "@anthropic-ai/sdk",
-      "role": "Stainless-generated SDK and HTTP header source",
-      "localRoot": "unpacked/npm/sdk",
-      "version": "PENDING_PACKAGE_SAMPLE",
-      "sha256": "PENDING_PACKAGE_HASH"
-    },
-    "transport": {
-      "packages": [
-        "undici",
-        "node:fetch",
-        "PENDING_RUNTIME_DEPENDENCY"
-      ],
-      "source": "PENDING_BUNDLE_OR_LOCKFILE_EVIDENCE"
-    },
+    "official_cli": "@anthropic-ai/claude-code native platform packages",
+    "main": "S1",
+    "sdk": "embedded JS module graph, no independent --sdk-root",
+    "transport": "globalThis.fetch/Bun options; undici proxy compatibility references retained",
     "subway": {
-      "source": "PENDING_LOCAL_SOURCE_OR_CAPTURE",
-      "status": "not located in current workspace"
+      "provenance": "USER-SUPPLIED",
+      "sha": "f314f5d7",
+      "local_source_reviewed": false
     }
   },
+  "sample_count": 34,
+  "native_sample_count": 27,
+  "extraction": "extraction-index.json",
+  "provenance": "sample-provenance.json",
+  "evidence": "evidence-index.json",
+  "version_map": "version-map.json",
   "deliverables": [
+    "report_overview.md",
     "claude-real-fingerprint.md",
     "fingerprint-domain-rules.md",
     "beta-matrix.md",
     "billing-fields.md",
     "oauth-auth.md",
     "tls-features.md",
-    "subway-diff.md"
+    "subway-diff.md",
+    "fingerprint-rules.json",
+    "version-map.json",
+    "version-transitions.json",
+    "beta-registry.json",
+    "beta-conditional-matrix.json"
   ],
-  "requiredEvidence": {
-    "sourceReference": "relative/file.js:function-or-export",
-    "location": "line or byte offset",
-    "logic": "branch, fallback, normalization, or dependency call",
-    "domain": "observed or statically enumerated value set",
-    "coupling": "cross-field or scenario constraint",
-    "versionScope": "package version or version range",
-    "evidenceLevel": [
-      "literal",
-      "call-chain",
-      "offline-reproduction",
-      "runtime-capture",
-      "inference"
-    ]
+  "validation": {
+    "offline_runtimes": [
+      "1.4.1",
+      "1.4.3",
+      "1.4.4"
+    ],
+    "official_binary_executed": false,
+    "anthropic_requests": 0,
+    "local_loopback_http": true,
+    "official_tls_capture": false
   },
-  "analysisStages": [
-    "npm pack and provenance recording",
-    "static extraction and hash inventory",
-    "constant and symbol scan",
-    "call-chain reconstruction",
-    "multi-version comparison",
-    "offline request construction",
-    "optional same-version capture cross-check",
-    "report and evidence verification"
-  ],
-  "prohibitedShortcuts": [
-    "single snapshot value presented as a domain",
-    "package name used as a source reference",
-    "SDK schema treated as proof of CLI runtime behavior",
-    "runtime header order inferred from JavaScript object order alone",
-    "TLS fingerprint claimed without a same-environment observation"
+  "unresolved": [
+    "Official embedded Bun process.version value inferred from native constant, not executed",
+    "Runtime flag/model/account/sticky-state inputs needed for a unique production beta list",
+    "Official cch final wire value and any native rewrite not observed",
+    "Official ClientHello/JA3/JA4/ALPN/h2 and Subway wire casing/order not captured",
+    "Bun upstream source downloads failed with ECONNRESET"
   ]
 }

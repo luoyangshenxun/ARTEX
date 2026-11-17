@@ -1,0 +1,88 @@
+[
+  {
+    "field": "bun_version",
+    "before": {
+      "cli_version": "2.1.268",
+      "value": "1.4.1",
+      "sample": "V2.1.268-darwin-arm64",
+      "evidence": "VERSION-V2.1.268-darwin-arm64"
+    },
+    "after": {
+      "cli_version": "2.1.269",
+      "value": "1.4.3",
+      "sample": "V2.1.269-darwin-arm64",
+      "evidence": "VERSION-V2.1.269-darwin-arm64"
+    },
+    "exact_adjacent_boundary": true,
+    "scope": "darwin-arm64 official artifacts only"
+  },
+  {
+    "field": "sdk_version",
+    "before": {
+      "cli_version": "2.1.284",
+      "value": "0.112.1",
+      "sample": "V2.1.284-darwin-arm64",
+      "evidence": "VERSION-V2.1.284-darwin-arm64"
+    },
+    "after": {
+      "cli_version": "2.1.285",
+      "value": "0.127.0",
+      "sample": "V2.1.285-darwin-arm64",
+      "evidence": "VERSION-V2.1.285-darwin-arm64"
+    },
+    "exact_adjacent_boundary": true,
+    "scope": "darwin-arm64 official artifacts only"
+  },
+  {
+    "field": "sdk_version",
+    "before": {
+      "cli_version": "2.1.287",
+      "value": "0.127.0",
+      "sample": "V2.1.287-darwin-arm64",
+      "evidence": "VERSION-V2.1.287-darwin-arm64"
+    },
+    "after": {
+      "cli_version": "2.1.288",
+      "value": "0.128.0",
+      "sample": "V2.1.288-darwin-arm64",
+      "evidence": "VERSION-V2.1.288-darwin-arm64"
+    },
+    "exact_adjacent_boundary": true,
+    "scope": "darwin-arm64 official artifacts only"
+  },
+  {
+    "field": "bun_version",
+    "before": {
+      "cli_version": "2.1.301",
+      "value": "1.4.3",
+      "sample": "V2.1.301-darwin-arm64",
+      "evidence": "VERSION-V2.1.301-darwin-arm64"
+    },
+    "after": {
+      "cli_version": "2.1.302",
+      "value": "1.4.4",
+      "sample": "V2.1.302-darwin-arm64",
+      "evidence": "VERSION-V2.1.302-darwin-arm64"
+    },
+    "exact_adjacent_boundary": true,
+    "scope": "darwin-arm64 official artifacts only"
+  },
+  {
+    "field": "runtime_version_reported",
+    "before": {
+      "cli_version": "2.1.310",
+      "value": "v26.3.0",
+      "sample": "V2.1.310-darwin-arm64",
+      "evidence": "VERSION-V2.1.310-darwin-arm64"
+    },
+    "after": {
+      "cli_version": "2.1.311",
+      "value": "v26.12.1",
+      "sample": "V2.1.311-darwin-arm64",
+      "evidence": "VERSION-V2.1.311-darwin-arm64"
+    },
+    "exact_adjacent_boundary": true,
+    "scope": "darwin-arm64 official artifacts only",
+    "caveat": "native compatibility constant; not official runtime observation"
+  }
+]

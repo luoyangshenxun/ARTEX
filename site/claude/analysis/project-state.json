@@ -1,0 +1,30 @@
+{
+  "active_object": "H:/orca/rea/site/claude",
+  "branch": "english-ui",
+  "starting_commit": "d1cf49c90a375108fb8cb9cbba1c9e16edad7791",
+  "operation": "native-bun-static-analysis-v2",
+  "status": "completed_static_scope",
+  "last_confirmed_result": "34 verified official samples; 27 native module graphs; 239 evidence entries rechecked against original bytes; five adjacent version boundaries; 128 conditional message-beta rows and eight count_tokens rows; three Bun offline runtimes; analysis and rollback verification PASS",
+  "next_executable_action": "optional official-build runtime capture only after the no-execution boundary is explicitly changed",
+  "input_paths": ["requirements-v2.md", "sample-provenance.json", "raw/embedded-modules.json"],
+  "acceptance_event": "observed: verified reports and JSON rules, original-byte checks PASS, rollback hash matched baseline, all four roles reopened",
+  "role_paths": {
+    "MODIFIED_FILE": "H:/orca/rea/site/claude/analysis/transaction/MODIFIED_FILE.md",
+    "DIFF_FILE": "H:/orca/rea/site/claude/analysis/transaction/DIFF_FILE.patch",
+    "VERIFICATION": "H:/orca/rea/site/claude/analysis/transaction/VERIFICATION.txt",
+    "ROLLBACK": "H:/orca/rea/site/claude/analysis/transaction/ROLLBACK.sh"
+  },
+  "observed_contract_behaviors": {
+    "BASELINE": {"stdout": "status=pending\n", "exit": 0},
+    "MODIFIED": {"stdout": "status=scaffolded\n", "exit": 0},
+    "ROLLBACK": {"stdout": "status=pending\n", "exit": 0}
+  },
+  "remaining_runtime_boundaries": [
+    "Official process.version is inferred from the native compatibility constant",
+    "Final cch wire value or a native rewrite has not been observed",
+    "Official ClientHello/JA3/JA4/ALPN/h2 and Subway wire order/casing were not captured",
+    "Actual beta list requires model capabilities, flags, policy and conversation state"
+  ],
+  "official_claude_executed": false,
+  "anthropic_api_calls": 0
+}

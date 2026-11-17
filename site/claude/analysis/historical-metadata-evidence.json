@@ -1,0 +1,90 @@
+[
+  {
+    "sample": "V2.1.50-main",
+    "version": "2.1.50",
+    "file": "unpacked/npm/claude-code-2.1.50/package/cli.js",
+    "sha256": "6b0834d98793e185a91a8d0a71a2832fd4a632108f1a66683cb7d6cc5fa075e1",
+    "hits": [
+      {
+        "term": "user_${",
+        "offset": 10122797,
+        "byte_offset": 10181112,
+        "excerpt": "KV.isUsingOverage))return!1;let K=IC1();if(K===null)K=qA(\"tengu_prompt_cache_1h_config\",{}).allowlist??[],bC1(K);return A!==void 0&&K.some((Y)=>Y.endsWith(\"*\")?A.startsWith(Y.slice(0,-1)):A===Y)}function Aqz(A,q,K,Y,z){if(!Wq6(z)||\"effort\"in q)return;if(A===void 0)Y.push(vR1);else if(typeof A===\"string\")q.effort=A,Y.push(vR1)}function js(){let A=iE(),q=c3()?.accountUuid??\"\",K=Q1();return{user_id:`user_${A}_account_${q}_session_${K}`}}async function D_q(A,q){if(q)return!0;try{let K=OH(),Y=rN(K);return await E_4(xO1(()=>Nh({apiKey:A,maxRetries:3,model:K}),async(z)=>{let w=[{role:\"user\",content:\"test\"}];return await z.beta.messages.create({model:K,max_tokens:1,messages:w,temperature:1,...Y.length>0?{betas:Y}:{},metadata:js(),...Dv1()}),!0},{maxRetries:2,model:K,thinkingConfig:{type:\"disabled\"}}))}catch(K){let Y=K;if(K instanceof im)Y=K.originalError;if(w6(Y),Y instanceof Error&&Y.message.includes('{\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"invalid x-api-key\"}}'))ret"
+      },
+      {
+        "term": "user_id:",
+        "offset": 10122788,
+        "byte_offset": 10181103,
+        "excerpt": "!(O7()&&!KV.isUsingOverage))return!1;let K=IC1();if(K===null)K=qA(\"tengu_prompt_cache_1h_config\",{}).allowlist??[],bC1(K);return A!==void 0&&K.some((Y)=>Y.endsWith(\"*\")?A.startsWith(Y.slice(0,-1)):A===Y)}function Aqz(A,q,K,Y,z){if(!Wq6(z)||\"effort\"in q)return;if(A===void 0)Y.push(vR1);else if(typeof A===\"string\")q.effort=A,Y.push(vR1)}function js(){let A=iE(),q=c3()?.accountUuid??\"\",K=Q1();return{user_id:`user_${A}_account_${q}_session_${K}`}}async function D_q(A,q){if(q)return!0;try{let K=OH(),Y=rN(K);return await E_4(xO1(()=>Nh({apiKey:A,maxRetries:3,model:K}),async(z)=>{let w=[{role:\"user\",content:\"test\"}];return await z.beta.messages.create({model:K,max_tokens:1,messages:w,temperature:1,...Y.length>0?{betas:Y}:{},metadata:js(),...Dv1()}),!0},{maxRetries:2,model:K,thinkingConfig:{type:\"disabled\"}}))}catch(K){let Y=K;if(K instanceof im)Y=K.originalError;if(w6(Y),Y instanceof Error&&Y.message.includes('{\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"invalid x-api-key"
+      }
+    ]
+  },
+  {
+    "sample": "V2.1.100-main",
+    "version": "2.1.100",
+    "file": "unpacked/npm/claude-code-2.1.100/package/cli.js",
+    "sha256": "d490cc3e923832683cd899cce6375cb9b3ce734bc72321d0bfea43470d5799be",
+    "hits": [
+      {
+        "term": "user_id:",
+        "offset": 11780086,
+        "byte_offset": 11841033,
+        "excerpt": "sk_budget\"in K||!Aq6())return;if(K.task_budget={type:\"tokens\",total:q.total,...q.remaining!==void 0&&{remaining:q.remaining}},!_.includes(FZ1))_.push(FZ1)}function yK6(){let q={},K=process.env.CLAUDE_CODE_EXTRA_METADATA;if(K){let _=m5(K,!1);if(_&&typeof _===\"object\"&&!Array.isArray(_))q=_;else N(`CLAUDE_CODE_EXTRA_METADATA env var must be a JSON object, but was given ${K}`,{level:\"error\"})}return{user_id:x6({...q,device_id:fb(),account_uuid:_z()?.accountUuid??\"\",session_id:N8()})}}async function coK(q,K){if(K)return!0;try{let _=sW(),z=LR(_);return await QC4(mL8(()=>yR({apiKey:q,maxRetries:3,model:_,source:\"verify_api_key\"}),async(Y)=>{let A=[{role:\"user\",content:\"test\"}];return await Y.beta.messages.create({model:_,max_tokens:1,messages:A,temperature:1,...z.length>0&&{betas:z},metadata:yK6(),...S56()}),!0},{maxRetries:2,model:_,thinkingConfig:{type:\"disabled\"}}))}catch(_){let z=_;if(_ instanceof fI)z=_.originalError;if($6(z),z instanceof Error&&z.message.includes('{\"type\":\"error\",\"erro"
+      }
+    ]
+  },
+  {
+    "sample": "V2.1.75-main",
+    "version": "2.1.75",
+    "file": "unpacked/npm/claude-code-2.1.75/package/cli.js",
+    "sha256": "f409b9cafd4cb3c741f3c9d2c054ffa1bdfb465602a60323b3401694dab05179",
+    "hits": [
+      {
+        "term": "user_${",
+        "offset": 10358951,
+        "byte_offset": 10418276,
+        "excerpt": "!$G.isUsingOverage))return!1;let K=fu1();if(K===null)K=M8(\"tengu_prompt_cache_1h_config\",{}).allowlist??[],Gu1(K);return A!==void 0&&K.some((Y)=>Y.endsWith(\"*\")?A.startsWith(Y.slice(0,-1)):A===Y)}function xKz(A,q,K,Y,z){if(!WC(z)||\"effort\"in q)return;if(A===void 0)Y.push(Wn1);else if(typeof A===\"string\")q.effort=A,Y.push(Wn1)}function Jt(){let A=Yy(),q=y5()?.accountUuid??\"\",K=R1();return{user_id:`user_${A}_account_${q}_session_${K}`}}async function fZq(A,q){if(q)return!0;try{let K=nH(),Y=kk(K);return await QY4(gX1(()=>KI({apiKey:A,maxRetries:3,model:K,source:\"verify_api_key\"}),async(z)=>{let _=[{role:\"user\",content:\"test\"}];return await z.beta.messages.create({model:K,max_tokens:1,messages:_,temperature:1,...Y.length>0?{betas:Y}:{},metadata:Jt(),...oR1()}),!0},{maxRetries:2,model:K,thinkingConfig:{type:\"disabled\"}}))}catch(K){let Y=K;if(K instanceof VB)Y=K.originalError;if(z6(Y),Y instanceof Error&&Y.message.includes('{\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"in"
+      },
+      {
+        "term": "user_id:",
+        "offset": 10358942,
+        "byte_offset": 10418267,
+        "excerpt": "(!(tA()&&!$G.isUsingOverage))return!1;let K=fu1();if(K===null)K=M8(\"tengu_prompt_cache_1h_config\",{}).allowlist??[],Gu1(K);return A!==void 0&&K.some((Y)=>Y.endsWith(\"*\")?A.startsWith(Y.slice(0,-1)):A===Y)}function xKz(A,q,K,Y,z){if(!WC(z)||\"effort\"in q)return;if(A===void 0)Y.push(Wn1);else if(typeof A===\"string\")q.effort=A,Y.push(Wn1)}function Jt(){let A=Yy(),q=y5()?.accountUuid??\"\",K=R1();return{user_id:`user_${A}_account_${q}_session_${K}`}}async function fZq(A,q){if(q)return!0;try{let K=nH(),Y=kk(K);return await QY4(gX1(()=>KI({apiKey:A,maxRetries:3,model:K,source:\"verify_api_key\"}),async(z)=>{let _=[{role:\"user\",content:\"test\"}];return await z.beta.messages.create({model:K,max_tokens:1,messages:_,temperature:1,...Y.length>0?{betas:Y}:{},metadata:Jt(),...oR1()}),!0},{maxRetries:2,model:K,thinkingConfig:{type:\"disabled\"}}))}catch(K){let Y=K;if(K instanceof VB)Y=K.originalError;if(z6(Y),Y instanceof Error&&Y.message.includes('{\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"mes"
+      }
+    ]
+  },
+  {
+    "sample": "V2.1.77-main",
+    "version": "2.1.77",
+    "file": "unpacked/npm/claude-code-2.1.77/package/cli.js",
+    "sha256": "59c6cbc99c314ae0612dea005998ea96d69fb3c208b90777f4db3593fb78ae6d",
+    "hits": [
+      {
+        "term": "user_${",
+        "offset": 10427936,
+        "byte_offset": 10487496,
+        "excerpt": "!Xf.isUsingOverage))return!1;let K=Nu1();if(K===null)K=z8(\"tengu_prompt_cache_1h_config\",{}).allowlist??[],Vu1(K);return A!==void 0&&K.some((Y)=>Y.endsWith(\"*\")?A.startsWith(Y.slice(0,-1)):A===Y)}function O7z(A,q,K,Y,z){if(!hC(z)||\"effort\"in q)return;if(A===void 0)Y.push(En1);else if(typeof A===\"string\")q.effort=A,Y.push(En1)}function Ft(){let A=Zy(),q=I3()?.accountUuid??\"\",K=L1();return{user_id:`user_${A}_account_${q}_session_${K}`}}async function jWq(A,q){if(q)return!0;try{let K=gH(),Y=Ck(K);return await E34(NX1(()=>Vk({apiKey:A,maxRetries:3,model:K,source:\"verify_api_key\"}),async(z)=>{let _=[{role:\"user\",content:\"test\"}];return await z.beta.messages.create({model:K,max_tokens:1,messages:_,temperature:1,...Y.length>0?{betas:Y}:{},metadata:Ft(),...Yh1()}),!0},{maxRetries:2,model:K,thinkingConfig:{type:\"disabled\"}}))}catch(K){let Y=K;if(K instanceof xB)Y=K.originalError;if(H6(Y),Y instanceof Error&&Y.message.includes('{\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"in"
+      },
+      {
+        "term": "user_id:",
+        "offset": 10427927,
+        "byte_offset": 10487487,
+        "excerpt": "(!(pA()&&!Xf.isUsingOverage))return!1;let K=Nu1();if(K===null)K=z8(\"tengu_prompt_cache_1h_config\",{}).allowlist??[],Vu1(K);return A!==void 0&&K.some((Y)=>Y.endsWith(\"*\")?A.startsWith(Y.slice(0,-1)):A===Y)}function O7z(A,q,K,Y,z){if(!hC(z)||\"effort\"in q)return;if(A===void 0)Y.push(En1);else if(typeof A===\"string\")q.effort=A,Y.push(En1)}function Ft(){let A=Zy(),q=I3()?.accountUuid??\"\",K=L1();return{user_id:`user_${A}_account_${q}_session_${K}`}}async function jWq(A,q){if(q)return!0;try{let K=gH(),Y=Ck(K);return await E34(NX1(()=>Vk({apiKey:A,maxRetries:3,model:K,source:\"verify_api_key\"}),async(z)=>{let _=[{role:\"user\",content:\"test\"}];return await z.beta.messages.create({model:K,max_tokens:1,messages:_,temperature:1,...Y.length>0?{betas:Y}:{},metadata:Ft(),...Yh1()}),!0},{maxRetries:2,model:K,thinkingConfig:{type:\"disabled\"}}))}catch(K){let Y=K;if(K instanceof xB)Y=K.originalError;if(H6(Y),Y instanceof Error&&Y.message.includes('{\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"mes"
+      }
+    ]
+  },
+  {
+    "sample": "V2.1.78-main",
+    "version": "2.1.78",
+    "file": "unpacked/npm/claude-code-2.1.78/package/cli.js",
+    "sha256": "51528d882b5bb2ab97d5f00b714d08b6652910968a96d599013361df9b419de7",
+    "hits": [
+      {
+        "term": "user_id:",
+        "offset": 10455766,
+        "byte_offset": 10515381,
+        "excerpt": "h(Y.slice(0,-1)):A===Y)}function Rqz(A,q,K,Y,z){if(!Jk(z)||\"effort\"in q)return;if(A===void 0)Y.push(Vr1);else if(typeof A===\"string\")q.effort=A,Y.push(Vr1)}function at(){let A={},q=process.env.CLAUDE_CODE_EXTRA_METADATA;if(q){let K=iq(q,!1);if(K&&typeof K===\"object\"&&!Array.isArray(K))A=K;else k(`CLAUDE_CODE_EXTRA_METADATA env var must be a JSON object, but was given ${q}`,{level:\"error\"})}return{user_id:p6({...A,device_id:xy(),account_uuid:N3()?.accountUuid??\"\",session_id:y1()})}}async function FZq(A,q){if(q)return!0;try{let K=aH(),Y=pk(K);return await p94(_P1(()=>Ik({apiKey:A,maxRetries:3,model:K,source:\"verify_api_key\"}),async(z)=>{let _=[{role:\"user\",content:\"test\"}];return await z.beta.messages.create({model:K,max_tokens:1,messages:_,temperature:1,...Y.length>0?{betas:Y}:{},metadata:at(),...th1()}),!0},{maxRetries:2,model:K,thinkingConfig:{type:\"disabled\"}}))}catch(K){let Y=K;if(K instanceof lB)Y=K.originalError;if(H6(Y),Y instanceof Error&&Y.message.includes('{\"type\":\"error\",\"err"
+      }
+    ]
+  }
+]

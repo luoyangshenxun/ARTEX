@@ -1,5 +1,6 @@
 # Official packages, extracted trees, local tools, and runtime captures remain local.
 /installer/*.tgz
+/installer/*.partial
 /installer/*.tar.gz
 /analysis/unpacked/
 /analysis/tools/

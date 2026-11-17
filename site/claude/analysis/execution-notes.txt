@@ -20,3 +20,28 @@ These notes retain setup history. Current evidence is in transaction/VERIFICATIO
 The final verifier replays DIFF_FILE.patch on baseline bytes, checks the result against
 MODIFIED_FILE.md, then observes pending -> scaffolded -> pending and reapplies scaffolded.
 These are workspace-contract states, not results from the official Claude client.
+
+V2 execution notes (2026-11-17)
+
+1. PowerShell node -e quoting dropped JavaScript string quotes (SyntaxError, exit 1).
+   Replaced inline scripts with explicit .mjs files; no official binary was run.
+2. PowerShell expanded unquoted $ in minified symbol names, and unquoted @ offsets
+   were interpreted by the shell. Corrected calls use single-quoted literal names.
+3. Get-Content of a verifier at analysis/verify-transaction.mjs failed (path missing);
+   actual existing verifier is analysis/transaction/verify-transaction.mjs.
+4. The patch tool rejected a combined delete/add of scan-static.mjs before editing
+   ("multiple operations target"). Applied one deletion followed by one addition.
+5. Direct raw.githubusercontent.com source reads failed with ECONNRESET even with
+   authorized network access; bun-source-provenance.json records each failure.
+   Earlier allSettled code returned exit 0 despite errors; the script now returns
+   exit 1 when no source fetch succeeds. No source-fetch success is claimed.
+6. Independent npm Bun tools and Claude embedded Bun builds have different revision
+   hashes even at the same semantic version; their runtime evidence is kept separate.
+7. Native module extraction, auth/endpoint/header/metadata/system/billing slices,
+   conditional beta fixtures and original-byte evidence checks completed locally.
+   Official process.version, final cch rewrite and ClientHello remain unexecuted.
+
+The existing four roles are extended in place for v2. Their status check remains
+pending -> scaffolded -> pending; analysis_status is separately asserted. The full
+v2 verifier's literal stdout/stderr/exit status is recorded by the same transaction
+driver. Downloads, complete bundles and tool binaries stay in ignored directories.

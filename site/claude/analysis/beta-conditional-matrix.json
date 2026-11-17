@@ -1,0 +1,4694 @@
+{
+  "schema_version": 2,
+  "sample": "S1",
+  "cli_version": "2.1.325",
+  "evidence_level": "offline-reproduction (exact base/cap rules) + explicit main-request path fixture",
+  "warning": "Controlled conditional matrix, not a unique production truth table. Model family and the six axes alone do not determine actual betas.",
+  "runtime": {
+    "bun_version": "1.4.4",
+    "bun_revision": "38afee6c84fcf48c0edb2466aa4b27d287a59c30",
+    "process_version": "v26.3.0"
+  },
+  "context": {
+    "provider": "firstParty",
+    "agentic_query": true,
+    "model_ids": "synthetic; no claim these are published models",
+    "model_capabilities": {
+      "interleavedThinking": true,
+      "contextManagement": true,
+      "thinkingSupported": true,
+      "thinkingTokenCount": true,
+      "effort": true,
+      "binding": true,
+      "context1m": false,
+      "perTurnEffort": false,
+      "perTurnTiming": false
+    },
+    "first_party_only_betas": true,
+    "first_party_capability_betas": true,
+    "prompt_cache_scope": true,
+    "thinking_display": "none",
+    "showThinkingSummaries": false,
+    "mid_conversation_system": "GA, null header",
+    "flags": "all additional feature flags false; no env/SDK betas, tools search, output format, fallback, fast, 1h cache, account extras",
+    "conversation": "new, no sticky beta accepted/refused state; non-mechanical thinking disable",
+    "independent_axes": "stream/tools do not change tokens in this explicit context; other contexts may"
+  },
+  "base_rule_source": {
+    "module": "/$bunfs/root/chunk-e44qnbvj.js",
+    "spans": [
+      {
+        "start": 533897,
+        "end": 534587
+      },
+      {
+        "start": 534588,
+        "end": 534777
+      }
+    ]
+  },
+  "subway_baseline": {
+    "provenance": "USER-SUPPLIED 2026-11-17, f314f5d7",
+    "tokens": [
+      "claude-code-20250219",
+      "oauth-2025-04-20",
+      "interleaved-thinking-2025-05-14",
+      "prompt-caching-scope-2026-01-05",
+      "effort-2025-11-24",
+      "context-management-2025-06-27",
+      "thinking-binding-controls-2026-08-01",
+      "mid-conversation-output-config-2026-07-01",
+      "extended-cache-ttl-2025-04-11"
+    ]
+  },
+  "rows": [
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "claude-code-20250219",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,claude-code-20250219,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": false,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": false,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": false,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": false,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "thinking-binding-controls-2026-08-01",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "interactive": true,
+      "stream": true,
+      "tools": true,
+      "thinking": true,
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "redact-thinking-2026-02-12",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13",
+        "effort-2025-11-24",
+        "thinking-binding-controls-2026-08-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,context-management-2025-06-27,prompt-caching-scope-2026-01-05,thinking-token-count-2026-05-13,effort-2025-11-24,thinking-binding-controls-2026-08-01",
+      "subway_extra": [
+        "oauth-2025-04-20",
+        "mid-conversation-output-config-2026-07-01",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "subway_missing": [
+        "redact-thinking-2026-02-12",
+        "thinking-token-count-2026-05-13"
+      ],
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-CAP-RULES",
+        "BETA-AGENTIC",
+        "BETA-EFFORT",
+        "BETA-STICKY-BINDING",
+        "BETA-WIRE-ASSEMBLY"
+      ]
+    }
+  ],
+  "count_tokens": [
+    {
+      "family": "opus",
+      "auth": "oauth",
+      "endpoint": "count_tokens",
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "token-counting-2024-11-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,token-counting-2024-11-01",
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-COUNTTOKENS-FILTER",
+        "BETA-COUNT-CALLER",
+        "BETA-COUNT-SDK"
+      ]
+    },
+    {
+      "family": "opus",
+      "auth": "api_key",
+      "endpoint": "count_tokens",
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "token-counting-2024-11-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,token-counting-2024-11-01",
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-COUNTTOKENS-FILTER",
+        "BETA-COUNT-CALLER",
+        "BETA-COUNT-SDK"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "oauth",
+      "endpoint": "count_tokens",
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "token-counting-2024-11-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,token-counting-2024-11-01",
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-COUNTTOKENS-FILTER",
+        "BETA-COUNT-CALLER",
+        "BETA-COUNT-SDK"
+      ]
+    },
+    {
+      "family": "sonnet",
+      "auth": "api_key",
+      "endpoint": "count_tokens",
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "token-counting-2024-11-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,token-counting-2024-11-01",
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-COUNTTOKENS-FILTER",
+        "BETA-COUNT-CALLER",
+        "BETA-COUNT-SDK"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "oauth",
+      "endpoint": "count_tokens",
+      "tokens": [
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "token-counting-2024-11-01"
+      ],
+      "header": "oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,token-counting-2024-11-01",
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-COUNTTOKENS-FILTER",
+        "BETA-COUNT-CALLER",
+        "BETA-COUNT-SDK"
+      ]
+    },
+    {
+      "family": "haiku",
+      "auth": "api_key",
+      "endpoint": "count_tokens",
+      "tokens": [
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "token-counting-2024-11-01"
+      ],
+      "header": "interleaved-thinking-2025-05-14,context-management-2025-06-27,token-counting-2024-11-01",
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-COUNTTOKENS-FILTER",
+        "BETA-COUNT-CALLER",
+        "BETA-COUNT-SDK"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "oauth",
+      "endpoint": "count_tokens",
+      "tokens": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "token-counting-2024-11-01"
+      ],
+      "header": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,context-management-2025-06-27,token-counting-2024-11-01",
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-COUNTTOKENS-FILTER",
+        "BETA-COUNT-CALLER",
+        "BETA-COUNT-SDK"
+      ]
+    },
+    {
+      "family": "fable",
+      "auth": "api_key",
+      "endpoint": "count_tokens",
+      "tokens": [
+        "claude-code-20250219",
+        "interleaved-thinking-2025-05-14",
+        "context-management-2025-06-27",
+        "token-counting-2024-11-01"
+      ],
+      "header": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,token-counting-2024-11-01",
+      "evidence": [
+        "BETA-BASE-RULES",
+        "BETA-COUNTTOKENS-FILTER",
+        "BETA-COUNT-CALLER",
+        "BETA-COUNT-SDK"
+      ]
+    }
+  ]
+}
