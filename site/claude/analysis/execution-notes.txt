@@ -1,0 +1,22 @@
+Claude analysis workspace preparation: observed setup errors
+
+These notes retain setup history. Current evidence is in transaction/VERIFICATION.txt.
+
+1. The first rollback invocation used "sh" on PowerShell; command resolution failed.
+   The outer command reported exit 0 because LASTEXITCODE retained a previous value.
+   No rollback occurred; the comparison correctly showed the hash did not match.
+2. A later inline PowerShell command had an invalid here-string token; parser exit 1.
+   Its body was not executed.
+3. Automatic permission review timed out on a combined command. The command did not run.
+   The steps were moved to a local script without cleanup operations.
+4. The first scripted Bash rollback rejected a target outside the transaction directory.
+   The PowerShell wrapper exited 1. The target copy was moved inside that directory.
+5. Reading empty stderr with TrimEnd on null caused the next wrapper to exit 1.
+   The final verifier uses Node child_process to capture actual native exit statuses
+   and literal stdout/stderr without PowerShell stream conversion.
+6. A continuation patch attempted delete/add on the same PS1 path; apply_patch rejected
+   the patch before edits. The corrected patch uses a single update operation.
+
+The final verifier replays DIFF_FILE.patch on baseline bytes, checks the result against
+MODIFIED_FILE.md, then observes pending -> scaffolded -> pending and reapplies scaffolded.
+These are workspace-contract states, not results from the official Claude client.

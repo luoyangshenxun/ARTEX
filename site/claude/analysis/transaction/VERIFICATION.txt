@@ -1,0 +1,85 @@
+Claude workspace scaffold transaction verification
+Recorded at: 2026-11-17T05:04:58.967Z
+TARGET: H:\orca\rea\site\claude\analysis\transaction\MODIFIED_FILE.md
+BASELINE: H:\orca\rea\site\claude\analysis\transaction\BASELINE.md
+GOAL: status=pending -> status=scaffolded; bind the CLI and SDK analysis targets.
+Scope: workspace contract only; no official client behavior has been measured.
+
+COMMAND PATCH: ["git","apply","--no-index","--directory=site/claude/analysis/raw/patch-replay","H:\\orca\\rea\\site\\claude\\analysis\\transaction\\DIFF_FILE.patch"]
+CWD: H:\orca\rea
+STDOUT BEGIN
+
+STDOUT END
+STDERR BEGIN
+
+STDERR END
+EXIT STATUS: 0
+SIGNAL: none
+EXECUTION ERROR: none
+
+COMMAND BASELINE: ["F:\\Program Files\\nodejs\\node.exe","H:\\orca\\rea\\site\\claude\\analysis\\transaction\\check-state.mjs","H:\\orca\\rea\\site\\claude\\analysis\\transaction\\BASELINE.md"]
+CWD: H:\orca\rea
+STDOUT BEGIN
+status=pending
+
+STDOUT END
+STDERR BEGIN
+
+STDERR END
+EXIT STATUS: 0
+SIGNAL: none
+EXECUTION ERROR: none
+
+COMMAND MODIFIED: ["F:\\Program Files\\nodejs\\node.exe","H:\\orca\\rea\\site\\claude\\analysis\\transaction\\check-state.mjs","H:\\orca\\rea\\site\\claude\\analysis\\transaction\\MODIFIED_FILE.md"]
+CWD: H:\orca\rea
+STDOUT BEGIN
+status=scaffolded
+
+STDOUT END
+STDERR BEGIN
+
+STDERR END
+EXIT STATUS: 0
+SIGNAL: none
+EXECUTION ERROR: none
+
+COMMAND ROLLBACK: ["C:\\Program Files\\Git\\bin\\bash.exe","./ROLLBACK.sh","./rollback-copy.md"]
+CWD: H:\orca\rea\site\claude\analysis\transaction
+STDOUT BEGIN
+RESTORED /h/orca/rea/site/claude/analysis/transaction/rollback-copy.md FROM /h/orca/rea/site/claude/analysis/transaction/BASELINE.md
+
+STDOUT END
+STDERR BEGIN
+
+STDERR END
+EXIT STATUS: 0
+SIGNAL: none
+EXECUTION ERROR: none
+
+COMMAND ROLLBACK CHECK: ["F:\\Program Files\\nodejs\\node.exe","H:\\orca\\rea\\site\\claude\\analysis\\transaction\\check-state.mjs","H:\\orca\\rea\\site\\claude\\analysis\\transaction\\rollback-copy.md"]
+CWD: H:\orca\rea
+STDOUT BEGIN
+status=pending
+
+STDOUT END
+STDERR BEGIN
+
+STDERR END
+EXIT STATUS: 0
+SIGNAL: none
+EXECUTION ERROR: none
+
+BASELINE SHA-256: 65251ede085c6f2fc2497b86ff8759266e32d32097b0841de292cadcfb1e89b1
+MODIFIED SHA-256: 79bd3d6292973bf397eded0e0e7cea3ca376bf6f0aa4ce5cd4bd168b5e6db53f
+PATCH REPLAY SHA-256: 79bd3d6292973bf397eded0e0e7cea3ca376bf6f0aa4ce5cd4bd168b5e6db53f
+ROLLBACK SHA-256: 65251ede085c6f2fc2497b86ff8759266e32d32097b0841de292cadcfb1e89b1
+ROLLBACK HASH MATCHES BASELINE: true
+OBSERVED BASELINE: status=pending; exit=0
+OBSERVED MODIFIED: status=scaffolded; exit=0
+OBSERVED ROLLBACK: status=pending; exit=0
+REAPPLY: status=scaffolded
+TRANSACTION_VERIFICATION=PASS
+
+SUPPLEMENTAL WORKSPACE CHECKS: H:\orca\rea\site\claude\analysis\workspace-verification.json
+RESULT: PASS; missing inputs exit=2; synthetic scanner checks exit=0.
+GIT PREPARATION: equivalent patch removes whitespace-only context; patch replay reverified.

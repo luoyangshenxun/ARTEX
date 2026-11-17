@@ -1,0 +1,16 @@
+# Official packages, extracted trees, local tools, and runtime captures remain local.
+/installer/*.tgz
+/installer/*.tar.gz
+/analysis/unpacked/
+/analysis/tools/
+/analysis/captures/
+/analysis/raw/
+/analysis/node_modules/
+
+# Local package metadata may contain machine-specific paths or registry details.
+/analysis/package-lock.json
+
+# Generated scratch output is reproducible from the checked-in scripts.
+/analysis/static-evidence.json
+/analysis/*.stdout.txt
+/analysis/*.stderr.txt

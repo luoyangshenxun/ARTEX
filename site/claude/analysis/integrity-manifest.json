@@ -1,0 +1,122 @@
+[
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\.gitignore",
+    "bytes": 479,
+    "sha256": "ececd7216b45062205f561a2833286db41e07fac7ff52526fa8e789b11129247"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\analysis-manifest.json",
+    "bytes": 2297,
+    "sha256": "d6427dce73d28e2bed01cb51cb34b639cbe1fe23fded8893044251c29bf7dcd7"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\beta-matrix.md",
+    "bytes": 2066,
+    "sha256": "7634d4ce53b061f345b4aeb7c1c68fc771dad6ce31d2d14122d55bb35ba78259"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\billing-fields.md",
+    "bytes": 2256,
+    "sha256": "733b6da357b0a7c9099f17020258a4d5a094e6d7edfa4cfb658a3360d143356b"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\claude-real-fingerprint.md",
+    "bytes": 6961,
+    "sha256": "3c62c14ffebda1ba9287964fc6a97f5ae00e2bb5419759ad2e3fbcb4a74fc898"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\execution-notes.txt",
+    "bytes": 1511,
+    "sha256": "19426ed60a8ab0db9d5765ea52823440768657e344baa922b40a657dc33c4116"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\fingerprint-domain-rules.md",
+    "bytes": 3653,
+    "sha256": "7cc34911face8b498ed0de6fd754866f7bed08e7cfa00394cb62e4bbfa8f85ed"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\oauth-auth.md",
+    "bytes": 2019,
+    "sha256": "edf75eca7a08a4d9bddb24db5c11ae6c9349397f0c30578863d79ba640e15dc3"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\report_overview.md",
+    "bytes": 2494,
+    "sha256": "9403b2304d03eeea7adcf4125440ea551c6596dca01657e293c1eced057e2e1b"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\scan-static.mjs",
+    "bytes": 3686,
+    "sha256": "8f87c0cb01d3906b0130a474986bcf1c6f8f7ccb579d97ba59971548167e7697"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\subway-diff.md",
+    "bytes": 1775,
+    "sha256": "82ba7363a8c9e91bc2313018cb2614b1ae92da2fe8428ad20565328939b48d27"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\tls-features.md",
+    "bytes": 1584,
+    "sha256": "32203c68a39a71aaedeca68392d2c239e3e5afa11d45c5064bb254085d25a155"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\.gitignore",
+    "bytes": 17,
+    "sha256": "a96bfd1b8e39382084425a4b5e9b565022b93792e3b9999e2e11c6822a7acfdd"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\BASELINE.md",
+    "bytes": 63,
+    "sha256": "65251ede085c6f2fc2497b86ff8759266e32d32097b0841de292cadcfb1e89b1"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\check-state.mjs",
+    "bytes": 262,
+    "sha256": "923ea0cf893c5afd5d67a65bcfb6f15aa845f2f6fa1ffcb58f8bb9a703f20e89"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\DIFF_FILE.patch",
+    "bytes": 381,
+    "sha256": "0caa3c1da8fb674893844a63410255959cccfa8c6833ee84b148166e3c51b032"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\MODIFIED_FILE.md",
+    "bytes": 198,
+    "sha256": "79bd3d6292973bf397eded0e0e7cea3ca376bf6f0aa4ce5cd4bd168b5e6db53f"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\ROLLBACK.sh",
+    "bytes": 570,
+    "sha256": "db080a99596e1e97cf93e7e4ff37999dfa6a142777a6093af453f8dd3b3232df"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\VERIFICATION.txt",
+    "bytes": 2867,
+    "sha256": "be1d701792ab6072bd3344d482f55d1958965de36cc1b0861e2730c09b8992d8"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\verify-transaction.mjs",
+    "bytes": 4685,
+    "sha256": "2f0fe5a97e362c7bbea6d0fbb4b4f0e172bfc98aa47295141ea4e19e16303214"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\transaction\\verify-transaction.ps1",
+    "bytes": 77,
+    "sha256": "e96f54850e4ef886ba0fa13a43622d693e05a7e9da7d4d71bdcf981dbae97f75"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\verify-scaffold.mjs",
+    "bytes": 2182,
+    "sha256": "16ee5429ff63f964b88671db7040ba60f509e49209efeb66e847df58191e83fa"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\analysis\\workspace-verification.json",
+    "bytes": 7278,
+    "sha256": "a84aef9499913909b627aa954cbaf8944af220bbe47b9a1c59d9d83f007170e2"
+  },
+  {
+    "path": "H:\\orca\\rea\\site\\claude\\README.md",
+    "bytes": 3866,
+    "sha256": "60f89681095c288bb88e28e1c3accff902b737b7b15f08436e602006e792e740"
+  }
+]

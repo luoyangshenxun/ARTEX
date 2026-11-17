@@ -1,0 +1,74 @@
+{
+  "workspace": "Claude Code static outbound fingerprint analysis",
+  "status": "scaffold",
+  "createdAt": "2026-11-17",
+  "target": {
+    "cli": {
+      "package": "@anthropic-ai/claude-code",
+      "role": "official CLI",
+      "localRoot": "unpacked/npm/claude-code",
+      "version": "PENDING_PACKAGE_SAMPLE",
+      "sha256": "PENDING_PACKAGE_HASH"
+    },
+    "sdk": {
+      "package": "@anthropic-ai/sdk",
+      "role": "Stainless-generated SDK and HTTP header source",
+      "localRoot": "unpacked/npm/sdk",
+      "version": "PENDING_PACKAGE_SAMPLE",
+      "sha256": "PENDING_PACKAGE_HASH"
+    },
+    "transport": {
+      "packages": [
+        "undici",
+        "node:fetch",
+        "PENDING_RUNTIME_DEPENDENCY"
+      ],
+      "source": "PENDING_BUNDLE_OR_LOCKFILE_EVIDENCE"
+    },
+    "subway": {
+      "source": "PENDING_LOCAL_SOURCE_OR_CAPTURE",
+      "status": "not located in current workspace"
+    }
+  },
+  "deliverables": [
+    "claude-real-fingerprint.md",
+    "fingerprint-domain-rules.md",
+    "beta-matrix.md",
+    "billing-fields.md",
+    "oauth-auth.md",
+    "tls-features.md",
+    "subway-diff.md"
+  ],
+  "requiredEvidence": {
+    "sourceReference": "relative/file.js:function-or-export",
+    "location": "line or byte offset",
+    "logic": "branch, fallback, normalization, or dependency call",
+    "domain": "observed or statically enumerated value set",
+    "coupling": "cross-field or scenario constraint",
+    "versionScope": "package version or version range",
+    "evidenceLevel": [
+      "literal",
+      "call-chain",
+      "offline-reproduction",
+      "runtime-capture",
+      "inference"
+    ]
+  },
+  "analysisStages": [
+    "npm pack and provenance recording",
+    "static extraction and hash inventory",
+    "constant and symbol scan",
+    "call-chain reconstruction",
+    "multi-version comparison",
+    "offline request construction",
+    "optional same-version capture cross-check",
+    "report and evidence verification"
+  ],
+  "prohibitedShortcuts": [
+    "single snapshot value presented as a domain",
+    "package name used as a source reference",
+    "SDK schema treated as proof of CLI runtime behavior",
+    "runtime header order inferred from JavaScript object order alone",
+    "TLS fingerprint claimed without a same-environment observation"
+  ]
+}

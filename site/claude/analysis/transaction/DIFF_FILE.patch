@@ -1,0 +1,13 @@
+diff --git a/MODIFIED_FILE.md b/MODIFIED_FILE.md
+--- a/MODIFIED_FILE.md
++++ b/MODIFIED_FILE.md
+@@ -1,4 +1,5 @@
+-# Analysis workspace contract
++# Claude Code static analysis workspace contract
+-
++
+-status: pending
+-target: unbound
++status: scaffolded
++target: @anthropic-ai/claude-code + @anthropic-ai/sdk
++deliverables: fingerprint, domains, beta, billing, oauth, tls, subway-diff
